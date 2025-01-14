@@ -2,7 +2,7 @@
 
 body {
     font-family: -apple-system, sans-serif;
-    background: #E3E3E3;
+    background: #060606;
     height: 100vh;
 }
 
@@ -32,7 +32,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #000000;
+    color: white;
     text-decoration: none;
 }
 
@@ -46,7 +46,7 @@ main {
     flex-direction: column;
     align-items: start;
     justify-content: center;
-    color: #000000;
+    color: #ffffff;
     padding: 0px 153px;
     margin: 4.2rem 0;
     z-index: 1;
@@ -74,13 +74,13 @@ main {
 }
 
 .left button:hover {
-    border: 2px solid #000000;
+    border: 2px solid #fff;
     border-radius: 5px;
     background: #d3358d;
 }
 
 .left button a {
-    color: #000000;
+    color: #FFFFFF;
     font-size: 2rem;
     text-decoration: none;
 }
