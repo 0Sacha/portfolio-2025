@@ -11,25 +11,55 @@
     <title>Portfolio</title>
 </head>
 <body>
+<a href="#"><img id="clickToUpScroll" src="./assets/img/up-arrow.svg" alt="click to up scroll"></a>
 <nav>
     <ul>
-        <li><a href="">Home</a></li>
-        <li><a href="">About</a></li>
-        <li><a href="">Project</a></li>
-        <li><a href="">Contact</a></li>
+        <li><a id="active" href="#">Home</a></li>
+        <li><a href="#AboutPage">About</a></li>
+        <li><a href="#ProjectPage">Project</a></li>
+        <li><a href="#ContactPage">Contact</a></li>
     </ul>
     <img id="moonSwitchBtn" src="./assets/img/moonIconDark.png" alt="Moon" height="50">
     <img style="display: none" id="sunSwitchBtn" src="./assets/img/sunIconLight.png" alt="Sun" height="50">
 </nav>
 <main>
-    <div class="left">
-        <h1>SACHA LAVILLE</h1>
-        <p>Développeur web front-end</p>
-        <button><a href="#">Découvrir</a></button>
-    </div>
-    <div class="right">
-        <img src="./assets/img/illustrationHautDePage.png" alt="Portfolio" height="500">
-    </div>
+    <section id="headPage">
+        <div class="leftHeadPage">
+            <h1>SACHA LAVILLE</h1>
+            <p>Développeur web front-end</p>
+            <button><a href="#">Découvrir</a></button>
+        </div>
+        <div class="rightHeadPage">
+            <img src="./assets/img/illustrationHautDePage.png" alt="Portfolio" height="500">
+        </div>
+    </section>
+    <section id="AboutPage">
+        <div class="leftHeadPage">
+            <h1>About him :</h1>
+            <p></p>
+        </div>
+        <div class="rightHeadPage">
+            <img src="./assets/img/" alt="" height="500">
+        </div>
+    </section>
+    <section id="ProjectPage">
+        <div class="leftHeadPage">
+            <h1>Project :</h1>
+            <p></p>
+        </div>
+        <div class="rightHeadPage">
+            <img src="./assets/img/" alt="" height="500">
+        </div>
+    </section>
+    <section id="ContactPage">
+        <div class="leftHeadPage">
+            <h1>Contact :</h1>
+            <p></p>
+        </div>
+        <div class="rightHeadPage">
+            <img src="./assets/img/" alt="" height="500">
+        </div>
+    </section>
 </main>
 </body>
 </html>

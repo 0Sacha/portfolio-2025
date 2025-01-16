@@ -1,9 +1,32 @@
 @import "reset.css";
 
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+    --backgroundColorDarkMode: #060606;
+    --fontColorDarkMode: white;
+    --fontColorLightMode: black;
+
+    --backgroundColorLightMode: #cccccc;
+    --backgroundColorAboutLightMode: red;
+    --backgroundColorProjectLightMode: blue;
+    --backgroundColorContactLightMode: forestgreen;
+
+}
+
 body {
     font-family: -apple-system, sans-serif;
-    background: #E3E3E3;
+    background: var(--backgroundColorLightMode);
     height: 100vh;
+}
+
+#clickToUpScroll {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin: 3rem;
 }
 
 nav {
@@ -32,38 +55,62 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #000000;
+    color: var(--fontColorLightMode);
     text-decoration: none;
 }
 
-main {
-    margin: 1.7rem 0;
+#active {
+    font-weight: bolder;
 }
 
-.left {
+#headPage {
+    margin: 1.7rem 0;
+    height: 100vh;
+}
+
+#AboutPage {
+    background: var(--backgroundColorAboutLightMode);
+    height: 100vh;
+    margin-top: 10rem;
+    padding-bottom: 20rem;
+}
+
+#ProjectPage {
+    background: var(--backgroundColorProjectLightMode);
+    padding-bottom: 10rem;
+    height: 100vh;
+}
+
+#ContactPage {
+    background: var(--backgroundColorContactLightMode);
+    padding-bottom: 10rem;
+    height: 100vh;
+}
+
+.leftHeadPage {
     display: flex;
     position: absolute;
     flex-direction: column;
     align-items: start;
     justify-content: center;
-    color: #000000;
+    color: var(--fontColorLightMode);
     padding: 0px 153px;
     margin: 4.2rem 0;
     z-index: 1;
 }
 
-.left h1 {
+.leftHeadPage h1 {
     font-size: 4rem;
 }
 
-.left p {
+.leftHeadPage p {
     font-size: 2rem;
     margin: 1rem 0;
     color: #D54796;
     font-weight: 600;
 }
 
-.left button {
+.leftHeadPage button {
     border: 2px solid #D54796;
     margin: 3rem 0;
     border-radius: 5px;
@@ -73,23 +120,31 @@ main {
     transition: background-color 150ms ease;
 }
 
-.left button:hover {
-    border: 2px solid #000000;
+.leftHeadPage button:hover {
+    border: 2px solid var(--fontColorLightMode);
     border-radius: 5px;
     background: #d3358d;
 }
 
-.left button a {
-    color: #000000;
+.leftHeadPage button a {
+    color: var(--fontColorLightMode);
     font-size: 2rem;
     text-decoration: none;
 }
 
-.right {
+.rightHeadPage {
     display: flex;
     flex-direction: column;
     align-items: end;
     justify-content: center;
     padding: 0px 200px;
     z-index: -1;
+}
+
+.footer {
+    display: flex;
+    padding: 50px 0;
+    background-color: red;
+    height: 50vh;
+
 }
