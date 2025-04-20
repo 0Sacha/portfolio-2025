@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="78aba201-c806-442e-8721-8ff8e2665cd1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/assets/img/up-arrow.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/darkStyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/darkStyle.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/lightStyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/lightStyle.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-    </list>
+    <list default="true" id="78aba201-c806-442e-8721-8ff8e2665cd1" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -18,6 +13,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "0Sacha"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/0Sacha/portfolio-2025.git",
+    "accountId": "c8b8875b-bc81-4caa-ae7a-9ca4e229e65e"
+  }
+}]]></component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 7
 }</component>
@@ -43,10 +50,15 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\sacha\OneDrive\Documents\GitHub\portfolio-2025\src" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-822845ee3bb5-JavaScript-WS-243.23654.44" />
+        <option value="bundled-js-predefined-d6986cc7102b-f27c65a3e318-JavaScript-WS-251.23774.424" />
       </set>
     </attachedChunks>
   </component>
@@ -63,6 +75,7 @@
       <workItem from="1736948485165" duration="1293000" />
       <workItem from="1736970630230" duration="4314000" />
       <workItem from="1737013655086" duration="6043000" />
+      <workItem from="1745088257540" duration="656000" />
     </task>
     <servers />
   </component>
