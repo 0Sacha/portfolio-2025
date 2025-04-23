@@ -4,27 +4,51 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="78aba201-c806-442e-8721-8ff8e2665cd1" name="Changes" comment="" />
+    <list default="true" id="78aba201-c806-442e-8721-8ff8e2665cd1" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/about.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/contact.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img/illustrationHautDePage.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/darkStyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/lightStyle.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/reset.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/reset.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/LogoPortfolio.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/img/LogoPortfolio.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/LogoPortfolio.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/img/LogoPortfolio.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/illustrationHautDePage.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/img/illustrationHautDePage.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/moonIconDark.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/img/moonIconDark.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/sunIconLight.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/img/sunIconLight.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/up-arrow.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/img/up-arrow.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "0Sacha"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;0Sacha&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/0Sacha/portfolio-2025.git",
-    "accountId": "c8b8875b-bc81-4caa-ae7a-9ca4e229e65e"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/0Sacha/portfolio-2025.git&quot;,
+    &quot;accountId&quot;: &quot;c8b8875b-bc81-4caa-ae7a-9ca4e229e65e&quot;
   }
-}]]></component>
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 7
 }</component>
@@ -36,20 +60,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Sacha - Promeo/Documents/GitHub/portfolio-2025&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "JavaScript Debug.index.html.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "C:/Users/Sacha - Promeo/Documents/GitHub/portfolio-2025",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\sacha\OneDrive\Documents\GitHub\portfolio-2025\src" />
@@ -76,6 +103,8 @@
       <workItem from="1736970630230" duration="4314000" />
       <workItem from="1737013655086" duration="6043000" />
       <workItem from="1745088257540" duration="656000" />
+      <workItem from="1745312693213" duration="7127000" />
+      <workItem from="1745407121437" duration="704000" />
     </task>
     <servers />
   </component>

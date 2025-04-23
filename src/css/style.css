@@ -6,19 +6,14 @@ html {
 
 :root {
     --backgroundColorDarkMode: #060606;
+    --backgroundColorLightMode: #cccccc;
     --fontColorDarkMode: white;
     --fontColorLightMode: black;
-
-    --backgroundColorLightMode: #cccccc;
-    --backgroundColorAboutLightMode: red;
-    --backgroundColorProjectLightMode: blue;
-    --backgroundColorContactLightMode: forestgreen;
-
 }
 
 body {
     font-family: -apple-system, sans-serif;
-    background: var(--backgroundColorLightMode);
+    background: var(--backgroundColorDarkMode);
     height: 100vh;
 }
 
@@ -30,18 +25,19 @@ body {
 }
 
 nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    font-size: 30px;
-    padding: 56px 0px;
+    font-size: 1.8rem;
+    padding: 4.5rem 0;
     backdrop-filter: blur(7px);
+    z-index: 2;
 }
 
-nav img {
-    cursor: pointer;
-}
 
 nav ul {
     display: flex;
@@ -55,7 +51,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: var(--fontColorLightMode);
+    color: var(--fontColorDarkMode);
     text-decoration: none;
 }
 
@@ -64,25 +60,25 @@ nav ul li a {
 }
 
 #headPage {
-    margin: 1.7rem 0;
+    margin: 11rem 0;
     height: 100vh;
 }
 
 #AboutPage {
-    background: var(--backgroundColorAboutLightMode);
+    background: red;
     height: 100vh;
     margin-top: 10rem;
     padding-bottom: 20rem;
 }
 
 #ProjectPage {
-    background: var(--backgroundColorProjectLightMode);
+    background: blue;
     padding-bottom: 10rem;
     height: 100vh;
 }
 
 #ContactPage {
-    background: var(--backgroundColorContactLightMode);
+    background: forestgreen;
     padding-bottom: 10rem;
     height: 100vh;
 }
@@ -93,8 +89,8 @@ nav ul li a {
     flex-direction: column;
     align-items: start;
     justify-content: center;
-    color: var(--fontColorLightMode);
-    padding: 0px 153px;
+    color: var(--fontColorDarkMode);
+    padding: 0 9.5rem;
     margin: 4.2rem 0;
     z-index: 1;
 }
@@ -106,28 +102,27 @@ nav ul li a {
 .leftHeadPage p {
     font-size: 2rem;
     margin: 1rem 0;
-    color: #D54796;
+    color: #2155c6;
     font-weight: 600;
 }
 
 .leftHeadPage button {
-    border: 2px solid #D54796;
+    border: 0.12rem solid #2155c6;
     margin: 3rem 0;
-    border-radius: 5px;
+    border-radius: 0.3rem;
     background: none;
-    width: 200px;
-    height: 50px;
+    width: 12.5rem;
+    height: 3rem;
     transition: background-color 150ms ease;
 }
 
 .leftHeadPage button:hover {
-    border: 2px solid var(--fontColorLightMode);
-    border-radius: 5px;
-    background: #d3358d;
+    border: 0.12rem solid var(--fontColorDarkMode);
+    background: #2563eb;
 }
 
 .leftHeadPage button a {
-    color: var(--fontColorLightMode);
+    color: var(--fontColorDarkMode);
     font-size: 2rem;
     text-decoration: none;
 }
@@ -137,13 +132,12 @@ nav ul li a {
     flex-direction: column;
     align-items: end;
     justify-content: center;
-    padding: 0px 200px;
-    z-index: -1;
+    padding: 0 12.5rem;
 }
 
 .footer {
     display: flex;
-    padding: 50px 0;
+    padding: 3.12rem 0;
     background-color: red;
     height: 50vh;
 
