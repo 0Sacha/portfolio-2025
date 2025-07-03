@@ -10,28 +10,47 @@ html {
     font-family: 'Poppins', sans-serif;
 }
 
+body {
+    height: 100vh;
+    background : linear-gradient( 156.2deg,  rgba(0,0,0,1) 14.8%, rgba(32,104,177,1) 68.1%, rgba(222,229,237,1) 129% );
+    background-attachment: fixed;
+}
+
 nav {
     display: flex;
-    padding: 1rem;
-    background-color: #19191C;
+    padding: 1.5rem 2rem;
+    background-color: transparent;
     align-items: center;
     justify-content: space-between;
 }
 
-#nav-overlay {
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
 }
 
-#connexionButton{
+#cvButtonToggle {
     padding: 1rem;
     border-radius: 0.5rem ;
-    background-color: #6294C6;
+    background-color: rgba(90, 60, 225, 0.28);
+    color: white;
+    text-decoration: none;
+    transition: background-color 150ms;
+}
+
+#connexionButton {
+    padding: 1rem;
+    border-radius: 0.5rem ;
+    background-color: #5a3ce1;
     color: white;
     text-decoration: none;
     transition: background-color 150ms;
 }
 
 #connexionButton:hover {
-    background-color: #1C5B9A;
+    background-color: #462eb4;
 }
 
 #connexionButtonToggle {
@@ -71,13 +90,6 @@ nav ul li a:hover {
 }
 
 
-/* Main */
-
-main {
-    height: 100vh;
-    background : linear-gradient( 156.2deg,  rgba(0,0,0,1) 14.8%, rgba(32,104,177,1) 68.1%, rgba(222,229,237,1) 129% );
-}
-
 .main {
     display: flex;
     flex-direction: column;
@@ -85,7 +97,6 @@ main {
     justify-content: center;
     text-align: center;
 }
-
 
 main .titre {
     height: 35vh;
@@ -97,4 +108,12 @@ main .titre {
     color: white;
     justify-content: center;
     align-items: center;
+}
+
+#formulaireDeContact form {
+    display: flex;
+}
+
+#formulaireDeContact legend {
+    color: white;
 }
