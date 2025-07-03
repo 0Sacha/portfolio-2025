@@ -1,16 +1,17 @@
-const moonSwitchBtn = document.querySelector('#moonSwitchBtn');
-const sunSwitchBtn = document.querySelector('#sunSwitchBtn');
+const openNavSideBar = document.querySelector('#open-sidebar');
+const closeNavSideBar = document.querySelector('#close-sidebar');
+const nav = document.querySelector('li');
 
-const themeSwitch = document.querySelector('#themeSwitch');
-
-moonSwitchBtn.addEventListener('click', (e) => {
-    moonSwitchBtn.style.display = 'none';
-    sunSwitchBtn.style.display = 'block';
-    themeSwitch.href = './src/css/lightStyle.css'
+openNavSideBar.addEventListener(`click`, (e) => {
+    nav.style.display = 'block';
+    openNavSideBar.style.display = 'none';
+    closeNavSideBar.style.display = 'block';
+    console.log("Open!");
 })
 
-sunSwitchBtn.addEventListener('click', (e) => {
-    moonSwitchBtn.style.display = 'block';
-    sunSwitchBtn.style.display = 'none';
-    themeSwitch.href = './src/css/style.css'
+closeNavSideBar.addEventListener(`click`, (e) => {
+    nav.style.display = 'none';
+    openNavSideBar.style.display = 'block';
+    closeNavSideBar.style.display = 'none';
+    console.log("Closed!");
 })

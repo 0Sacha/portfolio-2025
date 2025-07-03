@@ -1,19 +1,51 @@
-@media (max-width: 1200px) {
-    .home_loading {
+@media (max-width: 600px) {
+
+
+    body {
+        height: 100vh;
+    }
+
+    #connexionButton{
         display: none;
     }
 
-    html body {
-        height: 100vh;
+    #connexionButtonToggle {
+        display: block;
+    }
+
+    nav ul a , #connexionButtonToggle {
+        display: none;
+    }
+
+    nav ul img {
+        display: none;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+
+    #open-sidebar {
+        display: block;
+        height: 42.5px;
     }
 
     .error-page {
         height : 100%;
-        display: flex;
+        /*display: flex;*/
         flex-direction: column;
         align-items: center;
         justify-content: center;
         margin: 0 auto;
         gap: 1rem;
+    }
+
+    .error-page img {
+        height : 20%;
+
     }
 }
