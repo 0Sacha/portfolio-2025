@@ -28,24 +28,17 @@
         gap: 1rem;
     }
 
-
     #open-sidebar {
         display: block;
         height: 42.5px;
     }
 
-    .error-page {
-        height : 100%;
-        /*display: flex;*/
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        margin: 0 auto;
-        gap: 1rem;
+    main .titre {
+        font-size: 2rem;
     }
 
-    .error-page img {
-        height : 20%;
-
+    main .titre p {
+        font-size: 1.5rem;
     }
+
 }

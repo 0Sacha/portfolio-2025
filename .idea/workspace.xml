@@ -5,13 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="78aba201-c806-442e-8721-8ff8e2665cd1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/img/close-sidebar.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/open-sidebar.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img/bg.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/css/responsive.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/responsive.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/script.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,6 +69,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\sacha\OneDrive\Documents\GitHub\portfolio-2025\src\img" />
       <recent name="C:\Users\sacha\OneDrive\Documents\GitHub\portfolio-2025\src" />
     </key>
   </component>
@@ -105,7 +104,7 @@
       <workItem from="1750196332570" duration="3138000" />
       <workItem from="1751523658461" duration="327000" />
       <workItem from="1751524000316" duration="35000" />
-      <workItem from="1751524044495" duration="10931000" />
+      <workItem from="1751524044495" duration="14949000" />
     </task>
     <servers />
   </component>
