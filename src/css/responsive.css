@@ -3,6 +3,7 @@
 
     body {
         height: 100vh;
+        padding-top : env(safe-area-inset-top);
     }
 
     #connexionButton{
