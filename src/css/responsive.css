@@ -42,4 +42,8 @@
         font-size: 1.5rem;
     }
 
+    #formulaireDeContact {
+        display: none;
+    }
+
 }
