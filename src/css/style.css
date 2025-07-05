@@ -12,9 +12,9 @@ html {
 
 body {
     height: 100vh;
-    background : linear-gradient( 156.2deg,  rgba(0,0,0,1) 14.8%, rgba(32,104,177,1) 68.1%, rgba(222,229,237,1) 129% );
+    background: linear-gradient(156.2deg, rgba(0, 0, 0, 1) 14.8%, rgba(32, 104, 177, 1) 68.1%, rgba(222, 229, 237, 1) 129%);
     background-attachment: fixed;
-    padding-top : env(safe-area-inset-top);
+    padding-top: env(safe-area-inset-top);
 }
 
 nav {
@@ -34,7 +34,7 @@ nav {
 
 #cvButtonToggle {
     padding: 1rem;
-    border-radius: 0.5rem ;
+    border-radius: 0.5rem;
     background-color: rgba(90, 60, 225, 0.28);
     color: white;
     text-decoration: none;
@@ -43,7 +43,7 @@ nav {
 
 #connexionButton {
     padding: 1rem;
-    border-radius: 0.5rem ;
+    border-radius: 0.5rem;
     background-color: #5a3ce1;
     color: white;
     text-decoration: none;
@@ -179,6 +179,44 @@ main .titre_contact {
     gap: 1rem;
 }
 
+.filter {
+    display: flex;
+    flex-direction: row;
+    color: white;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.filter p {
+    text-decoration: none;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    background-color: #253982;
+    color: #969696;
+    transition: background-color 150ms;
+}
+
+#clearFilter {
+    background-color: #ff0000;
+    color: white;
+    display: none;
+}
+
+.filter p:hover {
+    background-color: #5a3ce1;
+    color: white;
+    cursor: pointer;
+}
+
+
+.project img {
+    height: 10rem;
+}
+
+.projects {
+    color: #fff;
+}
 
 
 

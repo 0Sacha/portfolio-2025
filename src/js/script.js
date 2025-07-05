@@ -1,17 +1,54 @@
-const openNavSideBar = document.querySelector('#open-sidebar');
-const closeNavSideBar = document.querySelector('#close-sidebar');
-const nav = document.querySelector('li');
+const frontProject = document.querySelector("#frontProject");
+const backProject = document.querySelector("#backProject");
+const clearFilter = document.querySelector("#clearFilter");
+const filterFrontProject = document.getElementById("1");
+const filterBackProject = document.getElementById("2");
 
-openNavSideBar.addEventListener(`click`, (e) => {
-    nav.style.display = 'block';
-    openNavSideBar.style.display = 'none';
-    closeNavSideBar.style.display = 'block';
-    console.log("Open!");
+
+frontProject.addEventListener("click", function (event) {
+    if (frontProject.click === true) {
+        frontProject.style.backgroundColor = "#253982";
+        frontProject.style.color = "#969696";
+        filterBackProject.style.display = "block";
+
+    } else {
+        frontProject.style.backgroundColor = "#5a3ce1";
+        frontProject.style.color = "#ffffff";
+        backProject.style.backgroundColor = "#253982";
+        backProject.style.color = "#969696";
+        clearFilter.style.display = "block";
+
+        filterBackProject.style.display = "none";
+
+    }
 })
 
-closeNavSideBar.addEventListener(`click`, (e) => {
-    nav.style.display = 'none';
-    openNavSideBar.style.display = 'block';
-    closeNavSideBar.style.display = 'none';
-    console.log("Closed!");
+backProject.addEventListener("click", function (event) {
+    if (backProject.click === true) {
+        backProject.style.backgroundColor = "#253982";
+        backProject.style.color = "#969696";
+        filterFrontProject.style.display = "block";
+
+    } else {
+        backProject.style.backgroundColor = "#5a3ce1";
+        backProject.style.color = "#ffffff";
+        frontProject.style.backgroundColor = "#253982";
+        frontProject.style.color = "#969696";
+        clearFilter.style.display = "block";
+
+        filterFrontProject.style.display = "none";
+
+    }
+})
+
+clearFilter.addEventListener("click", function (event) {
+    backProject.style.backgroundColor = "#253982";
+    backProject.style.color = "#969696";
+    frontProject.style.backgroundColor = "#253982";
+    frontProject.style.color = "#969696";
+    clearFilter.style.display = "none";
+    filterBackProject.style.display = "block";
+    filterFrontProject.style.display = "block";
+
+
 })
