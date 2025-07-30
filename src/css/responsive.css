@@ -1,49 +1,22 @@
-@media (max-width: 800px) {
+@media (max-width: 700px) {
 
-
-    body {
-        height: 100vh;
-        padding-top : env(safe-area-inset-top);
-    }
-
-    #connexionButton{
-        display: none;
-    }
-
-    #connexionButtonToggle {
-        display: block;
-    }
-
-    nav ul a , #connexionButtonToggle {
-        display: none;
-    }
-
-    nav ul img {
-        display: none;
-    }
-
-    nav ul {
-        display: flex;
-        flex-direction: column;
+    nav {
+        width: 100%;
+        padding: 0.7rem 0;
+        justify-content: end;
         align-items: center;
         gap: 1rem;
     }
 
-    #open-sidebar {
-        display: block;
-        height: 42.5px;
-    }
-
-    main .titre {
-        font-size: 2rem;
-    }
-
-    main .titre p {
-        font-size: 1.5rem;
-    }
-
-    #formulaireDeContact {
+    nav ul li {
         display: none;
     }
 
+    nav #menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-right: 1rem;
+    }
 }
