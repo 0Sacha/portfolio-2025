@@ -3,12 +3,22 @@
     body {
         height: 100dvh !important;
         background: #2068B1FF;
+        padding-top: env(safe-area-inset-top) ;
+    }
+
+    .top-safe-area-fill {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: env(safe-area-inset-top);
+        background: rgba(245, 245, 247, .8);
+        z-index: 9999;
     }
 
     nav {
         width: 100%;
-        padding: 4rem 0 0.7rem 0;
-        margin-top: -3.3rem;
+        padding: 0.7rem 0;
         justify-content: end;
         align-items: center;
         gap: 1rem;
