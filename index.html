@@ -13,6 +13,8 @@
 <body>
 <div class="top-safe-area-fill"></div>
 <nav>
+    <p id="responsive-navbar-text" >Portfolio - Sacha Laville - 2025</p>
+
     <ul>
         <li><a href="#">Acceuil</a></li>
         <li><a href="#">Travail</a></li>
@@ -21,8 +23,21 @@
         <li><a href="#">Moi</a></li>
         <li><a href="#">Contact</a></li>
     </ul>
-    <img src="./src/img/moon.svg" alt="dark mode toogle">
-    <img id="menu" src="./src/img/menu.svg" alt="menu toogle">
+    <div class="img">
+        <img id="moon" src="./src/img/moon.svg" alt="dark mode toogle">
+        <img id="menu" src="./src/img/menu.svg" alt="menu toogle">
+    </div>
 </nav>
 </body>
+<main>
+    <div style="display: none" class="menu-popup" >
+        <img style="display: none" id="close-menu" src="./src/img/close-menu.svg" alt="menu toogle">
+        <li><a href="#">Acceuil</a></li>
+        <li><a href="#">Travail</a></li>
+        <li><a href="#">Veille technologique</a></li>
+        <li><a href="#">Expérience</a></li>
+        <li><a href="#">Moi</a></li>
+        <li><a href="#">Contact</a></li>
+    </div>
+</main>
 </html>

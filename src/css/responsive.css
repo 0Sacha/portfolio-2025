@@ -3,39 +3,83 @@
     html, body {
         margin: 0;
         padding: 0;
-        background: #2068B1FF;
+        background: #152b49;
         height: 100%;
     }
 
-    .top-safe-area-fill {
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-        height: env(safe-area-inset-top);
-        background: rgba(245, 245, 247, .8);
-        z-index: 9999;
+    nav #responsive-navbar-text {
+        display: none;
     }
 
     nav {
-        position: sticky;
         width: 100%;
         padding: 0.7rem 0;
         justify-content: end;
         align-items: center;
         gap: 1rem;
-        background: rgb(245, 245, 247, .8);
+        background: rgb(248, 248, 248);
         box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
         backdrop-filter: blur(4.1px);
         -webkit-backdrop-filter: blur(4.1px);
         border: 1px solid rgba(255, 255, 255, 0.28);
     }
 
+    .menu-popup {
+        z-index: 10;
+        display: flex;
+        flex-direction: column;
+        background: #F8F8F8FF;
+        backdrop-filter: blur(4.1px);
+        -webkit-backdrop-filter: blur(4.1px);
+
+        width: 100%;
+        height: 100dvh;
+
+        text-align: start;
+        align-items: center ;
+        justify-content: center;
+
+        list-style: none;
+
+        transition: height 0.3s;
+    }
+
+    .menu-popup li {
+        display: flex;
+        flex-direction: column;
+        line-height: 5rem;
+        margin-left: 2rem !important;
+    }
+
+    .menu-popup a {
+        font-size: 28px ;
+        color: #1D1D1F;
+        text-decoration: none;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .menu-popup a:hover {
+        color: #1D1D1F;
+        text-decoration: underline;
+    }
+
+    main {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #close-menu {
+        position: fixed;
+        top: 1rem;
+        right: 1rem;
+    }
+
     nav ul li {
         display: none;
     }
 
-    nav #menu {
+    nav #menu, nav #close-menu {
         display: flex;
         flex-direction: column;
         justify-content: center;
