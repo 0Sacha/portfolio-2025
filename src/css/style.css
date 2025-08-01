@@ -19,6 +19,7 @@ html {
     --dark-text-navbar-color: #d9d9e7;
 
 
+
 }
 
 #responsive-navbar-text {
@@ -62,7 +63,7 @@ nav {
     justify-content: center;
 
     background: var(--light-bg-navbar-color) ;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    box-shadow:  0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(4.1px);
     -webkit-backdrop-filter: blur(4.1px);
     border: 1px solid rgba(255, 255, 255, 0.28);
