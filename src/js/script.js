@@ -1,53 +1,71 @@
 const menuHamburger = document.querySelector('#menu');
-const closeMenu = document.querySelector('#close-menu');
-const navMenu = document.querySelector('.menu-popup');
+const nav_menu = document.querySelector('.menu-popup');
+
+const menu = document.querySelector('#menu');
+const close_menu = document.querySelector('#close-menu');
 
 const html = document.querySelector('html');
 const body = document.querySelector('body');
 const main = document.querySelector('main');
+
 const nav = document.querySelector('nav');
-const nav_li_a  = document.querySelector('a');
+const nav_a = document.querySelectorAll('nav a');
+const nav_popup_menu = document.querySelectorAll('.menu-popup a');
 
 const moon = document.querySelector('#moon');
 const sun = document.querySelector('#sun');
 
 
 menuHamburger.addEventListener('click', (e) => {
-
-    if (menuHamburger.src === './src/img/close-menu.svg') {
-        console.log('H');
-    }})
-
-menuHamburger.addEventListener('click', (e) => {
-    console.log('Hamburger is clicked');
-    navMenu.style.display = 'block';
-    html.style.overflow = 'hidden';
+    nav_menu.style.display = 'block';
     menuHamburger.style.display = 'none';
-    closeMenu.style.display = 'block';
-
-    // body.style.background = "#F8F8F8FF"
-
+    close_menu.style.display = 'block';
+    html.style.overflow = 'hidden';
 })
 
-closeMenu.addEventListener('click', (e) => {
-    navMenu.style.display = 'none';
+close_menu.addEventListener('click', (e) => {
+    nav_menu.style.display = 'none';
     menuHamburger.style.display = 'block';
     moon.style.display = 'block';
-    closeMenu.style.display = 'none';
+    close_menu.style.display = 'none';
 })
 
 moon.addEventListener('click', (e) => {
     moon.style.display = 'none';
     sun.style.display = 'block';
-    nav.style.background ='var(--dark-bg-navbar-color)'
-    nav_li_a.style.color = 'var(--dark-text-navbar-color)'
+    nav.style.background = 'var(--dark-bg-navbar-color)'
+    nav_menu.style.background = 'var(--dark-bg-navbar-color)'
+
+
+    menu.src = 'src/img/menu-light.svg';
+    close_menu.src = 'src/img/close-menu-light.svg';
+
+    nav_a.forEach(a => {
+        a.style.color = 'var(--dark-text-navbar-color)';
+    });
+
+    nav_popup_menu.forEach(a => {
+        a.style.color = 'var(--dark-text-navbar-color)';
+    })
 })
 
 sun.addEventListener('click', (e) => {
     sun.style.display = 'none';
     moon.style.display = 'block';
-    nav.style.background ='var(--light-bg-navbar-color)'
-    nav_li_a.style.color = 'var(--light-text-navbar-color)'
+    nav.style.background = 'var(--light-bg-navbar-color)'
+    nav_menu.style.background = 'var(--light-bg-navbar-color)'
+
+    menu.src = 'src/img/menu-dark.svg';
+    close_menu.src = 'src/img/close-menu-dark.svg';
+
+    nav_a.forEach(a => {
+        a.style.color = 'var(--light-text-navbar-color)';
+    });
+
+    nav_popup_menu.forEach(a => {
+        a.style.color = 'var(--light-text-navbar-color)';
+    })
+
 })
 
 
