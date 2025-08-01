@@ -25,9 +25,8 @@ menuHamburger.addEventListener('click', (e) => {
 
 close_menu.addEventListener('click', (e) => {
     nav_menu.style.display = 'none';
-    menuHamburger.style.display = 'block';
-    moon.style.display = 'block';
     close_menu.style.display = 'none';
+    menuHamburger.style.display = 'block';
 })
 
 moon.addEventListener('click', (e) => {
