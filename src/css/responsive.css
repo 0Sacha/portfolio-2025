@@ -2,12 +2,14 @@
     --bg-color: linear-gradient( 156.2deg,rgba(0,0,0,1) 14.8%, rgba(32,104,177,1) 68.1%, rgba(222,229,237,1) 129% );
     /* Light mode */
 
+    --light-bg-color: rgba(35, 135, 248, 0.15);
     --light-bg-navbar-color: rgba(245, 245, 247, .8);
     --light-text-navbar-color: #1d1d1f ;
     --light-border-navbar-color: 1px solid rgba(255, 255, 255, 0.28);
     /* Dark mode */
 
-    --dark-bg-navbar-color: rgba(0, 0, 0, 0.8);
+    --dark-bg-color: rgba(35, 135, 248, 0.7);
+    --dark-bg-navbar-color: rgba(0, 0, 0, .8);
     --dark-text-navbar-color: #d9d9e7;
     --dark-border-navbar-color: 1px solid rgba(0, 0, 0, 0.28);
 }
@@ -17,7 +19,7 @@
     html, body {
         margin: 0;
         padding: 0;
-        background: var(--bg-color);
+        background: var(--light-bg-color);
         height: 100%;
     }
 
