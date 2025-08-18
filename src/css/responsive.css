@@ -1,5 +1,6 @@
 :root {
-    --bg-color: linear-gradient( 156.2deg,rgba(0,0,0,1) 14.8%, rgba(32,104,177,1) 68.1%, rgba(222,229,237,1) 129% );
+    --bg-color-black: linear-gradient( 156.2deg,rgba(0,0,0,1) 14.8%, rgba(32,104,177,1) 68.1%, rgba(222,229,237,1) 129% );
+    --bg-color-light: linear-gradient( 156.2deg, rgb(222, 229, 237) 14.8%, rgba(32,104,177,1) 68.1%, rgb(0, 0, 0) 129% );
     /* Light mode */
 
     --light-bg-color: rgba(35, 135, 248, 0.15);
@@ -19,7 +20,7 @@
     html, body {
         margin: 0;
         padding: 0;
-        background: var(--light-bg-color);
+        background: var(--bg-color-black);
         height: 100%;
     }
 
@@ -33,7 +34,7 @@
         justify-content: end;
         align-items: center;
         gap: 1rem;
-        background: rgb(248, 248, 248);
+        background: var(--light-bg-navbar-color);
         box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
         backdrop-filter: blur(4.1px);
         -webkit-backdrop-filter: blur(4.1px);
