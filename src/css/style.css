@@ -4,7 +4,7 @@
 
 html {
     scroll-behavior: smooth;
-    overflow-x: hidden;
+    /*overflow-x: hidden;*/
 }
 
 :root {
@@ -43,6 +43,8 @@ body {
     height: 100vh;
     background : var(--bg-color-black) ;
     background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
 }
 #menu, #close-menu {
     display: none;
@@ -104,4 +106,14 @@ img {
 #menu{
     height: 24px;
     width: 24px;
+}
+
+section p {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: env(safe-area-inset-bottom);
+    background: rgba(255, 0, 0, 0);
 }
