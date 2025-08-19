@@ -8,9 +8,13 @@ html {
 }
 
 :root {
-    /*--bg-color-black: linear-gradient( 156.2deg,rgba(0,0,0,1) 14.8%, rgba(32,104,177,1) 68.1%, rgba(222,229,237,1) 129% );*/
-    /*--bg-color-light: linear-gradient( 156.2deg, rgb(222, 229, 237) 14.8%, rgba(32,104,177,1) 68.1%, rgb(0, 0, 0) 129% );*/
-    /* Light mode */
+    --bg-color-dark: linear-gradient( 156.2deg,rgba(0,0,0,1) 14.8%, rgba(32,104,177,1) 68.1%, rgba(222,229,237,1) 129% );
+    --bg-color-light: linear-gradient( 156.2deg, rgba(222, 229, 237) 14.8%, rgba(32,104,177,1) 68.1%, rgba(0, 0, 0) 129% );
+
+    --bg-image-dark: url("../img/bg-dark.png");
+    --bg-image-light: url("../img/bg-light.png");
+
+     /*Light mode */
 
     --light-bg-navbar-color: rgba(245, 245, 247, .8);
     --light-text-navbar-color: #1d1d1f ;
@@ -30,8 +34,8 @@ html {
     font-family: 'Poppins', sans-serif;}
 
 body {
-    height: calc(100vh + 150px);
-    background-image : url(../img/bg-light.png);
+    height: 100vh;
+    background-image : var(--bg-color-dark);
     background-size: cover;
 }
 #menu, #close-menu {
@@ -52,7 +56,7 @@ nav {
     align-items: center;
     justify-content: center;
 
-    background: var(--light-bg-navbar-color) ;
+    background: var(--dark-bg-navbar-color) ;
     box-shadow:  0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(4.1px);
     -webkit-backdrop-filter: blur(4.1px);
@@ -73,7 +77,7 @@ nav ul {
 
 nav li a {
     font-size: 12px ;
-    color: var(--light-text-navbar-color);
+    color: var(--dark-text-navbar-color);
     text-decoration: none;
     font-family: 'Poppins', sans-serif;
 }

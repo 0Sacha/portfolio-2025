@@ -34,10 +34,7 @@ moon.addEventListener('click', (e) => {
     sun.style.display = 'block';
     nav.style.background = 'var(--dark-bg-navbar-color)'
     nav_menu.style.background = 'var(--dark-bg-navbar-color)'
-    body.style.backgroundImage = 'url("../img/bg-dark.png");'
-
-
-    // nav.style.border = 'var(--dark-border-navbar-color)'
+    body.style.background = 'var(--bg-color-dark)'
 
     menu.src = 'src/img/menu-light.svg';
     close_menu.src = 'src/img/close-menu-light.svg';
@@ -56,9 +53,7 @@ sun.addEventListener('click', (e) => {
     moon.style.display = 'block';
     nav.style.background = 'var(--light-bg-navbar-color)'
     nav_menu.style.background = 'var(--light-bg-navbar-color)'
-    body.style.backgroundImage = 'url("../img/bg-light.png");'
-
-    // nav.style.border = 'var(--light-border-navbar-color)'
+    body.style.background = 'var(--bg-color-light)'
 
     menu.src = 'src/img/menu-dark.svg';
     close_menu.src = 'src/img/close-menu-dark.svg';

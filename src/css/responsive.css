@@ -1,6 +1,10 @@
 :root {
-    --bg-color-black: linear-gradient( 156.2deg,rgba(0,0,0,1) 14.8%, rgba(32,104,177,1) 68.1%, rgba(222,229,237,1) 129% );
-    --bg-color-light: linear-gradient( 156.2deg, rgb(222, 229, 237) 14.8%, rgba(32,104,177,1) 68.1%, rgb(0, 0, 0) 129% );
+    --bg-color-dark: linear-gradient( 156.2deg,rgba(0,0,0,1) 14.8%, rgba(32,104,177,1) 68.1%, rgba(222,229,237,1) 129% );
+    --bg-color-light: linear-gradient( 156.2deg, rgba(222, 229, 237) 14.8%, rgba(32,104,177,1) 68.1%, rgba(0, 0, 0) 129% );
+
+    --bg-image-dark: url("../img/bg-dark.png");
+    --bg-image-light: url("../img/bg-light.png");
+
     /* Light mode */
 
     --light-bg-navbar-color: rgba(245, 245, 247, .8);
@@ -16,11 +20,9 @@
 
 @media (max-width: 700px) {
 
-    html, body {
-        margin: 0;
-        padding: 0;
-        background-image: url("../img/bg-light.png");
-        height: 100%;
+    body {
+        height: 100vh;
+        background: var(--bg-color-dark);
     }
 
     nav #responsive-navbar-text {
