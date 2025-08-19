@@ -40,11 +40,11 @@ html {
 }
 
 body {
-    height: 100vh;
+    height: calc(100vh + 150px);
     background : var(--bg-color-black) ;
     background-attachment: fixed;
     background-size: cover;
-    background-position: center center;
+    background-repeat: no-repeat;
 }
 #menu, #close-menu {
     display: none;
