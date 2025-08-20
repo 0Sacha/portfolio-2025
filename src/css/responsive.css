@@ -21,8 +21,9 @@
 @media (max-width: 700px) {
 
     body {
-        height: 100vh;
+        height: calc(120vh + 150px);
         background: var(--bg-color-dark);
+        background-repeat: no-repeat;
     }
 
     nav #responsive-navbar-text {

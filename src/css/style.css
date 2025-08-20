@@ -34,9 +34,8 @@ html {
     font-family: 'Poppins', sans-serif;}
 
 body {
-    height: 100vh;
+    height: calc(120vh + 150px);
     background-image : var(--bg-color-dark);
-    background-size: cover;
 }
 #menu, #close-menu {
     display: none;
