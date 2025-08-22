@@ -22,13 +22,12 @@ menuHamburger.addEventListener('click', (e) => {
     nav_menu.style.display = 'block';
     menuHamburger.style.display = 'none';
     close_menu.style.display = 'block';
-    nav_menu.style.height = '120vh';
 })
 
 close_menu.addEventListener('click', (e) => {
     nav_menu.style.display = 'none';
+    menuHamburger.style.display = 'block';
     close_menu.style.display = 'none';
-    nav_menu.style.height = '100vh';
 })
 
 moon.addEventListener('click', (e) => {
@@ -36,7 +35,6 @@ moon.addEventListener('click', (e) => {
     sun.style.display = 'block';
     nav_menu.style.background = 'var(--dark-bg-navbar-color)'
     body.style.background = 'var(--bg-color-dark)'
-    error_503.style.color = 'red';
 
     menu.src = 'src/img/menu-light.svg';
     close_menu.src = 'src/img/close-menu-light.svg';
@@ -55,7 +53,6 @@ sun.addEventListener('click', (e) => {
     moon.style.display = 'block';
     nav_menu.style.background = 'var(--light-bg-navbar-color)'
     body.style.background = 'var(--bg-color-light)'
-    error_503.style.color = 'var(--light-text)';
 
     menu.src = 'src/img/menu-dark.svg';
     close_menu.src = 'src/img/close-menu-dark.svg';

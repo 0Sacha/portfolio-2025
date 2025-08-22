@@ -10,13 +10,11 @@
     --light-bg-navbar-color: rgba(245, 245, 247, .8);
     --light-text-navbar-color: #1d1d1f ;
     --light-border-navbar-color: 1px solid rgba(255, 255, 255, 0.28);
-    --light-text: #d9d9e7;
     /* Dark mode */
 
     --dark-bg-navbar-color: rgba(0, 0, 0, 0.8);
     --dark-text-navbar-color: #d9d9e7;
     --dark-border-navbar-color: 1px solid rgba(0, 0, 0, 0.28);
-    --dark-text: #1d1d1f;
 }
 
 @media (max-width: 700px) {
