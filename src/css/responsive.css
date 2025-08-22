@@ -36,11 +36,8 @@
         justify-content: end;
         align-items: center;
         gap: 1rem;
-        background: var(--light-bg-navbar-color);
-        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-        backdrop-filter: blur(4.1px);
-        -webkit-backdrop-filter: blur(4.1px);
-        border: 1px solid rgba(255, 255, 255, 0.28);
+
+
     }
 
     .menu-popup {
@@ -82,7 +79,7 @@
         text-decoration: underline;
     }
 
-    main {
+    .popup {
         display: flex;
         flex-direction: column;
         justify-content: center;

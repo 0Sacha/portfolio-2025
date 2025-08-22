@@ -6,7 +6,7 @@ const close_menu = document.querySelector('#close-menu');
 
 const html = document.querySelector('html');
 const body = document.querySelector('body');
-const main = document.querySelector('main');
+const main = document.querySelector('.popup');
 
 const nav = document.querySelector('nav');
 const nav_a = document.querySelectorAll('nav a');
@@ -20,7 +20,9 @@ menuHamburger.addEventListener('click', (e) => {
     nav_menu.style.display = 'block';
     menuHamburger.style.display = 'none';
     close_menu.style.display = 'block';
-    html.style.overflow = 'hidden';
+    html.style.overflowY = 'hidden';
+    html.style.overflowX= 'hidden';
+    html.style.overflowZ = 'hidden';
 })
 
 close_menu.addEventListener('click', (e) => {
@@ -32,7 +34,7 @@ close_menu.addEventListener('click', (e) => {
 moon.addEventListener('click', (e) => {
     moon.style.display = 'none';
     sun.style.display = 'block';
-    nav.style.background = 'var(--dark-bg-navbar-color)'
+    // nav.style.background = 'var(--dark-bg-navbar-color)'
     nav_menu.style.background = 'var(--dark-bg-navbar-color)'
     body.style.background = 'var(--bg-color-dark)'
 
@@ -51,7 +53,7 @@ moon.addEventListener('click', (e) => {
 sun.addEventListener('click', (e) => {
     sun.style.display = 'none';
     moon.style.display = 'block';
-    nav.style.background = 'var(--light-bg-navbar-color)'
+    // nav.style.background = 'var(--light-bg-navbar-color)'
     nav_menu.style.background = 'var(--light-bg-navbar-color)'
     body.style.background = 'var(--bg-color-light)'
 

@@ -41,7 +41,7 @@ body {
     display: none;
 }
 
-main {
+.popup {
     display: none;
 }
 
@@ -55,11 +55,7 @@ nav {
     align-items: center;
     justify-content: center;
 
-    background: var(--dark-bg-navbar-color) ;
-    box-shadow:  0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(4.1px);
-    -webkit-backdrop-filter: blur(4.1px);
-    border: 1px solid rgba(255, 255, 255, 0.28);
+    top: 0;
 
     width: 100%;
     padding: 0.7rem 0;
@@ -107,4 +103,8 @@ section p {
     left: 0;
     height: env(safe-area-inset-bottom);
     background: rgba(255, 0, 0, 0);
+}
+
+main {
+    margin-top: 4rem;
 }
