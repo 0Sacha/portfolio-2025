@@ -17,13 +17,16 @@ html {
      /*Light mode */
 
     --light-bg-navbar-color: rgba(245, 245, 247, .8);
-    --light-text-navbar-color: #1d1d1f ;
+    --light-text-navbar-color: #0000ff;
     --light-border-navbar-color: 1px solid rgba(255, 255, 255, 0.28);
+    --light-text: #d9d9e7;
     /* Dark mode */
 
     --dark-bg-navbar-color: rgba(0, 0, 0, 0.8);
     --dark-text-navbar-color: #d9d9e7;
     --dark-border-navbar-color: 1px solid rgba(0, 0, 0, 0.28);
+    --dark-text: #ffffff;
+
 }
 
 #responsive-navbar-text {
@@ -72,7 +75,7 @@ nav ul {
 
 nav li a {
     font-size: 12px ;
-    color: var(--dark-text-navbar-color);
+    color: var(--light-text-navbar-color);
     text-decoration: none;
     font-family: 'Poppins', sans-serif;
 }
@@ -103,6 +106,22 @@ section p {
     left: 0;
     height: env(safe-area-inset-bottom);
     background: rgba(255, 0, 0, 0);
+}
+
+main {
+    height: 100vh;
+}
+
+.error_503 {
+    height: 100vh;
+    display: none;
+}
+
+.error_503 h1 {
+    font-size: 3rem;
+}
+.error_503 p {
+    font-size: 1rem;
 }
 
 main {

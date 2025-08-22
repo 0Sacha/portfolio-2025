@@ -15,6 +15,8 @@ const nav_popup_menu = document.querySelectorAll('.menu-popup a');
 const moon = document.querySelector('#moon');
 const sun = document.querySelector('#sun');
 
+const error_503 = document.querySelector('.error-503');
+
 
 menuHamburger.addEventListener('click', (e) => {
     nav_menu.style.display = 'block';
@@ -34,6 +36,7 @@ moon.addEventListener('click', (e) => {
     sun.style.display = 'block';
     nav_menu.style.background = 'var(--dark-bg-navbar-color)'
     body.style.background = 'var(--bg-color-dark)'
+    error_503.style.color = 'red';
 
     menu.src = 'src/img/menu-light.svg';
     close_menu.src = 'src/img/close-menu-light.svg';
@@ -52,6 +55,7 @@ sun.addEventListener('click', (e) => {
     moon.style.display = 'block';
     nav_menu.style.background = 'var(--light-bg-navbar-color)'
     body.style.background = 'var(--bg-color-light)'
+    error_503.style.color = 'var(--light-text)';
 
     menu.src = 'src/img/menu-dark.svg';
     close_menu.src = 'src/img/close-menu-dark.svg';
