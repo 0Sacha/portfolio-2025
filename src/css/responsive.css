@@ -22,7 +22,7 @@
 
     body {
         height: calc(120vh);
-        background: var(--bg-color-dark);
+        background: var(--bg-color-light);
         background-repeat: no-repeat;
     }
 

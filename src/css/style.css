@@ -35,7 +35,7 @@ html {
 
 body {
     height: calc(120vh + 150px);
-    background-image : var(--bg-color-dark);
+    background-image : var(--bg-color-light);
 }
 #menu, #close-menu {
     display: none;

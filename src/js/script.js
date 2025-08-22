@@ -32,7 +32,6 @@ close_menu.addEventListener('click', (e) => {
 moon.addEventListener('click', (e) => {
     moon.style.display = 'none';
     sun.style.display = 'block';
-    // nav.style.background = 'var(--dark-bg-navbar-color)'
     nav_menu.style.background = 'var(--dark-bg-navbar-color)'
     body.style.background = 'var(--bg-color-dark)'
 
@@ -51,7 +50,6 @@ moon.addEventListener('click', (e) => {
 sun.addEventListener('click', (e) => {
     sun.style.display = 'none';
     moon.style.display = 'block';
-    // nav.style.background = 'var(--light-bg-navbar-color)'
     nav_menu.style.background = 'var(--light-bg-navbar-color)'
     body.style.background = 'var(--bg-color-light)'
 
