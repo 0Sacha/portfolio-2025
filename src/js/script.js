@@ -20,15 +20,13 @@ menuHamburger.addEventListener('click', (e) => {
     nav_menu.style.display = 'block';
     menuHamburger.style.display = 'none';
     close_menu.style.display = 'block';
-    html.style.overflowY = 'hidden';
-    html.style.overflowX= 'hidden';
-    html.style.overflowZ = 'hidden';
+    nav_menu.style.height = '120vh';
 })
 
 close_menu.addEventListener('click', (e) => {
     nav_menu.style.display = 'none';
     close_menu.style.display = 'none';
-    menuHamburger.style.display = 'block';
+    nav_menu.style.height = '100vh';
 })
 
 moon.addEventListener('click', (e) => {
