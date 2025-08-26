@@ -122,6 +122,10 @@
         align-items: center;
         text-align: center;
         margin: 0 auto;
-        color: var(--dark-text);
+        color: var(--dark-text-navbar-color);
+    }
+
+    #home {
+        display: none;
     }
 }

@@ -8,12 +8,13 @@ const html = document.querySelector('html');
 const body = document.querySelector('body');
 const main = document.querySelector('.popup');
 
-const nav = document.querySelector('nav');
+const nav = document.querySelector('#nav');
 const nav_a = document.querySelectorAll('nav a');
 const nav_popup_menu = document.querySelectorAll('.menu-popup a');
 
 const moon = document.querySelector('#moon');
 const sun = document.querySelector('#sun');
+const home = document.querySelector('#home');
 
 const error_503 = document.querySelector('.error-503');
 
@@ -33,8 +34,13 @@ close_menu.addEventListener('click', (e) => {
 moon.addEventListener('click', (e) => {
     moon.style.display = 'none';
     sun.style.display = 'block';
+
     nav_menu.style.background = 'var(--dark-bg-navbar-color)'
     body.style.background = 'var(--bg-color-dark)'
+    nav.style.background = 'var(--dark-bg-navbar-color)';
+
+    home.style.color = 'var(--dark-text-navbar-color)';
+    nav.style.color = 'var(--dark-text-navbar-color)';
 
     menu.src = 'src/img/menu-light.svg';
     close_menu.src = 'src/img/close-menu-light.svg';
@@ -51,8 +57,13 @@ moon.addEventListener('click', (e) => {
 sun.addEventListener('click', (e) => {
     sun.style.display = 'none';
     moon.style.display = 'block';
+
     nav_menu.style.background = 'var(--light-bg-navbar-color)'
     body.style.background = 'var(--bg-color-light)'
+    nav.style.background = 'var(--light-bg-navbar-color)';
+
+    home.style.color = 'var(--light-text-navbar-color)';
+    nav.style.color = 'var(--light-text-navbar-color)';
 
     menu.src = 'src/img/menu-dark.svg';
     close_menu.src = 'src/img/close-menu-dark.svg';

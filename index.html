@@ -38,23 +38,27 @@
 <body>
 <!--debut de la navbar -->
 <div class="top-safe-area-fill"></div>
-<nav>
-    <p id="responsive-navbar-text">Portfolio - Sacha Laville - 2025</p>
-    <ul>
-        <li><a href="#">Acceuil</a></li>
-        <li><a href="#">Travail</a></li>
-        <li><a href="#">Veille technologique</a></li>
-        <li><a href="#">Expérience</a></li>
-        <li><a href="#">Moi</a></li>
-        <li><a href="#">Contact</a></li>
-    </ul>
-    <div class="img">
-        <img id="moon" src="./src/img/moon.svg" alt="dark mode toogle">
-        <img style="display: none" id="sun" src="./src/img/sun.svg" alt="dark mode toogle">
 
-        <img id="menu" src="src/img/menu-dark.svg" alt="menu toogle">
-    </div>
-</nav>
+<div id="nav">
+    <nav>
+        <p id="responsive-navbar-text">Portfolio - Sacha Laville - 2025</p>
+        <ul>
+            <li><a href="#">Acceuil</a></li>
+            <li><a href="#">Travail</a></li>
+            <li><a href="#">Veille technologique</a></li>
+            <li><a href="#">Expérience</a></li>
+            <li><a href="#">Moi</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <div class="img">
+            <img id="moon" src="./src/img/moon.svg" alt="dark mode toogle">
+            <img style="display: none" id="sun" src="./src/img/sun.svg" alt="dark mode toogle">
+
+            <img id="menu" src="src/img/menu-dark.svg" alt="menu toogle">
+        </div>
+    </nav>
+</div>
+
 </body>
 
 <div class="popup">
@@ -74,10 +78,19 @@
 <!--debut du contenu (test d'un solution pour affiché le dégrader sous la barre de navigation)-->
 
 <main>
+
+    <div id="home">
+        <div class="leftText">
+            <p>Sacha Laville</p>
+            <h1>DEVELOPPEUR</h1>
+        </div>
+        <img src="./src/img/moi-format-carte.JPEG">
+        <h1>FULLSTACK</h1>
+    </div>
+
     <div class="error_503">
         <h1>Erreur 503</h1>
         <p>La version Mobile du site n'est pas encore disponible</p>
-
     </div>
 </main>
 
