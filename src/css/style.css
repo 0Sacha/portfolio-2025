@@ -85,7 +85,7 @@ body::-webkit-scrollbar-thumb {
     > nav {
         @container scroll-state(stuck: top) {
             background: var(--light-bg-navbar-color);
-            color: var(--light-text-navbar-color);
+            /*color: var(--light-text-navbar-color);*/
             transition: background-color 1s ease;
         }
     }
