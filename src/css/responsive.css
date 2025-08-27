@@ -46,9 +46,13 @@
         background: var(--light-bg-navbar-color);
         backdrop-filter: blur(4.1px);
         -webkit-backdrop-filter: blur(4.1px);
+        position: absolute;
 
+        height: calc(120vh);
+
+        margin-top: 45rem;
         width: 100%;
-        height: 100dvh;
+        /*height: 100dvh;*/
 
         text-align: start;
         align-items: center ;
