@@ -152,47 +152,38 @@ main {
     height: 100vh;
 }
 
-.error_503 {
-    top: 0;
-    display: none;
-}
-
-.error_503 h1 {
-    font-size: 3rem;
-}
-.error_503 p {
-    font-size: 1rem;
-}
-
 main {
-
+    height: 100%;
 }
 
 #home {
-    height: 100vh;
+    height: 100%;
     display: flex;
-    flex-direction: row;
     align-items: center;
-    justify-content: center;
-    color: var(--light-text-navbar-color);
-    gap: 2rem;
-    margin: auto 0 ;
-
+    gap: 2.5rem;
 }
 
 #home .leftText {
+    display: flex;
+    justify-content: end;
+}
 
+.leftText {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+
+.rightText {
+    width: 100%;
 }
 
 #home h1 {
     font-family: "Viga", sans-serif;
-    font-size: 4rem;
-}
-
-#home p {
+    font-size: 400%;
 }
 
 #home img {
-    height: 30rem;
+    height: 51%;
     border-radius: 5%;
 }
