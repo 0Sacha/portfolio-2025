@@ -8,6 +8,7 @@ const html = document.querySelector('html');
 const body = document.querySelector('body');
 const main = document.querySelector('main');
 
+const mainNav = document.querySelector('nav');
 const nav = document.querySelector('#nav');
 const nav_a = document.querySelectorAll('nav a');
 const nav_popup_menu = document.querySelectorAll('.menu-popup a');
@@ -37,11 +38,12 @@ moon.addEventListener('click', (e) => {
 
     nav_menu.style.background = 'var(--dark-bg-navbar-color)'
     main.style.background = 'var(--bg-color-dark)'
-    nav.style.background = 'var(--dark-bg-navbar-color)';
     html.style.background = 'var(--dark-html-bg-color)';
 
     home.style.color = 'var(--dark-text-navbar-color)';
     nav.style.color = 'var(--dark-text-navbar-color)';
+
+    mainNav.style.backgroundColor = 'var(--dark-bg-navbar-color)';
 
     menu.src = 'src/img/menu-light.svg';
     close_menu.src = 'src/img/close-menu-light.svg';
@@ -61,11 +63,12 @@ sun.addEventListener('click', (e) => {
 
     nav_menu.style.background = 'var(--light-bg-navbar-color)'
     main.style.background = 'var(--bg-color-light)'
-    nav.style.background = 'var(--light-bg-navbar-color)';
     html.style.background = 'var(--light-html-bg-color)';
 
     home.style.color = 'var(--light-text-navbar-color)';
     nav.style.color = 'var(--light-text-navbar-color)';
+
+    mainNav.style.backgroundColor = 'var(--light-bg-navbar-color)';
 
     menu.src = 'src/img/menu-dark.svg';
     close_menu.src = 'src/img/close-menu-dark.svg';
