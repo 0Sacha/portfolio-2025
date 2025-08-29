@@ -89,10 +89,10 @@ nav {
     align-items: center;
     justify-content: center;
 
-    background: var(--dark-bg-navbar-color);
+    /*background: var(--dark-bg-navbar-color);*/
 
-    animation: --bg-navbar-toScroll;
-    animation-timeline: view();
+    /*animation: --bg-navbar-toScroll;*/
+    /*animation-timeline: view();*/
 
     top: 0;
 
@@ -101,11 +101,11 @@ nav {
     gap: 2rem;
 }
 
-@keyframes --bg-navbar-toScroll {
-    to {
-        background: transparent;
-    }
-}
+/*@keyframes --bg-navbar-toScroll {*/
+/*    to {*/
+/*        background: transparent;*/
+/*    }*/
+/*}*/
 
 nav ul {
     display: flex;

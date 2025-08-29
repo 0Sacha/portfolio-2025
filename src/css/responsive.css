@@ -1,6 +1,6 @@
 :root {
-    --bg-color-dark: linear-gradient( 156.2deg,rgba(0,0,0,1) 14.8%, rgba(32,104,177,1) 68.1%, rgba(222,229,237,1) 129% );
-    --bg-color-light: linear-gradient( 156.2deg, rgba(222, 229, 237) 14.8%, rgba(32,104,177,1) 68.1%, rgba(0, 0, 0) 129% );
+    --bg-color-dark: linear-gradient(156.2deg, rgba(0, 0, 0, 1) 14.8%, rgba(32, 104, 177, 1) 68.1%, rgba(222, 229, 237, 1) 129%);
+    --bg-color-light: linear-gradient(156.2deg, rgba(222, 229, 237) 14.8%, rgba(32, 104, 177, 1) 68.1%, rgba(0, 0, 0) 129%);
 
     --bg-image-dark: url("../img/bg-dark.png");
     --bg-image-light: url("../img/bg-light.png");
@@ -8,7 +8,7 @@
     /* Light mode */
 
     --light-bg-navbar-color: rgba(245, 245, 247, .8);
-    --light-text-navbar-color: #1d1d1f ;
+    --light-text-navbar-color: #1d1d1f;
     --light-border-navbar-color: 1px solid rgba(255, 255, 255, 0.28);
     --light-html-bg-color: #ffffff;
     /* Dark mode */
@@ -29,6 +29,7 @@
 
     nav #responsive-navbar-text {
         display: none;
+
     }
 
     nav {
@@ -37,8 +38,6 @@
         justify-content: end;
         align-items: center;
         gap: 1rem;
-
-
     }
 
     .menu-popup {
@@ -50,14 +49,14 @@
         -webkit-backdrop-filter: blur(4.1px);
         position: absolute;
 
-        height: calc(120vh);
+        height: 100vh;
 
         margin-top: 46rem;
         width: 100%;
-        /*height: 100dvh;*/
+        height: 100dvh;
 
         text-align: start;
-        align-items: center ;
+        align-items: center;
         justify-content: center;
 
         list-style: none;
@@ -73,7 +72,7 @@
     }
 
     .menu-popup a {
-        font-size: 28px ;
+        font-size: 28px;
         color: var(--dark-text-navbar-color);
         text-decoration: none;
         font-family: 'Poppins', sans-serif;
@@ -101,14 +100,14 @@
         display: none;
     }
 
-    nav #menu, nav #close-menu {
+    nav #menu,
+    nav #close-menu {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         margin-right: 1rem;
     }
-
 
     .img {
         display: flex;
@@ -119,19 +118,13 @@
 
     #close-menu {
         display: flex;
-        margin-top: -.3rem;
     }
-
-
-
 }
 
 @media (max-width: 1400px) {
 
     #home {
         height: 100%;
-        display: flex;
-        margin-top: -5rem ;
         align-items: center;
         justify-content: center;
         gap: 1rem;
@@ -146,7 +139,6 @@
         justify-content: center;
         text-align: center;
     }
-
 
     .rightText {
         width: 100%;
