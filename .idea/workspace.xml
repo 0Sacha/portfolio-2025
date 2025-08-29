@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="78aba201-c806-442e-8721-8ff8e2665cd1" name="Changes" comment="+fix: fix bug of menu hamburger">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="78aba201-c806-442e-8721-8ff8e2665cd1" name="Changes" comment="+fix: fix responsive.css">
       <change beforePath="$PROJECT_DIR$/src/css/responsive.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/responsive.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/script.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -131,7 +129,7 @@
       <workItem from="1756275382897" duration="9710000" />
       <workItem from="1756304961759" duration="1093000" />
       <workItem from="1756361907070" duration="12443000" />
-      <workItem from="1756448857172" duration="2526000" />
+      <workItem from="1756448857172" duration="3417000" />
     </task>
     <task id="LOCAL-00001" summary="+fix: fix bug of menu hamburger">
       <option name="closed" value="true" />
@@ -141,7 +139,15 @@
       <option name="project" value="LOCAL" />
       <updated>1756450848411</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="+fix: fix responsive.css">
+      <option name="closed" value="true" />
+      <created>1756451651380</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1756451651380</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -149,6 +155,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="+fix: fix bug of menu hamburger" />
-    <option name="LAST_COMMIT_MESSAGE" value="+fix: fix bug of menu hamburger" />
+    <MESSAGE value="+fix: fix responsive.css" />
+    <option name="LAST_COMMIT_MESSAGE" value="+fix: fix responsive.css" />
   </component>
 </project>
