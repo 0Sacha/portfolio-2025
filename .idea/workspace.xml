@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="78aba201-c806-442e-8721-8ff8e2665cd1" name="Changes" comment="//test: test">
-      <change afterPath="$PROJECT_DIR$/card_test.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/card_test.html" beforeDir="false" afterPath="$PROJECT_DIR$/card_test.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -133,7 +133,8 @@
       <workItem from="1756304961759" duration="1093000" />
       <workItem from="1756361907070" duration="12443000" />
       <workItem from="1756448857172" duration="10438000" />
-      <workItem from="1756471094966" duration="2325000" />
+      <workItem from="1756471094966" duration="3210000" />
+      <workItem from="1756708502211" duration="10899000" />
     </task>
     <task id="LOCAL-00001" summary="+fix: fix bug of menu hamburger">
       <option name="closed" value="true" />

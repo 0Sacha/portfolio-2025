@@ -6,7 +6,7 @@
 html {
     scroll-behavior: smooth;
     overflow-x: hidden;
-    overflow-y: hidden;
+    /*overflow-y: hidden;*/
 }
 
 :root {
@@ -204,4 +204,28 @@ main {
     100% {
         height: 51%;
     }
+}
+
+/* CARD PROJECT*/
+
+.cardSetup {
+    display: flex;
+}
+
+.card img {
+    display: flex;
+    flex-direction: column;
+
+    width: 276px;
+    height: 499px;
+    border-radius: 53px;
+
+    border: 15px solid var(--dark-text-navbar-color);
+}
+
+.card button {
+    background-color: var(--dark-text-navbar-color);
+    color: var(--light-text-navbar-color);
+    border: none;
+    border-radius: 999px;
 }
