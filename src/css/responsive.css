@@ -120,6 +120,12 @@
     #close-menu {
         display: flex;
     }
+
+    .cardSetup {
+        display: none;
+    }
+
+
 }
 
 @media (max-width: 1400px) {

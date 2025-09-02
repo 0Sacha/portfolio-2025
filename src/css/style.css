@@ -19,7 +19,7 @@ html {
     /*Light mode */
 
     --light-bg-navbar-color: rgba(245, 245, 247, .8);
-    --light-text-navbar-color: #0000ff;
+    --light-text-navbar-color: rgba(0, 0, 255, 0);
     --light-border-navbar-color: 1px solid rgba(255, 255, 255, 0.28);
     --light-html-bg-color: #ffffff;
     /* Dark mode */
@@ -28,6 +28,7 @@ html {
     --dark-text-navbar-color: #d9d9e7;
     --dark-border-navbar-color: 1px solid rgba(0, 0, 0, 0.28);
     --dark-html-bg-color: #000000;
+    --dark-hover-text : #fdfdff;
 
 }
 
@@ -206,26 +207,91 @@ main {
     }
 }
 
+.separate {
+
+}
+
 /* CARD PROJECT*/
 
 .cardSetup {
+    height: 100%;
     display: flex;
+    flex-direction: row;
+    gap: 1rem;
+
+    align-items: center;
+    justify-content: center;
 }
 
-.card img {
-    display: flex;
-    flex-direction: column;
-
+.card {
+    border: 5px solid var(--dark-text-navbar-color);
+    border-radius: 53px;
+    background-image: url("https://picsum.photos/440/796") ;
     width: 276px;
     height: 499px;
-    border-radius: 53px;
-
-    border: 15px solid var(--dark-text-navbar-color);
+    transition: all .3s ease-in;
 }
 
-.card button {
+.card:hover {
+    transform: scale(1.03);
+}
+
+.card .cardContent {
+    margin-top: 110%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    color: var(--dark-text-navbar-color);
+    /*background: red ;*/
+    background: rgba(255, 255, 255, 0.08);
+    background: linear-gradient(180deg,rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.33) 100%);
+    backdrop-filter: blur(20px);
+    padding-bottom: 1.4rem;
+    border-radius:  0 0 45px 45px ;
+}
+
+.card .content {
+    display: flex;
+    /*background: red;*/
+    justify-content: center;
+    /*margin-top: 26.5rem;*/
+}
+
+.card .infos {
+    display: flex;
+    /*background: red;*/
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem;
+    /*align-items: center;*/
+}
+
+.card .infos h1 {
+    margin-bottom: .5rem;
+}
+
+.card .infos span {
+    font-weight: bold;
+    text-decoration-line: underline;
+}
+
+.card a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 241px;
+    height: 61px;
+
     background-color: var(--dark-text-navbar-color);
     color: var(--light-text-navbar-color);
-    border: none;
     border-radius: 999px;
+
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    transition: all 300ms ease;
+}
+
+.card a:hover {
+    background-color: var(--dark-hover-text);
 }
