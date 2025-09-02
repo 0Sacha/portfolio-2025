@@ -17,6 +17,10 @@ const moon = document.querySelector('#moon');
 const sun = document.querySelector('#sun');
 const home = document.querySelector('#home');
 
+const cardSetup = document.querySelector('.cardContent');
+const p_cardSetup = document.querySelector('.cardContent p');
+
+
 const error_503 = document.querySelector('.error-503');
 
 
@@ -42,6 +46,7 @@ moon.addEventListener('click', (e) => {
 
     home.style.color = 'var(--dark-text-navbar-color)';
     nav.style.color = 'var(--dark-text-navbar-color)';
+    cardSetup.style.color = 'var(--dark-text-navbar-color)';
 
     menu.src = 'src/img/menu-light.svg';
     close_menu.src = 'src/img/close-menu-light.svg';
@@ -65,6 +70,12 @@ sun.addEventListener('click', (e) => {
 
     home.style.color = 'var(--light-text-navbar-color)';
     nav.style.color = 'var(--light-text-navbar-color)';
+    cardSetup.style.color = 'var(--light-text-navbar-color)';
+
+    cardSetup.forEach(a => {
+        p_cardSetup.style.color = 'var(--light-text-navbar-color)';
+
+    })
 
     menu.src = 'src/img/menu-dark.svg';
     close_menu.src = 'src/img/close-menu-dark.svg';
