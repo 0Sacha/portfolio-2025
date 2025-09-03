@@ -226,7 +226,7 @@ main {
 .card {
     border: 5px solid var(--dark-text-navbar-color);
     border-radius: 53px;
-    background-image: url("https://picsum.photos/440/796") ;
+    background-image: url("../img/watting-carte.png") ;
     width: 276px;
     height: 499px;
     transition: all .3s ease-in;
