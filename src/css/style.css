@@ -101,6 +101,7 @@ nav {
     width: 100%;
     padding: 0.7rem 0;
     gap: 2rem;
+
 }
 
 /*@keyframes --bg-navbar-toScroll {*/
@@ -113,8 +114,7 @@ nav ul {
     display: flex;
     flex-direction: row;
     gap: 2.5rem;
-    align-items: center;
-    justify-content: center;
+
 }
 
 nav li a {
@@ -177,6 +177,10 @@ main {
     justify-content: end;
 }
 
+#home .column {
+    margin-top: -16px;
+}
+
 .leftText {
     width: 100%;
     display: flex;
@@ -226,7 +230,7 @@ main {
 .card {
     border: 5px solid var(--dark-text-navbar-color);
     border-radius: 53px;
-    background-image: url("../img/watting-carte.png") ;
+    background-image: url("../img/waiting-carte.png") ;
     width: 276px;
     height: 499px;
     transition: all .3s ease-in;
