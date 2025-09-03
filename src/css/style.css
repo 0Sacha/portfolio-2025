@@ -258,7 +258,6 @@ main {
     display: flex;
     /*background: red;*/
     justify-content: center;
-    /*margin-top: 26.5rem;*/
 }
 
 .card .infos {
@@ -267,7 +266,6 @@ main {
     flex-direction: column;
     justify-content: center;
     padding: 1rem;
-    /*align-items: center;*/
 }
 
 .card .infos h1 {
@@ -279,7 +277,7 @@ main {
     text-decoration-line: underline;
 }
 
-.card a {
+.card .content p {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -296,6 +294,6 @@ main {
     transition: all 300ms ease;
 }
 
-.card a:hover {
+.card .content p:hover {
     background-color: var(--dark-hover-text);
 }

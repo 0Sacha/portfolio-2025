@@ -1,28 +1,12 @@
+// MENU HAMBURGER //
+
+// const //
+
 const menuHamburger = document.querySelector('#menu');
 const nav_menu = document.querySelector('.menu-popup');
-
-const menu = document.querySelector('#menu');
 const close_menu = document.querySelector('#close-menu');
 
-const html = document.querySelector('html');
-const body = document.querySelector('body');
-const main = document.querySelector('main');
-
-const mainNav = document.querySelector('nav');
-const nav = document.querySelector('#nav');
-const nav_a = document.querySelectorAll('nav a');
-const nav_popup_menu = document.querySelectorAll('.menu-popup a');
-
-const moon = document.querySelector('#moon');
-const sun = document.querySelector('#sun');
-const home = document.querySelector('#home');
-
-const cardSetup = document.querySelector('.cardContent');
-const p_cardSetup = document.querySelector('.cardContent p');
-
-
-const error_503 = document.querySelector('.error-503');
-
+// code //
 
 menuHamburger.addEventListener('click', (e) => {
     nav_menu.style.display = 'block';
@@ -36,6 +20,23 @@ close_menu.addEventListener('click', (e) => {
     close_menu.style.display = 'none';
 })
 
+// DARK MODE //
+
+// const //
+
+const html = document.querySelector('html');
+const main = document.querySelector('main');
+
+const nav = document.querySelector('#nav');
+const nav_a = document.querySelectorAll('nav a');
+const nav_popup_menu = document.querySelectorAll('.menu-popup a');
+
+const moon = document.querySelector('#moon');
+const sun = document.querySelector('#sun');
+const home = document.querySelector('#home');
+
+// code //
+
 moon.addEventListener('click', (e) => {
     moon.style.display = 'none';
     sun.style.display = 'block';
@@ -46,7 +47,6 @@ moon.addEventListener('click', (e) => {
 
     home.style.color = 'var(--dark-text-navbar-color)';
     nav.style.color = 'var(--dark-text-navbar-color)';
-    cardSetup.style.color = 'var(--dark-text-navbar-color)';
 
     menu.src = 'src/img/menu-light.svg';
     close_menu.src = 'src/img/close-menu-light.svg';
@@ -70,12 +70,7 @@ sun.addEventListener('click', (e) => {
 
     home.style.color = 'var(--light-text-navbar-color)';
     nav.style.color = 'var(--light-text-navbar-color)';
-    cardSetup.style.color = 'var(--light-text-navbar-color)';
 
-    cardSetup.forEach(a => {
-        p_cardSetup.style.color = 'var(--light-text-navbar-color)';
-
-    })
 
     menu.src = 'src/img/menu-dark.svg';
     close_menu.src = 'src/img/close-menu-dark.svg';
@@ -88,4 +83,18 @@ sun.addEventListener('click', (e) => {
         a.style.color = 'var(--light-text-navbar-color)';
     })
 
+})
+
+// CLICKED //
+
+// const //
+
+const card_button  = document.querySelector('.content p');
+const cardSize = document.querySelector('.card');
+
+// code //
+
+card_button.addEventListener('click', (e) => {
+        card_button.style.backgroundColor = 'red';
+        cardSize.style.height = '280px';
 })
