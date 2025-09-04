@@ -89,12 +89,30 @@ sun.addEventListener('click', (e) => {
 
 // const //
 
-const card_button  = document.querySelector('.content p');
+const card_button = document.querySelector('.button');
 const cardSize = document.querySelector('.card');
+const a = document.querySelector('.nextButton');
+const desc = document.querySelector('.desc');
+const show_desc = document.querySelector('.show-desc');
+const closeButton = document.querySelector('.closeButton');
+const card_img = document.querySelector('.img_card');
 
 // code //
 
-card_button.addEventListener('click', (e) => {
-        card_button.style.backgroundColor = 'red';
-        cardSize.style.height = '280px';
-})
+// card_button.addEventListener('click', (e) => {
+//     cardSize.style.clipPath = 'inset(0% 0% 33% 0% round 0%)';
+//     a.style.display = 'flex';
+//     card_button.style.display = 'none';
+//     desc.style.display = 'none';
+//     show_desc.style.display = 'block';
+//     closeButton.style.display = 'flex';
+// })
+
+// closeButton.addEventListener('click', (e) => {
+//     card_button.style.display = 'flex';
+//     cardSize.style.clipPath = 'inset(0% 0% 33% 0% round 0%)';
+//     a.style.display = 'none';
+//     desc.style.display = 'block';
+//     show_desc.style.display = 'none';
+//     closeButton.style.display = 'none';
+// })
