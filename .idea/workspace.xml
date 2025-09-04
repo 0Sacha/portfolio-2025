@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="78aba201-c806-442e-8721-8ff8e2665cd1" name="Changes" comment="//test: test to resolve bug of menu on responsive.css">
+    <list default="true" id="78aba201-c806-442e-8721-8ff8e2665cd1" name="Changes" comment="//test: test to resolve bug of menu-popup on responsive.css">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/css/responsive.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/responsive.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -83,7 +85,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-b598e85cdad2-JavaScript-WS-252.25557.126" />
+        <option value="bundled-js-predefined-d6986cc7102b-9c94529fcfe0-JavaScript-WS-252.26199.11" />
       </set>
     </attachedChunks>
   </component>
@@ -136,7 +138,8 @@
       <workItem from="1756708502211" duration="10899000" />
       <workItem from="1756793434044" duration="13842000" />
       <workItem from="1756881938433" duration="15546000" />
-      <workItem from="1756966368742" duration="9154000" />
+      <workItem from="1756966368742" duration="9869000" />
+      <workItem from="1756986369101" duration="1869000" />
     </task>
     <task id="LOCAL-00001" summary="+fix: fix bug of menu hamburger">
       <option name="closed" value="true" />
@@ -194,7 +197,15 @@
       <option name="project" value="LOCAL" />
       <updated>1756979617394</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="//test: test to resolve bug of menu-popup on responsive.css">
+      <option name="closed" value="true" />
+      <created>1756979948381</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1756979948381</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -218,6 +229,7 @@
     <MESSAGE value="+add: gallery of project card under home page." />
     <MESSAGE value="+add: card on mobile view" />
     <MESSAGE value="//test: test to resolve bug of menu on responsive.css" />
-    <option name="LAST_COMMIT_MESSAGE" value="//test: test to resolve bug of menu on responsive.css" />
+    <MESSAGE value="//test: test to resolve bug of menu-popup on responsive.css" />
+    <option name="LAST_COMMIT_MESSAGE" value="//test: test to resolve bug of menu-popup on responsive.css" />
   </component>
 </project>
