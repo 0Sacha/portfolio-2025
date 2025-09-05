@@ -115,6 +115,10 @@
         z-index: 2;
     }
 
+    #scrollToUp {
+        display: none;
+    }
+
     .img {
         display: flex;
         flex-direction: row;

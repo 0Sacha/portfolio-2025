@@ -1,3 +1,4 @@
+// ---------------------------------------------------------------------------------------------//
 // MENU HAMBURGER //
 
 // const //
@@ -20,6 +21,7 @@ close_menu.addEventListener('click', (e) => {
     close_menu.style.display = 'none';
 })
 
+// ---------------------------------------------------------------------------------------------//
 // DARK MODE //
 
 // const //
@@ -48,8 +50,11 @@ moon.addEventListener('click', (e) => {
     home.style.color = 'var(--dark-text-navbar-color)';
     nav.style.color = 'var(--dark-text-navbar-color)';
 
+    scrollToUp.style.backgroundColor = 'var(--dark-bg-navbar-color)';
+
     menu.src = 'src/img/menu-light.svg';
-    close_menu.src = 'src/img/close-menu-light.svg';
+    close_menu.src = './src/img/close-menu-light.svg';
+    scrollToUp.src = './src/img/up-arrow-light.svg'
 
     nav_a.forEach(a => {
         a.style.color = 'var(--dark-text-navbar-color)';
@@ -71,9 +76,11 @@ sun.addEventListener('click', (e) => {
     home.style.color = 'var(--light-text-navbar-color)';
     nav.style.color = 'var(--light-text-navbar-color)';
 
+    scrollToUp.style.backgroundColor = 'var(--light-bg-navbar-color)';
 
     menu.src = 'src/img/menu-dark.svg';
-    close_menu.src = 'src/img/close-menu-dark.svg';
+    close_menu.src = './src/img/close-menu-dark.svg';
+    scrollToUp.src = './src/img/up-arrow-dark.svg'
 
     nav_a.forEach(a => {
         a.style.color = 'var(--light-text-navbar-color)';
@@ -85,6 +92,7 @@ sun.addEventListener('click', (e) => {
 
 })
 
+// ---------------------------------------------------------------------------------------------//
 // CLICKED //
 
 // const //
@@ -116,3 +124,22 @@ const card_img = document.querySelector('.img_card');
 //     show_desc.style.display = 'none';
 //     closeButton.style.display = 'none';
 // })
+
+// ---------------------------------------------------------------------------------------------//
+// SCROLL TO WITH UP ARROW //
+
+// Const //
+
+const scrollToUp = document.querySelector('#scrollToUp');
+
+// Code //
+
+// window.addEventListener('scroll', (e) => {
+//     scrollToUp.style.display = 'block';
+// })
+
+// scrollToUp.addEventListener('click', (e) => {
+//     scrollToUp.style.display = 'none';
+// })
+
+// ---------------------------------------------------------------------------------------------//
