@@ -5,13 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="78aba201-c806-442e-8721-8ff8e2665cd1" name="Changes" comment="+add: Arrow to scroll up when i click on">
-      <change afterPath="$PROJECT_DIR$/src/img/up-arrow-dark.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/up-arrow-light.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/css/responsive.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/responsive.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/script.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -144,7 +141,8 @@
       <workItem from="1756881938433" duration="15546000" />
       <workItem from="1756966368742" duration="9869000" />
       <workItem from="1756986369101" duration="2465000" />
-      <workItem from="1757052845535" duration="5096000" />
+      <workItem from="1757052845535" duration="6321000" />
+      <workItem from="1757312186504" duration="7433000" />
     </task>
     <task id="LOCAL-00001" summary="+fix: fix bug of menu hamburger">
       <option name="closed" value="true" />
@@ -210,7 +208,15 @@
       <option name="project" value="LOCAL" />
       <updated>1756979948381</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="+add: Arrow to scroll up when i click on">
+      <option name="closed" value="true" />
+      <created>1757073146548</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1757073146548</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

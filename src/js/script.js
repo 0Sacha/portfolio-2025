@@ -13,12 +13,14 @@ menuHamburger.addEventListener('click', (e) => {
     nav_menu.style.display = 'block';
     menuHamburger.style.display = 'none';
     close_menu.style.display = 'block';
+    cardContent.style.display = 'none';
 })
 
 close_menu.addEventListener('click', (e) => {
     nav_menu.style.display = 'none';
     menuHamburger.style.display = 'block';
     close_menu.style.display = 'none';
+    cardContent.style.display = 'flex';
 })
 
 // ---------------------------------------------------------------------------------------------//
@@ -104,6 +106,7 @@ const desc = document.querySelector('.desc');
 const show_desc = document.querySelector('.show-desc');
 const closeButton = document.querySelector('.closeButton');
 const card_img = document.querySelector('.img_card');
+const cardContent = document.querySelector('.cardSetup');
 
 // code //
 
