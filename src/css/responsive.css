@@ -164,6 +164,12 @@
 
 }
 
+@media (max-width: 1200px) {
+    #scrollToUp {
+        display: none;
+    }
+}
+
 @media (max-width: 1400px) {
 
     #home {
@@ -201,3 +207,6 @@
         border-radius: 5%;
     }
 }
+
+
+
