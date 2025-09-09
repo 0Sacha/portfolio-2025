@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="78aba201-c806-442e-8721-8ff8e2665cd1" name="Changes" comment="+add: Arrow to scroll up when i click on">
+    <list default="true" id="78aba201-c806-442e-8721-8ff8e2665cd1" name="Changes" comment="+update: on 1200px width on device #scrollToUp hidden">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/css/responsive.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/responsive.css" afterDir="false" />
@@ -142,7 +142,8 @@
       <workItem from="1756966368742" duration="9869000" />
       <workItem from="1756986369101" duration="2465000" />
       <workItem from="1757052845535" duration="6321000" />
-      <workItem from="1757312186504" duration="7433000" />
+      <workItem from="1757312186504" duration="10162000" />
+      <workItem from="1757398393439" duration="17181000" />
     </task>
     <task id="LOCAL-00001" summary="+fix: fix bug of menu hamburger">
       <option name="closed" value="true" />
@@ -216,7 +217,23 @@
       <option name="project" value="LOCAL" />
       <updated>1757073146548</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="+update:view of card on mobile. +fix:popup">
+      <option name="closed" value="true" />
+      <created>1757335988031</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1757335988031</updated>
+    </task>
+    <task id="LOCAL-00011" summary="+update: on 1200px width on device #scrollToUp hidden">
+      <option name="closed" value="true" />
+      <created>1757403437010</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1757403437010</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -242,6 +259,8 @@
     <MESSAGE value="//test: test to resolve bug of menu on responsive.css" />
     <MESSAGE value="//test: test to resolve bug of menu-popup on responsive.css" />
     <MESSAGE value="+add: Arrow to scroll up when i click on" />
-    <option name="LAST_COMMIT_MESSAGE" value="+add: Arrow to scroll up when i click on" />
+    <MESSAGE value="+update:view of card on mobile. +fix:popup" />
+    <MESSAGE value="+update: on 1200px width on device #scrollToUp hidden" />
+    <option name="LAST_COMMIT_MESSAGE" value="+update: on 1200px width on device #scrollToUp hidden" />
   </component>
 </project>
