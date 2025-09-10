@@ -39,6 +39,7 @@ html {
     right:  50px;
     padding: 10px;
     border-radius: 999px ;
+    z-index: 9999;
 
     transition: all 300ms ease-in-out;
 
@@ -222,10 +223,6 @@ main {
     100% {
         height: 51%;
     }
-}
-
-.separate {
-
 }
 
 /* CARD PROJECT*/

@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="78aba201-c806-442e-8721-8ff8e2665cd1" name="Changes" comment="+fix: bug of view of card on mobile view">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/script.js" afterDir="false" />
-    </list>
+    <list default="true" id="78aba201-c806-442e-8721-8ff8e2665cd1" name="Changes" comment="+update: system for hiding the scroll-up button when the user scrolls to the top of the website" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -142,7 +139,7 @@
       <workItem from="1757052845535" duration="6321000" />
       <workItem from="1757312186504" duration="10162000" />
       <workItem from="1757398393439" duration="17639000" />
-      <workItem from="1757486965650" duration="5289000" />
+      <workItem from="1757486965650" duration="5782000" />
     </task>
     <task id="LOCAL-00001" summary="+fix: fix bug of menu hamburger">
       <option name="closed" value="true" />
@@ -248,7 +245,15 @@
       <option name="project" value="LOCAL" />
       <updated>1757495771649</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="+update: system for hiding the scroll-up button when the user scrolls to the top of the website">
+      <option name="closed" value="true" />
+      <created>1757497599419</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1757497599419</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -278,6 +283,7 @@
     <MESSAGE value="+update: on 1200px width on device #scrollToUp hidden" />
     <MESSAGE value="+update: change mobile view on all smartphone devices (work in progress)." />
     <MESSAGE value="+fix: bug of view of card on mobile view" />
-    <option name="LAST_COMMIT_MESSAGE" value="+fix: bug of view of card on mobile view" />
+    <MESSAGE value="+update: system for hiding the scroll-up button when the user scrolls to the top of the website" />
+    <option name="LAST_COMMIT_MESSAGE" value="+update: system for hiding the scroll-up button when the user scrolls to the top of the website" />
   </component>
 </project>
