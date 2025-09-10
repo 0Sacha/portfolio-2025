@@ -13,14 +13,14 @@ menuHamburger.addEventListener('click', (e) => {
     nav_menu.style.display = 'block';
     menuHamburger.style.display = 'none';
     close_menu.style.display = 'block';
-    cardContent.style.display = 'none';
+    responsiveCard.style.display = 'none';
 })
 
 close_menu.addEventListener('click', (e) => {
     nav_menu.style.display = 'none';
     menuHamburger.style.display = 'block';
     close_menu.style.display = 'none';
-    cardContent.style.display = 'flex';
+    responsiveCard.style.display = 'flex';
 })
 
 // ---------------------------------------------------------------------------------------------//
@@ -107,6 +107,7 @@ const show_desc = document.querySelector('.show-desc');
 const closeButton = document.querySelector('.closeButton');
 const card_img = document.querySelector('.img_card');
 const cardContent = document.querySelector('.cardSetup');
+const responsiveCard = document.querySelector('.responsiveCard');
 
 // code //
 
@@ -137,12 +138,12 @@ const scrollToUp = document.querySelector('#scrollToUp');
 
 // Code //
 
-// window.addEventListener('scroll', (e) => {
-//     scrollToUp.style.display = 'block';
-// })
-
-// scrollToUp.addEventListener('click', (e) => {
-//     scrollToUp.style.display = 'none';
-// })
+window.addEventListener('scroll', (e) => {
+    if (window.scrollY > 1) {
+        scrollToUp.style.display = 'block';
+    } else {
+        scrollToUp.style.display = 'none';
+    }
+})
 
 // ---------------------------------------------------------------------------------------------//

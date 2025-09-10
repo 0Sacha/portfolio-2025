@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="78aba201-c806-442e-8721-8ff8e2665cd1" name="Changes" comment="+update: change mobile view on all smartphone devices (work in progress).">
+    <list default="true" id="78aba201-c806-442e-8721-8ff8e2665cd1" name="Changes" comment="+fix: bug of view of card on mobile view">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/responsive.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/responsive.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/script.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -143,7 +142,7 @@
       <workItem from="1757052845535" duration="6321000" />
       <workItem from="1757312186504" duration="10162000" />
       <workItem from="1757398393439" duration="17639000" />
-      <workItem from="1757486965650" duration="3636000" />
+      <workItem from="1757486965650" duration="5289000" />
     </task>
     <task id="LOCAL-00001" summary="+fix: fix bug of menu hamburger">
       <option name="closed" value="true" />
@@ -241,7 +240,15 @@
       <option name="project" value="LOCAL" />
       <updated>1757429155914</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="+fix: bug of view of card on mobile view">
+      <option name="closed" value="true" />
+      <created>1757495771649</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1757495771649</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -270,6 +277,7 @@
     <MESSAGE value="+update:view of card on mobile. +fix:popup" />
     <MESSAGE value="+update: on 1200px width on device #scrollToUp hidden" />
     <MESSAGE value="+update: change mobile view on all smartphone devices (work in progress)." />
-    <option name="LAST_COMMIT_MESSAGE" value="+update: change mobile view on all smartphone devices (work in progress)." />
+    <MESSAGE value="+fix: bug of view of card on mobile view" />
+    <option name="LAST_COMMIT_MESSAGE" value="+fix: bug of view of card on mobile view" />
   </component>
 </project>
