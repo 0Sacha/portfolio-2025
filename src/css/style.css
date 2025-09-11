@@ -198,6 +198,7 @@ main {
 #home #moi {
     height: 23rem;
     border-radius: 5%;
+    cursor: auto;
 }
 
 #home .leftText {
@@ -361,5 +362,4 @@ main {
     transition: all 300ms ease;
     cursor: pointer;
     font-size: 1.5rem;
-
 }
