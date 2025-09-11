@@ -10,6 +10,7 @@ const close_menu = document.querySelector('#close-menu');
 // code //
 
 menuHamburger.addEventListener('click', (e) => {
+    // .display
     nav_menu.style.display = 'block';
     menuHamburger.style.display = 'none';
     close_menu.style.display = 'block';
@@ -17,6 +18,7 @@ menuHamburger.addEventListener('click', (e) => {
 })
 
 close_menu.addEventListener('click', (e) => {
+    // .display
     nav_menu.style.display = 'none';
     menuHamburger.style.display = 'block';
     close_menu.style.display = 'none';
@@ -144,7 +146,7 @@ const responsiveCard = document.querySelector('.responsiveCard');
 // code //
 
 // card_button.addEventListener('click', (e) => {
-//     cardSize.style.clipPath = 'inset(0% 0% 33% 0% round 0%)';
+//     //  .display
 //     a.style.display = 'flex';
 //     card_button.style.display = 'none';
 //     desc.style.display = 'none';
@@ -153,8 +155,8 @@ const responsiveCard = document.querySelector('.responsiveCard');
 // })
 
 // closeButton.addEventListener('click', (e) => {
+//     // .display
 //     card_button.style.display = 'flex';
-//     cardSize.style.clipPath = 'inset(0% 0% 33% 0% round 0%)';
 //     a.style.display = 'none';
 //     desc.style.display = 'block';
 //     show_desc.style.display = 'none';
