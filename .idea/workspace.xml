@@ -4,9 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="78aba201-c806-442e-8721-8ff8e2665cd1" name="Changes" comment="">
+    <list default="true" id="78aba201-c806-442e-8721-8ff8e2665cd1" name="Changes" comment="+update">
+      <change afterPath="$PROJECT_DIR$/src/img/not_a_sun.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/sun.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/img/sun.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/script.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,7 +89,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-9c94529fcfe0-JavaScript-WS-252.26199.11" />
+        <option value="bundled-js-predefined-d6986cc7102b-9c94529fcfe0-JavaScript-WS-252.26199.82" />
       </set>
     </attachedChunks>
   </component>
@@ -144,7 +148,8 @@
       <workItem from="1757312186504" duration="10162000" />
       <workItem from="1757398393439" duration="17639000" />
       <workItem from="1757486965650" duration="14102000" />
-      <workItem from="1757572125003" duration="5186000" />
+      <workItem from="1757572125003" duration="5880000" />
+      <workItem from="1757594794480" duration="1884000" />
     </task>
     <task id="LOCAL-00001" summary="+fix: fix bug of menu hamburger">
       <option name="closed" value="true" />
@@ -274,7 +279,15 @@
       <option name="project" value="LOCAL" />
       <updated>1757511761372</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="+update">
+      <option name="closed" value="true" />
+      <created>1757592705041</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1757592705043</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -307,6 +320,7 @@
     <MESSAGE value="+update: system for hiding the scroll-up button when the user scrolls to the top of the website" />
     <MESSAGE value="+update: up to 9999 z-index for Scroll-up button" />
     <MESSAGE value="+add: Links of my social network (github, linkedin, mail) under my image of profile" />
-    <option name="LAST_COMMIT_MESSAGE" value="+add: Links of my social network (github, linkedin, mail) under my image of profile" />
+    <MESSAGE value="+update" />
+    <option name="LAST_COMMIT_MESSAGE" value="+update" />
   </component>
 </project>
