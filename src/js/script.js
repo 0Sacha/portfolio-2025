@@ -140,6 +140,7 @@ sun.addEventListener('click', (e) => {
     window.addEventListener('scroll', (e) => {
         if (window.scrollY > 1) {
             navbar.style.background = 'var(--light-bg-navbar-color)';
+            navbar.style.backdropFilter = 'blur(3px)';
         } else {
             navbar.style.background = 'transparent';
         }
