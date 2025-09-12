@@ -4,8 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="78aba201-c806-442e-8721-8ff8e2665cd1" name="Changes" comment="+update: cursor of hover image of me">
+    <list default="true" id="78aba201-c806-442e-8721-8ff8e2665cd1" name="Changes" comment="+update: fix switch theme mode for background of the navigation bar">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/script.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -144,7 +147,9 @@
       <workItem from="1757398393439" duration="17639000" />
       <workItem from="1757486965650" duration="14102000" />
       <workItem from="1757572125003" duration="5880000" />
-      <workItem from="1757594794480" duration="4197000" />
+      <workItem from="1757594794480" duration="5486000" />
+      <workItem from="1757658475137" duration="874000" />
+      <workItem from="1757666183292" duration="2417000" />
     </task>
     <task id="LOCAL-00001" summary="+fix: fix bug of menu hamburger">
       <option name="closed" value="true" />
@@ -298,7 +303,15 @@
       <option name="project" value="LOCAL" />
       <updated>1757599806321</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="+update: wo">
+      <option name="closed" value="true" />
+      <created>1757600203958</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1757600203958</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -334,6 +347,9 @@
     <MESSAGE value="+update" />
     <MESSAGE value="+remove: temporary the switch theme mode; +add: not a sun icon to replace a sun icon" />
     <MESSAGE value="+update: cursor of hover image of me" />
-    <option name="LAST_COMMIT_MESSAGE" value="+update: cursor of hover image of me" />
+    <MESSAGE value="+update: commentary" />
+    <MESSAGE value="+update: wo" />
+    <MESSAGE value="+update: fix switch theme mode for background of the navigation bar" />
+    <option name="LAST_COMMIT_MESSAGE" value="+update: fix switch theme mode for background of the navigation bar" />
   </component>
 </project>

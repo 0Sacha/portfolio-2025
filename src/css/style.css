@@ -189,6 +189,14 @@ main {
     cursor: pointer;
 }
 
+.links_ico img {
+    transition: all 300ms ease;
+}
+
+.links_ico img:hover {
+    scale: 1.5;
+}
+
 #home .MiddleContent {
     display: flex;
     flex-direction: column;
