@@ -78,6 +78,7 @@ moon.addEventListener('click', (e) => {
     linkedin.src = './src/img/icons/linkedin-light-icon.svg'
     github.src = './src/img/icons/github-light-icon.svg'
     mailto.src = './src/img/icons/mailto-light-icon.svg'
+    navbar.style.background = "var(--dark-bg-navbar-color)"
 
     // forEach
 
@@ -126,6 +127,7 @@ sun.addEventListener('click', (e) => {
     linkedin.src = './src/img/icons/linkedin-dark-icon.svg'
     github.src = './src/img/icons/github-dark-icon.svg'
     mailto.src = './src/img/icons/mailto-dark-icon.svg'
+    navbar.style.background = "var(--light-bg-navbar-color)"
 
     // forEach
 
