@@ -4,14 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="78aba201-c806-442e-8721-8ff8e2665cd1" name="Changes" comment="+update: fix switch theme mode for background of the navigation bar">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/script.js" afterDir="false" />
-    </list>
+    <list default="true" id="78aba201-c806-442e-8721-8ff8e2665cd1" name="Changes" comment="+update: fix bug of background of nav bar on switch theme mode" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -33,7 +33,7 @@
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;https://github.com/0Sacha/portfolio-2025.git&quot;,
-    &quot;accountId&quot;: &quot;cdc711c3-b950-4443-9d25-5835f36d829f&quot;
+    &quot;accountId&quot;: &quot;2f0bb71d-38e7-4838-945b-9e8ed8c7f594&quot;
   }
 }</component>
   <component name="HighlightingSettingsPerFile">
@@ -148,7 +148,7 @@
       <workItem from="1757594794480" duration="5486000" />
       <workItem from="1757658475137" duration="874000" />
       <workItem from="1757666183292" duration="3359000" />
-      <workItem from="1757935445613" duration="942000" />
+      <workItem from="1757935445613" duration="1180000" />
     </task>
     <task id="LOCAL-00001" summary="+fix: fix bug of menu hamburger">
       <option name="closed" value="true" />
@@ -318,7 +318,15 @@
       <option name="project" value="LOCAL" />
       <updated>1757669829433</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="+update: fix bug of background of nav bar on switch theme mode">
+      <option name="closed" value="true" />
+      <created>1757936498500</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1757936498500</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -357,6 +365,7 @@
     <MESSAGE value="+update: commentary" />
     <MESSAGE value="+update: wo" />
     <MESSAGE value="+update: fix switch theme mode for background of the navigation bar" />
-    <option name="LAST_COMMIT_MESSAGE" value="+update: fix switch theme mode for background of the navigation bar" />
+    <MESSAGE value="+update: fix bug of background of nav bar on switch theme mode" />
+    <option name="LAST_COMMIT_MESSAGE" value="+update: fix bug of background of nav bar on switch theme mode" />
   </component>
 </project>

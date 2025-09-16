@@ -21,6 +21,10 @@
 
 @media (max-width: 700px) {
 
+    #linkedin, #mailto, #github {
+        display: none;
+    }
+
     html {
         background-color: var(--dark-html-bg-color);
     }
