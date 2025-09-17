@@ -14,7 +14,6 @@ menuHamburger.addEventListener('click', (e) => {
     nav_menu.style.display = 'block';
     menuHamburger.style.display = 'none';
     close_menu.style.display = 'block';
-    responsiveCard.style.display = 'none';
 })
 
 close_menu.addEventListener('click', (e) => {
@@ -22,7 +21,6 @@ close_menu.addEventListener('click', (e) => {
     nav_menu.style.display = 'none';
     menuHamburger.style.display = 'block';
     close_menu.style.display = 'none';
-    responsiveCard.style.display = 'flex';
 })
 
 // ---------------------------------------------------------------------------------------------//
@@ -149,41 +147,6 @@ sun.addEventListener('click', (e) => {
     })
 
 })
-
-// ---------------------------------------------------------------------------------------------//
-// CLICKED //
-
-// const //
-
-const card_button = document.querySelector('.button');
-const cardSize = document.querySelector('.card');
-const a = document.querySelector('.nextButton');
-const desc = document.querySelector('.desc');
-const show_desc = document.querySelector('.show-desc');
-const closeButton = document.querySelector('.closeButton');
-const card_img = document.querySelector('.img_card');
-const cardContent = document.querySelector('.cardSetup');
-const responsiveCard = document.querySelector('.responsiveCard');
-
-// code //
-
-// card_button.addEventListener('click', (e) => {
-//     //  .display
-//     a.style.display = 'flex';
-//     card_button.style.display = 'none';
-//     desc.style.display = 'none';
-//     show_desc.style.display = 'block';
-//     closeButton.style.display = 'flex';
-// })
-
-// closeButton.addEventListener('click', (e) => {
-//     // .display
-//     card_button.style.display = 'flex';
-//     a.style.display = 'none';
-//     desc.style.display = 'block';
-//     show_desc.style.display = 'none';
-//     closeButton.style.display = 'none';
-// })
 
 // ---------------------------------------------------------------------------------------------//
 // SCROLL TO WITH UP ARROW //

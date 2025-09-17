@@ -2,9 +2,6 @@
     --bg-color-dark: linear-gradient(156.2deg, rgba(0, 0, 0, 1) 14.8%, rgba(32, 104, 177, 1) 68.1%, rgba(222, 229, 237, 1) 129%);
     --bg-color-light: linear-gradient(156.2deg, rgba(222, 229, 237) 14.8%, rgba(32, 104, 177, 1) 68.1%, rgba(0, 0, 0) 129%);
 
-    --bg-image-dark: url("../img/bg-dark.png");
-    --bg-image-light: url("../img/bg-light.png");
-
     /* Light mode */
 
     --light-bg-navbar-color: rgba(245, 245, 247, .8);
@@ -54,18 +51,13 @@
         backdrop-filter: blur(4.1px);
         -webkit-backdrop-filter: blur(4.1px);
         position: absolute;
-
         height: 100vh;
-
         top: 0.5rem;
         width: 100%;
-
         text-align: start;
         align-items: center;
         justify-content: center;
-
         list-style: none;
-
         transition: height 0.3s;
     }
 
@@ -133,47 +125,6 @@
     #close-menu {
         display: flex;
     }
-
-    /* CARD PROJECT*/
-
-    .cardSetup {
-        display: none;
-    }
-
-    .responsiveCard {
-        display: flex;
-        flex-direction: column;
-        height: 100vh;
-        align-items: center;
-        justify-content: center;
-        gap: 1rem;
-    }
-
-    .responsiveCard .card {
-        border: 7px solid var(--dark-text-navbar-color);
-        border-radius: 18px;
-        background-image: url("../img/waiting-carte.png") ;
-        height: 75px;
-        width: 350px;
-        transition: all .3s ease-in;
-    }
-
-    .responsiveCard .cardContent {
-        gap: 10rem;
-        display: flex;
-    }
-
-    .responsiveCard .card .cardContent {
-        display: none;
-        flex-direction: column;
-        color: var(--dark-text-navbar-color);
-        /*background: red ;*/
-        background: rgba(255, 255, 255, 0.08);
-        background: linear-gradient(180deg,rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.33) 100%);
-        backdrop-filter: blur(20px);
-        border-radius:  0 0 45px 45px ;
-    }
-
 }
 
 @media (max-width: 1200px) {
