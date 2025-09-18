@@ -10,7 +10,7 @@
 html {
     scroll-behavior: smooth;
     overflow-x: hidden;
-    background-color: var(--dark-html-bg-color);
+    background-color: var(--light-html-bg-color);
 }
 
 :root {
@@ -81,6 +81,7 @@ nav {
     width: 100%;
     padding: 1.2rem 0;
     gap: 2rem;
+    transition: background-color 250ms ease;
 }
 
 nav ul {
@@ -210,4 +211,12 @@ main {
 
 #responsive-navbar-text {
     display: none;
+}
+
+/* CARD */
+
+.card {
+    background-color : red ;
+    width: 25%;
+    border-radius: 18px;
 }

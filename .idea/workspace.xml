@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="78aba201-c806-442e-8721-8ff8e2665cd1" name="Changes" comment="+update: Cleaning code">
+    <list default="true" id="78aba201-c806-442e-8721-8ff8e2665cd1" name="Changes" comment="+fix: bug on mobile device">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/responsive.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/responsive.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -155,7 +155,7 @@
       <workItem from="1757935445613" duration="1180000" />
       <workItem from="1758033544618" duration="328000" />
       <workItem from="1758113225887" duration="1360000" />
-      <workItem from="1758180011160" duration="952000" />
+      <workItem from="1758180011160" duration="3894000" />
     </task>
     <task id="LOCAL-00001" summary="+fix: fix bug of menu hamburger">
       <option name="closed" value="true" />
@@ -349,7 +349,15 @@
       <option name="project" value="LOCAL" />
       <updated>1758114525420</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="+fix: bug on mobile device">
+      <option name="closed" value="true" />
+      <created>1758181269144</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1758181269144</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -391,6 +399,7 @@
     <MESSAGE value="+update: fix bug of background of nav bar on switch theme mode" />
     <MESSAGE value="+update: #linkedin, #mailto, #github : display none on mobile view." />
     <MESSAGE value="+update: Cleaning code" />
-    <option name="LAST_COMMIT_MESSAGE" value="+update: Cleaning code" />
+    <MESSAGE value="+fix: bug on mobile device" />
+    <option name="LAST_COMMIT_MESSAGE" value="+fix: bug on mobile device" />
   </component>
 </project>
