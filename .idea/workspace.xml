@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="78aba201-c806-442e-8721-8ff8e2665cd1" name="Changes" comment="+fix: bug on mobile device">
+    <list default="true" id="78aba201-c806-442e-8721-8ff8e2665cd1" name="Changes" comment="+fix:">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/style.css" afterDir="false" />
@@ -155,7 +155,9 @@
       <workItem from="1757935445613" duration="1180000" />
       <workItem from="1758033544618" duration="328000" />
       <workItem from="1758113225887" duration="1360000" />
-      <workItem from="1758180011160" duration="3894000" />
+      <workItem from="1758180011160" duration="4171000" />
+      <workItem from="1758263797504" duration="6000" />
+      <workItem from="1758271268330" duration="11840000" />
     </task>
     <task id="LOCAL-00001" summary="+fix: fix bug of menu hamburger">
       <option name="closed" value="true" />
@@ -357,7 +359,15 @@
       <option name="project" value="LOCAL" />
       <updated>1758181269144</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="+fix: title">
+      <option name="closed" value="true" />
+      <created>1758184751816</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1758184751816</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -375,7 +385,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="+fix: fix bug of menu hamburger" />
     <MESSAGE value="+fix: fix responsive.css" />
     <MESSAGE value="//test: test" />
     <MESSAGE value="+add: gallery of project card under home page." />
@@ -400,6 +409,7 @@
     <MESSAGE value="+update: #linkedin, #mailto, #github : display none on mobile view." />
     <MESSAGE value="+update: Cleaning code" />
     <MESSAGE value="+fix: bug on mobile device" />
-    <option name="LAST_COMMIT_MESSAGE" value="+fix: bug on mobile device" />
+    <MESSAGE value="+fix: title" />
+    <option name="LAST_COMMIT_MESSAGE" value="+fix: title" />
   </component>
 </project>
