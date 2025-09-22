@@ -215,15 +215,22 @@ main {
 
 /* CARD */
 
+#projectPart {
+    display: flex;
+    grid-template-rows: 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
 
 .card {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-between;
     width: 25rem;
     height: 27.25rem;
     border-radius: 1.25rem;
     border: 2px solid #d9d9e7;
+    margin-top: 1rem;
 
 }
 .card_content {

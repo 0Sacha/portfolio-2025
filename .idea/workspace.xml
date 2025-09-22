@@ -34,12 +34,12 @@
     &quot;assignee&quot;: &quot;0Sacha&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/0Sacha/portfolio-2025.git&quot;,
-    &quot;accountId&quot;: &quot;2f0bb71d-38e7-4838-945b-9e8ed8c7f594&quot;
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/0Sacha/portfolio-2025.git",
+    "accountId": "cdc711c3-b950-4443-9d25-5835f36d829f"
   }
-}</component>
+}]]></component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/index.html" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -89,7 +89,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-bcbf228cf9b6-JavaScript-WS-253.17525.64" />
+        <option value="bundled-js-predefined-d6986cc7102b-256f9dae541f-JavaScript-WS-253.20558.45" />
       </set>
     </attachedChunks>
   </component>
@@ -158,6 +158,7 @@
       <workItem from="1758180011160" duration="4171000" />
       <workItem from="1758263797504" duration="6000" />
       <workItem from="1758271268330" duration="11840000" />
+      <workItem from="1758525594139" duration="14094000" />
     </task>
     <task id="LOCAL-00001" summary="+fix: fix bug of menu hamburger">
       <option name="closed" value="true" />
