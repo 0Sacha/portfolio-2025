@@ -45,6 +45,8 @@ const mailto = document.querySelector('#mailto');
 
 const navbar = document.querySelector('nav');
 
+const titreDeSection = document.querySelector('.titreDeSection');
+
 
 // code //
 
@@ -57,8 +59,8 @@ moon.addEventListener('click', (e) => {
 
     // .background
 
-    nav_menu.style.background = 'var(--dark-bg-navbar-color)'
-    main.style.background = 'var(--bg-color-dark)'
+    nav_menu.style.background = 'var(--dark-bg-navbar-color)';
+    main.style.background = 'var(--bg-color-dark)';
     html.style.background = 'var(--dark-html-bg-color)';
     scrollToUp.style.backgroundColor = 'var(--dark-bg-navbar-color)';
 
@@ -66,17 +68,18 @@ moon.addEventListener('click', (e) => {
 
     home.style.color = 'white';
     nav.style.color = 'var(--dark-text-navbar-color)';
+    titreDeSection.style.color = 'var(--dark-text-navbar-color)';
 
     // .src
 
     menu.src = 'src/img/menu-light.svg';
     close_menu.src = './src/img/close-menu-light.svg';
-    scrollToUp.src = './src/img/up-arrow-light.svg'
+    scrollToUp.src = './src/img/up-arrow-light.svg';
     // links
-    linkedin.src = './src/img/icons/linkedin-light-icon.svg'
-    github.src = './src/img/icons/github-light-icon.svg'
-    mailto.src = './src/img/icons/mailto-light-icon.svg'
-    navbar.style.background = "var(--dark-bg-navbar-color)"
+    linkedin.src = './src/img/icons/linkedin-light-icon.svg';
+    github.src = './src/img/icons/github-light-icon.svg';
+    mailto.src = './src/img/icons/mailto-light-icon.svg';
+    navbar.style.background = "var(--dark-bg-navbar-color)";
 
     // forEach
 
@@ -106,8 +109,8 @@ sun.addEventListener('click', (e) => {
 
     // .background
 
-    nav_menu.style.background = 'var(--light-bg-navbar-color)'
-    main.style.background = 'var(--bg-color-light)'
+    nav_menu.style.background = 'var(--light-bg-navbar-color)';
+    main.style.background = 'var(--bg-color-light)';
     html.style.background = 'var(--light-html-bg-color)';
     scrollToUp.style.backgroundColor = 'var(--light-bg-navbar-color)';
 
@@ -115,6 +118,7 @@ sun.addEventListener('click', (e) => {
 
     home.style.color = 'var(--light-text-navbar-color)';
     nav.style.color = 'var(--light-text-navbar-color)';
+    titreDeSection.style.color = 'var(--light-text-navbar-color)';
 
     // .src
 
@@ -122,10 +126,10 @@ sun.addEventListener('click', (e) => {
     close_menu.src = './src/img/close-menu-dark.svg';
     scrollToUp.src = './src/img/up-arrow-dark.svg'
     // links
-    linkedin.src = './src/img/icons/linkedin-dark-icon.svg'
-    github.src = './src/img/icons/github-dark-icon.svg'
-    mailto.src = './src/img/icons/mailto-dark-icon.svg'
-    navbar.style.background = "var(--light-bg-navbar-color)"
+    linkedin.src = './src/img/icons/linkedin-dark-icon.svg';
+    github.src = './src/img/icons/github-dark-icon.svg';
+    mailto.src = './src/img/icons/mailto-dark-icon.svg';
+    navbar.style.background = "var(--light-bg-navbar-color)";
 
     // forEach
 
