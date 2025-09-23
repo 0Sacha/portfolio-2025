@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="78aba201-c806-442e-8721-8ff8e2665cd1" name="Changes" comment="+update: in standby card project (hidden in production">
+    <list default="true" id="78aba201-c806-442e-8721-8ff8e2665cd1" name="Changes" comment="+update: remove image of  me on home page and fix white color for h1 text">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/responsive.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/responsive.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/script.js" afterDir="false" />
     </list>
@@ -163,7 +162,7 @@
       <workItem from="1758525594139" duration="14835000" />
       <workItem from="1758609952508" duration="1114000" />
       <workItem from="1758614135225" duration="1076000" />
-      <workItem from="1758619002354" duration="6665000" />
+      <workItem from="1758619002354" duration="7929000" />
     </task>
     <task id="LOCAL-00001" summary="+fix: fix bug of menu hamburger">
       <option name="closed" value="true" />
@@ -381,7 +380,15 @@
       <option name="project" value="LOCAL" />
       <updated>1758552307624</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="+update: remove image of  me on home page and fix white color for h1 text">
+      <option name="closed" value="true" />
+      <created>1758637527905</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1758637527905</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -399,7 +406,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="//test: test" />
     <MESSAGE value="+add: gallery of project card under home page." />
     <MESSAGE value="+add: card on mobile view" />
     <MESSAGE value="//test: test to resolve bug of menu on responsive.css" />
@@ -424,6 +430,7 @@
     <MESSAGE value="+fix: bug on mobile device" />
     <MESSAGE value="+fix: title" />
     <MESSAGE value="+update: in standby card project (hidden in production" />
-    <option name="LAST_COMMIT_MESSAGE" value="+update: in standby card project (hidden in production" />
+    <MESSAGE value="+update: remove image of  me on home page and fix white color for h1 text" />
+    <option name="LAST_COMMIT_MESSAGE" value="+update: remove image of  me on home page and fix white color for h1 text" />
   </component>
 </project>
