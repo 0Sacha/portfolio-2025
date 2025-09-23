@@ -64,7 +64,7 @@ moon.addEventListener('click', (e) => {
 
     // .color
 
-    home.style.color = 'var(--dark-text-navbar-color)';
+    home.style.color = 'white';
     nav.style.color = 'var(--dark-text-navbar-color)';
 
     // .src

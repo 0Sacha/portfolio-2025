@@ -125,6 +125,10 @@
     #close-menu {
         display: flex;
     }
+
+    .card {
+        display: none;
+    }
 }
 
 @media (max-width: 1200px) {

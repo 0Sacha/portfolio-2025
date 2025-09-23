@@ -4,10 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="78aba201-c806-442e-8721-8ff8e2665cd1" name="Changes" comment="+fix:">
+    <list default="true" id="78aba201-c806-442e-8721-8ff8e2665cd1" name="Changes" comment="+update: in standby card project (hidden in production">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/responsive.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/responsive.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/script.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,12 +36,12 @@
     &quot;assignee&quot;: &quot;0Sacha&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/0Sacha/portfolio-2025.git",
-    "accountId": "cdc711c3-b950-4443-9d25-5835f36d829f"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/0Sacha/portfolio-2025.git&quot;,
+    &quot;accountId&quot;: &quot;cdc711c3-b950-4443-9d25-5835f36d829f&quot;
   }
-}]]></component>
+}</component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/index.html" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -158,7 +160,10 @@
       <workItem from="1758180011160" duration="4171000" />
       <workItem from="1758263797504" duration="6000" />
       <workItem from="1758271268330" duration="11840000" />
-      <workItem from="1758525594139" duration="14094000" />
+      <workItem from="1758525594139" duration="14835000" />
+      <workItem from="1758609952508" duration="1114000" />
+      <workItem from="1758614135225" duration="1076000" />
+      <workItem from="1758619002354" duration="6665000" />
     </task>
     <task id="LOCAL-00001" summary="+fix: fix bug of menu hamburger">
       <option name="closed" value="true" />
@@ -368,7 +373,15 @@
       <option name="project" value="LOCAL" />
       <updated>1758184751816</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="+update: in standby card project (hidden in production">
+      <option name="closed" value="true" />
+      <created>1758552307624</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1758552307624</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -386,7 +399,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="+fix: fix responsive.css" />
     <MESSAGE value="//test: test" />
     <MESSAGE value="+add: gallery of project card under home page." />
     <MESSAGE value="+add: card on mobile view" />
@@ -411,6 +423,7 @@
     <MESSAGE value="+update: Cleaning code" />
     <MESSAGE value="+fix: bug on mobile device" />
     <MESSAGE value="+fix: title" />
-    <option name="LAST_COMMIT_MESSAGE" value="+fix: title" />
+    <MESSAGE value="+update: in standby card project (hidden in production" />
+    <option name="LAST_COMMIT_MESSAGE" value="+update: in standby card project (hidden in production" />
   </component>
 </project>
