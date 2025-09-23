@@ -1,2 +1,2 @@
-# Mon portfolio de 2025
- Bonjour, voici mon portfolio de 2025 qui contribuera a mon BTS SIO SLAM
+# Mon portfolio de Sacha Laville
+Étudiant en deuxième année du BTS SIO SLAM à Promeo FORMATION Compiègne.<br><br> Ce portfolio servira de support pour un oral qui contribuera à l'obtention de mon diplôme. <br> Celui-ci sert entre autres à montrer mes compétences en matière de programmation.
