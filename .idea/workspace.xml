@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="78aba201-c806-442e-8721-8ff8e2665cd1" name="Changes" comment="+adding: a temporary image on the card">
+    <list default="true" id="78aba201-c806-442e-8721-8ff8e2665cd1" name="Changes" comment="+ update: workspace.xml">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/411-384x208.jpg" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -160,7 +162,8 @@
       <workItem from="1758525594139" duration="14835000" />
       <workItem from="1758609952508" duration="1114000" />
       <workItem from="1758614135225" duration="1076000" />
-      <workItem from="1758619002354" duration="8659000" />
+      <workItem from="1758619002354" duration="8865000" />
+      <workItem from="1758695046647" duration="5846000" />
     </task>
     <task id="LOCAL-00001" summary="+fix: fix bug of menu hamburger">
       <option name="closed" value="true" />
@@ -410,7 +413,23 @@
       <option name="project" value="LOCAL" />
       <updated>1758639191863</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="+ update: README.md">
+      <option name="closed" value="true" />
+      <created>1758639596843</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1758639596843</updated>
+    </task>
+    <task id="LOCAL-00033" summary="+ update: workspace.xml">
+      <option name="closed" value="true" />
+      <created>1758639626532</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1758639626532</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -428,8 +447,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="//test: test to resolve bug of menu-popup on responsive.css" />
-    <MESSAGE value="+add: Arrow to scroll up when i click on" />
     <MESSAGE value="+update:view of card on mobile. +fix:popup" />
     <MESSAGE value="+update: on 1200px width on device #scrollToUp hidden" />
     <MESSAGE value="+update: change mobile view on all smartphone devices (work in progress)." />
@@ -453,6 +470,8 @@
     <MESSAGE value="+update: dark mode for all new elements" />
     <MESSAGE value="+add: flex-wrap: wrap; For an auto responsive layout of card (calculated with width size)." />
     <MESSAGE value="+adding: a temporary image on the card" />
-    <option name="LAST_COMMIT_MESSAGE" value="+adding: a temporary image on the card" />
+    <MESSAGE value="+ update: README.md" />
+    <MESSAGE value="+ update: workspace.xml" />
+    <option name="LAST_COMMIT_MESSAGE" value="+ update: workspace.xml" />
   </component>
 </project>
