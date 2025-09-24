@@ -106,6 +106,10 @@
         margin-right: 1rem;
     }
 
+    nav #close-menu {
+        z-index: 9999;
+    }
+
     #moon,
     #sun {
         z-index: 2;
