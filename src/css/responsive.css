@@ -43,6 +43,10 @@
         gap: 1rem;
     }
 
+    .titreDeSection {
+        display: none;
+    }
+
     .menu-popup {
         z-index: 10;
         display: flex;
