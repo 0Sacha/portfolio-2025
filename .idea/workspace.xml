@@ -4,11 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="78aba201-c806-442e-8721-8ff8e2665cd1" name="Changes" comment="+ update: workspace.xml">
+    <list default="true" id="78aba201-c806-442e-8721-8ff8e2665cd1" name="Changes" comment="+adding: image for 404 error on image of project on style.css">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/responsive.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/responsive.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/img/411-384x208.jpg" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -163,7 +163,7 @@
       <workItem from="1758609952508" duration="1114000" />
       <workItem from="1758614135225" duration="1076000" />
       <workItem from="1758619002354" duration="8865000" />
-      <workItem from="1758695046647" duration="5846000" />
+      <workItem from="1758695046647" duration="7112000" />
     </task>
     <task id="LOCAL-00001" summary="+fix: fix bug of menu hamburger">
       <option name="closed" value="true" />
@@ -429,7 +429,31 @@
       <option name="project" value="LOCAL" />
       <updated>1758639626532</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="+update: workspace.xml">
+      <option name="closed" value="true" />
+      <created>1758705626340</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1758705626340</updated>
+    </task>
+    <task id="LOCAL-00035" summary="+adding: image for 404 error on image of project">
+      <option name="closed" value="true" />
+      <created>1758705690665</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1758705690665</updated>
+    </task>
+    <task id="LOCAL-00036" summary="+adding: image for 404 error on image of project on style.css">
+      <option name="closed" value="true" />
+      <created>1758706635104</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1758706635104</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -447,9 +471,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="+update:view of card on mobile. +fix:popup" />
-    <MESSAGE value="+update: on 1200px width on device #scrollToUp hidden" />
-    <MESSAGE value="+update: change mobile view on all smartphone devices (work in progress)." />
     <MESSAGE value="+fix: bug of view of card on mobile view" />
     <MESSAGE value="+update: system for hiding the scroll-up button when the user scrolls to the top of the website" />
     <MESSAGE value="+update: up to 9999 z-index for Scroll-up button" />
@@ -472,6 +493,9 @@
     <MESSAGE value="+adding: a temporary image on the card" />
     <MESSAGE value="+ update: README.md" />
     <MESSAGE value="+ update: workspace.xml" />
-    <option name="LAST_COMMIT_MESSAGE" value="+ update: workspace.xml" />
+    <MESSAGE value="+update: workspace.xml" />
+    <MESSAGE value="+adding: image for 404 error on image of project" />
+    <MESSAGE value="+adding: image for 404 error on image of project on style.css" />
+    <option name="LAST_COMMIT_MESSAGE" value="+adding: image for 404 error on image of project on style.css" />
   </component>
 </project>
