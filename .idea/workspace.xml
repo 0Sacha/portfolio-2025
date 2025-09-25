@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="78aba201-c806-442e-8721-8ff8e2665cd1" name="Changes" comment="+adding: image for 404 error on image of project on style.css">
+    <list default="true" id="78aba201-c806-442e-8721-8ff8e2665cd1" name="Changes" comment="+adding: adapt a card for mobile view, disable a menu hamburger">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/responsive.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/responsive.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -163,7 +160,10 @@
       <workItem from="1758609952508" duration="1114000" />
       <workItem from="1758614135225" duration="1076000" />
       <workItem from="1758619002354" duration="8865000" />
-      <workItem from="1758695046647" duration="7112000" />
+      <workItem from="1758695046647" duration="7360000" />
+      <workItem from="1758781018168" duration="1773000" />
+      <workItem from="1758785100378" duration="7444000" />
+      <workItem from="1758808160996" duration="2247000" />
     </task>
     <task id="LOCAL-00001" summary="+fix: fix bug of menu hamburger">
       <option name="closed" value="true" />
@@ -453,7 +453,55 @@
       <option name="project" value="LOCAL" />
       <updated>1758706635104</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="+fix: try to fix a close menu button on responsive.css">
+      <option name="closed" value="true" />
+      <created>1758707025295</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1758707025295</updated>
+    </task>
+    <task id="LOCAL-00038" summary="+fix: display none, a &quot;.titreDeSection&quot; on mobile view">
+      <option name="closed" value="true" />
+      <created>1758707092566</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1758707092566</updated>
+    </task>
+    <task id="LOCAL-00039" summary="+fix: little bit changes">
+      <option name="closed" value="true" />
+      <created>1758707214634</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1758707214634</updated>
+    </task>
+    <task id="LOCAL-00040" summary="+adding: section of experience">
+      <option name="closed" value="true" />
+      <created>1758810309139</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1758810309139</updated>
+    </task>
+    <task id="LOCAL-00041" summary="+adding: style section of experience">
+      <option name="closed" value="true" />
+      <created>1758810332833</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1758810332833</updated>
+    </task>
+    <task id="LOCAL-00042" summary="+adding: adapt a card for mobile view, disable a menu hamburger">
+      <option name="closed" value="true" />
+      <created>1758810391420</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1758810391420</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -471,12 +519,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="+fix: bug of view of card on mobile view" />
-    <MESSAGE value="+update: system for hiding the scroll-up button when the user scrolls to the top of the website" />
-    <MESSAGE value="+update: up to 9999 z-index for Scroll-up button" />
-    <MESSAGE value="+add: Links of my social network (github, linkedin, mail) under my image of profile" />
-    <MESSAGE value="+update" />
-    <MESSAGE value="+remove: temporary the switch theme mode; +add: not a sun icon to replace a sun icon" />
     <MESSAGE value="+update: cursor of hover image of me" />
     <MESSAGE value="+update: commentary" />
     <MESSAGE value="+update: wo" />
@@ -496,6 +538,12 @@
     <MESSAGE value="+update: workspace.xml" />
     <MESSAGE value="+adding: image for 404 error on image of project" />
     <MESSAGE value="+adding: image for 404 error on image of project on style.css" />
-    <option name="LAST_COMMIT_MESSAGE" value="+adding: image for 404 error on image of project on style.css" />
+    <MESSAGE value="+fix: try to fix a close menu button on responsive.css" />
+    <MESSAGE value="+fix: display none, a &quot;.titreDeSection&quot; on mobile view" />
+    <MESSAGE value="+fix: little bit changes" />
+    <MESSAGE value="+adding: section of experience" />
+    <MESSAGE value="+adding: style section of experience" />
+    <MESSAGE value="+adding: adapt a card for mobile view, disable a menu hamburger" />
+    <option name="LAST_COMMIT_MESSAGE" value="+adding: adapt a card for mobile view, disable a menu hamburger" />
   </component>
 </project>
