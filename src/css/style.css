@@ -224,6 +224,7 @@ main {
     justify-content: center;
     align-items: center;
     gap: 1.5rem;
+    margin-bottom: 4rem;
 }
 
 .card {
@@ -310,10 +311,33 @@ main {
     cursor: pointer;
 }
 
+/* EXPERIENCE CARD */
+
+#experiencePart {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    grid-template-rows: 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    background: var(--bg-color-dark);
+}
+
+.card_experience {
+    display: flex;
+    flex-wrap: wrap;
+    grid-template-rows: 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    margin-bottom: 4rem;
+}
+
 .titreDeSection {
     display: flex;
     font-size: 2.5rem;
     justify-content: center;
-    padding: 2.12rem;
+    padding: 5rem;
     color: white;
 }
