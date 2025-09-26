@@ -182,3 +182,33 @@ window.addEventListener('scroll', (e) => {
         navbar.style.background = 'transparent';
     }
 })
+
+// ---------------------------------------------------------------------------------------------//
+// SHOW DETAILS IN CARD OF EXPERIENCE //
+
+const show_experience_details = document.querySelector('#showExperienceDetails');
+const show_more = document.querySelector('.enSavoirPlus #showMore');
+const show_lower = document.querySelector('.enSavoirPlus #showLower');
+
+const card_xp_2 = document.querySelector('.card_xp_2');
+
+show_more.addEventListener('click', (e) => {
+    show_more.style.display = 'none';
+    show_lower.style.display = 'block';
+
+    show_experience_details.style.display = 'block';
+    card_xp_2.style.height = '39rem';
+    card_xp_2.style.display = 'block';
+    card_xp_2.style.justifyContent = 'center';
+})
+
+show_lower.addEventListener('click', (e) => {
+    show_more.style.display = 'block';
+    show_lower.style.display = 'none';
+
+    show_experience_details.style.display = 'none';
+    card_xp_2.style.height = '27.25rem';
+    card_xp_2.style.display = 'flex';
+    card_xp_2.style.justifyContent = 'space-between';
+
+})
