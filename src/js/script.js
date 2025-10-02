@@ -81,6 +81,12 @@ moon.addEventListener('click', (e) => {
     mailto.src = './src/img/icons/mailto-light-icon.svg';
     navbar.style.background = "var(--dark-bg-navbar-color)";
 
+
+    if (window.scrollY > 1 ) {
+        navbar.style.background = 'var(--dark-bg-navbar-color)';
+    } else {
+        navbar.style.background = 'transparent';
+    }
     // forEach
 
     nav_a.forEach(a => {
@@ -131,6 +137,13 @@ sun.addEventListener('click', (e) => {
     mailto.src = './src/img/icons/mailto-dark-icon.svg';
     navbar.style.background = "var(--light-bg-navbar-color)";
 
+    if (window.scrollY > 1) {
+        navbar.style.background = 'var(--light-bg-navbar-color)';
+        navbar.style.backdropFilter = 'blur(3px)';
+    } else {
+        navbar.style.background = 'transparent';
+    }
+
     // forEach
 
     nav_a.forEach(a => {
@@ -144,7 +157,6 @@ sun.addEventListener('click', (e) => {
     window.addEventListener('scroll', (e) => {
         if (window.scrollY > 1) {
             navbar.style.background = 'var(--light-bg-navbar-color)';
-            navbar.style.backdropFilter = 'blur(3px)';
         } else {
             navbar.style.background = 'transparent';
         }

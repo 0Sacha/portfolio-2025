@@ -381,5 +381,26 @@ main {
     height: 13rem;
     margin: 0.50rem auto;
     border-radius: 1.25rem 1.25rem 0 0;
-    background: url("../img/404NotFoundImage.png");
+}
+
+.img_card_xp_1 {
+    background: url("../img/logoPresoaXP.png");
+
+}
+
+.img_card_xp_2 {
+    background: url("../img/logoDesmarezXP.png");
+}
+
+.img_card_xp_3 {
+    background: url("../img/logoVinylethifiXP.png");
+}
+
+.img_card_xp_4 {
+    background: url("../img/logoMicrocomXP.png");
+
+}
+
+.img_card_xp_5 {
+    background: url("../img/logoDtifXP.png");
 }
