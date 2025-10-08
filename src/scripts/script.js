@@ -72,17 +72,17 @@ moon.addEventListener('click', (e) => {
 
     // .src
 
-    menu.src = 'src/img/menu-light.svg';
-    close_menu.src = './src/img/close-menu-light.svg';
-    scrollToUp.src = './src/img/up-arrow-light.svg';
+    menu.src = 'src/images/menu-light.svg';
+    close_menu.src = './src/images/close-menu-light.svg';
+    scrollToUp.src = './src/images/up-arrow-light.svg';
     // links
-    linkedin.src = './src/img/icons/linkedin-light-icon.svg';
-    github.src = './src/img/icons/github-light-icon.svg';
-    mailto.src = './src/img/icons/mailto-light-icon.svg';
+    linkedin.src = './src/images/icons/linkedin-light-icon.svg';
+    github.src = './src/images/icons/github-light-icon.svg';
+    mailto.src = './src/images/icons/mailto-light-icon.svg';
     navbar.style.background = "var(--dark-bg-navbar-color)";
 
 
-    if (window.scrollY > 1 ) {
+    if (window.scrollY > 1) {
         navbar.style.background = 'var(--dark-bg-navbar-color)';
     } else {
         navbar.style.background = 'transparent';
@@ -128,13 +128,13 @@ sun.addEventListener('click', (e) => {
 
     // .src
 
-    menu.src = 'src/img/menu-dark.svg';
-    close_menu.src = './src/img/close-menu-dark.svg';
-    scrollToUp.src = './src/img/up-arrow-dark.svg'
+    menu.src = 'src/images/menu-dark.svg';
+    close_menu.src = './src/images/close-menu-dark.svg';
+    scrollToUp.src = './src/images/up-arrow-dark.svg'
     // links
-    linkedin.src = './src/img/icons/linkedin-dark-icon.svg';
-    github.src = './src/img/icons/github-dark-icon.svg';
-    mailto.src = './src/img/icons/mailto-dark-icon.svg';
+    linkedin.src = './src/images/icons/linkedin-dark-icon.svg';
+    github.src = './src/images/icons/github-dark-icon.svg';
+    mailto.src = './src/images/icons/mailto-dark-icon.svg';
     navbar.style.background = "var(--light-bg-navbar-color)";
 
     if (window.scrollY > 1) {
