@@ -10,12 +10,16 @@
 html {
     scroll-behavior: smooth;
     overflow-x: hidden;
-    background-color: var(--dark-html-bg-color);
+    background-color: var(--bg-color-default);
 }
-
 :root {
     --bg-color-dark: linear-gradient(156.2deg, rgba(0, 0, 0, 1) 14.8%, rgba(32, 104, 177, 1) 68.1%, rgb(224, 222, 237) 129%);
     --bg-color-light: linear-gradient(156.2deg, rgba(222, 229, 237) 14.8%, rgba(32, 104, 177, 1) 68.1%, rgba(0, 0, 0) 129%);
+
+
+    /* Default mode */
+    --bg-color-default : #f2ebdd;
+    --bg-nav-color-default : #f9f4ea;
 
     /*Light mode */
 
@@ -32,6 +36,7 @@ html {
     --dark-html-bg-color: #000000;
     --dark-hover-text: #fdfdff;
 }
+
 
 body {
     height: calc(100vh + 150px);
@@ -84,6 +89,7 @@ nav {
     gap: 2rem;
     transition: all 200ms linear;
     z-index: 9999;
+    background: var(--bg-nav-color-default);
 }
 
 nav ul {
@@ -171,7 +177,7 @@ main {
 }
 
 #home #moi {
-    height: 23rem;
+    height: 35rem;
     border-radius: 5%;
     cursor: auto;
 }

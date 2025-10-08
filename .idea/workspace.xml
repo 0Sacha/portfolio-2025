@@ -5,14 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="78aba201-c806-442e-8721-8ff8e2665cd1" name="Changes" comment="+adding:">
-      <change afterPath="$PROJECT_DIR$/src/scripts/html2canvas.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/scripts/jquery.ripples-min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/scripts/liquidGL.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/scripts/switchThemeMode.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/scripts/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/moi-format-carte.JPEG" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/moi-format-carte.JPEG" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scripts/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/scripts/script.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -180,7 +178,7 @@
       <workItem from="1759387055242" duration="5861000" />
       <workItem from="1759822760590" duration="5546000" />
       <workItem from="1759904442959" duration="7758000" />
-      <workItem from="1759925481018" duration="1788000" />
+      <workItem from="1759925481018" duration="6190000" />
     </task>
     <task id="LOCAL-00001" summary="+fix: fix bug of menu hamburger">
       <option name="closed" value="true" />
