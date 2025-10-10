@@ -87,9 +87,8 @@ nav {
     width: 100%;
     padding: 1.2rem 0;
     gap: 2rem;
-    transition: all 200ms linear;
+    /*transition: all 200ms linear;*/
     z-index: 9999;
-    background: var(--dark-bg-navbar-color);
 }
 
 nav ul {
