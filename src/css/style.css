@@ -1,8 +1,8 @@
+@import url("https://fonts.cdnfonts.com/css/sf-compact-display");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fjalla+One&family=Viga&display=swap");
 /*$bg-color-dark: linear-gradient(156.2deg, rgba(0, 0, 0, 1) 14.8%, rgba(32, 104, 177, 1) 68.1%, rgb(224, 222, 237) 129%);*/
 /*$bg-color-light: linear-gradient(156.2deg, rgba(222, 229, 237) 14.8%, rgba(32, 104, 177, 1) 68.1%, rgba(0, 0, 0) 129%);*/
-/* Default mode */
-/*$bg-color-default : #f2ebdd;*/
-/*$bg-nav-color-default : #f9f4ea;*/
 /*Light mode */
 /* Dark mode */
 html {
@@ -16,6 +16,10 @@ html body {
 html body nav {
   display: flex;
   color: rgba(245, 245, 247, 0.8);
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  gap: 25rem;
 }
 html body nav .title {
   display: flex;
@@ -27,12 +31,26 @@ html body nav .title img {
 }
 html body nav .title h1 {
   color: #ffffff;
+  font-size: 25px;
 }
-html body nav .ul {
+html body nav ul {
   display: flex;
+  gap: 1rem;
+  padding: 0;
+}
+html body nav ul li {
+  display: flex;
+  list-style: none;
+}
+html body nav ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 20px;
 }
 html body nav .switchMode {
   display: flex;
+  width: 50px;
+  height: 50px;
 }
 html body main #scrollToUp {
   position: fixed;

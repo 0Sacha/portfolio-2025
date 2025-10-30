@@ -5,24 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="78aba201-c806-442e-8721-8ff8e2665cd1" name="Changes" comment="+adding:">
-      <change afterPath="$PROJECT_DIR$/src/images/icons/logo_sachalaville.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/responsive.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/responsive.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/close-menu-dark.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/icons/close-menu-dark.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/close-menu-light.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/icons/close-menu-light.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/down-arrow-dark.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/icons/down-arrow-dark.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/down-arrow-light.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/icons/down-arrow-light.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/menu-dark.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/icons/menu-dark.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/menu-light.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/icons/menu-light.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/moon.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/icons/moon.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/not_a_sun.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/icons/not_a_sun.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/sun.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/icons/sun.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/up-arrow-dark.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/icons/up-arrow-dark.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/up-arrow-light.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/icons/up-arrow-light.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scripts/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/scripts/script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scripts/switchThemeMode.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/style.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/style.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/style.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -195,7 +181,7 @@
       <workItem from="1760000485369" duration="952000" />
       <workItem from="1760020894142" duration="894000" />
       <workItem from="1760077566157" duration="2539000" />
-      <workItem from="1761809713510" duration="5795000" />
+      <workItem from="1761809713510" duration="7006000" />
     </task>
     <task id="LOCAL-00001" summary="+fix: fix bug of menu hamburger">
       <option name="closed" value="true" />
