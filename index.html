@@ -32,14 +32,17 @@
     <link rel="icon" href="src/images/LogoPortfolio.png" type="image/x-icon">
     <link rel="stylesheet" href="./src/css/style.css">
     <link rel="stylesheet" href="./src/css/responsive.css">
-    <script src="src/scripts/script.js" defer></script>
+<!--    <script src="src/scripts/script.js" defer></script>-->
 
 
 </head>
 <body>
 <div id="nav">
     <nav>
-        <p id="responsive-navbar-text">Portfolio - Sacha Laville - 2025</p>
+        <div class="title">
+            <img src="./src/images/icons/logo_sachalaville.svg" alt="">
+            <h1>Sacha Laville</h1>
+        </div>
         <ul>
             <li><a href="#">Accueil</a></li>
             <li><a href="#travail">Travaux</a></li>
@@ -47,17 +50,17 @@
             <li><a href="#">Moi</a></li>
             <li><a href="#">Contact</a></li>
         </ul>
-        <div class="img">
-            <img style="display: none" id="moon" src="src/images/moon.svg" alt="dark mode toogle">
-            <img id="sun" src="src/images/sun.svg" alt="dark mode toogle">
-            <img id="menu" src="src/images/menu-light.svg" alt="menu toogle">
+        <div class="switchMode">
+            <img style="display: none" id="moon" src="src/images/icons/moon.svg" alt="dark mode toogle">
+            <img id="sun" src="src/images/icons/sun.svg" alt="dark mode toogle">
+            <img id="menu" src="src/images/icons/menu-light.svg" alt="menu toogle">
         </div>
     </nav>
 </div>
 <!-- Menu hamburger-->
 <div class="popup">
     <div style="display: none" class="menu-popup">
-        <img style="display: none" id="close-menu" src="src/images/close-menu-light.svg" alt="menu toogle">
+        <img style="display: none" id="close-menu" src="src/images/icons/close-menu-light.svg" alt="menu toogle">
         <li><a href="#">Accueil</a></li>
         <li><a href="#travail">Travaux</a></li>
         <li><a href="#xp">Expérience</a></li>
@@ -67,253 +70,241 @@
 </div>
 
 <main>
-    <a href="#home"><img id="scrollToUp" src="src/images/up-arrow-light.svg" alt=""></a>
-    <div id="home">
-        <div class="leftText">
-            <div class="column">
-                <p>Sacha Laville</p>
-                <h1>APPRENTI</h1>
-            </div>
-        </div>
-        <div class="MiddleContent">
-            <img id="moi" src="src/images/moi-format-carte.JPEG" alt="">
-        </div>
-        <div class="rightText">
-            <h1>DÉVELOPPEUR</h1>
-        </div>
-    </div>
+    <a href="#nav"><img id="scrollToUp" src="src/images/icons/up-arrow-light.svg" alt=""></a>
 
-    <h1 class="titreDeSection" id="travail">Travaux</h1>
+
+
+<!--    <h1 class="titreDeSection" id="travail">Travaux</h1>-->
 
     <!-- CARD -->
-    <div id="projectPart">
+<!--    <div id="projectPart">-->
 
-        <div class="card">
-            <div class="card_content">
-                <div class="img_card"></div>
-                <div class="text_card">
-                    <h1 class="cardtitle">TITRE DU PROJET</h1>
-                    <p>DESCRIPTION : Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
-                </div>
-                <div class="separate"></div>
-                <div id="enSavoirPlus">
-                    <div class="enSavoirPlus">
-                        <div class="button_card">
-                            <p>En savoir plus</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+<!--        <div class="card">-->
+<!--            <div class="card_content">-->
+<!--                <div class="img_card"></div>-->
+<!--                <div class="text_card">-->
+<!--                    <h1 class="cardtitle">TITRE DU PROJET</h1>-->
+<!--                    <p>DESCRIPTION : Lorem Ipsum is simply dummy text of the printing and typesetting industry.-->
+<!--                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>-->
+<!--                </div>-->
+<!--                <div class="separate"></div>-->
+<!--                <div id="enSavoirPlus">-->
+<!--                    <div class="enSavoirPlus">-->
+<!--                        <div class="button_card">-->
+<!--                            <p>En savoir plus</p>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
 
-        <div class="card">
-            <div class="card_content">
-                <div class="img_card"></div>
-                <div class="text_card">
-                    <h1 class="cardtitle">TITRE DU PROJET</h1>
-                    <p>DESCRIPTION : Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
-                </div>
-                <div class="separate"></div>
-                <div id="enSavoirPlus">
-                    <div class="enSavoirPlus">
-                        <div class="button_card">
-                            <p>En savoir plus</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+<!--        <div class="card">-->
+<!--            <div class="card_content">-->
+<!--                <div class="img_card"></div>-->
+<!--                <div class="text_card">-->
+<!--                    <h1 class="cardtitle">TITRE DU PROJET</h1>-->
+<!--                    <p>DESCRIPTION : Lorem Ipsum is simply dummy text of the printing and typesetting industry.-->
+<!--                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>-->
+<!--                </div>-->
+<!--                <div class="separate"></div>-->
+<!--                <div id="enSavoirPlus">-->
+<!--                    <div class="enSavoirPlus">-->
+<!--                        <div class="button_card">-->
+<!--                            <p>En savoir plus</p>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
 
-        <div class="card">
-            <div class="card_content">
-                <div class="img_card"></div>
-                <div class="text_card">
-                    <h1 class="cardtitle">TITRE DU PROJET</h1>
-                    <p>DESCRIPTION : Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
-                </div>
-                <div class="separate"></div>
-                <div id="enSavoirPlus">
-                    <div class="enSavoirPlus">
-                        <div class="button_card">
-                            <p>En savoir plus</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+<!--        <div class="card">-->
+<!--            <div class="card_content">-->
+<!--                <div class="img_card"></div>-->
+<!--                <div class="text_card">-->
+<!--                    <h1 class="cardtitle">TITRE DU PROJET</h1>-->
+<!--                    <p>DESCRIPTION : Lorem Ipsum is simply dummy text of the printing and typesetting industry.-->
+<!--                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>-->
+<!--                </div>-->
+<!--                <div class="separate"></div>-->
+<!--                <div id="enSavoirPlus">-->
+<!--                    <div class="enSavoirPlus">-->
+<!--                        <div class="button_card">-->
+<!--                            <p>En savoir plus</p>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
 
-        <div class="card">
-            <div class="card_content">
-                <div class="img_card">
-                </div>
-                <div class="text_card">
-                    <h1 class="cardtitle">TITRE DU PROJET</h1>
-                    <p>DESCRIPTION : Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
-                </div>
-                <div class="separate"></div>
-                <div id="enSavoirPlus">
-                    <div class="enSavoirPlus">
-                        <div class="button_card">
-                            <p>En savoir plus</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+<!--        <div class="card">-->
+<!--            <div class="card_content">-->
+<!--                <div class="img_card">-->
+<!--                </div>-->
+<!--                <div class="text_card">-->
+<!--                    <h1 class="cardtitle">TITRE DU PROJET</h1>-->
+<!--                    <p>DESCRIPTION : Lorem Ipsum is simply dummy text of the printing and typesetting industry.-->
+<!--                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>-->
+<!--                </div>-->
+<!--                <div class="separate"></div>-->
+<!--                <div id="enSavoirPlus">-->
+<!--                    <div class="enSavoirPlus">-->
+<!--                        <div class="button_card">-->
+<!--                            <p>En savoir plus</p>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
 
-        <div class="card">
-            <div class="card_content">
-                <div class="img_card">
-                </div>
-                <div class="text_card">
-                    <h1 class="cardtitle">TITRE DU PROJET</h1>
-                    <p>DESCRIPTION : Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
-                </div>
-                <div class="separate"></div>
-                <div id="enSavoirPlus">
-                    <div class="enSavoirPlus">
-                        <div class="button_card">
-                            <p>En savoir plus</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+<!--        <div class="card">-->
+<!--            <div class="card_content">-->
+<!--                <div class="img_card">-->
+<!--                </div>-->
+<!--                <div class="text_card">-->
+<!--                    <h1 class="cardtitle">TITRE DU PROJET</h1>-->
+<!--                    <p>DESCRIPTION : Lorem Ipsum is simply dummy text of the printing and typesetting industry.-->
+<!--                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>-->
+<!--                </div>-->
+<!--                <div class="separate"></div>-->
+<!--                <div id="enSavoirPlus">-->
+<!--                    <div class="enSavoirPlus">-->
+<!--                        <div class="button_card">-->
+<!--                            <p>En savoir plus</p>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
 
-        <div class="card">
-            <div class="card_content">
-                <div class="img_card">
-                </div>
-                <div class="text_card">
-                    <h1 class="cardtitle"></h1>
-                    <p>DESCRIPTION : Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
-                </div>
-                <div class="separate"></div>
-                <div id="enSavoirPlus">
-                    <div class="enSavoirPlus">
-                        <div class="button_card">
-                            <p>En savoir plus</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+<!--        <div class="card">-->
+<!--            <div class="card_content">-->
+<!--                <div class="img_card">-->
+<!--                </div>-->
+<!--                <div class="text_card">-->
+<!--                    <h1 class="cardtitle"></h1>-->
+<!--                    <p>DESCRIPTION : Lorem Ipsum is simply dummy text of the printing and typesetting industry.-->
+<!--                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>-->
+<!--                </div>-->
+<!--                <div class="separate"></div>-->
+<!--                <div id="enSavoirPlus">-->
+<!--                    <div class="enSavoirPlus">-->
+<!--                        <div class="button_card">-->
+<!--                            <p>En savoir plus</p>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
 
-    <div id="experiencePart">
-        <h1 class="titreDeSection" id="xp">Expérience</h1>
-        <div class="card_experience">
+<!--    <div id="experiencePart">-->
+<!--        <h1 class="titreDeSection" id="xp">Expérience</h1>-->
+<!--        <div class="card_experience">-->
 
-            <div class="card">
-                <div class="card_content">
-                    <div class="img_card_xp_5"></div>
-                    <div class="text_card">
-                        <h1 class="cardtitle">MARS 2020 | STAGE DE 3EME CHEZ "LES DEMEURES TRADITIONNELLES D'ILE DE FRANCE"</h1>
-                        <p>Stage d’observation d'une semaine en entreprise pour découvrir le métier d’architecte.
-                        </p>
-                    </div>
-                    <div class="separate"></div>
-                    <div id="enSavoirPlus">
-                        <div class="enSavoirPlus">
-                            <div class="button_card">
-                                <p>Voir plus</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+<!--            <div class="card">-->
+<!--                <div class="card_content">-->
+<!--                    <div class="img_card_xp_5"></div>-->
+<!--                    <div class="text_card">-->
+<!--                        <h1 class="cardtitle">MARS 2020 | STAGE DE 3EME CHEZ "LES DEMEURES TRADITIONNELLES D'ILE DE FRANCE"</h1>-->
+<!--                        <p>Stage d’observation d'une semaine en entreprise pour découvrir le métier d’architecte.-->
+<!--                        </p>-->
+<!--                    </div>-->
+<!--                    <div class="separate"></div>-->
+<!--                    <div id="enSavoirPlus">-->
+<!--                        <div class="enSavoirPlus">-->
+<!--                            <div class="button_card">-->
+<!--                                <p>Voir plus</p>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
 
-            <div class="card">
-                <div class="card_content">
-                    <div class="img_card_xp_4"></div>
-                    <div class="text_card">
-                        <h1 class="cardtitle">FÉVRIER 2021 | STAGE DE SECONDE CHEZ VINYLES & HIFI</h1>
-                        <p>Stage de second pour apprendre la vie en entreprise.</p>
-                    </div>
-                    <div class="separate"></div>
-                    <div id="enSavoirPlus">
-                        <div class="enSavoirPlus">
-                            <div class="button_card">
-                                <p>Voir plus</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+<!--            <div class="card">-->
+<!--                <div class="card_content">-->
+<!--                    <div class="img_card_xp_4"></div>-->
+<!--                    <div class="text_card">-->
+<!--                        <h1 class="cardtitle">FÉVRIER 2021 | STAGE DE SECONDE CHEZ VINYLES & HIFI</h1>-->
+<!--                        <p>Stage de second pour apprendre la vie en entreprise.</p>-->
+<!--                    </div>-->
+<!--                    <div class="separate"></div>-->
+<!--                    <div id="enSavoirPlus">-->
+<!--                        <div class="enSavoirPlus">-->
+<!--                            <div class="button_card">-->
+<!--                                <p>Voir plus</p>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
 
-            <div class="card">
-                <div class="card_content">
-                    <div class="img_card_xp_3"></div>
-                    <div class="text_card">
-                        <h1 class="cardtitle">JUIN 2021 | STAGE DE SECONDE CHEZ MICROCOM</h1>
-                        <p>Stage de 3 semaines en entreprise entent que stagiaire en réparation d’appareil technologique.</p>
-                    </div>
-                    <div class="separate"></div>
-                    <div id="enSavoirPlus">
-                        <div class="enSavoirPlus">
-                            <div class="button_card">
-                                <p>Voir plus</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="card_xp_2">
-                <div class="card_content">
-                    <div class="img_card_xp_2"></div>
-                    <div class="text_card_xp_2">
-                        <h1 class="cardtitle">2022/2023 - STAGE DE PREMIERE ET TERMINALE CHEZ DESMAREZ</h1>
-                        <p>Durant mon Bac Pro Systems Numériques, j'ai du effectué 4 stages d'un mois chacun dans l'entreprise DESMAREZ.</p>
-                        <span style="display: none" id="showExperienceDetails">
-                            - Souder sur carte électronique <br>
-                            - Création de coffrets équipés d'alarme <br>
-                            - câblage des différentes cartes électroniques des coffrets <br>
-                            - Programmation de portatif, talkiewalkie <br>
-                            - Programmation de sirènes d'alarme <br>
-                            - Programmation de GSM <br>
-                            - Réglage de cartes <br>
-                            - Interventions sur site pour installer les coffrets <br>
-                            - Interventions sur site pour la maintenance <br>
-                        </span>
-                    </div>
-                    <div class="separate"></div>
-                    <div id="enSavoirPlus">
-                        <div class="enSavoirPlus">
-                            <div class="button_card">
-                                <p id="showMore">Voir plus</p>
-                                <p style="display: none" id="showLower">Voir moins</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+<!--            <div class="card">-->
+<!--                <div class="card_content">-->
+<!--                    <div class="img_card_xp_3"></div>-->
+<!--                    <div class="text_card">-->
+<!--                        <h1 class="cardtitle">JUIN 2021 | STAGE DE SECONDE CHEZ MICROCOM</h1>-->
+<!--                        <p>Stage de 3 semaines en entreprise entent que stagiaire en réparation d’appareil technologique.</p>-->
+<!--                    </div>-->
+<!--                    <div class="separate"></div>-->
+<!--                    <div id="enSavoirPlus">-->
+<!--                        <div class="enSavoirPlus">-->
+<!--                            <div class="button_card">-->
+<!--                                <p>Voir plus</p>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--            <div class="card_xp_2">-->
+<!--                <div class="card_content">-->
+<!--                    <div class="img_card_xp_2"></div>-->
+<!--                    <div class="text_card_xp_2">-->
+<!--                        <h1 class="cardtitle">2022/2023 - STAGE DE PREMIERE ET TERMINALE CHEZ DESMAREZ</h1>-->
+<!--                        <p>Durant mon Bac Pro Systems Numériques, j'ai du effectué 4 stages d'un mois chacun dans l'entreprise DESMAREZ.</p>-->
+<!--                        <span style="display: none" id="showExperienceDetails">-->
+<!--                            - Souder sur carte électronique <br>-->
+<!--                            - Création de coffrets équipés d'alarme <br>-->
+<!--                            - câblage des différentes cartes électroniques des coffrets <br>-->
+<!--                            - Programmation de portatif, talkiewalkie <br>-->
+<!--                            - Programmation de sirènes d'alarme <br>-->
+<!--                            - Programmation de GSM <br>-->
+<!--                            - Réglage de cartes <br>-->
+<!--                            - Interventions sur site pour installer les coffrets <br>-->
+<!--                            - Interventions sur site pour la maintenance <br>-->
+<!--                        </span>-->
+<!--                    </div>-->
+<!--                    <div class="separate"></div>-->
+<!--                    <div id="enSavoirPlus">-->
+<!--                        <div class="enSavoirPlus">-->
+<!--                            <div class="button_card">-->
+<!--                                <p id="showMore">Voir plus</p>-->
+<!--                                <p style="display: none" id="showLower">Voir moins</p>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
 
-            <div class="card">
-                <div class="card_content">
-                    <div class="img_card_xp_1"></div>
-                    <div class="text_card">
-                        <h1 class="cardtitle">2024 - Aujourd'hui | ALTERNANCE CHEZ PRESOA</h1>
-                        <p>Alternant informatique chez PRESOA à Compiègne,
-                            depuis presque 1ans je suis au service infromatique support de l'entreprise.</p>
-                    </div>
-                    <div class="separate"></div>
-                    <div id="enSavoirPlus">
-                        <div class="enSavoirPlus">
-                            <div class="button_card">
-                                <p>Voir plus</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+<!--            <div class="card">-->
+<!--                <div class="card_content">-->
+<!--                    <div class="img_card_xp_1"></div>-->
+<!--                    <div class="text_card">-->
+<!--                        <h1 class="cardtitle">2024 - Aujourd'hui | ALTERNANCE CHEZ PRESOA</h1>-->
+<!--                        <p>Alternant informatique chez PRESOA à Compiègne,-->
+<!--                            depuis presque 1ans je suis au service infromatique support de l'entreprise.</p>-->
+<!--                    </div>-->
+<!--                    <div class="separate"></div>-->
+<!--                    <div id="enSavoirPlus">-->
+<!--                        <div class="enSavoirPlus">-->
+<!--                            <div class="button_card">-->
+<!--                                <p>Voir plus</p>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
 
 </main>
 </body>
