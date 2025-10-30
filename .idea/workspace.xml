@@ -36,12 +36,12 @@
     &quot;assignee&quot;: &quot;0Sacha&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/0Sacha/portfolio-2025.git&quot;,
-    &quot;accountId&quot;: &quot;2f0bb71d-38e7-4838-945b-9e8ed8c7f594&quot;
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/0Sacha/portfolio-2025.git",
+    "accountId": "c8b8875b-bc81-4caa-ae7a-9ca4e229e65e"
   }
-}</component>
+}]]></component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/index.html" root0="SKIP_INSPECTION" />
   </component>
@@ -184,6 +184,7 @@
       <workItem from="1760077566157" duration="2539000" />
       <workItem from="1761809713510" duration="7166000" />
       <workItem from="1761818171048" duration="4095000" />
+      <workItem from="1761862208311" duration="2655000" />
     </task>
     <task id="LOCAL-00001" summary="+fix: fix bug of menu hamburger">
       <option name="closed" value="true" />
