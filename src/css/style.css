@@ -8,9 +8,23 @@ html {
   overflow-x: hidden;
   background-color: #000000;
 }
+html #error-404 {
+  display: none;
+  color: rgb(255, 255, 255);
+}
+@media (max-width: 375px) {
+  html #error-404 {
+    display: flex;
+  }
+}
 html body {
   height: calc(100vh + 150px);
   font-family: "Space Grotesk";
+}
+@media (max-width: 375px) {
+  html body {
+    display: none;
+  }
 }
 html body #nav {
   display: flex;
@@ -50,6 +64,11 @@ html body #nav nav ul {
   padding: 0;
   align-items: center;
 }
+@media (max-width: 1100px) {
+  html body #nav nav ul {
+    display: none;
+  }
+}
 html body #nav nav ul li {
   display: flex;
   list-style: none;
@@ -63,10 +82,12 @@ html body #nav nav ul li a:hover {
   color: #ffffff;
 }
 html body #nav nav ul .cvButton {
+  display: flex;
   background-color: #2b7fff;
   border-radius: 33px;
-  padding: 7px 23px;
+  padding: 9px 24px;
   transition: scale 0.1s ease-out;
+  font-size: 16px;
 }
 html body #nav nav ul .cvButton a {
   color: #ffffff;
@@ -75,19 +96,57 @@ html body #nav nav ul .cvButton:hover {
   background-color: #155dfc;
   scale: 1.05;
 }
+html body #nav nav #burger {
+  display: none;
+  padding: 8px;
+}
+@media (max-width: 1100px) {
+  html body #nav nav #burger {
+    display: block;
+  }
+}
+html body #nav nav #burger li {
+  list-style: none;
+}
+html body #nav nav #burger li a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
 html body #nav nav .switchMode {
   display: flex;
   width: 50px;
   height: 50px;
 }
 html body #hero {
-  padding: 150px 182.5px 33px 182.5px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  margin-left: 182.5px;
+  margin-top: 150px;
+}
+@media (max-width: 1100px) {
+  html body #hero {
+    align-items: center;
+    justify-content: center;
+    margin-left: 0;
+    margin-top: 100px;
+  }
 }
 html body #hero #hero-title {
   display: flex;
   flex-direction: column;
   color: rgb(255, 255, 255);
   font-size: 96px;
+}
+@media (max-width: 1100px) {
+  html body #hero #hero-title {
+    text-align: center;
+  }
+}
+@media (max-width: 500px) {
+  html body #hero #hero-title {
+    font-size: 48px;
+  }
 }
 html body #hero #hero-subtitle {
   margin-top: 15px;
@@ -96,12 +155,32 @@ html body #hero #hero-subtitle {
   font-weight: 300;
   line-height: 48px; /* 100% */
 }
+@media (max-width: 1100px) {
+  html body #hero #hero-subtitle {
+    text-align: center;
+  }
+}
+@media (max-width: 650px) {
+  html body #hero #hero-subtitle {
+    font-size: 24px;
+  }
+}
 html body #hero #hero-description {
   margin-top: 33px;
   color: rgba(255, 255, 255, 0.8);
   font-size: 20px;
   width: 637px;
   line-height: 140%;
+}
+@media (max-width: 1100px) {
+  html body #hero #hero-description {
+    text-align: start;
+  }
+}
+@media (max-width: 650px) {
+  html body #hero #hero-description {
+    width: 345px;
+  }
 }
 html body #hero #hero-icon {
   margin-top: 48px;
@@ -131,6 +210,11 @@ html body #hero #hero-links {
   margin-top: 40px;
   gap: 16px;
   height: 58px;
+}
+@media (max-width: 1100px) {
+  html body #hero #hero-links {
+    flex-direction: column;
+  }
 }
 html body #hero #hero-links #hero-links-project, html body #hero #hero-links #hero-links-contact {
   color: rgb(255, 255, 255);
