@@ -29,7 +29,7 @@ html {
     display: none;
     color: $text-default;
     @media (max-width: 375px) {
-      display: flex;
+      //display: flex;
     }
   }
 
@@ -37,7 +37,7 @@ html {
     height: calc(100vh + 150px);
     font-family: $font-default;
     @media (max-width: 375px) {
-      display: none;
+      //display: none;
     }
 
     #nav {

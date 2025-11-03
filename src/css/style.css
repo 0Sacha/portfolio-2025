@@ -12,19 +12,9 @@ html #error-404 {
   display: none;
   color: rgb(255, 255, 255);
 }
-@media (max-width: 375px) {
-  html #error-404 {
-    display: flex;
-  }
-}
 html body {
   height: calc(100vh + 150px);
   font-family: "Space Grotesk";
-}
-@media (max-width: 375px) {
-  html body {
-    display: none;
-  }
 }
 html body #nav {
   display: flex;
