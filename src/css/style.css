@@ -1,8 +1,8 @@
+@import "reset.css";
 @import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 /*$bg-color-dark: linear-gradient(156.2deg, rgba(0, 0, 0, 1) 14.8%, rgba(32, 104, 177, 1) 68.1%, rgb(224, 222, 237) 129%);*/
 /*$bg-color-light: linear-gradient(156.2deg, rgba(222, 229, 237) 14.8%, rgba(32, 104, 177, 1) 68.1%, rgba(0, 0, 0) 129%);*/
-
 html {
   scroll-behavior: smooth;
   overflow-x: hidden;
@@ -10,7 +10,7 @@ html {
 }
 html body {
   height: calc(100vh + 150px);
-  font-family: "Space Grotesk", serif;
+  font-family: "Space Grotesk";
 }
 html body #nav {
   display: flex;
@@ -79,6 +79,89 @@ html body #nav nav .switchMode {
   display: flex;
   width: 50px;
   height: 50px;
+}
+html body #hero {
+  padding: 150px 182.5px 33px 182.5px;
+}
+html body #hero #hero-title {
+  display: flex;
+  flex-direction: column;
+  color: rgb(255, 255, 255);
+  font-size: 96px;
+}
+html body #hero #hero-subtitle {
+  margin-top: 15px;
+  color: #51A2FF;
+  font-size: 48px;
+  font-weight: 300;
+  line-height: 48px; /* 100% */
+}
+html body #hero #hero-description {
+  margin-top: 33px;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 20px;
+  width: 637px;
+  line-height: 140%;
+}
+html body #hero #hero-icon {
+  margin-top: 48px;
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+}
+html body #hero #hero-icon #github, html body #hero #hero-icon #linkedin, html body #hero #hero-icon #mailto {
+  padding: 17px;
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.1);
+  transition: all 150ms ease-in-out;
+}
+html body #hero #hero-icon #github:hover, html body #hero #hero-icon #linkedin:hover, html body #hero #hero-icon #mailto:hover {
+  transform: scale(1.1);
+  border: 1px solid rgba(81, 162, 255, 0.5);
+  background: rgba(255, 255, 255, 0.1);
+}
+html body #hero #hero-icon #github img, html body #hero #hero-icon #linkedin img, html body #hero #hero-icon #mailto img {
+  height: 24px;
+  width: 24px;
+}
+html body #hero #hero-links {
+  display: flex;
+  flex-direction: row;
+  margin-top: 40px;
+  gap: 16px;
+  height: 58px;
+}
+html body #hero #hero-links #hero-links-project, html body #hero #hero-links #hero-links-contact {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  transition: all 150ms ease-in-out;
+}
+html body #hero #hero-links #hero-links-project:hover {
+  transform: scale(1.1);
+  border: 1px solid rgba(81, 162, 255, 0.3);
+  background: rgba(43, 127, 255, 0.5);
+}
+html body #hero #hero-links #hero-links-contact:hover {
+  transform: scale(1.1);
+}
+html body #hero #hero-links #hero-links-project {
+  padding: 16px 33px 18px 33px;
+  border-radius: 16px;
+  border: 1px solid rgba(81, 162, 255, 0.5);
+  background: rgba(43, 127, 255, 0.2);
+}
+html body #hero #hero-links #hero-links-project, html body #hero #hero-links img {
+  display: flex;
+  align-items: center;
+}
+html body #hero #hero-links #hero-links-contact {
+  display: flex;
+  align-items: center;
+  padding: 16px 32.594px 18px 33px;
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.1);
 }
 html body main #scrollToUp {
   position: fixed;
