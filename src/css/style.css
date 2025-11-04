@@ -168,7 +168,7 @@ html body .burger #burgerNav #burgerCV:hover {
 html body .burger #burgerNav li {
   display: flex;
   flex-direction: column;
-  width: 100%;
+  width: 375px;
 }
 html body .burger #burgerNav li a {
   color: rgba(255, 255, 255, 0.8);
