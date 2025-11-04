@@ -110,9 +110,9 @@ html body #nav nav #burger li a {
   text-decoration: none;
 }
 html body .burger {
-  display: flex;
   align-items: center;
   justify-content: center;
+  display: none;
 }
 @media (min-width: 1100px) {
   html body .burger {
