@@ -145,9 +145,15 @@ html {
 
     .burger {
       //display: flex;
-      align-items: center;
+      //align-items: center;
       justify-content: center;
-      display: none;
+      //display: none;
+      padding: 17.10px 17.10px 1.10px 17.10px;
+      align-items: flex-start;
+      flex-shrink: 0;
+      align-self: stretch;
+      display: flex;
+      height: 350.071px;
       @media (min-width: 1100px) {
         display: none;
       }
@@ -185,7 +191,7 @@ html {
           align-content: center;
           gap: 12px;
           margin: 0 auto;
-          //width: 100%;
+          width: 335px;
 
         }
 
@@ -206,17 +212,18 @@ html {
 
         li {
           display: flex;
-          flex-direction: column;
-          width: 375px;
+          flex-direction: row;
+          width: 335px;
+
           a {
             color: $text-navbar-color;
             display: flex;
+            flex-direction: row;
             border-radius: 14px;
             font-size: 16px;
             text-decoration: none;
-            padding: 18px 270px 18px 17px;
+            padding: 18px 270px 18px 15.99px;
             transition: all 150ms ease-out;
-
           }
 
           a:hover {

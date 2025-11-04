@@ -110,9 +110,13 @@ html body #nav nav #burger li a {
   text-decoration: none;
 }
 html body .burger {
-  align-items: center;
   justify-content: center;
-  display: none;
+  padding: 17.1px 17.1px 1.1px 17.1px;
+  align-items: flex-start;
+  flex-shrink: 0;
+  align-self: stretch;
+  display: flex;
+  height: 350.071px;
 }
 @media (min-width: 1100px) {
   html body .burger {
@@ -152,6 +156,7 @@ html body .burger #burgerNav #burgerMenu {
   align-content: center;
   gap: 12px;
   margin: 0 auto;
+  width: 335px;
 }
 html body .burger #burgerNav #burgerCV {
   display: flex;
@@ -167,16 +172,17 @@ html body .burger #burgerNav #burgerCV:hover {
 }
 html body .burger #burgerNav li {
   display: flex;
-  flex-direction: column;
-  width: 375px;
+  flex-direction: row;
+  width: 335px;
 }
 html body .burger #burgerNav li a {
   color: rgba(255, 255, 255, 0.8);
   display: flex;
+  flex-direction: row;
   border-radius: 14px;
   font-size: 16px;
   text-decoration: none;
-  padding: 18px 270px 18px 17px;
+  padding: 18px 270px 18px 15.99px;
   transition: all 150ms ease-out;
 }
 html body .burger #burgerNav li a:hover {
