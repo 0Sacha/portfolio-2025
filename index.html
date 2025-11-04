@@ -31,9 +31,8 @@
 
     <link rel="icon" href="src/images/LogoPortfolio.png" type="image/x-icon">
     <link rel="stylesheet" href="./src/css/style.css">
-    <link rel="stylesheet" href="./src/css/responsive.css">
-    <!--    <script src="src/scripts/script.js" defer></script>-->
-</head>
+    <script src="src/scripts/script.js" defer></script>
+</head>z
 <div id="error-404">
     Appareil avec une largeur trop petite <br>
     Device with too narrow a width
@@ -53,9 +52,21 @@
             <li class="cvButton"><a href="#">Mon cv</a></li>
         </ul>
         <div id="burger">
-            <li><a href="#"><img src="./src/images/icons/burger.svg" alt=""></a></li>
+            <li id="openBurger" ><img src="./src/images/icons/burger.svg" alt=""></li>
+            <li id="closeBurger" style="display: none" ><img src="./src/images/icons/close-menu-light.svg" alt=""></li>
         </div>
     </nav>
+</div>
+<div class="burger">
+    <div id="burgerNav">
+        <ul id="burgerMenu">
+            <li><a href="#">Accueil</a></li>
+            <li><a href="#travail">Travaux</a></li>
+            <li><a href="#xp">Expérience</a></li>
+            <li><a href="#">Contact</a></li>
+            <li id="burgerCV"><a href="#">Mon cv</a></li>
+        </ul>
+    </div>
 </div>
 <div id="hero">
     <div id="hero-title">

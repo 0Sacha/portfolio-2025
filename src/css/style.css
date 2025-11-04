@@ -28,6 +28,8 @@ html body #nav nav {
   background-color: rgba(255, 255, 255, 0.1);
   border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 24px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(50px);
   padding: 0 33px;
   align-items: center;
   flex-direction: row;
@@ -47,6 +49,11 @@ html body #nav nav .title img {
 html body #nav nav .title h1 {
   color: #ffffff;
   font-size: 16px;
+}
+@media (max-width: 1100px) {
+  html body #nav nav .title h1 {
+    display: none;
+  }
 }
 html body #nav nav ul {
   display: flex;
@@ -102,12 +109,80 @@ html body #nav nav #burger li a {
   color: rgb(255, 255, 255);
   text-decoration: none;
 }
-html body #nav nav .switchMode {
+html body .burger {
   display: flex;
-  width: 50px;
-  height: 50px;
+  align-items: center;
+  justify-content: center;
 }
-html body #hero {
+@media (min-width: 1100px) {
+  html body .burger {
+    display: none;
+  }
+}
+html body .burger #burgerNav {
+  display: flex;
+  position: absolute;
+  top: 135px;
+  color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 24px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(50px);
+  justify-content: start;
+  align-items: center;
+  font-size: 16px;
+  height: 350px;
+  width: 87%;
+  animation: burger 150ms ease-in-out;
+}
+@keyframes burger {
+  from {
+    height: 0;
+  }
+  to {
+    height: 350px;
+  }
+}
+html body .burger #burgerNav #burgerMenu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  align-content: center;
+  gap: 12px;
+  margin: 0 auto;
+}
+html body .burger #burgerNav #burgerCV {
+  display: flex;
+  background-color: #2b7fff;
+  border-radius: 14px;
+  font-size: 16px;
+}
+html body .burger #burgerNav #burgerCV a {
+  color: #ffffff;
+}
+html body .burger #burgerNav #burgerCV:hover {
+  background-color: #155dfc;
+}
+html body .burger #burgerNav li {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+html body .burger #burgerNav li a {
+  color: rgba(255, 255, 255, 0.8);
+  display: flex;
+  border-radius: 14px;
+  font-size: 16px;
+  text-decoration: none;
+  padding: 18px 270px 18px 17px;
+  transition: all 150ms ease-out;
+}
+html body .burger #burgerNav li a:hover {
+  background: rgba(207, 212, 236, 0.2);
+}
+html #hero {
   display: flex;
   flex-direction: column;
   align-items: start;
@@ -115,30 +190,30 @@ html body #hero {
   margin-top: 150px;
 }
 @media (max-width: 1100px) {
-  html body #hero {
+  html #hero {
     align-items: center;
     justify-content: center;
     margin-left: 0;
     margin-top: 100px;
   }
 }
-html body #hero #hero-title {
+html #hero #hero-title {
   display: flex;
   flex-direction: column;
   color: rgb(255, 255, 255);
   font-size: 96px;
 }
 @media (max-width: 1100px) {
-  html body #hero #hero-title {
+  html #hero #hero-title {
     text-align: center;
   }
 }
 @media (max-width: 500px) {
-  html body #hero #hero-title {
+  html #hero #hero-title {
     font-size: 48px;
   }
 }
-html body #hero #hero-subtitle {
+html #hero #hero-subtitle {
   margin-top: 15px;
   color: #51A2FF;
   font-size: 48px;
@@ -146,16 +221,16 @@ html body #hero #hero-subtitle {
   line-height: 48px; /* 100% */
 }
 @media (max-width: 1100px) {
-  html body #hero #hero-subtitle {
+  html #hero #hero-subtitle {
     text-align: center;
   }
 }
 @media (max-width: 650px) {
-  html body #hero #hero-subtitle {
+  html #hero #hero-subtitle {
     font-size: 24px;
   }
 }
-html body #hero #hero-description {
+html #hero #hero-description {
   margin-top: 33px;
   color: rgba(255, 255, 255, 0.8);
   font-size: 20px;
@@ -163,38 +238,38 @@ html body #hero #hero-description {
   line-height: 140%;
 }
 @media (max-width: 1100px) {
-  html body #hero #hero-description {
+  html #hero #hero-description {
     text-align: start;
   }
 }
 @media (max-width: 650px) {
-  html body #hero #hero-description {
+  html #hero #hero-description {
     width: 345px;
   }
 }
-html body #hero #hero-icon {
+html #hero #hero-icon {
   margin-top: 48px;
   display: flex;
   flex-direction: row;
   gap: 16px;
 }
-html body #hero #hero-icon #github, html body #hero #hero-icon #linkedin, html body #hero #hero-icon #mailto {
+html #hero #hero-icon #github, html #hero #hero-icon #linkedin, html #hero #hero-icon #mailto {
   padding: 17px;
   border-radius: 16px;
   border: 1px solid rgba(255, 255, 255, 0.2);
   background: rgba(255, 255, 255, 0.1);
   transition: all 150ms ease-in-out;
 }
-html body #hero #hero-icon #github:hover, html body #hero #hero-icon #linkedin:hover, html body #hero #hero-icon #mailto:hover {
+html #hero #hero-icon #github:hover, html #hero #hero-icon #linkedin:hover, html #hero #hero-icon #mailto:hover {
   transform: scale(1.1);
   border: 1px solid rgba(81, 162, 255, 0.5);
   background: rgba(255, 255, 255, 0.1);
 }
-html body #hero #hero-icon #github img, html body #hero #hero-icon #linkedin img, html body #hero #hero-icon #mailto img {
+html #hero #hero-icon #github img, html #hero #hero-icon #linkedin img, html #hero #hero-icon #mailto img {
   height: 24px;
   width: 24px;
 }
-html body #hero #hero-links {
+html #hero #hero-links {
   display: flex;
   flex-direction: row;
   margin-top: 40px;
@@ -202,34 +277,34 @@ html body #hero #hero-links {
   height: 58px;
 }
 @media (max-width: 1100px) {
-  html body #hero #hero-links {
+  html #hero #hero-links {
     flex-direction: column;
   }
 }
-html body #hero #hero-links #hero-links-project, html body #hero #hero-links #hero-links-contact {
+html #hero #hero-links #hero-links-project, html #hero #hero-links #hero-links-contact {
   color: rgb(255, 255, 255);
   text-decoration: none;
   transition: all 150ms ease-in-out;
 }
-html body #hero #hero-links #hero-links-project:hover {
+html #hero #hero-links #hero-links-project:hover {
   transform: scale(1.1);
   border: 1px solid rgba(81, 162, 255, 0.3);
   background: rgba(43, 127, 255, 0.5);
 }
-html body #hero #hero-links #hero-links-contact:hover {
+html #hero #hero-links #hero-links-contact:hover {
   transform: scale(1.1);
 }
-html body #hero #hero-links #hero-links-project {
+html #hero #hero-links #hero-links-project {
   padding: 16px 33px 18px 33px;
   border-radius: 16px;
   border: 1px solid rgba(81, 162, 255, 0.5);
   background: rgba(43, 127, 255, 0.2);
 }
-html body #hero #hero-links #hero-links-project, html body #hero #hero-links img {
+html #hero #hero-links #hero-links-project, html #hero #hero-links img {
   display: flex;
   align-items: center;
 }
-html body #hero #hero-links #hero-links-contact {
+html #hero #hero-links #hero-links-contact {
   display: flex;
   align-items: center;
   padding: 16px 32.594px 18px 33px;
@@ -237,7 +312,7 @@ html body #hero #hero-links #hero-links-contact {
   border: 1px solid rgba(255, 255, 255, 0.2);
   background: rgba(255, 255, 255, 0.1);
 }
-html body main #scrollToUp {
+html main #scrollToUp {
   position: fixed;
   bottom: 50px;
   right: 50px;
