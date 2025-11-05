@@ -110,10 +110,10 @@ html body #nav nav #burger li a {
   text-decoration: none;
 }
 html body .burger {
-  display: flex;
   align-items: center;
   justify-content: center;
   top: 135px;
+  display: none;
   height: 350px;
   width: 100%;
   position: absolute;
