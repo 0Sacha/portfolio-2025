@@ -381,7 +381,9 @@ html {
     text-align: center;
     margin-top: 160px;
     padding-top: 127px;
-    display: none;
+    @media (max-width: 1100px) {
+      display: none;
+    }
 
 
     h1 {
@@ -397,8 +399,10 @@ html {
   }
 
   #selection {
-    margin: 80px 110px 0 110px;
-    display: none;
+    margin: 80px 360px 0 360px;
+    @media (max-width: 1100px) {
+      display: none;
+    }
 
     #selectionCard01 {
       display: flex;

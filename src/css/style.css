@@ -334,7 +334,11 @@ html #interTitre {
   text-align: center;
   margin-top: 160px;
   padding-top: 127px;
-  display: none;
+}
+@media (max-width: 1100px) {
+  html #interTitre {
+    display: none;
+  }
 }
 html #interTitre h1 {
   font-size: 60px;
@@ -346,8 +350,12 @@ html #interTitre p {
   color: rgba(255, 255, 255, 0.8);
 }
 html #selection {
-  margin: 80px 110px 0 110px;
-  display: none;
+  margin: 80px 360px 0 360px;
+}
+@media (max-width: 1100px) {
+  html #selection {
+    display: none;
+  }
 }
 html #selection #selectionCard01 {
   display: flex;
