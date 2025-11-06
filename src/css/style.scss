@@ -806,6 +806,8 @@ html {
       width: 376px;
       height: 400px;
 
+      transition: all .2s ease-out;
+
       #topCard {
         img {
           border-radius: 16px 16px 0 0;
@@ -877,6 +879,11 @@ html {
 
       }
 
+    }
+
+    #card:hover {
+      border: 1px solid rgba(43, 127, 255, 0.7);
+      transform: scale(1.02);
     }
   }
 

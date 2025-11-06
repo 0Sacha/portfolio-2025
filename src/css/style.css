@@ -682,6 +682,7 @@ html #cardSection #card {
   flex-direction: column;
   width: 376px;
   height: 400px;
+  transition: all 0.2s ease-out;
 }
 html #cardSection #card #topCard img {
   border-radius: 16px 16px 0 0;
@@ -739,6 +740,10 @@ html #cardSection #card #downCard #cardTopic li {
   background: rgba(43, 127, 255, 0.2);
   padding: 6px 12px;
   height: 14px;
+}
+html #cardSection #card:hover {
+  border: 1px solid rgba(43, 127, 255, 0.7);
+  transform: scale(1.02);
 }
 
 /*# sourceMappingURL=style.css.map */
