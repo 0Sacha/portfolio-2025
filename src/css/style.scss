@@ -887,4 +887,19 @@ html {
     }
   }
 
+  footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0 ;
+    p {
+      color: $text-navbar-color;
+      a {
+        color: $text-default;
+      }
+    }
+
+  }
+
 }

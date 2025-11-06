@@ -39,7 +39,7 @@
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;https://github.com/0Sacha/portfolio-2025.git&quot;,
-    &quot;accountId&quot;: &quot;cdc711c3-b950-4443-9d25-5835f36d829f&quot;
+    &quot;accountId&quot;: &quot;c8b8875b-bc81-4caa-ae7a-9ca4e229e65e&quot;
   }
 }</component>
   <component name="HighlightingSettingsPerFile">
@@ -194,6 +194,7 @@
       <workItem from="1762358299712" duration="83000" />
       <workItem from="1762415637352" duration="12480000" />
       <workItem from="1762432426785" duration="7576000" />
+      <workItem from="1762468105018" duration="303000" />
     </task>
     <task id="LOCAL-00001" summary="+fix: fix bug of menu hamburger">
       <option name="closed" value="true" />
