@@ -5,6 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="78aba201-c806-442e-8721-8ff8e2665cd1" name="Changes" comment="+adding:">
+      <change afterPath="$PROJECT_DIR$/login.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/icons/chevronIcon.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/icons/controllerIcon.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/icons/downloadIcon.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/icons/loginIcon.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/icons/pcIcon.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/icons/styletIcon.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/style.css" afterDir="false" />
@@ -66,10 +73,11 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;javascript.preferred.runtime.type.id&quot;: &quot;node&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/sacha.laville/OneDrive - Présoa/Documents/GitHub/portfolio-2025/src/img&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/sacha/WebstormProjects/portfolio-2025&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -94,7 +102,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-c7e53b3be11b-JavaScript-WS-253.28086.39" />
+        <option value="bundled-js-predefined-d6986cc7102b-3aa1da707db6-JavaScript-PS-252.27397.112" />
+        <option value="bundled-php-predefined-a98d8de5180a-b35feea871ed-com.jetbrains.php.sharedIndexes-PS-252.27397.112" />
       </set>
     </attachedChunks>
   </component>
@@ -194,7 +203,11 @@
       <workItem from="1762358299712" duration="83000" />
       <workItem from="1762415637352" duration="12480000" />
       <workItem from="1762432426785" duration="7576000" />
-      <workItem from="1762468105018" duration="303000" />
+      <workItem from="1762468105018" duration="514000" />
+      <workItem from="1762794703748" duration="8887000" />
+      <workItem from="1762808896928" duration="16000" />
+      <workItem from="1762808928523" duration="45000" />
+      <workItem from="1762808982941" duration="3689000" />
     </task>
     <task id="LOCAL-00001" summary="+fix: fix bug of menu hamburger">
       <option name="closed" value="true" />

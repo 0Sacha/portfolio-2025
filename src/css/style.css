@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import "reset.css";
 @import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
@@ -81,20 +82,15 @@ html body #nav nav ul li a {
 html body #nav nav ul li a:hover {
   color: #ffffff;
 }
-html body #nav nav ul .cvButton {
-  display: flex;
-  background-color: #2b7fff;
-  border-radius: 33px;
-  padding: 9px 24px;
-  transition: scale 0.1s ease-out;
-  font-size: 16px;
+html body #nav nav ul #loginBtn {
+  padding: 9px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 999px;
 }
-html body #nav nav ul .cvButton a {
-  color: #ffffff;
-}
-html body #nav nav ul .cvButton:hover {
-  background-color: #155dfc;
-  scale: 1.05;
+html body #nav nav ul #loginBtn:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.25);
 }
 html body #nav nav #burger {
   display: none;
@@ -172,18 +168,6 @@ html body .burger #burgerNav #burgerCt a, html body .burger #burgerNav #burgerAc
 }
 html body .burger #burgerNav #burgerCt:hover, html body .burger #burgerNav #burgerAcc:hover, html body .burger #burgerNav #burgerTra:hover, html body .burger #burgerNav #burgerExp:hover {
   background: rgba(207, 212, 236, 0.2);
-}
-html body .burger #burgerNav #burgerCV {
-  display: flex;
-  background-color: #2b7fff;
-  border-radius: 14px;
-  font-size: 16px;
-}
-html body .burger #burgerNav #burgerCV a {
-  color: #ffffff;
-}
-html body .burger #burgerNav #burgerCV:hover {
-  background-color: #155dfc;
 }
 html body .burger #burgerNav li {
   display: flex;
@@ -744,6 +728,154 @@ html #cardSection #card #downCard #cardTopic li {
 html #cardSection #card:hover {
   border: 1px solid rgba(43, 127, 255, 0.7);
   transform: scale(1.02);
+}
+html #interTitre3 {
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
+  text-align: center;
+  margin-top: 170px;
+  padding-top: 170px;
+}
+@media (max-width: 1100px) {
+  html #interTitre3 {
+    display: none;
+  }
+}
+html #interTitre3 h1 {
+  font-size: 60px;
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+}
+html #interTitre3 p {
+  font-size: 20px;
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 32px;
+}
+html #interTitre3 a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  background: linear-gradient(90deg, #2b67ff, #2b7fff);
+  color: rgb(255, 255, 255);
+  font-size: 14px;
+  text-decoration: none;
+  width: 17%;
+  border-radius: 8px;
+  padding: 8px 12px;
+  gap: 16px;
+}
+html #aboutSection {
+  margin-top: 88px;
+}
+html #aboutSection #aboutMeCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 24px;
+  box-sizing: border-box;
+  padding: 49px;
+  width: 85%;
+  height: 316px;
+  margin: 0 auto;
+  gap: 32px;
+}
+html #aboutSection #aboutMeCard h1 {
+  color: rgb(255, 255, 255);
+  font-size: 36px;
+}
+html #aboutSection #aboutMeCard h1 span {
+  color: #2b7fff;
+}
+html #aboutSection #aboutMeCard p {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 16px;
+}
+html #aboutSection #aboutMeCard h2 {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 14px;
+  text-transform: uppercase;
+}
+html #aboutSection #aboutMeCard #aboutMeCD {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+html #aboutSection #aboutMeCard #aboutMeCD #aboutMeCDList {
+  display: flex;
+  gap: 8px;
+}
+html #aboutSection #aboutMeCard #aboutMeCD #aboutMeCDList li {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  color: rgb(255, 255, 255);
+  border-radius: 14px;
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 0 16px;
+  font-size: 14px;
+  height: 46px;
+  gap: 8px;
+  transition: all 0.2s ease-out;
+}
+html #aboutSection #aboutMeCard #aboutMeCD #aboutMeCDList li img {
+  height: 24px;
+  width: 24px;
+}
+html #aboutSection #aboutMeCard #aboutMeCD #aboutMeCDList li:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+}
+html #aboutSection #interInterTitre {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 64px;
+  font-size: 30px;
+  color: rgb(255, 255, 255);
+  margin-bottom: 34px;
+}
+html #aboutSection #aboutCoupOEil {
+  display: flex;
+  flex-direction: row;
+  gap: 0;
+}
+html #aboutSection #aboutCoupOEil #infosEssential {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+  color: rgb(255, 255, 255);
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-sizing: border-box;
+  border-radius: 24px;
+  height: 400px;
+  width: 35%;
+  gap: 24px;
+}
+html #aboutSection #aboutCoupOEil #infosEssential #localisation,
+html #aboutSection #aboutCoupOEil #infosEssential #mobilité,
+html #aboutSection #aboutCoupOEil #infosEssential #disponibilité,
+html #aboutSection #aboutCoupOEil #infosEssential #status {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  padding: 0 100px 0 100px;
+}
+html #aboutSection #aboutCoupOEil #infosEssential #localisation #infosTitle,
+html #aboutSection #aboutCoupOEil #infosEssential #mobilité #infosTitle,
+html #aboutSection #aboutCoupOEil #infosEssential #disponibilité #infosTitle,
+html #aboutSection #aboutCoupOEil #infosEssential #status #infosTitle {
+  display: flex;
+  gap: 12px;
+  flex-direction: row;
 }
 html footer {
   display: flex;
