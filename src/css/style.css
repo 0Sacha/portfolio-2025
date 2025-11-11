@@ -9,9 +9,63 @@ html {
   overflow-x: hidden;
   background-color: #000000;
 }
-html #error-404 {
-  display: none;
-  color: rgb(255, 255, 255);
+html #homeAmbiance {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+html #homeAmbiance #sphere1Home,
+html #homeAmbiance #sphere2Home,
+html #homeAmbiance #sphere3Home {
+  position: absolute;
+  filter: blur(150px);
+  border-radius: 999px;
+}
+html #homeAmbiance #sphere1Home {
+  width: 600px;
+  height: 600px;
+  top: 10%;
+  left: 7%;
+  animation: sphere1Bounce 6s ease-in-out infinite;
+  background-color: rgba(43, 127, 255, 0.2);
+}
+@keyframes sphere1Bounce {
+  0% {
+    top: 10%;
+  }
+  50% {
+    top: 15%;
+  }
+  100% {
+    top: 10%;
+  }
+}
+html #homeAmbiance #sphere2Home {
+  width: 600px;
+  height: 600px;
+  top: 65%;
+  right: 5%;
+  background-color: rgba(173, 70, 255, 0.15);
+  animation: sphere2Bounce 8s ease-in-out infinite;
+}
+@keyframes sphere2Bounce {
+  0% {
+    top: 65%;
+  }
+  50% {
+    top: 60%;
+  }
+  100% {
+    top: 65%;
+  }
+}
+html #homeAmbiance #sphere3Home {
+  width: 600px;
+  height: 600px;
+  top: 165%;
+  left: 5%;
+  background-color: rgba(70, 206, 255, 0.15);
 }
 html body {
   height: calc(100vh + 150px);
@@ -769,6 +823,11 @@ html #interTitre3 a {
 html #aboutSection {
   margin-top: 88px;
 }
+@media (max-width: 1100px) {
+  html #aboutSection {
+    display: none;
+  }
+}
 html #aboutSection #aboutMeCard {
   display: flex;
   flex-direction: column;
@@ -889,6 +948,136 @@ html footer p {
 }
 html footer p a {
   color: rgb(255, 255, 255);
+}
+html #loginAmbiance {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+html #loginAmbiance #sphere1,
+html #loginAmbiance #sphere2,
+html #loginAmbiance #sphere3 {
+  position: absolute;
+  filter: blur(150px);
+  border-radius: 999px;
+}
+html #loginAmbiance #sphere1 {
+  width: 600px;
+  height: 600px;
+  top: 1%;
+  left: 20%;
+  background-color: rgba(43, 127, 255, 0.2);
+}
+html #loginAmbiance #sphere2 {
+  width: 600px;
+  height: 600px;
+  right: 33%;
+  top: 25%;
+  background-color: rgba(0, 184, 219, 0.1);
+}
+html #loginAmbiance #sphere3 {
+  width: 600px;
+  height: 600px;
+  top: 45%;
+  right: 20%;
+  background-color: rgba(173, 70, 255, 0.15);
+}
+html #indexBtn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: rotate(90deg);
+  margin: 24px;
+  padding: 13px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 999px;
+  cursor: pointer;
+  transition: all 0.2s ease-out;
+}
+html #indexBtn img {
+  height: 24px;
+}
+html #indexBtn:hover {
+  background-color: rgba(255, 255, 255, 0.13);
+}
+html #loginSection {
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+html #loginSection #loginCard {
+  height: 700px;
+  width: 27%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto 0;
+  color: rgb(255, 255, 255);
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  border-radius: 24px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+html #loginSection #loginCard #loginLogo {
+  margin-bottom: 32px;
+}
+html #loginSection #loginCard #loginLogo img {
+  width: 64px;
+}
+html #loginSection #loginCard h1 {
+  font-size: 36px;
+}
+html #loginSection #loginCard p {
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.8);
+}
+html #loginSection #loginCard #loginForm {
+  margin-top: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 24px;
+}
+html #loginSection #loginCard #loginForm label {
+  font-size: 14px;
+}
+html #loginSection #loginCard #loginForm #loginEmail,
+html #loginSection #loginCard #loginForm #loginPassword {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-sizing: border-box;
+  border-radius: 16px;
+  padding-left: 16px;
+}
+html #loginSection #loginCard #loginForm #loginEmail input,
+html #loginSection #loginCard #loginForm #loginPassword input {
+  font-size: 16px;
+  border: none;
+  background: transparent;
+  padding: 16px 48px;
+  color: rgb(255, 255, 255);
+}
+html #loginSection #loginCard #loginForm #loginButton {
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 16px;
+  background-color: rgba(43, 127, 255, 0.2);
+  border: 1px solid rgba(81, 162, 255, 0.5);
+  padding: 16px 48px;
 }
 
 /*# sourceMappingURL=style.css.map */

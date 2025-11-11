@@ -34,21 +34,32 @@
     <script src="src/scripts/script.js" defer></script>
 </head>
 <body>
-<div id="loginCard">
-    <div id="loginLogo">
-
+<div id="loginAmbiance">
+    <div id="sphere1"></div>
+    <div id="sphere2"></div>
+    <div id="sphere3"></div>
+</div>
+<a id="indexBtn" href="index.html"><img src="src/images/icons/down-arrow-light.svg"></a>
+<div id="loginSection">
+    <div id="loginCard">
+        <div id="loginLogo">
+            <img src="./src/images/LogoPortfolio.svg" alt="">
+        </div>
+        <h1>Dashboard Admin</h1>
+        <p>Connectez-vous pour accéder au CMS</p>
+        <form id="loginForm" method="get">
+            <label>Email</label>
+            <label id="loginEmail">
+                <img src="./src/images/icons/userIcon.svg">
+                <input type="email" placeholder="admin@admin.com">
+            </label>
+            <label>Mot de passe</label>
+            <label id="loginPassword">
+                <img src="./src/images/icons/cadenaIcon.svg">
+                <input type="password" placeholder="••••••••">            </label>
+            <button id="loginButton" formmethod="post">Se connecter</button>
+        </form>
     </div>
-    <h1>Dashboard Admin</h1>
-    <p>Connectez-vous pour accéder au CMS</p>
-    <form action="" method="get">
-        <label for="Email">
-            <input type="email" placeholder="admin@admin.com">
-        </label>
-        <label for="Mots de passe">
-            <input type="password" placeholder="••••••••">
-        </label>
-        <button formmethod="post">Se connecter</button>
-    </form>
 </div>
 </body>
 </html>
