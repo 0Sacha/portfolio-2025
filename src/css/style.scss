@@ -29,10 +29,6 @@ html {
   overflow-x: hidden;
   background-color: $bg-color-dark;
 
-  head {
-  }
-
-
   #homeAmbiance {
     display: flex;
     justify-content: center;
@@ -820,7 +816,6 @@ html {
 
     .separate {
       height: 1px;
-      flex: 1 0 0;
       background: linear-gradient(90deg, rgba(0, 0, 0, 0.00) 0%, rgba(255, 255, 255, 0.20) 50%, rgba(0, 0, 0, 0.00) 100%);
     }
   }
@@ -1042,40 +1037,49 @@ html {
 
     }
 
-    #interInterTitre {
+
+  }
+
+  #interInterTitre {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 64px;
+    font-size: 30px;
+    color: $text-default;
+    margin-bottom: 34px;
+
+  }
+
+  #aboutCoupOEil {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0 auto;
+    gap: 25px;
+
+    #infosEssential {
       display: flex;
-      flex-direction: row;
+      flex-direction: column;
       justify-content: center;
-      align-items: center;
-      margin-top: 64px;
-      font-size: 30px;
       color: $text-default;
-      margin-bottom: 34px;
+      background-color: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      box-sizing: border-box;
 
-    }
-
-    #aboutCoupOEil {
-      display: flex;
-      flex-direction: row;
-      gap: 0;
-
-      #infosEssential {
+      border-radius: 24px;
+      //padding: 1px;
+      height: 400px;
+      width: 35%;
+      gap: 24px;
+      #infoCard {
         display: flex;
         flex-direction: column;
         justify-content: center;
         margin: 0 auto;
-
-        color: $text-default;
-        background-color: rgba(255, 255, 255, 0.05);
-        border: 1px solid rgba(255, 255, 255, 0.1);
-        box-sizing: border-box;
-
-        border-radius: 24px;
-        //padding: 1px;
-        height: 400px;
-        width: 35%;
-        gap: 24px;
-
+        gap: 45px;
+      }
         #localisation,
         #mobilité,
         #disponibilité,
@@ -1083,13 +1087,160 @@ html {
           display: flex;
           flex-direction: column;
           justify-content: center;
-          align-items: start;
-          padding: 0 100px 0 100px;
 
           #infosTitle {
             display: flex;
             gap: 12px;
             flex-direction: row;
+          }
+        }
+    }
+    #sectionRightCard {
+      display: grid;
+      grid-template-columns: 10fr 1fr;
+      justify-items: center;
+      align-items: center;
+      gap: 25px;
+      width: 580px;
+      height: 402px;
+      color: $text-default;
+
+      #jvCard {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 1rem;
+        border: 1px solid rgba(255, 255, 255, 0.10);
+        background: rgba(255, 255, 255, 0.05);
+        width: 278px;
+        height: 167.5px;
+        gap: 12px;
+
+        img {
+          height: 24px;
+          padding: 13px;
+          border-radius: 14px;
+          border: 1px solid rgba(81, 162, 255, 0.30);
+          background: rgba(43, 127, 255, 0.20);
+        }
+
+      }
+
+      #graphCard {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 1rem;
+        border: 1px solid rgba(255, 255, 255, 0.10);
+        background: rgba(255, 255, 255, 0.05);
+        width: 278px;
+        height: 167.5px;
+        gap: 12px;
+
+        img {
+          height: 24px;
+          padding: 13px;
+          border-radius: 14px;
+          border: 1px solid rgba(194, 122, 255, 0.30);
+          background: rgba(173, 70, 255, 0.20);
+        }
+      }
+
+      #yearCard {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 16px;
+        border: 1px solid rgba(0, 211, 242, 0.20);
+        background: linear-gradient(135deg, rgba(0, 184, 219, 0.10) 0%, rgba(43, 127, 255, 0.10) 100%);width: 278px;
+        height: 199px;
+
+        img {
+          height: 24px;
+        }
+
+        h1 {
+          color: #00D3F2;
+          font-size: 60px;
+          font-weight: 400;
+        }
+        p {
+          color: rgba(255, 255, 255, 0.60);
+          font-size: 14px;
+          text-transform: uppercase;
+        }
+        #barre {
+          display: flex;
+          height: 29px;
+          padding-top: 13px;
+          border-top: 5px solid rgba(255, 255, 255, 0.10);
+        }
+        p {
+          font-size: 12px;
+          color: rgba(255, 255, 255, 0.40);
+        }
+      }
+      #nbrFormationCard {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 16px;
+        border: 1px solid rgba(194, 122, 255, 0.20);
+        background: linear-gradient(135deg, rgba(173, 70, 255, 0.10) 0%, rgba(246, 51, 154, 0.10) 100%);width: 278px;
+        height: 199px;
+
+        img {
+          height: 24px;
+        }
+
+        h1 {
+          color: #C27AFF;
+          font-size: 60px;
+          font-weight: 400;
+        }
+        p {
+          color: rgba(255, 255, 255, 0.60);
+          font-size: 14px;
+          text-transform: uppercase;
+        }
+        #barre {
+          display: flex;
+          height: 29px;
+          padding-top: 13px;
+          border-top: 5px solid rgba(255, 255, 255, 0.10);
+        }
+        p {
+          font-size: 12px;
+          color: rgba(255, 255, 255, 0.40);
+        }
+      }
+    }
+    #sectionDownCard {
+
+      #sectionCardAbout {
+        display: flex;
+        flex-direction: row;
+        #progCard {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          border-radius: 1rem;
+          border: 1px solid rgba(255, 255, 255, 0.10);
+          background: rgba(255, 255, 255, 0.05);
+          width: 278px;
+          height: 167.5px;
+
+          img {
+            height: 24px;
+            padding: 13px;
+            border-radius: 14px;
+            border: 1px solid rgba(0, 211, 242, 0.30);
+            background: rgba(0, 184, 219, 0.20);
           }
         }
       }
@@ -1266,7 +1417,5 @@ html {
         }
       }
     }
-
   }
-
 }
