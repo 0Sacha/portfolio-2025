@@ -905,7 +905,12 @@ html #aboutCoupOEil {
   margin: 0 auto;
   gap: 25px;
 }
-html #aboutCoupOEil #infosEssential {
+html #aboutCoupOEil #sectionLeft {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+html #aboutCoupOEil #sectionLeft #infosEssential {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -915,33 +920,82 @@ html #aboutCoupOEil #infosEssential {
   box-sizing: border-box;
   border-radius: 24px;
   height: 400px;
-  width: 35%;
+  width: 580px;
   gap: 24px;
 }
-html #aboutCoupOEil #infosEssential #infoCard {
+html #aboutCoupOEil #sectionLeft #infosEssential #infoCard {
   display: flex;
   flex-direction: column;
   justify-content: center;
   margin: 0 auto;
   gap: 45px;
 }
-html #aboutCoupOEil #infosEssential #localisation,
-html #aboutCoupOEil #infosEssential #mobilité,
-html #aboutCoupOEil #infosEssential #disponibilité,
-html #aboutCoupOEil #infosEssential #status {
+html #aboutCoupOEil #sectionLeft #infosEssential #localisation,
+html #aboutCoupOEil #sectionLeft #infosEssential #mobilité,
+html #aboutCoupOEil #sectionLeft #infosEssential #disponibilité,
+html #aboutCoupOEil #sectionLeft #infosEssential #status {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-html #aboutCoupOEil #infosEssential #localisation #infosTitle,
-html #aboutCoupOEil #infosEssential #mobilité #infosTitle,
-html #aboutCoupOEil #infosEssential #disponibilité #infosTitle,
-html #aboutCoupOEil #infosEssential #status #infosTitle {
+html #aboutCoupOEil #sectionLeft #infosEssential #localisation #infosTitle,
+html #aboutCoupOEil #sectionLeft #infosEssential #mobilité #infosTitle,
+html #aboutCoupOEil #sectionLeft #infosEssential #disponibilité #infosTitle,
+html #aboutCoupOEil #sectionLeft #infosEssential #status #infosTitle {
   display: flex;
   gap: 12px;
   flex-direction: row;
 }
-html #aboutCoupOEil #sectionRightCard {
+html #aboutCoupOEil #sectionLeft #sectionDownLeftCard {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  color: rgb(255, 255, 255);
+}
+html #aboutCoupOEil #sectionLeft #sectionDownLeftCard #progCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.05);
+  width: 278px;
+  height: 167.5px;
+  gap: 12px;
+}
+html #aboutCoupOEil #sectionLeft #sectionDownLeftCard #progCard img {
+  height: 24px;
+  padding: 13px;
+  border-radius: 14px;
+  border: 1px solid rgba(0, 211, 242, 0.3);
+  background: rgba(0, 184, 219, 0.2);
+}
+html #aboutCoupOEil #sectionLeft #sectionDownLeftCard #informaCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.05);
+  width: 278px;
+  height: 149, 7px;
+  gap: 12px;
+}
+html #aboutCoupOEil #sectionLeft #sectionDownLeftCard #informaCard img {
+  height: 24px;
+  padding: 13px;
+  border-radius: 14px;
+  border: 1px solid rgba(251, 100, 182, 0.3);
+  background: rgba(246, 51, 154, 0.2);
+}
+html #aboutCoupOEil #sectionRight {
+  display: flex;
+  flex-direction: column;
+  gap: 22.5px;
+}
+html #aboutCoupOEil #sectionRight #sectionRightCard {
   display: grid;
   grid-template-columns: 10fr 1fr;
   justify-items: center;
@@ -951,7 +1005,7 @@ html #aboutCoupOEil #sectionRightCard {
   height: 402px;
   color: rgb(255, 255, 255);
 }
-html #aboutCoupOEil #sectionRightCard #jvCard {
+html #aboutCoupOEil #sectionRight #sectionRightCard #jvCard {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -963,14 +1017,14 @@ html #aboutCoupOEil #sectionRightCard #jvCard {
   height: 167.5px;
   gap: 12px;
 }
-html #aboutCoupOEil #sectionRightCard #jvCard img {
+html #aboutCoupOEil #sectionRight #sectionRightCard #jvCard img {
   height: 24px;
   padding: 13px;
   border-radius: 14px;
   border: 1px solid rgba(81, 162, 255, 0.3);
   background: rgba(43, 127, 255, 0.2);
 }
-html #aboutCoupOEil #sectionRightCard #graphCard {
+html #aboutCoupOEil #sectionRight #sectionRightCard #graphCard {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -982,14 +1036,14 @@ html #aboutCoupOEil #sectionRightCard #graphCard {
   height: 167.5px;
   gap: 12px;
 }
-html #aboutCoupOEil #sectionRightCard #graphCard img {
+html #aboutCoupOEil #sectionRight #sectionRightCard #graphCard img {
   height: 24px;
   padding: 13px;
   border-radius: 14px;
   border: 1px solid rgba(194, 122, 255, 0.3);
   background: rgba(173, 70, 255, 0.2);
 }
-html #aboutCoupOEil #sectionRightCard #yearCard {
+html #aboutCoupOEil #sectionRight #sectionRightCard #yearCard {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -999,31 +1053,32 @@ html #aboutCoupOEil #sectionRightCard #yearCard {
   background: linear-gradient(135deg, rgba(0, 184, 219, 0.1) 0%, rgba(43, 127, 255, 0.1) 100%);
   width: 278px;
   height: 199px;
+  gap: 9px;
 }
-html #aboutCoupOEil #sectionRightCard #yearCard img {
+html #aboutCoupOEil #sectionRight #sectionRightCard #yearCard img {
   height: 24px;
 }
-html #aboutCoupOEil #sectionRightCard #yearCard h1 {
+html #aboutCoupOEil #sectionRight #sectionRightCard #yearCard h1 {
   color: #00D3F2;
   font-size: 60px;
   font-weight: 400;
 }
-html #aboutCoupOEil #sectionRightCard #yearCard p {
+html #aboutCoupOEil #sectionRight #sectionRightCard #yearCard p {
   color: rgba(255, 255, 255, 0.6);
   font-size: 14px;
   text-transform: uppercase;
 }
-html #aboutCoupOEil #sectionRightCard #yearCard #barre {
+html #aboutCoupOEil #sectionRight #sectionRightCard #yearCard #barre {
   display: flex;
   height: 29px;
   padding-top: 13px;
   border-top: 5px solid rgba(255, 255, 255, 0.1);
 }
-html #aboutCoupOEil #sectionRightCard #yearCard p {
+html #aboutCoupOEil #sectionRight #sectionRightCard #yearCard p {
   font-size: 12px;
   color: rgba(255, 255, 255, 0.4);
 }
-html #aboutCoupOEil #sectionRightCard #nbrFormationCard {
+html #aboutCoupOEil #sectionRight #sectionRightCard #nbrFormationCard {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1033,82 +1088,67 @@ html #aboutCoupOEil #sectionRightCard #nbrFormationCard {
   background: linear-gradient(135deg, rgba(173, 70, 255, 0.1) 0%, rgba(246, 51, 154, 0.1) 100%);
   width: 278px;
   height: 199px;
+  gap: 9px;
 }
-html #aboutCoupOEil #sectionRightCard #nbrFormationCard img {
+html #aboutCoupOEil #sectionRight #sectionRightCard #nbrFormationCard img {
   height: 24px;
 }
-html #aboutCoupOEil #sectionRightCard #nbrFormationCard h1 {
+html #aboutCoupOEil #sectionRight #sectionRightCard #nbrFormationCard h1 {
   color: #C27AFF;
   font-size: 60px;
   font-weight: 400;
 }
-html #aboutCoupOEil #sectionRightCard #nbrFormationCard p {
+html #aboutCoupOEil #sectionRight #sectionRightCard #nbrFormationCard p {
   color: rgba(255, 255, 255, 0.6);
   font-size: 14px;
   text-transform: uppercase;
 }
-html #aboutCoupOEil #sectionRightCard #nbrFormationCard #barre {
+html #aboutCoupOEil #sectionRight #sectionRightCard #nbrFormationCard #barre {
   display: flex;
   height: 29px;
   padding-top: 13px;
   border-top: 5px solid rgba(255, 255, 255, 0.1);
 }
-html #aboutCoupOEil #sectionRightCard #nbrFormationCard p {
+html #aboutCoupOEil #sectionRight #sectionRightCard #nbrFormationCard p {
   font-size: 12px;
   color: rgba(255, 255, 255, 0.4);
 }
-html #aboutCoupOEil #sectionDownCard #sectionCardAbout {
+html #aboutCoupOEil #sectionRight #sectionDownRightCard #logiCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 580px;
+  height: 167.5px;
+  border-radius: 16px;
+  border: 1px solid rgba(5, 223, 114, 0.2);
+  background: linear-gradient(135deg, rgba(0, 201, 80, 0.1) 0%, rgba(0, 188, 125, 0.1) 100%);
+  color: rgb(255, 255, 255);
+  gap: 16px;
+}
+html #aboutCoupOEil #sectionRight #sectionDownRightCard #logiCard h1 {
+  color: #05DF72;
+  font-size: 36px;
+}
+html #aboutCoupOEil #sectionRight #sectionDownRightCard #logiCard p {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 14px;
+  text-transform: uppercase;
+}
+html #aboutCoupOEil #sectionRight #sectionDownRightCard #logiCard #tag {
   display: flex;
   flex-direction: row;
+  gap: 8px;
 }
-html #aboutCoupOEil #sectionDownCard #sectionCardAbout #progCard {
+html #aboutCoupOEil #sectionRight #sectionDownRightCard #logiCard #tag li {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
-  border-radius: 1rem;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  background: rgba(255, 255, 255, 0.05);
-  width: 278px;
-  height: 167.5px;
-}
-html #aboutCoupOEil #sectionDownCard #sectionCardAbout #progCard img {
-  height: 24px;
-  padding: 13px;
-  border-radius: 14px;
-  border: 1px solid rgba(0, 211, 242, 0.3);
-  background: rgba(0, 184, 219, 0.2);
-}
-html #aboutCoupOEil #sectionDownCard #sectionCardAbout #informaCard {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  border-radius: 1rem;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  background: rgba(255, 255, 255, 0.05);
-  width: 278px;
-  height: 167.5px;
-}
-html #aboutCoupOEil #sectionDownCard #sectionCardAbout #informaCard img {
-  height: 24px;
-  padding: 13px;
-  border-radius: 14px;
-  border: 1px solid rgba(251, 100, 182, 0.3);
-  background: rgba(246, 51, 154, 0.2);
-}
-html #aboutCoupOEil #sectionDownCard #sectionCardAbout #logiMaitriseCard {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  border-radius: 1rem;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  background: rgba(255, 255, 255, 0.05);
-  height: 167.5px;
-}
-html #aboutCoupOEil #sectionDownCard #sectionCardAbout #logiMaitriseCard img {
-  height: 24px;
+  height: 26px;
+  padding: 4px 12px;
+  border-radius: 10px;
+  border: 1px solid rgba(5, 223, 114, 0.2);
+  background: rgba(0, 201, 80, 0.1);
+  list-style: none;
 }
 html footer {
   display: flex;

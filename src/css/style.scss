@@ -29,6 +29,9 @@ html {
   overflow-x: hidden;
   background-color: $bg-color-dark;
 
+  @media (max-width: 1100px) {
+  }
+
   #homeAmbiance {
     display: flex;
     justify-content: center;
@@ -1059,27 +1062,34 @@ html {
     margin: 0 auto;
     gap: 25px;
 
-    #infosEssential {
+    #sectionLeft {
       display: flex;
       flex-direction: column;
-      justify-content: center;
-      color: $text-default;
-      background-color: rgba(255, 255, 255, 0.05);
-      border: 1px solid rgba(255, 255, 255, 0.1);
-      box-sizing: border-box;
-
-      border-radius: 24px;
-      //padding: 1px;
-      height: 400px;
-      width: 35%;
       gap: 24px;
-      #infoCard {
+
+      #infosEssential {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        margin: 0 auto;
-        gap: 45px;
-      }
+        color: $text-default;
+        background-color: rgba(255, 255, 255, 0.05);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        box-sizing: border-box;
+
+        border-radius: 24px;
+        //padding: 1px;
+        height: 400px;
+        width: 580px;
+        gap: 24px;
+
+        #infoCard {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          margin: 0 auto;
+          gap: 45px;
+        }
+
         #localisation,
         #mobilité,
         #disponibilité,
@@ -1094,136 +1104,14 @@ html {
             flex-direction: row;
           }
         }
-    }
-    #sectionRightCard {
-      display: grid;
-      grid-template-columns: 10fr 1fr;
-      justify-items: center;
-      align-items: center;
-      gap: 25px;
-      width: 580px;
-      height: 402px;
-      color: $text-default;
-
-      #jvCard {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        border-radius: 1rem;
-        border: 1px solid rgba(255, 255, 255, 0.10);
-        background: rgba(255, 255, 255, 0.05);
-        width: 278px;
-        height: 167.5px;
-        gap: 12px;
-
-        img {
-          height: 24px;
-          padding: 13px;
-          border-radius: 14px;
-          border: 1px solid rgba(81, 162, 255, 0.30);
-          background: rgba(43, 127, 255, 0.20);
-        }
-
       }
 
-      #graphCard {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        border-radius: 1rem;
-        border: 1px solid rgba(255, 255, 255, 0.10);
-        background: rgba(255, 255, 255, 0.05);
-        width: 278px;
-        height: 167.5px;
-        gap: 12px;
-
-        img {
-          height: 24px;
-          padding: 13px;
-          border-radius: 14px;
-          border: 1px solid rgba(194, 122, 255, 0.30);
-          background: rgba(173, 70, 255, 0.20);
-        }
-      }
-
-      #yearCard {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        border-radius: 16px;
-        border: 1px solid rgba(0, 211, 242, 0.20);
-        background: linear-gradient(135deg, rgba(0, 184, 219, 0.10) 0%, rgba(43, 127, 255, 0.10) 100%);width: 278px;
-        height: 199px;
-
-        img {
-          height: 24px;
-        }
-
-        h1 {
-          color: #00D3F2;
-          font-size: 60px;
-          font-weight: 400;
-        }
-        p {
-          color: rgba(255, 255, 255, 0.60);
-          font-size: 14px;
-          text-transform: uppercase;
-        }
-        #barre {
-          display: flex;
-          height: 29px;
-          padding-top: 13px;
-          border-top: 5px solid rgba(255, 255, 255, 0.10);
-        }
-        p {
-          font-size: 12px;
-          color: rgba(255, 255, 255, 0.40);
-        }
-      }
-      #nbrFormationCard {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        border-radius: 16px;
-        border: 1px solid rgba(194, 122, 255, 0.20);
-        background: linear-gradient(135deg, rgba(173, 70, 255, 0.10) 0%, rgba(246, 51, 154, 0.10) 100%);width: 278px;
-        height: 199px;
-
-        img {
-          height: 24px;
-        }
-
-        h1 {
-          color: #C27AFF;
-          font-size: 60px;
-          font-weight: 400;
-        }
-        p {
-          color: rgba(255, 255, 255, 0.60);
-          font-size: 14px;
-          text-transform: uppercase;
-        }
-        #barre {
-          display: flex;
-          height: 29px;
-          padding-top: 13px;
-          border-top: 5px solid rgba(255, 255, 255, 0.10);
-        }
-        p {
-          font-size: 12px;
-          color: rgba(255, 255, 255, 0.40);
-        }
-      }
-    }
-    #sectionDownCard {
-
-      #sectionCardAbout {
+      #sectionDownLeftCard {
         display: flex;
         flex-direction: row;
+        gap: 24px;
+        color: $text-default;
+
         #progCard {
           display: flex;
           flex-direction: column;
@@ -1234,6 +1122,7 @@ html {
           background: rgba(255, 255, 255, 0.05);
           width: 278px;
           height: 167.5px;
+          gap: 12px;
 
           img {
             height: 24px;
@@ -1241,6 +1130,208 @@ html {
             border-radius: 14px;
             border: 1px solid rgba(0, 211, 242, 0.30);
             background: rgba(0, 184, 219, 0.20);
+          }
+
+        }
+
+        #informaCard {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          border-radius: 1rem;
+          border: 1px solid rgba(255, 255, 255, 0.10);
+          background: rgba(255, 255, 255, 0.05);
+          width: 278px;
+          height: 149,7px;
+          gap: 12px;
+
+          img {
+            height: 24px;
+            padding: 13px;
+            border-radius: 14px;
+            border: 1px solid rgba(251, 100, 182, 0.30);
+            background: rgba(246, 51, 154, 0.20);
+          }
+
+        }
+      }
+    }
+
+    #sectionRight {
+      display: flex;
+      flex-direction: column;
+      gap: 22.5px;
+      #sectionRightCard {
+        display: grid;
+        grid-template-columns: 10fr 1fr;
+        justify-items: center;
+        align-items: center;
+        gap: 25px;
+        width: 580px;
+        height: 402px;
+        color: $text-default;
+
+        #jvCard {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          border-radius: 1rem;
+          border: 1px solid rgba(255, 255, 255, 0.10);
+          background: rgba(255, 255, 255, 0.05);
+          width: 278px;
+          height: 167.5px;
+          gap: 12px;
+
+          img {
+            height: 24px;
+            padding: 13px;
+            border-radius: 14px;
+            border: 1px solid rgba(81, 162, 255, 0.30);
+            background: rgba(43, 127, 255, 0.20);
+          }
+
+        }
+
+        #graphCard {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          border-radius: 1rem;
+          border: 1px solid rgba(255, 255, 255, 0.10);
+          background: rgba(255, 255, 255, 0.05);
+          width: 278px;
+          height: 167.5px;
+          gap: 12px;
+
+          img {
+            height: 24px;
+            padding: 13px;
+            border-radius: 14px;
+            border: 1px solid rgba(194, 122, 255, 0.30);
+            background: rgba(173, 70, 255, 0.20);
+          }
+        }
+
+        #yearCard {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          border-radius: 16px;
+          border: 1px solid rgba(0, 211, 242, 0.20);
+          background: linear-gradient(135deg, rgba(0, 184, 219, 0.10) 0%, rgba(43, 127, 255, 0.10) 100%);
+          width: 278px;
+          height: 199px;
+          gap: 9px;
+
+          img {
+            height: 24px;
+          }
+
+          h1 {
+            color: #00D3F2;
+            font-size: 60px;
+            font-weight: 400;
+          }
+
+          p {
+            color: rgba(255, 255, 255, 0.60);
+            font-size: 14px;
+            text-transform: uppercase;
+          }
+
+          #barre {
+            display: flex;
+            height: 29px;
+            padding-top: 13px;
+            border-top: 5px solid rgba(255, 255, 255, 0.10);
+          }
+
+          p {
+            font-size: 12px;
+            color: rgba(255, 255, 255, 0.40);
+          }
+        }
+
+        #nbrFormationCard {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          border-radius: 16px;
+          border: 1px solid rgba(194, 122, 255, 0.20);
+          background: linear-gradient(135deg, rgba(173, 70, 255, 0.10) 0%, rgba(246, 51, 154, 0.10) 100%);
+          width: 278px;
+          height: 199px;
+          gap: 9px;
+          img {
+            height: 24px;
+          }
+
+          h1 {
+            color: #C27AFF;
+            font-size: 60px;
+            font-weight: 400;
+          }
+
+          p {
+            color: rgba(255, 255, 255, 0.60);
+            font-size: 14px;
+            text-transform: uppercase;
+          }
+
+          #barre {
+            display: flex;
+            height: 29px;
+            padding-top: 13px;
+            border-top: 5px solid rgba(255, 255, 255, 0.10);
+          }
+
+          p {
+            font-size: 12px;
+            color: rgba(255, 255, 255, 0.40);
+          }
+        }
+      }
+      #sectionDownRightCard {
+        #logiCard {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          width: 580px;
+          height: 167.5px;
+          border-radius: 16px;
+          border: 1px solid rgba(5, 223, 114, 0.20);
+          background: linear-gradient(135deg, rgba(0, 201, 80, 0.10) 0%, rgba(0, 188, 125, 0.10) 100%);
+          color: $text-default;
+          gap: 16px;
+          h1 {
+            color: #05DF72;
+            font-size: 36px;
+          }
+          p {
+            color: rgba(255, 255, 255, 0.60);
+            font-size: 14px;
+            text-transform: uppercase;
+          }
+          #tag {
+            display: flex;
+            flex-direction: row;
+            gap: 8px;
+            li {
+              display: flex;
+              align-items: center;
+              height: 26px;
+              padding: 4px 12px;
+              border-radius: 10px;
+              border: 1px solid rgba(5, 223, 114, 0.20);
+              background: rgba(0, 201, 80, 0.10);
+              list-style: none;
+            }
           }
         }
       }
