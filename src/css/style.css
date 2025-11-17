@@ -980,7 +980,7 @@ html #aboutCoupOEil #sectionLeft #sectionDownLeftCard #informaCard {
   border: 1px solid rgba(255, 255, 255, 0.1);
   background: rgba(255, 255, 255, 0.05);
   width: 278px;
-  height: 149, 7px;
+  height: 149.7px;
   gap: 12px;
 }
 html #aboutCoupOEil #sectionLeft #sectionDownLeftCard #informaCard img {
@@ -1149,6 +1149,280 @@ html #aboutCoupOEil #sectionRight #sectionDownRightCard #logiCard #tag li {
   border: 1px solid rgba(5, 223, 114, 0.2);
   background: rgba(0, 201, 80, 0.1);
   list-style: none;
+}
+html #competenceTitle {
+  margin: 63px 127px 32px 127px;
+}
+html #competenceTitle h1 {
+  color: rgb(255, 255, 255);
+  font-size: 30px;
+}
+html #aboutCompetences {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+html #aboutCompetences #aboutinterCompetences {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  gap: 24px;
+}
+html #aboutCompetences #aboutinterCompetences #cardCompetence1,
+html #aboutCompetences #aboutinterCompetences #cardCompetence2,
+html #aboutCompetences #aboutinterCompetences #cardCompetence3,
+html #aboutCompetences #aboutinterCompetences #cardCompetence4,
+html #aboutCompetences #aboutinterCompetences #cardCompetence5,
+html #aboutCompetences #aboutinterCompetences #cardCompetence6 {
+  width: 378.65px;
+  height: 172px;
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.05);
+}
+html #aboutCompetences #aboutinterCompetences #cardCompetence1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  padding-left: 25px;
+}
+html #aboutCompetences #aboutinterCompetences #cardCompetence1 img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  padding: 13px;
+  margin-bottom: 16px;
+  border-radius: 14px;
+  border: 1px solid rgba(81, 162, 255, 0.3);
+  background: rgba(43, 127, 255, 0.2);
+}
+html #aboutCompetences #aboutinterCompetences #cardCompetence1 h1 {
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+html #aboutCompetences #aboutinterCompetences #cardCompetence1 #liCompetence {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 14px;
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+}
+html #aboutCompetences #aboutinterCompetences #cardCompetence1 #liCompetence #first {
+  list-style: none;
+}
+html #aboutCompetences #aboutinterCompetences #cardCompetence1 #liCompetence li {
+  list-style: circle;
+  margin-right: 25px;
+}
+html #aboutCompetences #aboutinterCompetences #cardCompetence2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  padding-left: 25px;
+}
+html #aboutCompetences #aboutinterCompetences #cardCompetence2 img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  padding: 13px;
+  margin-bottom: 16px;
+  border-radius: 14px;
+  border: 1px solid rgba(81, 162, 255, 0.3);
+  background: rgba(43, 127, 255, 0.2);
+}
+html #aboutCompetences #aboutinterCompetences #cardCompetence2 h1 {
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+html #aboutCompetences #aboutinterCompetences #cardCompetence2 #liCompetence {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 14px;
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+}
+html #aboutCompetences #aboutinterCompetences #cardCompetence2 #liCompetence #first {
+  list-style: none;
+}
+html #aboutCompetences #aboutinterCompetences #cardCompetence2 #liCompetence li {
+  list-style: circle;
+  margin-right: 25px;
+}
+html #aboutCompetences #aboutinterCompetences #cardCompetence3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  padding-left: 25px;
+}
+html #aboutCompetences #aboutinterCompetences #cardCompetence3 img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  padding: 13px;
+  margin-bottom: 16px;
+  border-radius: 14px;
+  border: 1px solid rgba(81, 162, 255, 0.3);
+  background: rgba(43, 127, 255, 0.2);
+}
+html #aboutCompetences #aboutinterCompetences #cardCompetence3 h1 {
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+html #aboutCompetences #aboutinterCompetences #cardCompetence3 #liCompetence {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 14px;
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+}
+html #aboutCompetences #aboutinterCompetences #cardCompetence3 #liCompetence #first {
+  list-style: none;
+}
+html #aboutCompetences #aboutinterCompetences #cardCompetence3 #liCompetence li {
+  list-style: circle;
+  margin-right: 25px;
+}
+html #aboutCompetences #aboutinterCompetences #cardCompetence4 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  padding-left: 25px;
+}
+html #aboutCompetences #aboutinterCompetences #cardCompetence4 img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  padding: 13px;
+  margin-bottom: 16px;
+  border-radius: 14px;
+  border: 1px solid rgba(81, 162, 255, 0.3);
+  background: rgba(43, 127, 255, 0.2);
+}
+html #aboutCompetences #aboutinterCompetences #cardCompetence4 h1 {
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+html #aboutCompetences #aboutinterCompetences #cardCompetence4 #liCompetence {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 14px;
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+}
+html #aboutCompetences #aboutinterCompetences #cardCompetence4 #liCompetence #first {
+  list-style: none;
+}
+html #aboutCompetences #aboutinterCompetences #cardCompetence4 #liCompetence li {
+  list-style: circle;
+  margin-right: 25px;
+}
+html #aboutCompetences #aboutinterCompetences #cardCompetence5 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  padding-left: 25px;
+}
+html #aboutCompetences #aboutinterCompetences #cardCompetence5 img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  padding: 13px;
+  margin-bottom: 16px;
+  border-radius: 14px;
+  border: 1px solid rgba(81, 162, 255, 0.3);
+  background: rgba(43, 127, 255, 0.2);
+}
+html #aboutCompetences #aboutinterCompetences #cardCompetence5 h1 {
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+html #aboutCompetences #aboutinterCompetences #cardCompetence5 #liCompetence {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 14px;
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+}
+html #aboutCompetences #aboutinterCompetences #cardCompetence5 #liCompetence #first {
+  list-style: none;
+}
+html #aboutCompetences #aboutinterCompetences #cardCompetence5 #liCompetence li {
+  list-style: circle;
+  margin-right: 25px;
+}
+html #aboutCompetences #aboutinterCompetences #cardCompetence6 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  padding-left: 25px;
+}
+html #aboutCompetences #aboutinterCompetences #cardCompetence6 img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  padding: 13px;
+  margin-bottom: 16px;
+  border-radius: 14px;
+  border: 1px solid rgba(81, 162, 255, 0.3);
+  background: rgba(43, 127, 255, 0.2);
+}
+html #aboutCompetences #aboutinterCompetences #cardCompetence6 h1 {
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+html #aboutCompetences #aboutinterCompetences #cardCompetence6 #liCompetence {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 14px;
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+}
+html #aboutCompetences #aboutinterCompetences #cardCompetence6 #liCompetence #first {
+  list-style: none;
+}
+html #aboutCompetences #aboutinterCompetences #cardCompetence6 #liCompetence li {
+  list-style: circle;
+  margin-right: 25px;
+}
+html #ExpTitle {
+  margin: 63px 127px 32px 127px;
+}
+html #ExpTitle h1 {
+  color: rgb(255, 255, 255);
+  font-size: 30px;
+}
+html #FormTitle {
+  margin: 63px 127px 32px 127px;
+}
+html #FormTitle h1 {
+  color: rgb(255, 255, 255);
+  font-size: 30px;
 }
 html footer {
   display: flex;

@@ -75,6 +75,7 @@
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_interpreter_path&quot;: &quot;C:/Users/sacha.laville/AppData/Roaming/JetBrains/WebStorm2025.2/node/versions/24.11.1/node&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;settings.javascript.runtime&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
@@ -95,7 +96,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-c7e53b3be11b-JavaScript-WS-253.28294.86" />
+        <option value="bundled-js-predefined-d6986cc7102b-3aa1da707db6-JavaScript-WS-252.27397.92" />
       </set>
     </attachedChunks>
   </component>
@@ -204,6 +205,8 @@
       <workItem from="1762933830358" duration="15130000" />
       <workItem from="1762957713893" duration="3402000" />
       <workItem from="1763025597885" duration="6102000" />
+      <workItem from="1763367307758" duration="622000" />
+      <workItem from="1763368273851" duration="6760000" />
     </task>
     <task id="LOCAL-00001" summary="+fix: fix bug of menu hamburger">
       <option name="closed" value="true" />
