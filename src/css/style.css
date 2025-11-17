@@ -9,6 +9,11 @@ html {
   overflow-x: hidden;
   background-color: #000000;
 }
+@media (max-width: 1100px) {
+  html {
+    overflow-x: hidden;
+  }
+}
 html #homeAmbiance {
   display: flex;
   justify-content: center;
@@ -239,7 +244,7 @@ html body .burger #burgerNav li a {
   transition: all 150ms ease-out;
   padding-right: 10px;
 }
-html #hero {
+html body #hero {
   display: flex;
   flex-direction: column;
   align-items: start;
@@ -247,30 +252,30 @@ html #hero {
   margin-top: 150px;
 }
 @media (max-width: 1100px) {
-  html #hero {
+  html body #hero {
     align-items: center;
     justify-content: center;
     margin-left: 0;
     margin-top: 100px;
   }
 }
-html #hero #hero-title {
+html body #hero #hero-title {
   display: flex;
   flex-direction: column;
   color: rgb(255, 255, 255);
   font-size: 96px;
 }
 @media (max-width: 1100px) {
-  html #hero #hero-title {
+  html body #hero #hero-title {
     text-align: center;
   }
 }
 @media (max-width: 500px) {
-  html #hero #hero-title {
+  html body #hero #hero-title {
     font-size: 48px;
   }
 }
-html #hero #hero-subtitle {
+html body #hero #hero-subtitle {
   margin-top: 15px;
   color: #51A2FF;
   font-size: 48px;
@@ -278,16 +283,16 @@ html #hero #hero-subtitle {
   line-height: 48px; /* 100% */
 }
 @media (max-width: 1100px) {
-  html #hero #hero-subtitle {
+  html body #hero #hero-subtitle {
     text-align: center;
   }
 }
 @media (max-width: 650px) {
-  html #hero #hero-subtitle {
+  html body #hero #hero-subtitle {
     font-size: 24px;
   }
 }
-html #hero #hero-description {
+html body #hero #hero-description {
   margin-top: 33px;
   color: rgba(255, 255, 255, 0.8);
   font-size: 20px;
@@ -295,38 +300,38 @@ html #hero #hero-description {
   line-height: 140%;
 }
 @media (max-width: 1100px) {
-  html #hero #hero-description {
+  html body #hero #hero-description {
     text-align: start;
   }
 }
 @media (max-width: 650px) {
-  html #hero #hero-description {
+  html body #hero #hero-description {
     width: 345px;
   }
 }
-html #hero #hero-icon {
+html body #hero #hero-icon {
   margin-top: 48px;
   display: flex;
   flex-direction: row;
   gap: 16px;
 }
-html #hero #hero-icon #github, html #hero #hero-icon #linkedin, html #hero #hero-icon #mailto {
+html body #hero #hero-icon #github, html body #hero #hero-icon #linkedin, html body #hero #hero-icon #mailto {
   padding: 17px;
   border-radius: 16px;
   border: 1px solid rgba(255, 255, 255, 0.2);
   background: rgba(255, 255, 255, 0.1);
   transition: all 150ms ease-in-out;
 }
-html #hero #hero-icon #github:hover, html #hero #hero-icon #linkedin:hover, html #hero #hero-icon #mailto:hover {
+html body #hero #hero-icon #github:hover, html body #hero #hero-icon #linkedin:hover, html body #hero #hero-icon #mailto:hover {
   transform: scale(1.1);
   border: 1px solid rgba(81, 162, 255, 0.5);
   background: rgba(255, 255, 255, 0.1);
 }
-html #hero #hero-icon #github img, html #hero #hero-icon #linkedin img, html #hero #hero-icon #mailto img {
+html body #hero #hero-icon #github img, html body #hero #hero-icon #linkedin img, html body #hero #hero-icon #mailto img {
   height: 24px;
   width: 24px;
 }
-html #hero #hero-links {
+html body #hero #hero-links {
   display: flex;
   flex-direction: row;
   margin-top: 40px;
@@ -334,34 +339,34 @@ html #hero #hero-links {
   height: 58px;
 }
 @media (max-width: 1100px) {
-  html #hero #hero-links {
+  html body #hero #hero-links {
     flex-direction: column;
   }
 }
-html #hero #hero-links #hero-links-project, html #hero #hero-links #hero-links-contact {
+html body #hero #hero-links #hero-links-project, html body #hero #hero-links #hero-links-contact {
   color: rgb(255, 255, 255);
   text-decoration: none;
   transition: all 150ms ease-in-out;
 }
-html #hero #hero-links #hero-links-project:hover {
+html body #hero #hero-links #hero-links-project:hover {
   transform: scale(1.1);
   border: 1px solid rgba(81, 162, 255, 0.3);
   background: rgba(43, 127, 255, 0.5);
 }
-html #hero #hero-links #hero-links-contact:hover {
+html body #hero #hero-links #hero-links-contact:hover {
   transform: scale(1.1);
 }
-html #hero #hero-links #hero-links-project {
+html body #hero #hero-links #hero-links-project {
   padding: 16px 33px 18px 33px;
   border-radius: 16px;
   border: 1px solid rgba(81, 162, 255, 0.5);
   background: rgba(43, 127, 255, 0.2);
 }
-html #hero #hero-links #hero-links-project, html #hero #hero-links img {
+html body #hero #hero-links #hero-links-project, html body #hero #hero-links img {
   display: flex;
   align-items: center;
 }
-html #hero #hero-links #hero-links-contact {
+html body #hero #hero-links #hero-links-contact {
   display: flex;
   align-items: center;
   padding: 16px 32.594px 18px 33px;
@@ -369,7 +374,7 @@ html #hero #hero-links #hero-links-contact {
   border: 1px solid rgba(255, 255, 255, 0.2);
   background: rgba(255, 255, 255, 0.1);
 }
-html #interTitre {
+html body #interTitre {
   display: flex;
   flex-direction: column;
   gap: 17px;
@@ -378,73 +383,73 @@ html #interTitre {
   padding-top: 170px;
 }
 @media (max-width: 1100px) {
-  html #interTitre {
+  html body #interTitre {
     display: none;
   }
 }
-html #interTitre h1 {
+html body #interTitre h1 {
   font-size: 60px;
   color: rgb(255, 255, 255);
   text-transform: uppercase;
 }
-html #interTitre p {
+html body #interTitre p {
   font-size: 20px;
   color: rgba(255, 255, 255, 0.8);
 }
-html #selection {
+html body #selection {
   display: flex;
   flex-direction: column;
   margin: 80px 300px 0 300px;
   gap: 130px;
 }
 @media (max-width: 1100px) {
-  html #selection {
+  html body #selection {
     display: none;
   }
 }
-html #selection #selectionCard01 {
+html body #selection #selectionCard01 {
   display: flex;
   gap: 33px;
 }
-html #selection #selectionCard01 #leftSelectCard01 {
+html body #selection #selectionCard01 #leftSelectCard01 {
   display: flex;
   flex-direction: column;
 }
-html #selection #selectionCard01 #midSelectCard01 img {
+html body #selection #selectionCard01 #midSelectCard01 img {
   border-radius: 24px;
   border: 1px solid rgba(255, 255, 255, 0.1);
   transition: all 300ms ease-out;
 }
-html #selection #selectionCard01 #midSelectCard01 img:hover {
+html body #selection #selectionCard01 #midSelectCard01 img:hover {
   transform: scale(1.02);
 }
-html #selection #selectionCard01 #rightSelectCard01 {
+html body #selection #selectionCard01 #rightSelectCard01 {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
-html #selection #selectionCard01 #rightSelectCard01 h1 {
+html body #selection #selectionCard01 #rightSelectCard01 h1 {
   color: rgba(81, 162, 255, 0.7);
   font-size: 72px;
   font-weight: 700;
 }
-html #selection #selectionCard01 #rightSelectCard01 h2 {
+html body #selection #selectionCard01 #rightSelectCard01 h2 {
   color: rgb(255, 255, 255);
   font-size: 36px;
   font-weight: 400;
 }
-html #selection #selectionCard01 #rightSelectCard01 p {
+html body #selection #selectionCard01 #rightSelectCard01 p {
   color: rgba(255, 255, 255, 0.8);
   font-size: 18px;
   font-weight: 400;
 }
-html #selection #selectionCard01 #rightSelectCard01 #selectionTopic {
+html body #selection #selectionCard01 #rightSelectCard01 #selectionTopic {
   display: flex;
   flex-direction: row;
   gap: 8px;
   align-items: center;
 }
-html #selection #selectionCard01 #rightSelectCard01 #selectionTopic li {
+html body #selection #selectionCard01 #rightSelectCard01 #selectionTopic li {
   display: flex;
   flex-direction: row;
   list-style: none;
@@ -454,14 +459,14 @@ html #selection #selectionCard01 #rightSelectCard01 #selectionTopic li {
   border: 1px solid rgba(255, 255, 255, 0.1);
   background: rgba(255, 255, 255, 0.05);
 }
-html #selection #selectionCard01 #rightSelectCard01 #selectionTopic li a {
+html body #selection #selectionCard01 #rightSelectCard01 #selectionTopic li a {
   font-size: 14px;
 }
-html #selection #selectionCard01 #rightSelectCard01 #selectionMore {
+html body #selection #selectionCard01 #rightSelectCard01 #selectionMore {
   display: flex;
   gap: 16px;
 }
-html #selection #selectionCard01 #rightSelectCard01 #selectionMore #selectionShowMore {
+html body #selection #selectionCard01 #rightSelectCard01 #selectionMore #selectionShowMore {
   display: flex;
   align-items: center;
   list-style: none;
@@ -472,23 +477,23 @@ html #selection #selectionCard01 #rightSelectCard01 #selectionMore #selectionSho
   transition: all 300ms ease-out;
   gap: 7px;
 }
-html #selection #selectionCard01 #rightSelectCard01 #selectionMore #selectionShowMore img {
+html body #selection #selectionCard01 #rightSelectCard01 #selectionMore #selectionShowMore img {
   transition: all 300ms ease-out;
 }
-html #selection #selectionCard01 #rightSelectCard01 #selectionMore #selectionShowMore img:hover {
+html body #selection #selectionCard01 #rightSelectCard01 #selectionMore #selectionShowMore img:hover {
   transform: translateX(5px) translateY(-5px);
 }
-html #selection #selectionCard01 #rightSelectCard01 #selectionMore #selectionShowMore a {
+html body #selection #selectionCard01 #rightSelectCard01 #selectionMore #selectionShowMore a {
   text-decoration: none;
   color: rgb(255, 255, 255);
   font-size: 16px;
 }
-html #selection #selectionCard01 #rightSelectCard01 #selectionMore #selectionShowMore:hover {
+html body #selection #selectionCard01 #rightSelectCard01 #selectionMore #selectionShowMore:hover {
   border: 1px solid rgba(81, 162, 255, 0.7);
   background: rgba(43, 127, 255, 0.4);
   cursor: pointer;
 }
-html #selection #selectionCard01 #rightSelectCard01 #selectionMore #selectionGithub {
+html body #selection #selectionCard01 #rightSelectCard01 #selectionMore #selectionGithub {
   display: flex;
   align-items: center;
   padding: 0 24px;
@@ -497,49 +502,49 @@ html #selection #selectionCard01 #rightSelectCard01 #selectionMore #selectionGit
   background: rgba(255, 255, 255, 0.1);
   list-style: none;
 }
-html #selection #selectionCard02 {
+html body #selection #selectionCard02 {
   display: flex;
   gap: 33px;
 }
-html #selection #selectionCard02 #leftSelectCard02 {
+html body #selection #selectionCard02 #leftSelectCard02 {
   display: flex;
   flex-direction: column;
 }
-html #selection #selectionCard02 #midSelectCard02 img {
+html body #selection #selectionCard02 #midSelectCard02 img {
   border-radius: 24px;
   border: 1px solid rgba(255, 255, 255, 0.1);
   transition: all 300ms ease-out;
 }
-html #selection #selectionCard02 #midSelectCard02 img:hover {
+html body #selection #selectionCard02 #midSelectCard02 img:hover {
   transform: scale(1.02);
 }
-html #selection #selectionCard02 #rightSelectCard02 {
+html body #selection #selectionCard02 #rightSelectCard02 {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
-html #selection #selectionCard02 #rightSelectCard02 h1 {
+html body #selection #selectionCard02 #rightSelectCard02 h1 {
   color: rgba(81, 162, 255, 0.7);
   font-size: 72px;
   font-weight: 700;
 }
-html #selection #selectionCard02 #rightSelectCard02 h2 {
+html body #selection #selectionCard02 #rightSelectCard02 h2 {
   color: rgb(255, 255, 255);
   font-size: 36px;
   font-weight: 400;
 }
-html #selection #selectionCard02 #rightSelectCard02 p {
+html body #selection #selectionCard02 #rightSelectCard02 p {
   color: rgba(255, 255, 255, 0.8);
   font-size: 18px;
   font-weight: 400;
 }
-html #selection #selectionCard02 #rightSelectCard02 #selectionTopic {
+html body #selection #selectionCard02 #rightSelectCard02 #selectionTopic {
   display: flex;
   flex-direction: row;
   gap: 8px;
   align-items: center;
 }
-html #selection #selectionCard02 #rightSelectCard02 #selectionTopic li {
+html body #selection #selectionCard02 #rightSelectCard02 #selectionTopic li {
   display: flex;
   flex-direction: row;
   list-style: none;
@@ -549,14 +554,14 @@ html #selection #selectionCard02 #rightSelectCard02 #selectionTopic li {
   border: 1px solid rgba(255, 255, 255, 0.1);
   background: rgba(255, 255, 255, 0.05);
 }
-html #selection #selectionCard02 #rightSelectCard02 #selectionTopic li a {
+html body #selection #selectionCard02 #rightSelectCard02 #selectionTopic li a {
   font-size: 14px;
 }
-html #selection #selectionCard02 #rightSelectCard02 #selectionMore {
+html body #selection #selectionCard02 #rightSelectCard02 #selectionMore {
   display: flex;
   gap: 16px;
 }
-html #selection #selectionCard02 #rightSelectCard02 #selectionMore #selectionShowMore {
+html body #selection #selectionCard02 #rightSelectCard02 #selectionMore #selectionShowMore {
   display: flex;
   align-items: center;
   list-style: none;
@@ -567,23 +572,23 @@ html #selection #selectionCard02 #rightSelectCard02 #selectionMore #selectionSho
   transition: all 300ms ease-out;
   gap: 7px;
 }
-html #selection #selectionCard02 #rightSelectCard02 #selectionMore #selectionShowMore img {
+html body #selection #selectionCard02 #rightSelectCard02 #selectionMore #selectionShowMore img {
   transition: all 300ms ease-out;
 }
-html #selection #selectionCard02 #rightSelectCard02 #selectionMore #selectionShowMore img:hover {
+html body #selection #selectionCard02 #rightSelectCard02 #selectionMore #selectionShowMore img:hover {
   transform: translateX(5px) translateY(-5px);
 }
-html #selection #selectionCard02 #rightSelectCard02 #selectionMore #selectionShowMore a {
+html body #selection #selectionCard02 #rightSelectCard02 #selectionMore #selectionShowMore a {
   text-decoration: none;
   color: rgb(255, 255, 255);
   font-size: 16px;
 }
-html #selection #selectionCard02 #rightSelectCard02 #selectionMore #selectionShowMore:hover {
+html body #selection #selectionCard02 #rightSelectCard02 #selectionMore #selectionShowMore:hover {
   border: 1px solid rgba(81, 162, 255, 0.7);
   background: rgba(43, 127, 255, 0.4);
   cursor: pointer;
 }
-html #selection #selectionCard02 #rightSelectCard02 #selectionMore #selectionGithub {
+html body #selection #selectionCard02 #rightSelectCard02 #selectionMore #selectionGithub {
   display: flex;
   align-items: center;
   padding: 0 24px;
@@ -592,49 +597,49 @@ html #selection #selectionCard02 #rightSelectCard02 #selectionMore #selectionGit
   background: rgba(255, 255, 255, 0.1);
   list-style: none;
 }
-html #selection #selectionCard03 {
+html body #selection #selectionCard03 {
   display: flex;
   gap: 33px;
 }
-html #selection #selectionCard03 #leftSelectCard03 {
+html body #selection #selectionCard03 #leftSelectCard03 {
   display: flex;
   flex-direction: column;
 }
-html #selection #selectionCard03 #midSelectCard03 img {
+html body #selection #selectionCard03 #midSelectCard03 img {
   border-radius: 24px;
   border: 1px solid rgba(255, 255, 255, 0.1);
   transition: all 300ms ease-out;
 }
-html #selection #selectionCard03 #midSelectCard03 img:hover {
+html body #selection #selectionCard03 #midSelectCard03 img:hover {
   transform: scale(1.02);
 }
-html #selection #selectionCard03 #rightSelectCard03 {
+html body #selection #selectionCard03 #rightSelectCard03 {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
-html #selection #selectionCard03 #rightSelectCard03 h1 {
+html body #selection #selectionCard03 #rightSelectCard03 h1 {
   color: rgba(81, 162, 255, 0.7);
   font-size: 72px;
   font-weight: 700;
 }
-html #selection #selectionCard03 #rightSelectCard03 h2 {
+html body #selection #selectionCard03 #rightSelectCard03 h2 {
   color: rgb(255, 255, 255);
   font-size: 36px;
   font-weight: 400;
 }
-html #selection #selectionCard03 #rightSelectCard03 p {
+html body #selection #selectionCard03 #rightSelectCard03 p {
   color: rgba(255, 255, 255, 0.8);
   font-size: 18px;
   font-weight: 400;
 }
-html #selection #selectionCard03 #rightSelectCard03 #selectionTopic {
+html body #selection #selectionCard03 #rightSelectCard03 #selectionTopic {
   display: flex;
   flex-direction: row;
   gap: 8px;
   align-items: center;
 }
-html #selection #selectionCard03 #rightSelectCard03 #selectionTopic li {
+html body #selection #selectionCard03 #rightSelectCard03 #selectionTopic li {
   display: flex;
   flex-direction: row;
   list-style: none;
@@ -644,14 +649,14 @@ html #selection #selectionCard03 #rightSelectCard03 #selectionTopic li {
   border: 1px solid rgba(255, 255, 255, 0.1);
   background: rgba(255, 255, 255, 0.05);
 }
-html #selection #selectionCard03 #rightSelectCard03 #selectionTopic li a {
+html body #selection #selectionCard03 #rightSelectCard03 #selectionTopic li a {
   font-size: 14px;
 }
-html #selection #selectionCard03 #rightSelectCard03 #selectionMore {
+html body #selection #selectionCard03 #rightSelectCard03 #selectionMore {
   display: flex;
   gap: 16px;
 }
-html #selection #selectionCard03 #rightSelectCard03 #selectionMore #selectionShowMore {
+html body #selection #selectionCard03 #rightSelectCard03 #selectionMore #selectionShowMore {
   display: flex;
   align-items: center;
   list-style: none;
@@ -662,23 +667,23 @@ html #selection #selectionCard03 #rightSelectCard03 #selectionMore #selectionSho
   transition: all 300ms ease-out;
   gap: 7px;
 }
-html #selection #selectionCard03 #rightSelectCard03 #selectionMore #selectionShowMore img {
+html body #selection #selectionCard03 #rightSelectCard03 #selectionMore #selectionShowMore img {
   transition: all 300ms ease-out;
 }
-html #selection #selectionCard03 #rightSelectCard03 #selectionMore #selectionShowMore img:hover {
+html body #selection #selectionCard03 #rightSelectCard03 #selectionMore #selectionShowMore img:hover {
   transform: translateX(5px) translateY(-5px);
 }
-html #selection #selectionCard03 #rightSelectCard03 #selectionMore #selectionShowMore a {
+html body #selection #selectionCard03 #rightSelectCard03 #selectionMore #selectionShowMore a {
   text-decoration: none;
   color: rgb(255, 255, 255);
   font-size: 16px;
 }
-html #selection #selectionCard03 #rightSelectCard03 #selectionMore #selectionShowMore:hover {
+html body #selection #selectionCard03 #rightSelectCard03 #selectionMore #selectionShowMore:hover {
   border: 1px solid rgba(81, 162, 255, 0.7);
   background: rgba(43, 127, 255, 0.4);
   cursor: pointer;
 }
-html #selection #selectionCard03 #rightSelectCard03 #selectionMore #selectionGithub {
+html body #selection #selectionCard03 #rightSelectCard03 #selectionMore #selectionGithub {
   display: flex;
   align-items: center;
   padding: 0 24px;
@@ -687,7 +692,7 @@ html #selection #selectionCard03 #rightSelectCard03 #selectionMore #selectionGit
   background: rgba(255, 255, 255, 0.1);
   list-style: none;
 }
-html #interTitre2 {
+html body #interTitre2 {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -695,23 +700,23 @@ html #interTitre2 {
   margin-top: 97px;
   margin-bottom: 65px;
 }
-html #interTitre2 h1 {
+html body #interTitre2 h1 {
   font-size: 14px;
   font-weight: 400;
   color: rgb(255, 255, 255);
 }
-html #interTitre2 .separate {
+html body #interTitre2 .separate {
   height: 1px;
   background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgba(255, 255, 255, 0.2) 50%, rgba(0, 0, 0, 0) 100%);
 }
-html #cardSection {
+html body #cardSection {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   gap: 26px;
 }
-html #cardSection #card {
+html body #cardSection #card {
   border-radius: 16px;
   border: 1px solid rgba(255, 255, 255, 0.1);
   background: rgba(255, 255, 255, 0.05);
@@ -721,17 +726,17 @@ html #cardSection #card {
   height: 400px;
   transition: all 0.2s ease-out;
 }
-html #cardSection #card #topCard img {
+html body #cardSection #card #topCard img {
   border-radius: 16px 16px 0 0;
 }
-html #cardSection #card #downCard {
+html body #cardSection #card #downCard {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   gap: 18px;
   padding: 20px;
 }
-html #cardSection #card #downCard #cardTitle {
+html body #cardSection #card #downCard #cardTitle {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -739,35 +744,35 @@ html #cardSection #card #downCard #cardTitle {
   color: rgb(255, 255, 255);
   font-size: 20px;
 }
-html #cardSection #card #downCard #cardTitle #cardShow {
+html body #cardSection #card #downCard #cardTitle #cardShow {
   display: flex;
   flex-direction: row;
   align-items: center;
   gap: 8px;
 }
-html #cardSection #card #downCard #cardTitle #cardShow #cardShowMore {
+html body #cardSection #card #downCard #cardTitle #cardShow #cardShowMore {
   padding: 9px;
   border-radius: 10px;
   border: 1px solid rgba(81, 162, 255, 0.3);
   background: rgba(43, 127, 255, 0.2);
 }
-html #cardSection #card #downCard #cardTitle #cardShow #cardGithub {
+html body #cardSection #card #downCard #cardTitle #cardShow #cardGithub {
   padding: 9px;
   border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.2);
   background: rgba(255, 255, 255, 0.1);
 }
-html #cardSection #card #downCard #cardDescription p {
+html body #cardSection #card #downCard #cardDescription p {
   color: rgba(255, 255, 255, 0.8);
   font-size: 14px;
 }
-html #cardSection #card #downCard #cardTopic {
+html body #cardSection #card #downCard #cardTopic {
   display: flex;
   flex-direction: row;
   justify-content: start;
   gap: 8px;
 }
-html #cardSection #card #downCard #cardTopic li {
+html body #cardSection #card #downCard #cardTopic li {
   display: flex;
   align-items: center;
   list-style: none;
@@ -778,11 +783,11 @@ html #cardSection #card #downCard #cardTopic li {
   padding: 6px 12px;
   height: 14px;
 }
-html #cardSection #card:hover {
+html body #cardSection #card:hover {
   border: 1px solid rgba(43, 127, 255, 0.7);
   transform: scale(1.02);
 }
-html #interTitre3 {
+html body #interTitre3 {
   display: flex;
   flex-direction: column;
   gap: 17px;
@@ -791,21 +796,21 @@ html #interTitre3 {
   padding-top: 170px;
 }
 @media (max-width: 1100px) {
-  html #interTitre3 {
+  html body #interTitre3 {
     display: none;
   }
 }
-html #interTitre3 h1 {
+html body #interTitre3 h1 {
   font-size: 60px;
   color: rgb(255, 255, 255);
   text-transform: uppercase;
 }
-html #interTitre3 p {
+html body #interTitre3 p {
   font-size: 20px;
   color: rgba(255, 255, 255, 0.8);
   margin-bottom: 32px;
 }
-html #interTitre3 a {
+html body #interTitre3 a {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -819,15 +824,15 @@ html #interTitre3 a {
   padding: 8px 12px;
   gap: 16px;
 }
-html #aboutSection {
+html body #aboutSection {
   margin-top: 88px;
 }
 @media (max-width: 1100px) {
-  html #aboutSection {
+  html body #aboutSection {
     display: none;
   }
 }
-html #aboutSection #aboutMeCard {
+html body #aboutSection #aboutMeCard {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -836,37 +841,37 @@ html #aboutSection #aboutMeCard {
   border-radius: 24px;
   box-sizing: border-box;
   padding: 49px;
-  width: 85%;
+  width: 80%;
   height: 316px;
   margin: 0 auto;
   gap: 32px;
 }
-html #aboutSection #aboutMeCard h1 {
+html body #aboutSection #aboutMeCard h1 {
   color: rgb(255, 255, 255);
   font-size: 36px;
 }
-html #aboutSection #aboutMeCard h1 span {
+html body #aboutSection #aboutMeCard h1 span {
   color: #2b7fff;
 }
-html #aboutSection #aboutMeCard p {
+html body #aboutSection #aboutMeCard p {
   color: rgba(255, 255, 255, 0.8);
   font-size: 16px;
 }
-html #aboutSection #aboutMeCard h2 {
+html body #aboutSection #aboutMeCard h2 {
   color: rgba(255, 255, 255, 0.8);
   font-size: 14px;
   text-transform: uppercase;
 }
-html #aboutSection #aboutMeCard #aboutMeCD {
+html body #aboutSection #aboutMeCard #aboutMeCD {
   display: flex;
   flex-direction: column;
   gap: 16px;
 }
-html #aboutSection #aboutMeCard #aboutMeCD #aboutMeCDList {
+html body #aboutSection #aboutMeCard #aboutMeCD #aboutMeCDList {
   display: flex;
   gap: 8px;
 }
-html #aboutSection #aboutMeCard #aboutMeCD #aboutMeCDList li {
+html body #aboutSection #aboutMeCard #aboutMeCD #aboutMeCDList li {
   display: flex;
   align-items: center;
   list-style: none;
@@ -880,15 +885,15 @@ html #aboutSection #aboutMeCard #aboutMeCD #aboutMeCDList li {
   gap: 8px;
   transition: all 0.2s ease-out;
 }
-html #aboutSection #aboutMeCard #aboutMeCD #aboutMeCDList li img {
+html body #aboutSection #aboutMeCard #aboutMeCD #aboutMeCDList li img {
   height: 24px;
   width: 24px;
 }
-html #aboutSection #aboutMeCard #aboutMeCD #aboutMeCDList li:hover {
+html body #aboutSection #aboutMeCard #aboutMeCD #aboutMeCDList li:hover {
   background-color: rgba(255, 255, 255, 0.1);
   border: 1px solid rgba(255, 255, 255, 0.25);
 }
-html #interInterTitre {
+html body #interInterTitre {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -898,19 +903,29 @@ html #interInterTitre {
   color: rgb(255, 255, 255);
   margin-bottom: 34px;
 }
-html #aboutCoupOEil {
+@media (max-width: 1100px) {
+  html body #interInterTitre {
+    display: none;
+  }
+}
+html body #aboutCoupOEil {
   display: flex;
   flex-direction: row;
   justify-content: center;
   margin: 0 auto;
   gap: 25px;
 }
-html #aboutCoupOEil #sectionLeft {
+@media (max-width: 1100px) {
+  html body #aboutCoupOEil {
+    display: none;
+  }
+}
+html body #aboutCoupOEil #sectionLeft {
   display: flex;
   flex-direction: column;
   gap: 24px;
 }
-html #aboutCoupOEil #sectionLeft #infosEssential {
+html body #aboutCoupOEil #sectionLeft #infosEssential {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -923,36 +938,36 @@ html #aboutCoupOEil #sectionLeft #infosEssential {
   width: 580px;
   gap: 24px;
 }
-html #aboutCoupOEil #sectionLeft #infosEssential #infoCard {
+html body #aboutCoupOEil #sectionLeft #infosEssential #infoCard {
   display: flex;
   flex-direction: column;
   justify-content: center;
   margin: 0 auto;
   gap: 45px;
 }
-html #aboutCoupOEil #sectionLeft #infosEssential #localisation,
-html #aboutCoupOEil #sectionLeft #infosEssential #mobilité,
-html #aboutCoupOEil #sectionLeft #infosEssential #disponibilité,
-html #aboutCoupOEil #sectionLeft #infosEssential #status {
+html body #aboutCoupOEil #sectionLeft #infosEssential #localisation,
+html body #aboutCoupOEil #sectionLeft #infosEssential #mobilité,
+html body #aboutCoupOEil #sectionLeft #infosEssential #disponibilité,
+html body #aboutCoupOEil #sectionLeft #infosEssential #status {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-html #aboutCoupOEil #sectionLeft #infosEssential #localisation #infosTitle,
-html #aboutCoupOEil #sectionLeft #infosEssential #mobilité #infosTitle,
-html #aboutCoupOEil #sectionLeft #infosEssential #disponibilité #infosTitle,
-html #aboutCoupOEil #sectionLeft #infosEssential #status #infosTitle {
+html body #aboutCoupOEil #sectionLeft #infosEssential #localisation #infosTitle,
+html body #aboutCoupOEil #sectionLeft #infosEssential #mobilité #infosTitle,
+html body #aboutCoupOEil #sectionLeft #infosEssential #disponibilité #infosTitle,
+html body #aboutCoupOEil #sectionLeft #infosEssential #status #infosTitle {
   display: flex;
   gap: 12px;
   flex-direction: row;
 }
-html #aboutCoupOEil #sectionLeft #sectionDownLeftCard {
+html body #aboutCoupOEil #sectionLeft #sectionDownLeftCard {
   display: flex;
   flex-direction: row;
   gap: 24px;
   color: rgb(255, 255, 255);
 }
-html #aboutCoupOEil #sectionLeft #sectionDownLeftCard #progCard {
+html body #aboutCoupOEil #sectionLeft #sectionDownLeftCard #progCard {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -964,14 +979,14 @@ html #aboutCoupOEil #sectionLeft #sectionDownLeftCard #progCard {
   height: 167.5px;
   gap: 12px;
 }
-html #aboutCoupOEil #sectionLeft #sectionDownLeftCard #progCard img {
+html body #aboutCoupOEil #sectionLeft #sectionDownLeftCard #progCard img {
   height: 24px;
   padding: 13px;
   border-radius: 14px;
   border: 1px solid rgba(0, 211, 242, 0.3);
   background: rgba(0, 184, 219, 0.2);
 }
-html #aboutCoupOEil #sectionLeft #sectionDownLeftCard #informaCard {
+html body #aboutCoupOEil #sectionLeft #sectionDownLeftCard #informaCard {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -980,22 +995,22 @@ html #aboutCoupOEil #sectionLeft #sectionDownLeftCard #informaCard {
   border: 1px solid rgba(255, 255, 255, 0.1);
   background: rgba(255, 255, 255, 0.05);
   width: 278px;
-  height: 149.7px;
+  height: 167.5px;
   gap: 12px;
 }
-html #aboutCoupOEil #sectionLeft #sectionDownLeftCard #informaCard img {
+html body #aboutCoupOEil #sectionLeft #sectionDownLeftCard #informaCard img {
   height: 24px;
   padding: 13px;
   border-radius: 14px;
   border: 1px solid rgba(251, 100, 182, 0.3);
   background: rgba(246, 51, 154, 0.2);
 }
-html #aboutCoupOEil #sectionRight {
+html body #aboutCoupOEil #sectionRight {
   display: flex;
   flex-direction: column;
   gap: 22.5px;
 }
-html #aboutCoupOEil #sectionRight #sectionRightCard {
+html body #aboutCoupOEil #sectionRight #sectionRightCard {
   display: grid;
   grid-template-columns: 10fr 1fr;
   justify-items: center;
@@ -1005,7 +1020,7 @@ html #aboutCoupOEil #sectionRight #sectionRightCard {
   height: 402px;
   color: rgb(255, 255, 255);
 }
-html #aboutCoupOEil #sectionRight #sectionRightCard #jvCard {
+html body #aboutCoupOEil #sectionRight #sectionRightCard #jvCard {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1017,14 +1032,14 @@ html #aboutCoupOEil #sectionRight #sectionRightCard #jvCard {
   height: 167.5px;
   gap: 12px;
 }
-html #aboutCoupOEil #sectionRight #sectionRightCard #jvCard img {
+html body #aboutCoupOEil #sectionRight #sectionRightCard #jvCard img {
   height: 24px;
   padding: 13px;
   border-radius: 14px;
   border: 1px solid rgba(81, 162, 255, 0.3);
   background: rgba(43, 127, 255, 0.2);
 }
-html #aboutCoupOEil #sectionRight #sectionRightCard #graphCard {
+html body #aboutCoupOEil #sectionRight #sectionRightCard #graphCard {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1036,14 +1051,14 @@ html #aboutCoupOEil #sectionRight #sectionRightCard #graphCard {
   height: 167.5px;
   gap: 12px;
 }
-html #aboutCoupOEil #sectionRight #sectionRightCard #graphCard img {
+html body #aboutCoupOEil #sectionRight #sectionRightCard #graphCard img {
   height: 24px;
   padding: 13px;
   border-radius: 14px;
   border: 1px solid rgba(194, 122, 255, 0.3);
   background: rgba(173, 70, 255, 0.2);
 }
-html #aboutCoupOEil #sectionRight #sectionRightCard #yearCard {
+html body #aboutCoupOEil #sectionRight #sectionRightCard #yearCard {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1055,30 +1070,30 @@ html #aboutCoupOEil #sectionRight #sectionRightCard #yearCard {
   height: 199px;
   gap: 9px;
 }
-html #aboutCoupOEil #sectionRight #sectionRightCard #yearCard img {
+html body #aboutCoupOEil #sectionRight #sectionRightCard #yearCard img {
   height: 24px;
 }
-html #aboutCoupOEil #sectionRight #sectionRightCard #yearCard h1 {
+html body #aboutCoupOEil #sectionRight #sectionRightCard #yearCard h1 {
   color: #00D3F2;
   font-size: 60px;
   font-weight: 400;
 }
-html #aboutCoupOEil #sectionRight #sectionRightCard #yearCard p {
+html body #aboutCoupOEil #sectionRight #sectionRightCard #yearCard p {
   color: rgba(255, 255, 255, 0.6);
   font-size: 14px;
   text-transform: uppercase;
 }
-html #aboutCoupOEil #sectionRight #sectionRightCard #yearCard #barre {
+html body #aboutCoupOEil #sectionRight #sectionRightCard #yearCard #barre {
   display: flex;
   height: 29px;
   padding-top: 13px;
   border-top: 5px solid rgba(255, 255, 255, 0.1);
 }
-html #aboutCoupOEil #sectionRight #sectionRightCard #yearCard p {
+html body #aboutCoupOEil #sectionRight #sectionRightCard #yearCard p {
   font-size: 12px;
   color: rgba(255, 255, 255, 0.4);
 }
-html #aboutCoupOEil #sectionRight #sectionRightCard #nbrFormationCard {
+html body #aboutCoupOEil #sectionRight #sectionRightCard #nbrFormationCard {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1090,30 +1105,30 @@ html #aboutCoupOEil #sectionRight #sectionRightCard #nbrFormationCard {
   height: 199px;
   gap: 9px;
 }
-html #aboutCoupOEil #sectionRight #sectionRightCard #nbrFormationCard img {
+html body #aboutCoupOEil #sectionRight #sectionRightCard #nbrFormationCard img {
   height: 24px;
 }
-html #aboutCoupOEil #sectionRight #sectionRightCard #nbrFormationCard h1 {
+html body #aboutCoupOEil #sectionRight #sectionRightCard #nbrFormationCard h1 {
   color: #C27AFF;
   font-size: 60px;
   font-weight: 400;
 }
-html #aboutCoupOEil #sectionRight #sectionRightCard #nbrFormationCard p {
+html body #aboutCoupOEil #sectionRight #sectionRightCard #nbrFormationCard p {
   color: rgba(255, 255, 255, 0.6);
   font-size: 14px;
   text-transform: uppercase;
 }
-html #aboutCoupOEil #sectionRight #sectionRightCard #nbrFormationCard #barre {
+html body #aboutCoupOEil #sectionRight #sectionRightCard #nbrFormationCard #barre {
   display: flex;
   height: 29px;
   padding-top: 13px;
   border-top: 5px solid rgba(255, 255, 255, 0.1);
 }
-html #aboutCoupOEil #sectionRight #sectionRightCard #nbrFormationCard p {
+html body #aboutCoupOEil #sectionRight #sectionRightCard #nbrFormationCard p {
   font-size: 12px;
   color: rgba(255, 255, 255, 0.4);
 }
-html #aboutCoupOEil #sectionRight #sectionDownRightCard #logiCard {
+html body #aboutCoupOEil #sectionRight #sectionDownRightCard #logiCard {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1126,21 +1141,21 @@ html #aboutCoupOEil #sectionRight #sectionDownRightCard #logiCard {
   color: rgb(255, 255, 255);
   gap: 16px;
 }
-html #aboutCoupOEil #sectionRight #sectionDownRightCard #logiCard h1 {
+html body #aboutCoupOEil #sectionRight #sectionDownRightCard #logiCard h1 {
   color: #05DF72;
   font-size: 36px;
 }
-html #aboutCoupOEil #sectionRight #sectionDownRightCard #logiCard p {
+html body #aboutCoupOEil #sectionRight #sectionDownRightCard #logiCard p {
   color: rgba(255, 255, 255, 0.6);
   font-size: 14px;
   text-transform: uppercase;
 }
-html #aboutCoupOEil #sectionRight #sectionDownRightCard #logiCard #tag {
+html body #aboutCoupOEil #sectionRight #sectionDownRightCard #logiCard #tag {
   display: flex;
   flex-direction: row;
   gap: 8px;
 }
-html #aboutCoupOEil #sectionRight #sectionDownRightCard #logiCard #tag li {
+html body #aboutCoupOEil #sectionRight #sectionDownRightCard #logiCard #tag li {
   display: flex;
   align-items: center;
   height: 26px;
@@ -1150,19 +1165,28 @@ html #aboutCoupOEil #sectionRight #sectionDownRightCard #logiCard #tag li {
   background: rgba(0, 201, 80, 0.1);
   list-style: none;
 }
-html #competenceTitle {
+html body #competenceTitle {
   margin: 63px 127px 32px 127px;
 }
-html #competenceTitle h1 {
+@media (max-width: 1100px) {
+  html body #competenceTitle {
+    margin: 63px 0 32px 0;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+}
+html body #competenceTitle h1 {
   color: rgb(255, 255, 255);
   font-size: 30px;
 }
-html #aboutCompetences {
+html body #aboutCompetences {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 0 auto;
 }
-html #aboutCompetences #aboutinterCompetences {
+html body #aboutCompetences #aboutinterCompetences {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -1170,26 +1194,27 @@ html #aboutCompetences #aboutinterCompetences {
   margin: 0 auto;
   gap: 24px;
 }
-html #aboutCompetences #aboutinterCompetences #cardCompetence1,
-html #aboutCompetences #aboutinterCompetences #cardCompetence2,
-html #aboutCompetences #aboutinterCompetences #cardCompetence3,
-html #aboutCompetences #aboutinterCompetences #cardCompetence4,
-html #aboutCompetences #aboutinterCompetences #cardCompetence5,
-html #aboutCompetences #aboutinterCompetences #cardCompetence6 {
+html body #aboutCompetences #aboutinterCompetences #cardCompetence1,
+html body #aboutCompetences #aboutinterCompetences #cardCompetence2,
+html body #aboutCompetences #aboutinterCompetences #cardCompetence3,
+html body #aboutCompetences #aboutinterCompetences #cardCompetence4,
+html body #aboutCompetences #aboutinterCompetences #cardCompetence5,
+html body #aboutCompetences #aboutinterCompetences #cardCompetence6 {
   width: 378.65px;
   height: 172px;
   border-radius: 16px;
   border: 1px solid rgba(255, 255, 255, 0.1);
   background: rgba(255, 255, 255, 0.05);
+  transition: all 0.1s ease-in-out;
 }
-html #aboutCompetences #aboutinterCompetences #cardCompetence1 {
+html body #aboutCompetences #aboutinterCompetences #cardCompetence1 {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: start;
   padding-left: 25px;
 }
-html #aboutCompetences #aboutinterCompetences #cardCompetence1 img {
+html body #aboutCompetences #aboutinterCompetences #cardCompetence1 img {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1201,33 +1226,36 @@ html #aboutCompetences #aboutinterCompetences #cardCompetence1 img {
   border: 1px solid rgba(81, 162, 255, 0.3);
   background: rgba(43, 127, 255, 0.2);
 }
-html #aboutCompetences #aboutinterCompetences #cardCompetence1 h1 {
+html body #aboutCompetences #aboutinterCompetences #cardCompetence1 h1 {
   color: rgb(255, 255, 255);
   font-size: 20px;
   margin-bottom: 8px;
 }
-html #aboutCompetences #aboutinterCompetences #cardCompetence1 #liCompetence {
+html body #aboutCompetences #aboutinterCompetences #cardCompetence1 #liCompetence {
   color: rgba(255, 255, 255, 0.6);
   font-size: 14px;
   display: flex;
   flex-direction: row;
   list-style: none;
 }
-html #aboutCompetences #aboutinterCompetences #cardCompetence1 #liCompetence #first {
+html body #aboutCompetences #aboutinterCompetences #cardCompetence1 #liCompetence #first {
   list-style: none;
 }
-html #aboutCompetences #aboutinterCompetences #cardCompetence1 #liCompetence li {
+html body #aboutCompetences #aboutinterCompetences #cardCompetence1 #liCompetence li {
   list-style: circle;
   margin-right: 25px;
 }
-html #aboutCompetences #aboutinterCompetences #cardCompetence2 {
+html body #aboutCompetences #aboutinterCompetences #cardCompetence1:hover {
+  border: 1px solid rgba(81, 162, 255, 0.5);
+}
+html body #aboutCompetences #aboutinterCompetences #cardCompetence2 {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: start;
   padding-left: 25px;
 }
-html #aboutCompetences #aboutinterCompetences #cardCompetence2 img {
+html body #aboutCompetences #aboutinterCompetences #cardCompetence2 img {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1236,36 +1264,39 @@ html #aboutCompetences #aboutinterCompetences #cardCompetence2 img {
   padding: 13px;
   margin-bottom: 16px;
   border-radius: 14px;
-  border: 1px solid rgba(81, 162, 255, 0.3);
-  background: rgba(43, 127, 255, 0.2);
+  border: 1px solid rgba(194, 122, 255, 0.3);
+  background: rgba(173, 70, 255, 0.2);
 }
-html #aboutCompetences #aboutinterCompetences #cardCompetence2 h1 {
+html body #aboutCompetences #aboutinterCompetences #cardCompetence2 h1 {
   color: rgb(255, 255, 255);
   font-size: 20px;
   margin-bottom: 8px;
 }
-html #aboutCompetences #aboutinterCompetences #cardCompetence2 #liCompetence {
+html body #aboutCompetences #aboutinterCompetences #cardCompetence2 #liCompetence {
   color: rgba(255, 255, 255, 0.6);
   font-size: 14px;
   display: flex;
   flex-direction: row;
   list-style: none;
 }
-html #aboutCompetences #aboutinterCompetences #cardCompetence2 #liCompetence #first {
+html body #aboutCompetences #aboutinterCompetences #cardCompetence2 #liCompetence #first {
   list-style: none;
 }
-html #aboutCompetences #aboutinterCompetences #cardCompetence2 #liCompetence li {
+html body #aboutCompetences #aboutinterCompetences #cardCompetence2 #liCompetence li {
   list-style: circle;
   margin-right: 25px;
 }
-html #aboutCompetences #aboutinterCompetences #cardCompetence3 {
+html body #aboutCompetences #aboutinterCompetences #cardCompetence2:hover {
+  border: 1px solid rgba(194, 122, 255, 0.5);
+}
+html body #aboutCompetences #aboutinterCompetences #cardCompetence3 {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: start;
   padding-left: 25px;
 }
-html #aboutCompetences #aboutinterCompetences #cardCompetence3 img {
+html body #aboutCompetences #aboutinterCompetences #cardCompetence3 img {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1274,36 +1305,39 @@ html #aboutCompetences #aboutinterCompetences #cardCompetence3 img {
   padding: 13px;
   margin-bottom: 16px;
   border-radius: 14px;
-  border: 1px solid rgba(81, 162, 255, 0.3);
-  background: rgba(43, 127, 255, 0.2);
+  border: 1px solid rgba(0, 211, 242, 0.3);
+  background: rgba(0, 184, 219, 0.2);
 }
-html #aboutCompetences #aboutinterCompetences #cardCompetence3 h1 {
+html body #aboutCompetences #aboutinterCompetences #cardCompetence3 h1 {
   color: rgb(255, 255, 255);
   font-size: 20px;
   margin-bottom: 8px;
 }
-html #aboutCompetences #aboutinterCompetences #cardCompetence3 #liCompetence {
+html body #aboutCompetences #aboutinterCompetences #cardCompetence3 #liCompetence {
   color: rgba(255, 255, 255, 0.6);
   font-size: 14px;
   display: flex;
   flex-direction: row;
   list-style: none;
 }
-html #aboutCompetences #aboutinterCompetences #cardCompetence3 #liCompetence #first {
+html body #aboutCompetences #aboutinterCompetences #cardCompetence3 #liCompetence #first {
   list-style: none;
 }
-html #aboutCompetences #aboutinterCompetences #cardCompetence3 #liCompetence li {
+html body #aboutCompetences #aboutinterCompetences #cardCompetence3 #liCompetence li {
   list-style: circle;
   margin-right: 25px;
 }
-html #aboutCompetences #aboutinterCompetences #cardCompetence4 {
+html body #aboutCompetences #aboutinterCompetences #cardCompetence3:hover {
+  border: 1px solid rgba(0, 211, 242, 0.5);
+}
+html body #aboutCompetences #aboutinterCompetences #cardCompetence4 {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: start;
   padding-left: 25px;
 }
-html #aboutCompetences #aboutinterCompetences #cardCompetence4 img {
+html body #aboutCompetences #aboutinterCompetences #cardCompetence4 img {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1312,36 +1346,39 @@ html #aboutCompetences #aboutinterCompetences #cardCompetence4 img {
   padding: 13px;
   margin-bottom: 16px;
   border-radius: 14px;
-  border: 1px solid rgba(81, 162, 255, 0.3);
-  background: rgba(43, 127, 255, 0.2);
+  border: 1px solid rgba(5, 223, 114, 0.3);
+  background: rgba(0, 201, 80, 0.2);
 }
-html #aboutCompetences #aboutinterCompetences #cardCompetence4 h1 {
+html body #aboutCompetences #aboutinterCompetences #cardCompetence4 h1 {
   color: rgb(255, 255, 255);
   font-size: 20px;
   margin-bottom: 8px;
 }
-html #aboutCompetences #aboutinterCompetences #cardCompetence4 #liCompetence {
+html body #aboutCompetences #aboutinterCompetences #cardCompetence4 #liCompetence {
   color: rgba(255, 255, 255, 0.6);
   font-size: 14px;
   display: flex;
   flex-direction: row;
   list-style: none;
 }
-html #aboutCompetences #aboutinterCompetences #cardCompetence4 #liCompetence #first {
+html body #aboutCompetences #aboutinterCompetences #cardCompetence4 #liCompetence #first {
   list-style: none;
 }
-html #aboutCompetences #aboutinterCompetences #cardCompetence4 #liCompetence li {
+html body #aboutCompetences #aboutinterCompetences #cardCompetence4 #liCompetence li {
   list-style: circle;
   margin-right: 25px;
 }
-html #aboutCompetences #aboutinterCompetences #cardCompetence5 {
+html body #aboutCompetences #aboutinterCompetences #cardCompetence4:hover {
+  border: 1px solid rgba(5, 223, 114, 0.5);
+}
+html body #aboutCompetences #aboutinterCompetences #cardCompetence5 {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: start;
   padding-left: 25px;
 }
-html #aboutCompetences #aboutinterCompetences #cardCompetence5 img {
+html body #aboutCompetences #aboutinterCompetences #cardCompetence5 img {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1350,36 +1387,39 @@ html #aboutCompetences #aboutinterCompetences #cardCompetence5 img {
   padding: 13px;
   margin-bottom: 16px;
   border-radius: 14px;
-  border: 1px solid rgba(81, 162, 255, 0.3);
-  background: rgba(43, 127, 255, 0.2);
+  border: 1px solid rgba(255, 137, 4, 0.3);
+  background: rgba(255, 105, 0, 0.2);
 }
-html #aboutCompetences #aboutinterCompetences #cardCompetence5 h1 {
+html body #aboutCompetences #aboutinterCompetences #cardCompetence5 h1 {
   color: rgb(255, 255, 255);
   font-size: 20px;
   margin-bottom: 8px;
 }
-html #aboutCompetences #aboutinterCompetences #cardCompetence5 #liCompetence {
+html body #aboutCompetences #aboutinterCompetences #cardCompetence5 #liCompetence {
   color: rgba(255, 255, 255, 0.6);
   font-size: 14px;
   display: flex;
   flex-direction: row;
   list-style: none;
 }
-html #aboutCompetences #aboutinterCompetences #cardCompetence5 #liCompetence #first {
+html body #aboutCompetences #aboutinterCompetences #cardCompetence5 #liCompetence #first {
   list-style: none;
 }
-html #aboutCompetences #aboutinterCompetences #cardCompetence5 #liCompetence li {
+html body #aboutCompetences #aboutinterCompetences #cardCompetence5 #liCompetence li {
   list-style: circle;
   margin-right: 25px;
 }
-html #aboutCompetences #aboutinterCompetences #cardCompetence6 {
+html body #aboutCompetences #aboutinterCompetences #cardCompetence5:hover {
+  border: 1px solid rgba(255, 137, 4, 0.5);
+}
+html body #aboutCompetences #aboutinterCompetences #cardCompetence6 {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: start;
   padding-left: 25px;
 }
-html #aboutCompetences #aboutinterCompetences #cardCompetence6 img {
+html body #aboutCompetences #aboutinterCompetences #cardCompetence6 img {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1388,90 +1428,395 @@ html #aboutCompetences #aboutinterCompetences #cardCompetence6 img {
   padding: 13px;
   margin-bottom: 16px;
   border-radius: 14px;
-  border: 1px solid rgba(81, 162, 255, 0.3);
-  background: rgba(43, 127, 255, 0.2);
+  border: 1px solid rgba(251, 100, 182, 0.3);
+  background: rgba(246, 51, 154, 0.2);
 }
-html #aboutCompetences #aboutinterCompetences #cardCompetence6 h1 {
+html body #aboutCompetences #aboutinterCompetences #cardCompetence6 h1 {
   color: rgb(255, 255, 255);
   font-size: 20px;
   margin-bottom: 8px;
 }
-html #aboutCompetences #aboutinterCompetences #cardCompetence6 #liCompetence {
+html body #aboutCompetences #aboutinterCompetences #cardCompetence6 #liCompetence {
   color: rgba(255, 255, 255, 0.6);
   font-size: 14px;
   display: flex;
   flex-direction: row;
   list-style: none;
 }
-html #aboutCompetences #aboutinterCompetences #cardCompetence6 #liCompetence #first {
+html body #aboutCompetences #aboutinterCompetences #cardCompetence6 #liCompetence #first {
   list-style: none;
 }
-html #aboutCompetences #aboutinterCompetences #cardCompetence6 #liCompetence li {
+html body #aboutCompetences #aboutinterCompetences #cardCompetence6 #liCompetence li {
   list-style: circle;
   margin-right: 25px;
 }
-html #ExpTitle {
+html body #aboutCompetences #aboutinterCompetences #cardCompetence6:hover {
+  border: 1px solid rgba(251, 100, 182, 0.6);
+}
+html body #ExpTitle {
   margin: 63px 127px 32px 127px;
 }
-html #ExpTitle h1 {
+html body #ExpTitle h1 {
   color: rgb(255, 255, 255);
   font-size: 30px;
 }
-html #FormTitle {
+html body #aboutExpProffesionnelles {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  gap: 24px;
+}
+html body #aboutExpProffesionnelles #cardExpProffesionnelles1,
+html body #aboutExpProffesionnelles #cardExpProffesionnelles2,
+html body #aboutExpProffesionnelles #cardExpProffesionnelles3 {
+  width: 80%;
+  border-radius: 16px;
+  border: 0.8px solid rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.05);
+}
+html body #aboutExpProffesionnelles #cardExpProffesionnelles1 {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  padding: 32.8px;
+}
+html body #aboutExpProffesionnelles #cardExpProffesionnelles1 #cardExpLeft #bagGreenColorIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  padding: 13px;
+  border-radius: 14px;
+  border: 0.8px solid rgba(5, 223, 114, 0.3);
+  background: rgba(0, 201, 80, 0.2);
+}
+html body #aboutExpProffesionnelles #cardExpProffesionnelles1 #cardExpRight {
+  gap: 16px;
+}
+html body #aboutExpProffesionnelles #cardExpProffesionnelles1 #cardExpRight #cardTitle {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+html body #aboutExpProffesionnelles #cardExpProffesionnelles1 #cardExpRight #cardTitle h1 {
+  font-size: 24px;
+  color: rgb(255, 255, 255);
+}
+html body #aboutExpProffesionnelles #cardExpProffesionnelles1 #cardExpRight #cardTitle li {
+  display: flex;
+  width: 6%;
+  padding: 7px 12px;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  color: #05DF72;
+  font-size: 12px;
+  border-radius: 999px;
+  border: 0.8px solid rgba(5, 223, 114, 0.3);
+  background: rgba(0, 201, 80, 0.2);
+}
+html body #aboutExpProffesionnelles #cardExpProffesionnelles1 #cardExpRight h2 {
+  color: #05DF72;
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 8px;
+}
+html body #aboutExpProffesionnelles #cardExpProffesionnelles1 #cardExpRight #infoExpProffesionnelles {
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
+  margin-top: 16px;
+}
+html body #aboutExpProffesionnelles #cardExpProffesionnelles1 #cardExpRight #infoExpProffesionnelles #ExpproDate {
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
+}
+html body #aboutExpProffesionnelles #cardExpProffesionnelles1 #cardExpRight #infoExpProffesionnelles #ExpproDate img {
+  width: 14px;
+  height: 14px;
+}
+html body #aboutExpProffesionnelles #cardExpProffesionnelles1 #cardExpRight #infoExpProffesionnelles #ExpproDate p {
+  color: rgba(255, 255, 255, 0.5);
+}
+html body #aboutExpProffesionnelles #cardExpProffesionnelles1 #cardExpRight #infoExpProffesionnelles #ExpproLocalisation {
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
+}
+html body #aboutExpProffesionnelles #cardExpProffesionnelles1 #cardExpRight #infoExpProffesionnelles #ExpproLocalisation img {
+  width: 14px;
+  height: 14px;
+}
+html body #aboutExpProffesionnelles #cardExpProffesionnelles1 #cardExpRight #infoExpProffesionnelles #ExpproLocalisation p {
+  color: rgba(255, 255, 255, 0.5);
+}
+html body #aboutExpProffesionnelles #cardExpProffesionnelles1 #cardExpRight p {
+  color: rgba(255, 255, 255, 0.6);
+}
+html body #aboutExpProffesionnelles #cardExpProffesionnelles1 #cardExpRight #ExpTache {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-top: 23.5px;
+}
+html body #aboutExpProffesionnelles #cardExpProffesionnelles1 #cardExpRight #ExpTache li {
+  color: rgba(255, 255, 255, 0.6);
+  line-height: 22.75px;
+}
+html body #aboutExpProffesionnelles #cardExpProffesionnelles1 #cardExpRight #ExpSkill {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  margin-top: 12px;
+}
+html body #aboutExpProffesionnelles #cardExpProffesionnelles1 #cardExpRight #ExpSkill li {
+  border-radius: 10px;
+  border: 0.8px solid rgba(5, 223, 114, 0.2);
+  background: rgba(0, 201, 80, 0.1);
+  padding: 4.8px 8px;
+  color: rgb(255, 255, 255);
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+html body #aboutExpProffesionnelles #cardExpProffesionnelles2 {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  padding: 32.8px;
+}
+html body #aboutExpProffesionnelles #cardExpProffesionnelles2 #cardExpLeft #bagBlueColorIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  padding: 13px;
+  border-radius: 14px;
+  border: 0.8px solid rgba(81, 162, 255, 0.3);
+  background: rgba(43, 127, 255, 0.2);
+}
+html body #aboutExpProffesionnelles #cardExpProffesionnelles2 #cardExpRight #cardTitle {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+html body #aboutExpProffesionnelles #cardExpProffesionnelles2 #cardExpRight #cardTitle h1 {
+  font-size: 24px;
+  color: rgb(255, 255, 255);
+}
+html body #aboutExpProffesionnelles #cardExpProffesionnelles2 #cardExpRight h2 {
+  color: #51A2FF;
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 12px;
+}
+html body #aboutExpProffesionnelles #cardExpProffesionnelles2 #cardExpRight #infoExpProffesionnelles {
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
+  margin-top: 16px;
+}
+html body #aboutExpProffesionnelles #cardExpProffesionnelles2 #cardExpRight #infoExpProffesionnelles #ExpproDate {
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
+}
+html body #aboutExpProffesionnelles #cardExpProffesionnelles2 #cardExpRight #infoExpProffesionnelles #ExpproDate img {
+  width: 14px;
+  height: 14px;
+}
+html body #aboutExpProffesionnelles #cardExpProffesionnelles2 #cardExpRight #infoExpProffesionnelles #ExpproDate p {
+  color: rgba(255, 255, 255, 0.5);
+}
+html body #aboutExpProffesionnelles #cardExpProffesionnelles2 #cardExpRight #infoExpProffesionnelles #ExpproLocalisation {
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
+}
+html body #aboutExpProffesionnelles #cardExpProffesionnelles2 #cardExpRight #infoExpProffesionnelles #ExpproLocalisation img {
+  width: 14px;
+  height: 14px;
+}
+html body #aboutExpProffesionnelles #cardExpProffesionnelles2 #cardExpRight #infoExpProffesionnelles #ExpproLocalisation p {
+  color: rgba(255, 255, 255, 0.5);
+}
+html body #aboutExpProffesionnelles #cardExpProffesionnelles2 #cardExpRight #ExpTache {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-top: 23.5px;
+}
+html body #aboutExpProffesionnelles #cardExpProffesionnelles2 #cardExpRight #ExpTache li {
+  color: rgba(255, 255, 255, 0.6);
+  line-height: 22.75px;
+}
+html body #aboutExpProffesionnelles #cardExpProffesionnelles2 #cardExpRight #ExpSkill {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  margin-top: 12px;
+}
+html body #aboutExpProffesionnelles #cardExpProffesionnelles2 #cardExpRight #ExpSkill li {
+  border-radius: 10px;
+  border: 0.8px solid rgba(81, 162, 255, 0.2);
+  background: rgba(43, 127, 255, 0.1);
+  padding: 4.8px 8px;
+  color: rgb(255, 255, 255);
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+html body #aboutExpProffesionnelles #cardExpProffesionnelles3 {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  padding: 32.8px;
+}
+html body #aboutExpProffesionnelles #cardExpProffesionnelles3 #cardExpLeft #bagPurpleColorIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  padding: 13px;
+  border-radius: 14px;
+  border: 0.8px solid rgba(194, 122, 255, 0.3);
+  background: rgba(173, 70, 255, 0.2);
+}
+html body #aboutExpProffesionnelles #cardExpProffesionnelles3 #cardExpRight {
+  gap: 16px;
+}
+html body #aboutExpProffesionnelles #cardExpProffesionnelles3 #cardExpRight #cardTitle {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+html body #aboutExpProffesionnelles #cardExpProffesionnelles3 #cardExpRight #cardTitle h1 {
+  font-size: 24px;
+  color: rgb(255, 255, 255);
+}
+html body #aboutExpProffesionnelles #cardExpProffesionnelles3 #cardExpRight h2 {
+  color: #C27AFF;
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 12px;
+}
+html body #aboutExpProffesionnelles #cardExpProffesionnelles3 #cardExpRight #infoExpProffesionnelles {
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
+  margin-top: 16px;
+}
+html body #aboutExpProffesionnelles #cardExpProffesionnelles3 #cardExpRight #infoExpProffesionnelles #ExpproDate {
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
+}
+html body #aboutExpProffesionnelles #cardExpProffesionnelles3 #cardExpRight #infoExpProffesionnelles #ExpproDate img {
+  width: 14px;
+  height: 14px;
+}
+html body #aboutExpProffesionnelles #cardExpProffesionnelles3 #cardExpRight #infoExpProffesionnelles #ExpproDate p {
+  color: rgba(255, 255, 255, 0.5);
+}
+html body #aboutExpProffesionnelles #cardExpProffesionnelles3 #cardExpRight #infoExpProffesionnelles #ExpproLocalisation {
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
+}
+html body #aboutExpProffesionnelles #cardExpProffesionnelles3 #cardExpRight #infoExpProffesionnelles #ExpproLocalisation img {
+  width: 14px;
+  height: 14px;
+}
+html body #aboutExpProffesionnelles #cardExpProffesionnelles3 #cardExpRight #infoExpProffesionnelles #ExpproLocalisation p {
+  color: rgba(255, 255, 255, 0.5);
+}
+html body #aboutExpProffesionnelles #cardExpProffesionnelles3 #cardExpRight #ExpTache {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-top: 23.5px;
+}
+html body #aboutExpProffesionnelles #cardExpProffesionnelles3 #cardExpRight #ExpTache li {
+  color: rgba(255, 255, 255, 0.6);
+  line-height: 22.75px;
+}
+html body #aboutExpProffesionnelles #cardExpProffesionnelles3 #cardExpRight #ExpSkill {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  margin-top: 12px;
+}
+html body #aboutExpProffesionnelles #cardExpProffesionnelles3 #cardExpRight #ExpSkill li {
+  border-radius: 10px;
+  border: 0.8px solid rgba(194, 122, 255, 0.2);
+  background: rgba(173, 70, 255, 0.1);
+  padding: 4.8px 8px;
+  color: rgb(255, 255, 255);
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+html body #aboutExpProffesionnelles #cardExpProffesionnelles3 #FormTitle {
   margin: 63px 127px 32px 127px;
 }
-html #FormTitle h1 {
+html body #aboutExpProffesionnelles #cardExpProffesionnelles3 #FormTitle h1 {
   color: rgb(255, 255, 255);
   font-size: 30px;
 }
-html footer {
+html body #aboutExpProffesionnelles #cardExpProffesionnelles3 footer {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   padding: 40px 0;
 }
-html footer p {
+html body #aboutExpProffesionnelles #cardExpProffesionnelles3 footer p {
   color: rgba(255, 255, 255, 0.8);
 }
-html footer p a {
+html body #aboutExpProffesionnelles #cardExpProffesionnelles3 footer p a {
   color: rgb(255, 255, 255);
 }
-html #loginAmbiance {
+html body #aboutExpProffesionnelles #cardExpProffesionnelles3 #loginAmbiance {
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 0 auto;
 }
-html #loginAmbiance #sphere1,
-html #loginAmbiance #sphere2,
-html #loginAmbiance #sphere3 {
+html body #aboutExpProffesionnelles #cardExpProffesionnelles3 #loginAmbiance #sphere1,
+html body #aboutExpProffesionnelles #cardExpProffesionnelles3 #loginAmbiance #sphere2,
+html body #aboutExpProffesionnelles #cardExpProffesionnelles3 #loginAmbiance #sphere3 {
   position: absolute;
   filter: blur(150px);
   border-radius: 999px;
 }
-html #loginAmbiance #sphere1 {
+html body #aboutExpProffesionnelles #cardExpProffesionnelles3 #loginAmbiance #sphere1 {
   width: 600px;
   height: 600px;
   top: 1%;
   left: 20%;
   background-color: rgba(43, 127, 255, 0.2);
 }
-html #loginAmbiance #sphere2 {
+html body #aboutExpProffesionnelles #cardExpProffesionnelles3 #loginAmbiance #sphere2 {
   width: 600px;
   height: 600px;
   right: 33%;
   top: 25%;
   background-color: rgba(0, 184, 219, 0.1);
 }
-html #loginAmbiance #sphere3 {
+html body #aboutExpProffesionnelles #cardExpProffesionnelles3 #loginAmbiance #sphere3 {
   width: 600px;
   height: 600px;
   top: 45%;
   right: 20%;
   background-color: rgba(173, 70, 255, 0.15);
 }
-html #indexBtn {
+html body #aboutExpProffesionnelles #cardExpProffesionnelles3 #indexBtn {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -1488,20 +1833,20 @@ html #indexBtn {
   cursor: pointer;
   transition: all 0.2s ease-out;
 }
-html #indexBtn img {
+html body #aboutExpProffesionnelles #cardExpProffesionnelles3 #indexBtn img {
   height: 24px;
 }
-html #indexBtn:hover {
+html body #aboutExpProffesionnelles #cardExpProffesionnelles3 #indexBtn:hover {
   background-color: rgba(255, 255, 255, 0.13);
 }
-html #loginSection {
+html body #aboutExpProffesionnelles #cardExpProffesionnelles3 #loginSection {
   height: 100vh;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
 }
-html #loginSection #loginCard {
+html body #aboutExpProffesionnelles #cardExpProffesionnelles3 #loginSection #loginCard {
   height: 700px;
   width: 27%;
   display: flex;
@@ -1515,31 +1860,31 @@ html #loginSection #loginCard {
   background-color: rgba(255, 255, 255, 0.1);
   border: 1px solid rgba(255, 255, 255, 0.2);
 }
-html #loginSection #loginCard #loginLogo {
+html body #aboutExpProffesionnelles #cardExpProffesionnelles3 #loginSection #loginCard #loginLogo {
   margin-bottom: 32px;
 }
-html #loginSection #loginCard #loginLogo img {
+html body #aboutExpProffesionnelles #cardExpProffesionnelles3 #loginSection #loginCard #loginLogo img {
   width: 64px;
 }
-html #loginSection #loginCard h1 {
+html body #aboutExpProffesionnelles #cardExpProffesionnelles3 #loginSection #loginCard h1 {
   font-size: 36px;
 }
-html #loginSection #loginCard p {
+html body #aboutExpProffesionnelles #cardExpProffesionnelles3 #loginSection #loginCard p {
   font-size: 16px;
   color: rgba(255, 255, 255, 0.8);
 }
-html #loginSection #loginCard #loginForm {
+html body #aboutExpProffesionnelles #cardExpProffesionnelles3 #loginSection #loginCard #loginForm {
   margin-top: 32px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   gap: 24px;
 }
-html #loginSection #loginCard #loginForm label {
+html body #aboutExpProffesionnelles #cardExpProffesionnelles3 #loginSection #loginCard #loginForm label {
   font-size: 14px;
 }
-html #loginSection #loginCard #loginForm #loginEmail,
-html #loginSection #loginCard #loginForm #loginPassword {
+html body #aboutExpProffesionnelles #cardExpProffesionnelles3 #loginSection #loginCard #loginForm #loginEmail,
+html body #aboutExpProffesionnelles #cardExpProffesionnelles3 #loginSection #loginCard #loginForm #loginPassword {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -1550,15 +1895,15 @@ html #loginSection #loginCard #loginForm #loginPassword {
   border-radius: 16px;
   padding-left: 16px;
 }
-html #loginSection #loginCard #loginForm #loginEmail input,
-html #loginSection #loginCard #loginForm #loginPassword input {
+html body #aboutExpProffesionnelles #cardExpProffesionnelles3 #loginSection #loginCard #loginForm #loginEmail input,
+html body #aboutExpProffesionnelles #cardExpProffesionnelles3 #loginSection #loginCard #loginForm #loginPassword input {
   font-size: 16px;
   border: none;
   background: transparent;
   padding: 16px 48px;
   color: rgb(255, 255, 255);
 }
-html #loginSection #loginCard #loginForm #loginButton {
+html body #aboutExpProffesionnelles #cardExpProffesionnelles3 #loginSection #loginCard #loginForm #loginButton {
   color: rgb(255, 255, 255);
   font-size: 16px;
   cursor: pointer;
@@ -1566,6 +1911,565 @@ html #loginSection #loginCard #loginForm #loginButton {
   background-color: rgba(43, 127, 255, 0.2);
   border: 1px solid rgba(81, 162, 255, 0.5);
   padding: 16px 48px;
+}
+html body #formaTitle {
+  margin: 63px 127px 32px 127px;
+}
+html body #formaTitle h1 {
+  color: rgb(255, 255, 255);
+  font-size: 30px;
+}
+html body #aboutFormations {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  gap: 24px;
+}
+html body #aboutFormations #cardFormations1,
+html body #aboutFormations #cardFormations2,
+html body #aboutFormations #cardFormations3,
+html body #aboutFormations #cardFormations4,
+html body #aboutFormations #cardFormations5 {
+  width: 80%;
+  border-radius: 16px;
+  border: 0.8px solid rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.05);
+}
+html body #aboutFormations #cardFormations1 {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  padding: 32.8px;
+}
+html body #aboutFormations #cardFormations1 #cardFormationsLeft #certificationBlueIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  padding: 13px;
+  border-radius: 14px;
+  border: 0.8px solid rgba(81, 162, 255, 0.3);
+  background: rgba(43, 127, 255, 0.2);
+}
+html body #aboutFormations #cardFormations1 #cardFormationsRight {
+  gap: 16px;
+}
+html body #aboutFormations #cardFormations1 #cardFormationsRight #cardTitle {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+html body #aboutFormations #cardFormations1 #cardFormationsRight #cardTitle h1 {
+  font-size: 24px;
+  color: rgb(255, 255, 255);
+}
+html body #aboutFormations #cardFormations1 #cardFormationsRight #cardTitle li {
+  display: flex;
+  width: 8%;
+  padding: 7px 12px;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  color: #51A2FF;
+  font-size: 12px;
+  border-radius: 999px;
+  border: 0.8px solid rgba(81, 162, 255, 0.3);
+  background: rgba(43, 127, 255, 0.2);
+}
+html body #aboutFormations #cardFormations1 #cardFormationsRight h2 {
+  color: #51A2FF;
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 8px;
+}
+html body #aboutFormations #cardFormations1 #cardFormationsRight #infoFormations {
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
+  margin-top: 16px;
+}
+html body #aboutFormations #cardFormations1 #cardFormationsRight #infoFormations #FormationsDate {
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
+}
+html body #aboutFormations #cardFormations1 #cardFormationsRight #infoFormations #FormationsDate img {
+  width: 14px;
+  height: 14px;
+}
+html body #aboutFormations #cardFormations1 #cardFormationsRight #infoFormations #FormationsDate p {
+  color: rgba(255, 255, 255, 0.5);
+}
+html body #aboutFormations #cardFormations1 #cardFormationsRight #infoFormations #FormationsLocalisation {
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
+}
+html body #aboutFormations #cardFormations1 #cardFormationsRight #infoFormations #FormationsLocalisation img {
+  width: 14px;
+  height: 14px;
+}
+html body #aboutFormations #cardFormations1 #cardFormationsRight #infoFormations #FormationsLocalisation p {
+  color: rgba(255, 255, 255, 0.5);
+}
+html body #aboutFormations #cardFormations1 #cardFormationsRight #FormationsDescription {
+  margin-top: 8px;
+  color: rgba(255, 255, 255, 0.6);
+}
+html body #aboutFormations #cardFormations1 #cardFormationsRight #FormationsTache {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-top: 23.5px;
+}
+html body #aboutFormations #cardFormations1 #cardFormationsRight #FormationsTache li {
+  color: rgba(255, 255, 255, 0.6);
+  line-height: 22.75px;
+}
+html body #aboutFormations #cardFormations1 #cardFormationsRight #FormationsSkill {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  margin-top: 12px;
+}
+html body #aboutFormations #cardFormations1 #cardFormationsRight #FormationsSkill li {
+  border-radius: 10px;
+  border: 0.8px solid rgba(81, 162, 255, 0.2);
+  background: rgba(43, 127, 255, 0.1);
+  padding: 4.8px 8px;
+  color: rgb(255, 255, 255);
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+html body #aboutFormations #cardFormations2 {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  padding: 32.8px;
+}
+html body #aboutFormations #cardFormations2 #cardFormationsLeft #certificationCyanIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  padding: 13px;
+  border-radius: 14px;
+  border: 0.8px solid rgba(81, 162, 255, 0.3);
+  background: rgba(43, 127, 255, 0.2);
+}
+html body #aboutFormations #cardFormations2 #cardFormationsRight {
+  gap: 16px;
+}
+html body #aboutFormations #cardFormations2 #cardFormationsRight #cardTitle {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+html body #aboutFormations #cardFormations2 #cardFormationsRight #cardTitle h1 {
+  font-size: 24px;
+  color: rgb(255, 255, 255);
+}
+html body #aboutFormations #cardFormations2 #cardFormationsRight h2 {
+  color: #51A2FF;
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 8px;
+}
+html body #aboutFormations #cardFormations2 #cardFormationsRight #infoFormations {
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
+  margin-top: 16px;
+}
+html body #aboutFormations #cardFormations2 #cardFormationsRight #infoFormations #FormationsDate {
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
+}
+html body #aboutFormations #cardFormations2 #cardFormationsRight #infoFormations #FormationsDate img {
+  width: 14px;
+  height: 14px;
+}
+html body #aboutFormations #cardFormations2 #cardFormationsRight #infoFormations #FormationsDate p {
+  color: rgba(255, 255, 255, 0.5);
+}
+html body #aboutFormations #cardFormations2 #cardFormationsRight #infoFormations #FormationsLocalisation {
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
+}
+html body #aboutFormations #cardFormations2 #cardFormationsRight #infoFormations #FormationsLocalisation img {
+  width: 14px;
+  height: 14px;
+}
+html body #aboutFormations #cardFormations2 #cardFormationsRight #infoFormations #FormationsLocalisation p {
+  color: rgba(255, 255, 255, 0.5);
+}
+html body #aboutFormations #cardFormations2 #cardFormationsRight #FormationsDescription {
+  margin-top: 8px;
+  color: rgba(255, 255, 255, 0.6);
+}
+html body #aboutFormations #cardFormations2 #cardFormationsRight #FormationsTache {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-top: 23.5px;
+}
+html body #aboutFormations #cardFormations2 #cardFormationsRight #FormationsTache li {
+  color: rgba(255, 255, 255, 0.6);
+  line-height: 22.75px;
+}
+html body #aboutFormations #cardFormations2 #cardFormationsRight #FormationsSkill {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  margin-top: 12px;
+}
+html body #aboutFormations #cardFormations2 #cardFormationsRight #FormationsSkill li {
+  border-radius: 10px;
+  border: 0.8px solid rgba(81, 162, 255, 0.2);
+  background: rgba(43, 127, 255, 0.1);
+  padding: 4.8px 8px;
+  color: rgb(255, 255, 255);
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+html body #aboutFormations #cardFormations3 {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  padding: 32.8px;
+}
+html body #aboutFormations #cardFormations3 #cardFormationsLeft #certificationLimeGreenIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  padding: 13px;
+  border-radius: 14px;
+  border: 0.8px solid rgba(5, 223, 114, 0.3);
+  background: rgba(0, 201, 80, 0.2);
+}
+html body #aboutFormations #cardFormations3 #cardFormationsRight {
+  gap: 16px;
+}
+html body #aboutFormations #cardFormations3 #cardFormationsRight #cardTitle {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+html body #aboutFormations #cardFormations3 #cardFormationsRight #cardTitle h1 {
+  font-size: 24px;
+  color: rgb(255, 255, 255);
+}
+html body #aboutFormations #cardFormations3 #cardFormationsRight h2 {
+  color: #05DF72;
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 8px;
+}
+html body #aboutFormations #cardFormations3 #cardFormationsRight #infoFormations {
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
+  margin-top: 16px;
+}
+html body #aboutFormations #cardFormations3 #cardFormationsRight #infoFormations #FormationsDate {
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
+}
+html body #aboutFormations #cardFormations3 #cardFormationsRight #infoFormations #FormationsDate img {
+  width: 14px;
+  height: 14px;
+}
+html body #aboutFormations #cardFormations3 #cardFormationsRight #infoFormations #FormationsDate p {
+  color: rgba(255, 255, 255, 0.5);
+}
+html body #aboutFormations #cardFormations3 #cardFormationsRight #infoFormations #FormationsLocalisation {
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
+}
+html body #aboutFormations #cardFormations3 #cardFormationsRight #infoFormations #FormationsLocalisation img {
+  width: 14px;
+  height: 14px;
+}
+html body #aboutFormations #cardFormations3 #cardFormationsRight #infoFormations #FormationsLocalisation p {
+  color: rgba(255, 255, 255, 0.5);
+}
+html body #aboutFormations #cardFormations3 #cardFormationsRight #FormationsDescription {
+  color: rgba(255, 255, 255, 0.6);
+}
+html body #aboutFormations #cardFormations3 #cardFormationsRight #FormationsTache {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-top: 23.5px;
+}
+html body #aboutFormations #cardFormations3 #cardFormationsRight #FormationsTache li {
+  color: rgba(255, 255, 255, 0.6);
+  line-height: 22.75px;
+}
+html body #aboutFormations #cardFormations3 #cardFormationsRight #FormationsSkill {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  margin-top: 12px;
+}
+html body #aboutFormations #cardFormations3 #cardFormationsRight #FormationsSkill li {
+  border-radius: 10px;
+  border: 0.8px solid rgba(5, 223, 114, 0.2);
+  background: rgba(0, 201, 80, 0.1);
+  padding: 4.8px 8px;
+  color: rgb(255, 255, 255);
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+html body #aboutFormations #cardFormations4 {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  padding: 32.8px;
+}
+html body #aboutFormations #cardFormations4 #cardFormationsLeft #certificationOrangeIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  padding: 13px;
+  border-radius: 14px;
+  border: 0.8px solid rgba(255, 137, 4, 0.3);
+  background: rgba(255, 105, 0, 0.2);
+}
+html body #aboutFormations #cardFormations4 #cardFormationsRight {
+  gap: 16px;
+}
+html body #aboutFormations #cardFormations4 #cardFormationsRight #cardTitle {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+html body #aboutFormations #cardFormations4 #cardFormationsRight #cardTitle h1 {
+  font-size: 24px;
+  color: rgb(255, 255, 255);
+}
+html body #aboutFormations #cardFormations4 #cardFormationsRight #cardTitle li {
+  display: flex;
+  width: 22%;
+  padding: 7px 12px;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  color: #FF8904;
+  font-size: 12px;
+  border-radius: 999px;
+  border: 0.8px solid rgba(255, 137, 4, 0.3);
+  background: rgba(255, 105, 0, 0.2);
+}
+html body #aboutFormations #cardFormations4 #cardFormationsRight h2 {
+  color: #FF8904;
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 8px;
+}
+html body #aboutFormations #cardFormations4 #cardFormationsRight #infoFormations {
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
+  margin-top: 16px;
+}
+html body #aboutFormations #cardFormations4 #cardFormationsRight #infoFormations #FormationsDate {
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
+}
+html body #aboutFormations #cardFormations4 #cardFormationsRight #infoFormations #FormationsDate img {
+  width: 14px;
+  height: 14px;
+}
+html body #aboutFormations #cardFormations4 #cardFormationsRight #infoFormations #FormationsDate p {
+  color: rgba(255, 255, 255, 0.5);
+}
+html body #aboutFormations #cardFormations4 #cardFormationsRight #infoFormations #FormationsLocalisation {
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
+}
+html body #aboutFormations #cardFormations4 #cardFormationsRight #infoFormations #FormationsLocalisation img {
+  width: 14px;
+  height: 14px;
+}
+html body #aboutFormations #cardFormations4 #cardFormationsRight #infoFormations #FormationsLocalisation p {
+  color: rgba(255, 255, 255, 0.5);
+}
+html body #aboutFormations #cardFormations4 #cardFormationsRight #FormationsDescription {
+  color: rgba(255, 255, 255, 0.6);
+}
+html body #aboutFormations #cardFormations4 #cardFormationsRight #FormationsTache {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-top: 23.5px;
+}
+html body #aboutFormations #cardFormations4 #cardFormationsRight #FormationsTache li {
+  color: rgba(255, 255, 255, 0.6);
+  line-height: 22.75px;
+}
+html body #aboutFormations #cardFormations4 #cardFormationsRight #FormationsSkill {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  margin-top: 12px;
+}
+html body #aboutFormations #cardFormations4 #cardFormationsRight #FormationsSkill li {
+  border-radius: 10px;
+  border: 0.8px solid rgba(255, 137, 4, 0.2);
+  background: rgba(255, 105, 0, 0.1);
+  padding: 4.8px 8px;
+  color: rgb(255, 255, 255);
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+html body #aboutFormations #cardFormations5 {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  padding: 32.8px;
+}
+html body #aboutFormations #cardFormations5 #cardFormationsLeft #certificatRoseIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  padding: 13px;
+  border-radius: 14px;
+  border: 0.8px solid rgba(251, 100, 182, 0.3);
+  background: rgba(246, 51, 154, 0.2);
+}
+html body #aboutFormations #cardFormations5 #cardFormationsRight {
+  gap: 16px;
+}
+html body #aboutFormations #cardFormations5 #cardFormationsRight #cardTitle {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+html body #aboutFormations #cardFormations5 #cardFormationsRight #cardTitle h1 {
+  font-size: 24px;
+  color: rgb(255, 255, 255);
+}
+html body #aboutFormations #cardFormations5 #cardFormationsRight h2 {
+  color: #FB64B6;
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 8px;
+}
+html body #aboutFormations #cardFormations5 #cardFormationsRight #infoFormations {
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
+  margin-top: 16px;
+}
+html body #aboutFormations #cardFormations5 #cardFormationsRight #infoFormations #FormationsDate {
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
+}
+html body #aboutFormations #cardFormations5 #cardFormationsRight #infoFormations #FormationsDate img {
+  width: 14px;
+  height: 14px;
+}
+html body #aboutFormations #cardFormations5 #cardFormationsRight #infoFormations #FormationsDate p {
+  color: rgba(255, 255, 255, 0.5);
+}
+html body #aboutFormations #cardFormations5 #cardFormationsRight #infoFormations #FormationsLocalisation {
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
+}
+html body #aboutFormations #cardFormations5 #cardFormationsRight #infoFormations #FormationsLocalisation img {
+  width: 14px;
+  height: 14px;
+}
+html body #aboutFormations #cardFormations5 #cardFormationsRight #infoFormations #FormationsLocalisation p {
+  color: rgba(255, 255, 255, 0.5);
+}
+html body #aboutFormations #cardFormations5 #cardFormationsRight #FormationsDescription {
+  color: rgba(255, 255, 255, 0.6);
+}
+html body #aboutFormations #cardFormations5 #cardFormationsRight #FormationsTache {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-top: 23.5px;
+}
+html body #aboutFormations #cardFormations5 #cardFormationsRight #FormationsTache li {
+  color: rgba(255, 255, 255, 0.6);
+  line-height: 22.75px;
+}
+html body #aboutFormations #cardFormations5 #cardFormationsRight #FormationsSkill {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  margin-top: 12px;
+}
+html body #aboutFormations #cardFormations5 #cardFormationsRight #FormationsSkill li {
+  border-radius: 10px;
+  border: 0.8px solid rgba(251, 100, 182, 0.2);
+  background: rgba(246, 51, 154, 0.1);
+  padding: 4.8px 8px;
+  color: rgb(255, 255, 255);
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+html body #phraseDeFin {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 64px auto 0 auto;
+  width: 84.5%;
+  height: 97px;
+  gap: 16px;
+  border-radius: 24px;
+  border: 0.8px solid rgba(251, 100, 182, 0.2);
+  background: linear-gradient(90deg, rgba(246, 51, 154, 0.1) 0%, rgba(173, 70, 255, 0.1) 100%);
+}
+html body #phraseDeFin p {
+  color: rgb(255, 255, 255);
+}
+html body #phraseDeFin p #dynamic {
+  color: #FB64B6;
+}
+html body #phraseDeFin p #investi {
+  color: #C27AFF;
+}
+html body footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 32px;
+}
+html body footer p {
+  color: rgb(255, 255, 255);
+}
+html body footer p a {
+  color: rgb(255, 255, 255);
 }
 
 /*# sourceMappingURL=style.css.map */
