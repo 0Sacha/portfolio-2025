@@ -34,32 +34,44 @@
     <script src="src/scripts/script.js" defer></script>
 </head>
 <body>
-<div id="loginAmbiance">
-    <div id="sphere1"></div>
-    <div id="sphere2"></div>
-    <div id="sphere3"></div>
-</div>
-<a id="indexBtn" href="index.html"><img src="src/images/icons/down-arrow-light.svg"></a>
-<div id="loginSection">
-    <div id="loginCard">
-        <div id="loginLogo">
-            <img src="./src/images/LogoPortfolio.svg" alt="">
+
+<div id="loginPage">
+    <div id="loginBack">
+        <a id="backToThePortolio" href="index.html">
+            <img src="./src/images/icons/leftArrowWhiteIcon.svg">
+            <p>Retour au portfolio</p>
+        </a>
+    </div>
+    <div id="loginForm">
+        <div id="loginHeadForm">
+            <img src="./src/images/icons/logo_sachalaville.svg">
+            <div id="loginHeadTextForm">
+                <h1>Dashboard admin</h1>
+                <p>Connectez-vous pour accéder au système de gestion</p>
+            </div>
         </div>
-        <h1>Dashboard Admin</h1>
-        <p>Connectez-vous pour accéder au CMS</p>
-        <form id="loginForm" method="get">
-            <label>Email</label>
-            <label id="loginEmail">
-                <img src="./src/images/icons/userIcon.svg">
-                <input type="email" placeholder="admin@admin.com">
-            </label>
-            <label>Mot de passe</label>
-            <label id="loginPassword">
-                <img src="./src/images/icons/cadenaIcon.svg">
-                <input type="password" placeholder="••••••••">            </label>
-            <button id="loginButton" formmethod="post">Se connecter</button>
-        </form>
+        <div id="loginInputForm">
+            <div id="loginFormEmail">
+                <label for="email">Adresse email <span id="loginFormRequired">*</span></label>
+                <input type="email" name="email" id="email" required placeholder="votre.email@exemple.com">
+            </div>
+            <div id="loginFormPassword">
+                <label for="password">Adresse email <span id="loginFormRequired">*</span></label>
+                <div id="inputPassword">
+                    <input type="password" name="password" id="password" required placeholder="votre.email@exemple.com">
+                    <img src="./src/images/icons/eyesIcon.svg">
+                </div>
+            </div>
+            <div id="loginFormSubmit">
+                <button type="submit"><img src="./src/images/icons/connectionWhiteIcon.svg">Se connecter</button>
+            </div>
+        </div>
     </div>
 </div>
+
+<footer>
+    <p>Portfolio codé entièrement par <a href="https://github.com/0Sacha/">0Sacha</a></p>
+</footer>
+
 </body>
 </html>
