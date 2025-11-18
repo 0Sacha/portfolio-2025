@@ -2881,5 +2881,135 @@ html body footer p {
 html body footer p a {
   color: rgb(255, 255, 255);
 }
+html body #loginAmbiance {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+html body #loginAmbiance #sphere1,
+html body #loginAmbiance #sphere2,
+html body #loginAmbiance #sphere3 {
+  position: absolute;
+  filter: blur(150px);
+  border-radius: 999px;
+}
+html body #loginAmbiance #sphere1 {
+  width: 600px;
+  height: 600px;
+  top: 1%;
+  left: 20%;
+  background-color: rgba(43, 127, 255, 0.2);
+}
+html body #loginAmbiance #sphere2 {
+  width: 600px;
+  height: 600px;
+  right: 33%;
+  top: 25%;
+  background-color: rgba(0, 184, 219, 0.1);
+}
+html body #loginAmbiance #sphere3 {
+  width: 600px;
+  height: 600px;
+  top: 45%;
+  right: 20%;
+  background-color: rgba(173, 70, 255, 0.15);
+}
+html body #indexBtn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: rotate(90deg);
+  margin: 24px;
+  padding: 13px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 999px;
+  cursor: pointer;
+  transition: all 0.2s ease-out;
+}
+html body #indexBtn img {
+  height: 24px;
+}
+html body #indexBtn:hover {
+  background-color: rgba(255, 255, 255, 0.13);
+}
+html body #loginSection {
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+html body #loginSection #loginCard {
+  height: 700px;
+  width: 27%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto 0;
+  color: rgb(255, 255, 255);
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  border-radius: 24px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+html body #loginSection #loginCard #loginLogo {
+  margin-bottom: 32px;
+}
+html body #loginSection #loginCard #loginLogo img {
+  width: 64px;
+}
+html body #loginSection #loginCard h1 {
+  font-size: 36px;
+}
+html body #loginSection #loginCard p {
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.8);
+}
+html body #loginSection #loginCard #loginForm {
+  margin-top: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 24px;
+}
+html body #loginSection #loginCard #loginForm label {
+  font-size: 14px;
+}
+html body #loginSection #loginCard #loginForm #loginEmail,
+html body #loginSection #loginCard #loginForm #loginPassword {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-sizing: border-box;
+  border-radius: 16px;
+  padding-left: 16px;
+}
+html body #loginSection #loginCard #loginForm #loginEmail input,
+html body #loginSection #loginCard #loginForm #loginPassword input {
+  font-size: 16px;
+  border: none;
+  background: transparent;
+  padding: 16px 48px;
+  color: rgb(255, 255, 255);
+}
+html body #loginSection #loginCard #loginForm #loginButton {
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 16px;
+  background-color: rgba(43, 127, 255, 0.2);
+  border: 1px solid rgba(81, 162, 255, 0.5);
+  padding: 16px 48px;
+}
 
 /*# sourceMappingURL=style.css.map */
