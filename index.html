@@ -49,7 +49,7 @@
             <li><a href="#">Accueil</a></li>
             <li><a href="#interTitre">Mes projets</a></li>
             <li><a href="#interTitre3">Expérience</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#contactTitle">Contact</a></li>
             <li><a href="login.html"><img id="loginBtn" src="./src/images/icons/loginIcon.svg"></a></li>
         </ul>
         <div id="burger">
@@ -64,7 +64,7 @@
             <li id="burgerAcc"><a href="#">Accueil</a></li>
             <li id="burgerTra"><a href="#interTitre">Mes projets</a></li>
             <li id="burgerExp"><a href="#xp">Expérience</a></li>
-            <li id="burgerCt"><a href="#">Contact</a></li>
+            <li id="burgerCt"><a href="#contactTitle">Contact</a></li>
         </ul>
     </div>
 </div>
@@ -820,6 +820,93 @@
 <div id="phraseDeFin">
     <img src="./src/images/icons/fuséeRoseIcon.svg">
     <p>Curieux, <span id="dynamic"> dynamic </span> et <span id="investi"> investi à 100% </span> dans mes projets</p>
+</div>
+
+<div id="contactTitle">
+    <h1>Contactez-Moi</h1>
+    <p>Une question, un projet ou juste envie de discuter ? N'hésitez pas à me contacter !</p>
+</div>
+
+<div id="contactSection">
+    <div id="contactLeftMainContent">
+        <div id="talkWithYouContent">
+            <div id="talkWithYou">
+                <h1>Parlons ensemble</h1>
+                <p>Je suis disponible pour discuter de vos projets et opportunités.</p>
+                <div id="contactInfo">
+                    <div id="mail">
+                        <img src="./src/images/icons/mailBueIcon.svg">
+                        <div id="mailText">
+                            <h1>mail</h1>
+                            <p>sacha.laville.pro@gmail.com</p>
+                        </div>
+                    </div>
+                    <div id="telephone">
+                        <img src="./src/images/icons/phonePurpleIcon.svg">
+                        <div id="telephoneText">
+                            <h1>telephone</h1>
+                            <p>+33 777235070</p>
+                        </div>
+                    </div>
+                    <div id="localisation">
+                        <img src="./src/images/icons/localisationCyanIcon.svg">
+                        <div id="localisationText">
+                            <h1>localisation</h1>
+                            <p>Lacroix-Saint-Ouen, France</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="myLinkContent">
+            <div id="myLink">
+                <p>Retrouver-moi sur</p>
+                <div id="links">
+                    <li><a href="#"><img src="./src/images/icons/github-light-icon.svg"></a></li>
+                    <li><a href="#"><img src="./src/images/icons/linkedin-light-icon.svg"></a></li>
+                    <li><a href="#"><img src="./src/images/icons/mailto-light-icon.svg"></a></li>
+                </div>
+            </div>
+        </div>
+        <div id="myStatusContent">
+            <div id="myStatus">
+                <img id="messageOrangeIcon" src="./src/images/icons/messageOrangeIcon.svg">
+                <div id="myStatusText">
+                    <li><img id="circlePointOrageIcon" src="./src/images/icons/circleOrangeIcon.svg">En poste</li>
+                    <p>Acctuellement en Alternace. Disponible pour des projet freelance ou collaborations</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div id="contactRightMainContent">
+        <div id="contactPart">
+            <h1>Envoyez-moi un message</h1>
+            <p>Remplissez le formulaire ci-dessous et je vous repondrai dans le splus brefs délais.</p>
+            <form id="contactForm">
+                <div id="contactFormName">
+                    <label for="name">Nom complet <span id="contactFormRequired">*</span></label>
+                    <input type="text" name="name" id="name" required placeholder="Votre nom">
+                </div>
+                <div id="contactFormEmail">
+                    <label for="email">Adresse email <span id="contactFormRequired">*</span></label>
+                    <input type="email" name="email" id="email" required placeholder="votre.email@exemple.com">
+                </div>
+                <div id="contactFormTopic">
+                    <label for="message">Sujet <span id="contactFormRequired">*</span></label>
+                    <textarea name="Sujet" id="topic" required placeholder="De quoi souhaitez-vous parler ?"></textarea>
+                </div>
+                <div id="contactFormMessage">
+                    <label for="message">Message <span id="contactFormRequired">*</span></label>
+                    <textarea name="message" id="message" required placeholder="Votre message..."></textarea>
+                </div>
+                <div id="contactFormButtons">
+                    <button type="submit"><img src="./src/images/icons/paperPlaneIcon.svg">Envoyez le message</button>
+                </div>
+            </form>
+            <p>En envoyant ce formulaire, vous acceptez que vos donnée soient utilisées pour vous recontacter.</p>
+        </div>
+    </div>
 </div>
 
 <footer>
