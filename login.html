@@ -36,35 +36,30 @@
 <body>
 
 <div id="loginPage">
-    <div id="loginBack">
-        <a id="backToThePortolio" href="index.html">
-            <img src="./src/images/icons/leftArrowWhiteIcon.svg">
-            <p>Retour au portfolio</p>
-        </a>
-    </div>
-    <div id="loginForm">
-        <div id="loginHeadForm">
-            <img src="./src/images/icons/logo_sachalaville.svg">
-            <div id="loginHeadTextForm">
-                <h1>Dashboard admin</h1>
-                <p>Connectez-vous pour accéder au système de gestion</p>
-            </div>
+    <div id="loginContainer">
+        <div id="loginBack">
+            <a href="index.html" id="loginBackThePortfolio">
+                <img src="./src/images/icons/leftArrowWhiteIcon.svg" alt="Fleches blanche pointant vers la gauche">
+                <p>Retour</p>
+            </a>
         </div>
-        <div id="loginInputForm">
-            <div id="loginFormEmail">
-                <label for="email">Adresse email <span id="loginFormRequired">*</span></label>
-                <input type="email" name="email" id="email" required placeholder="votre.email@exemple.com">
-            </div>
-            <div id="loginFormPassword">
-                <label for="password">Adresse email <span id="loginFormRequired">*</span></label>
-                <div id="inputPassword">
-                    <input type="password" name="password" id="password" required placeholder="votre.email@exemple.com">
-                    <img src="./src/images/icons/eyesIcon.svg">
+        <div id="loginForm">
+            <div id="loginText">
+                <div id="loginTitre">
+                    <img src="./src/images/icons/guardIcon.svg">
+                    <p>Accès sécurisé</p>
                 </div>
+                <p>Connectez-vous au système de gestion</p>
             </div>
-            <div id="loginFormSubmit">
-                <button type="submit"><img src="./src/images/icons/connectionWhiteIcon.svg">Se connecter</button>
-            </div>
+            <form method="post" action="login.html" id="loginInput">
+                <label for="loginEmail">Adresse email</label>
+                <input type="email" id="loginEmail" name="loginEmail" placeholder="votre@email.com">
+                <label for="loginPassword">Mot de passe</label>
+                <input type="password" id="loginPassword" name="loginPassword" placeholder="••••••••••">
+                <button type="submit" id="loginSubmit" formmethod="post"><img
+                        src="./src/images/icons/connectionWhiteIcon.svg">Se connecter
+                </button>
+            </form>
         </div>
     </div>
 </div>
