@@ -700,14 +700,14 @@ html body #interTitre2 {
   margin-top: 97px;
   margin-bottom: 65px;
 }
+html body #interTitre2 .separate {
+  height: 10px;
+  background: red;
+}
 html body #interTitre2 h1 {
   font-size: 14px;
   font-weight: 400;
   color: rgb(255, 255, 255);
-}
-html body #interTitre2 .separate {
-  height: 1px;
-  background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgba(255, 255, 255, 0.2) 50%, rgba(0, 0, 0, 0) 100%);
 }
 html body #cardSection {
   display: flex;
@@ -723,7 +723,6 @@ html body #cardSection #card {
   display: flex;
   flex-direction: column;
   width: 376px;
-  height: 400px;
   transition: all 0.2s ease-out;
 }
 html body #cardSection #card #topCard img {
