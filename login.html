@@ -34,32 +34,48 @@
     <script src="src/scripts/script.js" defer></script>
 </head>
 <body>
-<div id="loginAmbiance">
-    <div id="sphere1"></div>
-    <div id="sphere2"></div>
-    <div id="sphere3"></div>
-</div>
-<a id="indexBtn" href="index.html"><img src="src/images/icons/down-arrow-light.svg"></a>
-<div id="loginSection">
-    <div id="loginCard">
-        <div id="loginLogo">
-            <img src="./src/images/LogoPortfolio.svg" alt="">
+
+<div id="loginPage">
+    <div id="loginContainer">
+        <div id="loginBack">
+            <a href="index.html" id="loginBackThePortfolio">
+                <img src="./src/images/icons/leftArrowWhiteIcon.svg" alt="Fleches blanche pointant vers la gauche">
+                <p>Retour</p>
+            </a>
         </div>
-        <h1>Dashboard Admin</h1>
-        <p>Connectez-vous pour accéder au CMS</p>
-        <form id="loginForm" method="get">
-            <label>Email</label>
-            <label id="loginEmail">
-                <img src="./src/images/icons/userIcon.svg">
-                <input type="email" placeholder="admin@admin.com">
-            </label>
-            <label>Mot de passe</label>
-            <label id="loginPassword">
-                <img src="./src/images/icons/cadenaIcon.svg">
-                <input type="password" placeholder="••••••••">            </label>
-            <button id="loginButton" formmethod="post">Se connecter</button>
-        </form>
+        <div id="loginForm">
+            <div id="loginText">
+                <div id="loginTitre">
+                    <img src="./src/images/icons/guardIcon.svg">
+                    <p>Accès sécurisé</p>
+                </div>
+                <p>Connectez-vous au système de gestion</p>
+            </div>
+            <form method="post" action="login.html" id="loginInput">
+                <label for="loginEmail">Adresse email</label>
+                <input type="email" id="loginEmail" name="loginEmail" placeholder="votre@email.com">
+                <label for="loginPassword">Mot de passe</label>
+                <input type="password" id="loginPassword" name="loginPassword" placeholder="••••••••••">
+                <button type="submit" id="loginSubmit" formmethod="post"><img
+                        src="./src/images/icons/connectionWhiteIcon.svg">Se connecter
+                </button>
+            </form>
+            <div id="barre"></div>
+            <div id="loginCredit">
+                <img src="./src/images/icons/etincelleIcon.svg">
+                <p>Powered by Sacha Laville</p>
+            </div>
+        </div>
+        <div id="loginSecure">
+            <img src="./src/images/icons/cadenaWhiteIcon.svg">
+            <p>Connexion sécurisée avec chiffrement</p>
+        </div>
     </div>
 </div>
+
+<footer>
+    <p>Portfolio codé entièrement par <a href="https://github.com/0Sacha/">0Sacha</a></p>
+</footer>
+
 </body>
 </html>
