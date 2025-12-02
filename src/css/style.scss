@@ -38,6 +38,10 @@ html {
     justify-content: center;
     align-items: center;
     margin: 0 auto;
+    @media (max-width: 1100px) {
+      display: none;
+    }
+
 
     #sphere1Home,
     #sphere2Home,
@@ -183,107 +187,6 @@ html {
           }
         }
 
-        #burger {
-          display: none;
-          padding: 8px;
-          @media (max-width: 1100px) {
-            display: block;
-          }
-
-          li {
-            list-style: none;
-
-            a {
-              color: $text-default;
-              text-decoration: none;
-            }
-          }
-        }
-      }
-    }
-
-    .burger {
-      //display: flex;
-      align-items: center;
-      justify-content: center;
-      top: 135px;
-      display: none;
-      height: 350px;
-      width: 100%;
-      position: absolute;
-      margin: 0 auto;
-      @media (min-width: 1100px) {
-        display: none;
-      }
-
-      #burgerNav {
-        display: flex;
-        color: $text-navbar-color;
-        background-color: $bg-navbar-color;
-        border: $border-navbar-color;
-        border-radius: $border_radius-navbar-color;
-        box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
-        backdrop-filter: blur(50px);
-        justify-content: start;
-        align-items: center;
-        font-size: 16px;
-        height: 350px;
-        width: 87%;
-        animation: burger 150ms ease-in-out;
-        @keyframes burger {
-          from {
-            height: 0;
-          }
-          to {
-            height: 350px;
-          }
-        }
-
-        #burgerMenu {
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: start;
-          align-content: center;
-          gap: 12px;
-          margin: 0 auto;
-          width: 335px;
-
-        }
-
-        #burgerCt, #burgerAcc, #burgerTra, #burgerExp {
-          display: flex;
-          background-color: rgba(43, 127, 255, 0);
-          border-radius: 14px;
-          font-size: 16px;
-
-          a {
-            color: #ffffff;
-            padding: 18px 270px 18px 15.99px;
-          }
-        }
-
-        #burgerCt:hover, #burgerAcc:hover, #burgerTra:hover, #burgerExp:hover {
-          background: rgba(207, 212, 236, 0.2);
-        }
-
-        li {
-          display: flex;
-          flex-direction: row;
-          width: 335px;
-
-          a {
-            color: $text-navbar-color;
-            display: flex;
-            flex-direction: row;
-            border-radius: 14px;
-            font-size: 16px;
-            text-decoration: none;
-            padding: 18px 270px 18px 15.99px;
-            transition: all 150ms ease-out;
-            padding-right: 10px;
-          }
-        }
       }
     }
 
@@ -446,14 +349,28 @@ html {
       flex-direction: column;
       margin: 80px 300px 0 300px;
       gap: 130px;
-
-      @media (max-width: 1100px) {
-        display: none;
+      justify-content: center;
+      align-items: center;
+      @media (max-width: 1260px) {
+        display: flex;
+        margin: 80px 100px 0 100px;
+        justify-content: center;
+        align-items: center;
       }
 
       #selectionCard01 {
         display: flex;
         gap: 33px;
+
+        @media (max-width: 1260px) {
+          margin-top: 80px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          gap: 33px;
+
+        }
 
         #leftSelectCard01 {
           display: flex;
@@ -466,45 +383,75 @@ html {
             border-radius: 24px;
             border: 1px solid rgba(255, 255, 255, 0.10);
             transition: all 300ms ease-out;
+
+            @media (max-width: 1260px) {
+              display: flex;
+              width: 326px;
+              height: 204px;
+            }
+
           }
 
           img:hover {
             transform: scale(1.02);
           }
+
+
         }
 
         #rightSelectCard01 {
           display: flex;
           flex-direction: column;
           justify-content: space-between;
+          @media (max-width: 1260px) {
+            display: flex;
+            gap: 33px;
+            width: 328.66px;
+          }
 
           h1 {
             color: rgba(81, 162, 255, 0.7);
             font-size: 72px;
             font-weight: 700;
+            @media (max-width: 1260px) {
+              font-size: 60px;
+            }
           }
 
           h2 {
             color: $text-default;
             font-size: 36px;
             font-weight: 400;
+            @media (max-width: 1260px) {
+              font-size: 30px;
+            }
           }
 
           p {
             color: $text-navbar-color;
             font-size: 18px;
             font-weight: 400;
+            @media (max-width: 1260px) {
+              font-size: 16px;
+            }
           }
 
           #selectionTopic {
-            display: flex;
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
             flex-direction: row;
             gap: 8px;
             align-items: center;
 
+            @media (max-width: 1260px) {
+              grid-template-columns: repeat(2, 1fr);
+            }
+
             li {
               display: flex;
               flex-direction: row;
+              justify-content: center;
+              align-items: center;
               list-style: none;
               color: $text-default;
               padding: 9px 16px 9px 17px;
@@ -566,11 +513,21 @@ html {
             }
           }
         }
+
       }
 
       #selectionCard02 {
         display: flex;
         gap: 33px;
+        @media (max-width: 1260px) {
+          display: flex;
+          flex-direction: column-reverse;
+          gap: 33px;
+          margin-top: 80px;
+          justify-content: center;
+          align-items: center;
+
+        }
 
         #leftSelectCard02 {
           display: flex;
@@ -583,6 +540,11 @@ html {
             border-radius: 24px;
             border: 1px solid rgba(255, 255, 255, 0.10);
             transition: all 300ms ease-out;
+            @media (max-width: 1260px) {
+              display: flex;
+              width: 326px;
+              height: 204px;
+            }
           }
 
           img:hover {
@@ -590,38 +552,59 @@ html {
           }
         }
 
-        #rightSelectCard02 {
+        #rightSelectCard02  {
           display: flex;
           flex-direction: column;
           justify-content: space-between;
+          @media (max-width: 1260px) {
+            display: flex;
+            gap: 33px;
+            width: 328.66px;
+          }
 
           h1 {
             color: rgba(81, 162, 255, 0.7);
             font-size: 72px;
             font-weight: 700;
+            @media (max-width: 1260px) {
+              font-size: 60px;
+            }
           }
 
           h2 {
             color: $text-default;
             font-size: 36px;
             font-weight: 400;
+            @media (max-width: 1260px) {
+              font-size: 30px;
+            }
           }
 
           p {
             color: $text-navbar-color;
             font-size: 18px;
             font-weight: 400;
+            @media (max-width: 1260px) {
+              font-size: 16px;
+            }
           }
 
           #selectionTopic {
-            display: flex;
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
             flex-direction: row;
             gap: 8px;
             align-items: center;
 
+            @media (max-width: 1260px) {
+              grid-template-columns: repeat(2, 1fr);
+            }
+
             li {
               display: flex;
               flex-direction: row;
+              justify-content: center;
+              align-items: center;
               list-style: none;
               color: $text-default;
               padding: 9px 16px 9px 17px;
@@ -688,6 +671,15 @@ html {
       #selectionCard03 {
         display: flex;
         gap: 33px;
+        @media (max-width: 1260px) {
+          margin-top: 80px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          gap: 33px;
+
+        }
 
         #leftSelectCard03 {
           display: flex;
@@ -700,6 +692,11 @@ html {
             border-radius: 24px;
             border: 1px solid rgba(255, 255, 255, 0.10);
             transition: all 300ms ease-out;
+            @media (max-width: 1260px) {
+              display: flex;
+              width: 326px;
+              height: 204px;
+            }
           }
 
           img:hover {
@@ -707,38 +704,59 @@ html {
           }
         }
 
-        #rightSelectCard03 {
+        #rightSelectCard03  {
           display: flex;
           flex-direction: column;
           justify-content: space-between;
+          @media (max-width: 1260px) {
+            display: flex;
+            gap: 33px;
+            width: 328.66px;
+          }
 
           h1 {
             color: rgba(81, 162, 255, 0.7);
             font-size: 72px;
             font-weight: 700;
+            @media (max-width: 1260px) {
+              font-size: 60px;
+            }
           }
 
           h2 {
             color: $text-default;
             font-size: 36px;
             font-weight: 400;
+            @media (max-width: 1260px) {
+              font-size: 30px;
+            }
           }
 
           p {
             color: $text-navbar-color;
             font-size: 18px;
             font-weight: 400;
+            @media (max-width: 1260px) {
+              font-size: 16px;
+            }
           }
 
           #selectionTopic {
-            display: flex;
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
             flex-direction: row;
             gap: 8px;
             align-items: center;
 
+            @media (max-width: 1260px) {
+              grid-template-columns: repeat(2, 1fr);
+            }
+
             li {
               display: flex;
               flex-direction: row;
+              justify-content: center;
+              align-items: center;
               list-style: none;
               color: $text-default;
               padding: 9px 16px 9px 17px;
@@ -813,7 +831,7 @@ html {
 
       .separate {
         height: 10px;
-        background: red;
+
       }
 
       h1 {
@@ -897,6 +915,7 @@ html {
             flex-direction: row;
             justify-content: start;
             gap: 8px;
+
             li {
               display: flex;
               align-items: center;
@@ -1704,7 +1723,9 @@ html {
 
     #ExpTitle {
       margin: 63px 127px 32px 127px;
-
+      @media (max-width: 1100px) {
+        display: none;
+      }
       h1 {
         color: $text-default;
         font-size: 30px;
@@ -1718,7 +1739,9 @@ html {
       justify-content: center;
       margin: 0 auto;
       gap: 24px;
-
+      @media (max-width: 1100px) {
+        display: none;
+      }
       #cardExpProffesionnelles1,
       #cardExpProffesionnelles2,
       #cardExpProffesionnelles3 {
@@ -2265,7 +2288,9 @@ html {
 
     #formaTitle {
       margin: 63px 127px 32px 127px;
-
+      @media (max-width: 1100px) {
+        display: none;
+      }
       h1 {
         color: $text-default;
         font-size: 30px;
@@ -2279,7 +2304,9 @@ html {
       justify-content: center;
       margin: 0 auto;
       gap: 24px;
-
+      @media (max-width: 1100px) {
+        display: none;
+      }
       #cardFormations1,
       #cardFormations2,
       #cardFormations3,
@@ -2953,6 +2980,9 @@ html {
       align-items: start;
       justify-content: center;
       margin: 80px 0px;
+      @media (max-width: 1100px) {
+        display: none;
+      }
 
       #contactLeftMainContent {
         display: flex;
@@ -3407,6 +3437,7 @@ html {
 
     #loginPage {
       height: 100vh;
+
       #loginContainer {
         #loginBack {
 

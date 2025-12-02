@@ -20,6 +20,11 @@ html #homeAmbiance {
   align-items: center;
   margin: 0 auto;
 }
+@media (max-width: 1100px) {
+  html #homeAmbiance {
+    display: none;
+  }
+}
 html #homeAmbiance #sphere1Home,
 html #homeAmbiance #sphere2Home,
 html #homeAmbiance #sphere3Home {
@@ -150,99 +155,6 @@ html body #nav nav ul #loginBtn {
 html body #nav nav ul #loginBtn:hover {
   background-color: rgba(255, 255, 255, 0.15);
   border: 1px solid rgba(255, 255, 255, 0.25);
-}
-html body #nav nav #burger {
-  display: none;
-  padding: 8px;
-}
-@media (max-width: 1100px) {
-  html body #nav nav #burger {
-    display: block;
-  }
-}
-html body #nav nav #burger li {
-  list-style: none;
-}
-html body #nav nav #burger li a {
-  color: rgb(255, 255, 255);
-  text-decoration: none;
-}
-html body .burger {
-  align-items: center;
-  justify-content: center;
-  top: 135px;
-  display: none;
-  height: 350px;
-  width: 100%;
-  position: absolute;
-  margin: 0 auto;
-}
-@media (min-width: 1100px) {
-  html body .burger {
-    display: none;
-  }
-}
-html body .burger #burgerNav {
-  display: flex;
-  color: rgba(255, 255, 255, 0.8);
-  background-color: rgba(255, 255, 255, 0.1);
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  border-radius: 24px;
-  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
-  backdrop-filter: blur(50px);
-  justify-content: start;
-  align-items: center;
-  font-size: 16px;
-  height: 350px;
-  width: 87%;
-  animation: burger 150ms ease-in-out;
-}
-@keyframes burger {
-  from {
-    height: 0;
-  }
-  to {
-    height: 350px;
-  }
-}
-html body .burger #burgerNav #burgerMenu {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: start;
-  align-content: center;
-  gap: 12px;
-  margin: 0 auto;
-  width: 335px;
-}
-html body .burger #burgerNav #burgerCt, html body .burger #burgerNav #burgerAcc, html body .burger #burgerNav #burgerTra, html body .burger #burgerNav #burgerExp {
-  display: flex;
-  background-color: rgba(43, 127, 255, 0);
-  border-radius: 14px;
-  font-size: 16px;
-}
-html body .burger #burgerNav #burgerCt a, html body .burger #burgerNav #burgerAcc a, html body .burger #burgerNav #burgerTra a, html body .burger #burgerNav #burgerExp a {
-  color: #ffffff;
-  padding: 18px 270px 18px 15.99px;
-}
-html body .burger #burgerNav #burgerCt:hover, html body .burger #burgerNav #burgerAcc:hover, html body .burger #burgerNav #burgerTra:hover, html body .burger #burgerNav #burgerExp:hover {
-  background: rgba(207, 212, 236, 0.2);
-}
-html body .burger #burgerNav li {
-  display: flex;
-  flex-direction: row;
-  width: 335px;
-}
-html body .burger #burgerNav li a {
-  color: rgba(255, 255, 255, 0.8);
-  display: flex;
-  flex-direction: row;
-  border-radius: 14px;
-  font-size: 16px;
-  text-decoration: none;
-  padding: 18px 270px 18px 15.99px;
-  transition: all 150ms ease-out;
-  padding-right: 10px;
 }
 html body #hero {
   display: flex;
@@ -401,15 +313,30 @@ html body #selection {
   flex-direction: column;
   margin: 80px 300px 0 300px;
   gap: 130px;
+  justify-content: center;
+  align-items: center;
 }
-@media (max-width: 1100px) {
+@media (max-width: 1260px) {
   html body #selection {
-    display: none;
+    display: flex;
+    margin: 80px 100px 0 100px;
+    justify-content: center;
+    align-items: center;
   }
 }
 html body #selection #selectionCard01 {
   display: flex;
   gap: 33px;
+}
+@media (max-width: 1260px) {
+  html body #selection #selectionCard01 {
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 33px;
+  }
 }
 html body #selection #selectionCard01 #leftSelectCard01 {
   display: flex;
@@ -420,6 +347,13 @@ html body #selection #selectionCard01 #midSelectCard01 img {
   border: 1px solid rgba(255, 255, 255, 0.1);
   transition: all 300ms ease-out;
 }
+@media (max-width: 1260px) {
+  html body #selection #selectionCard01 #midSelectCard01 img {
+    display: flex;
+    width: 326px;
+    height: 204px;
+  }
+}
 html body #selection #selectionCard01 #midSelectCard01 img:hover {
   transform: scale(1.02);
 }
@@ -428,30 +362,60 @@ html body #selection #selectionCard01 #rightSelectCard01 {
   flex-direction: column;
   justify-content: space-between;
 }
+@media (max-width: 1260px) {
+  html body #selection #selectionCard01 #rightSelectCard01 {
+    display: flex;
+    gap: 33px;
+    width: 328.66px;
+  }
+}
 html body #selection #selectionCard01 #rightSelectCard01 h1 {
   color: rgba(81, 162, 255, 0.7);
   font-size: 72px;
   font-weight: 700;
+}
+@media (max-width: 1260px) {
+  html body #selection #selectionCard01 #rightSelectCard01 h1 {
+    font-size: 60px;
+  }
 }
 html body #selection #selectionCard01 #rightSelectCard01 h2 {
   color: rgb(255, 255, 255);
   font-size: 36px;
   font-weight: 400;
 }
+@media (max-width: 1260px) {
+  html body #selection #selectionCard01 #rightSelectCard01 h2 {
+    font-size: 30px;
+  }
+}
 html body #selection #selectionCard01 #rightSelectCard01 p {
   color: rgba(255, 255, 255, 0.8);
   font-size: 18px;
   font-weight: 400;
 }
+@media (max-width: 1260px) {
+  html body #selection #selectionCard01 #rightSelectCard01 p {
+    font-size: 16px;
+  }
+}
 html body #selection #selectionCard01 #rightSelectCard01 #selectionTopic {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
   flex-direction: row;
   gap: 8px;
   align-items: center;
 }
+@media (max-width: 1260px) {
+  html body #selection #selectionCard01 #rightSelectCard01 #selectionTopic {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
 html body #selection #selectionCard01 #rightSelectCard01 #selectionTopic li {
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  align-items: center;
   list-style: none;
   color: rgb(255, 255, 255);
   padding: 9px 16px 9px 17px;
@@ -506,6 +470,16 @@ html body #selection #selectionCard02 {
   display: flex;
   gap: 33px;
 }
+@media (max-width: 1260px) {
+  html body #selection #selectionCard02 {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 33px;
+    margin-top: 80px;
+    justify-content: center;
+    align-items: center;
+  }
+}
 html body #selection #selectionCard02 #leftSelectCard02 {
   display: flex;
   flex-direction: column;
@@ -515,6 +489,13 @@ html body #selection #selectionCard02 #midSelectCard02 img {
   border: 1px solid rgba(255, 255, 255, 0.1);
   transition: all 300ms ease-out;
 }
+@media (max-width: 1260px) {
+  html body #selection #selectionCard02 #midSelectCard02 img {
+    display: flex;
+    width: 326px;
+    height: 204px;
+  }
+}
 html body #selection #selectionCard02 #midSelectCard02 img:hover {
   transform: scale(1.02);
 }
@@ -523,30 +504,60 @@ html body #selection #selectionCard02 #rightSelectCard02 {
   flex-direction: column;
   justify-content: space-between;
 }
+@media (max-width: 1260px) {
+  html body #selection #selectionCard02 #rightSelectCard02 {
+    display: flex;
+    gap: 33px;
+    width: 328.66px;
+  }
+}
 html body #selection #selectionCard02 #rightSelectCard02 h1 {
   color: rgba(81, 162, 255, 0.7);
   font-size: 72px;
   font-weight: 700;
+}
+@media (max-width: 1260px) {
+  html body #selection #selectionCard02 #rightSelectCard02 h1 {
+    font-size: 60px;
+  }
 }
 html body #selection #selectionCard02 #rightSelectCard02 h2 {
   color: rgb(255, 255, 255);
   font-size: 36px;
   font-weight: 400;
 }
+@media (max-width: 1260px) {
+  html body #selection #selectionCard02 #rightSelectCard02 h2 {
+    font-size: 30px;
+  }
+}
 html body #selection #selectionCard02 #rightSelectCard02 p {
   color: rgba(255, 255, 255, 0.8);
   font-size: 18px;
   font-weight: 400;
 }
+@media (max-width: 1260px) {
+  html body #selection #selectionCard02 #rightSelectCard02 p {
+    font-size: 16px;
+  }
+}
 html body #selection #selectionCard02 #rightSelectCard02 #selectionTopic {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
   flex-direction: row;
   gap: 8px;
   align-items: center;
 }
+@media (max-width: 1260px) {
+  html body #selection #selectionCard02 #rightSelectCard02 #selectionTopic {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
 html body #selection #selectionCard02 #rightSelectCard02 #selectionTopic li {
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  align-items: center;
   list-style: none;
   color: rgb(255, 255, 255);
   padding: 9px 16px 9px 17px;
@@ -601,6 +612,16 @@ html body #selection #selectionCard03 {
   display: flex;
   gap: 33px;
 }
+@media (max-width: 1260px) {
+  html body #selection #selectionCard03 {
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 33px;
+  }
+}
 html body #selection #selectionCard03 #leftSelectCard03 {
   display: flex;
   flex-direction: column;
@@ -610,6 +631,13 @@ html body #selection #selectionCard03 #midSelectCard03 img {
   border: 1px solid rgba(255, 255, 255, 0.1);
   transition: all 300ms ease-out;
 }
+@media (max-width: 1260px) {
+  html body #selection #selectionCard03 #midSelectCard03 img {
+    display: flex;
+    width: 326px;
+    height: 204px;
+  }
+}
 html body #selection #selectionCard03 #midSelectCard03 img:hover {
   transform: scale(1.02);
 }
@@ -618,30 +646,60 @@ html body #selection #selectionCard03 #rightSelectCard03 {
   flex-direction: column;
   justify-content: space-between;
 }
+@media (max-width: 1260px) {
+  html body #selection #selectionCard03 #rightSelectCard03 {
+    display: flex;
+    gap: 33px;
+    width: 328.66px;
+  }
+}
 html body #selection #selectionCard03 #rightSelectCard03 h1 {
   color: rgba(81, 162, 255, 0.7);
   font-size: 72px;
   font-weight: 700;
+}
+@media (max-width: 1260px) {
+  html body #selection #selectionCard03 #rightSelectCard03 h1 {
+    font-size: 60px;
+  }
 }
 html body #selection #selectionCard03 #rightSelectCard03 h2 {
   color: rgb(255, 255, 255);
   font-size: 36px;
   font-weight: 400;
 }
+@media (max-width: 1260px) {
+  html body #selection #selectionCard03 #rightSelectCard03 h2 {
+    font-size: 30px;
+  }
+}
 html body #selection #selectionCard03 #rightSelectCard03 p {
   color: rgba(255, 255, 255, 0.8);
   font-size: 18px;
   font-weight: 400;
 }
+@media (max-width: 1260px) {
+  html body #selection #selectionCard03 #rightSelectCard03 p {
+    font-size: 16px;
+  }
+}
 html body #selection #selectionCard03 #rightSelectCard03 #selectionTopic {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
   flex-direction: row;
   gap: 8px;
   align-items: center;
 }
+@media (max-width: 1260px) {
+  html body #selection #selectionCard03 #rightSelectCard03 #selectionTopic {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
 html body #selection #selectionCard03 #rightSelectCard03 #selectionTopic li {
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  align-items: center;
   list-style: none;
   color: rgb(255, 255, 255);
   padding: 9px 16px 9px 17px;
@@ -702,7 +760,6 @@ html body #interTitre2 {
 }
 html body #interTitre2 .separate {
   height: 10px;
-  background: red;
 }
 html body #interTitre2 h1 {
   font-size: 14px;
@@ -1455,6 +1512,11 @@ html body #aboutCompetences #aboutinterCompetences #cardCompetence6:hover {
 html body #ExpTitle {
   margin: 63px 127px 32px 127px;
 }
+@media (max-width: 1100px) {
+  html body #ExpTitle {
+    display: none;
+  }
+}
 html body #ExpTitle h1 {
   color: rgb(255, 255, 255);
   font-size: 30px;
@@ -1466,6 +1528,11 @@ html body #aboutExpProffesionnelles {
   justify-content: center;
   margin: 0 auto;
   gap: 24px;
+}
+@media (max-width: 1100px) {
+  html body #aboutExpProffesionnelles {
+    display: none;
+  }
 }
 html body #aboutExpProffesionnelles #cardExpProffesionnelles1,
 html body #aboutExpProffesionnelles #cardExpProffesionnelles2,
@@ -1914,6 +1981,11 @@ html body #aboutExpProffesionnelles #cardExpProffesionnelles3 #loginSection #log
 html body #formaTitle {
   margin: 63px 127px 32px 127px;
 }
+@media (max-width: 1100px) {
+  html body #formaTitle {
+    display: none;
+  }
+}
 html body #formaTitle h1 {
   color: rgb(255, 255, 255);
   font-size: 30px;
@@ -1925,6 +1997,11 @@ html body #aboutFormations {
   justify-content: center;
   margin: 0 auto;
   gap: 24px;
+}
+@media (max-width: 1100px) {
+  html body #aboutFormations {
+    display: none;
+  }
 }
 html body #aboutFormations #cardFormations1,
 html body #aboutFormations #cardFormations2,
@@ -2485,6 +2562,11 @@ html body #contactSection {
   align-items: start;
   justify-content: center;
   margin: 80px 0px;
+}
+@media (max-width: 1100px) {
+  html body #contactSection {
+    display: none;
+  }
 }
 html body #contactSection #contactLeftMainContent {
   display: flex;
