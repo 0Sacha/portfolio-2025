@@ -5,12 +5,50 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="78aba201-c806-442e-8721-8ff8e2665cd1" name="Changes" comment="+adding:">
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+=======
+      <change afterPath="$PROJECT_DIR$/src/images/deltaOne.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/icons/bagBleuColorIcon.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/icons/bagGreenColorIcon.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/icons/bagPurpleColorIcon.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/icons/cadenaWhiteIcon.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/icons/calendColorIcon.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/icons/certificatRoseIcon.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/icons/certificationBleuIcon.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/icons/certificationCyanIcon.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/icons/certificationGreenLimeIcon.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/icons/certificationOrangeIcon.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/icons/circleOrangeIcon.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/icons/connectionWhiteIcon.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/icons/cpuIcon.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/icons/etincelleIcon.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/icons/fuséeRoseIcon.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/icons/guardIcon.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/icons/leftArrowWhiteIcon.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/icons/lightningIcon.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/icons/localisationColorIcon.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/icons/localisationCyanIcon.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/icons/mailBueIcon.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/icons/maintenanceIcon.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/icons/messageOrangeIcon.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/icons/paletteIcon.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/icons/paperPlaneIcon.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/icons/phonePurpleIcon.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/text.txt" afterDir="false" />
+>>>>>>> cea8175f75fe55e47d0e9df450c4c25ea7a8a546
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/css/style.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/style.css.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/css/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/style.scss" afterDir="false" />
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/src/scripts/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/scripts/script.js" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/src/images/card1Example.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/card2Example.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/card2Example.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/icons/calendIcon.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/icons/calendIcon.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/icons/localisationIcon.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/icons/localisationIcon.svg" afterDir="false" />
+>>>>>>> cea8175f75fe55e47d0e9df450c4c25ea7a8a546
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,7 +78,7 @@
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;https://github.com/0Sacha/portfolio-2025.git&quot;,
-    &quot;accountId&quot;: &quot;cdc711c3-b950-4443-9d25-5835f36d829f&quot;
+    &quot;accountId&quot;: &quot;2f0bb71d-38e7-4838-945b-9e8ed8c7f594&quot;
   }
 }</component>
   <component name="HighlightingSettingsPerFile">
@@ -68,7 +106,11 @@
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+<<<<<<< HEAD
     "git-widget-placeholder": "main",
+=======
+    "git-widget-placeholder": "Merging main",
+>>>>>>> cea8175f75fe55e47d0e9df450c4c25ea7a8a546
     "ignore.virus.scanning.warn.message": "true",
     "javascript.preferred.runtime.type.id": "node",
     "last_opened_file_path": "C:/Users/sacha/WebstormProjects/portfolio-2025",
@@ -76,10 +118,15 @@
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
+<<<<<<< HEAD
     "nodejs_interpreter_path": "node",
     "nodejs_package_manager_path": "npm",
     "settings.editor.selected.configurable": "settings.javascript.runtime",
     "ts.external.directory.path": "C:\\Users\\sacha.laville\\AppData\\Local\\Programs\\WebStorm\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external",
+=======
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "settings.javascript.runtime",
+>>>>>>> cea8175f75fe55e47d0e9df450c4c25ea7a8a546
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -206,6 +253,7 @@
       <workItem from="1762876364222" duration="6396000" />
       <workItem from="1762933830358" duration="15130000" />
       <workItem from="1762957713893" duration="3402000" />
+<<<<<<< HEAD
       <workItem from="1763025597885" duration="6102000" />
       <workItem from="1763367307758" duration="622000" />
       <workItem from="1763368273851" duration="20600000" />
@@ -216,6 +264,11 @@
       <workItem from="1763641276716" duration="2550000" />
       <workItem from="1764599166114" duration="1902000" />
       <workItem from="1764669885322" duration="7593000" />
+=======
+      <workItem from="1763025597885" duration="6441000" />
+      <workItem from="1763973303794" duration="37000" />
+      <workItem from="1763973834837" duration="12000" />
+>>>>>>> cea8175f75fe55e47d0e9df450c4c25ea7a8a546
     </task>
     <task id="LOCAL-00001" summary="+fix: fix bug of menu hamburger">
       <option name="closed" value="true" />
