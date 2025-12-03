@@ -33,7 +33,7 @@ html {
     overflow-x: hidden;
   }
 
-  #homeAmbiance {
+    #homeAmbiance {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -327,9 +327,6 @@ html {
       text-align: center;
       margin-top: 170px;
       padding-top: 170px;
-      @media (max-width: 1100px) {
-        display: none;
-      }
 
 
       h1 {
@@ -351,25 +348,28 @@ html {
       gap: 130px;
       justify-content: center;
       align-items: center;
+      scroll-behavior: smooth;
       @media (max-width: 1260px) {
         display: flex;
-        margin: 80px 100px 0 100px;
-        justify-content: center;
-        align-items: center;
+        gap: 50px;
+        justify-content: start;
+        flex-direction: row;
+        margin: 0 20px 0 20px;
+        overflow-x: scroll ;
+        scrollbar-width: none;
       }
 
       #selectionCard01 {
         display: flex;
+        justify-content: center;
+        align-items: center;
         gap: 33px;
 
         @media (max-width: 1260px) {
           margin-top: 80px;
           display: flex;
           flex-direction: column;
-          justify-content: center;
-          align-items: center;
           gap: 33px;
-
         }
 
         #leftSelectCard01 {
@@ -818,6 +818,22 @@ html {
             }
           }
         }
+      }
+    }
+
+    #selectionButton {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 70px ;
+      gap: 5px;
+      .circle1, .circle2, .circle3 {
+        display: flex;
+        background: rgba(255, 255, 255, 0.2);
+        height: 16px;
+        width: 16px;
+        border-radius: 999px;
+        transition: width 300ms ease-out;
       }
     }
 

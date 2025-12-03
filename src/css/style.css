@@ -294,11 +294,6 @@ html body #interTitre {
   margin-top: 170px;
   padding-top: 170px;
 }
-@media (max-width: 1100px) {
-  html body #interTitre {
-    display: none;
-  }
-}
 html body #interTitre h1 {
   font-size: 60px;
   color: rgb(255, 255, 255);
@@ -315,17 +310,23 @@ html body #selection {
   gap: 130px;
   justify-content: center;
   align-items: center;
+  scroll-behavior: smooth;
 }
 @media (max-width: 1260px) {
   html body #selection {
     display: flex;
-    margin: 80px 100px 0 100px;
-    justify-content: center;
-    align-items: center;
+    gap: 50px;
+    justify-content: start;
+    flex-direction: row;
+    margin: 0 20px 0 20px;
+    overflow-x: scroll;
+    scrollbar-width: none;
   }
 }
 html body #selection #selectionCard01 {
   display: flex;
+  justify-content: center;
+  align-items: center;
   gap: 33px;
 }
 @media (max-width: 1260px) {
@@ -333,8 +334,6 @@ html body #selection #selectionCard01 {
     margin-top: 80px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     gap: 33px;
   }
 }
@@ -749,6 +748,21 @@ html body #selection #selectionCard03 #rightSelectCard03 #selectionMore #selecti
   border: 1px solid rgba(255, 255, 255, 0.2);
   background: rgba(255, 255, 255, 0.1);
   list-style: none;
+}
+html body #selectionButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 70px;
+  gap: 5px;
+}
+html body #selectionButton .circle1, html body #selectionButton .circle2, html body #selectionButton .circle3 {
+  display: flex;
+  background: rgba(255, 255, 255, 0.2);
+  height: 16px;
+  width: 16px;
+  border-radius: 999px;
+  transition: width 300ms ease-out;
 }
 html body #interTitre2 {
   display: flex;
