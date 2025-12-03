@@ -55,3 +55,23 @@ selectBtn3.addEventListener('click', (e) => {
     circle3.style.width = '64px'
     circle3.style.backgroundColor = '#51A2FF'
 })
+
+//
+
+// const menu = document.querySelector('.menu');
+// const hamburgerBtn = document.querySelector('#hamburgerBtn');
+// const active = document.querySelector('.active');
+//
+// const hamburgerLines1 = document.querySelector('#hamburgerLines1');
+// const hamburgerLines2 = document.querySelector('#hamburgerLines1');
+// const hamburgerLines3 = document.querySelector('#hamburgerLines1');
+//
+// menu.addEventListener('click', (e) => {
+//     nav.style.width = '75%'
+//     menu.classList.replace('menu', 'active');
+// })
+//
+// active.addEventListener('click', (e) => {
+//     nav.style.width = '5%'
+//     menu.classList.replace('active', 'menu');
+// })
