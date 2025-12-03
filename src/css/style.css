@@ -105,6 +105,13 @@ html body #nav nav {
   z-index: 9999;
   transition: scale 0.2s ease-out;
 }
+@media (max-width: 1100px) {
+  html body #nav nav {
+    margin-top: -50px;
+    width: 75%;
+    height: 50.2px;
+  }
+}
 html body #nav nav .title {
   display: flex;
   align-items: center;
@@ -756,7 +763,9 @@ html body #selectionButton {
   margin-top: 70px;
   gap: 5px;
 }
-html body #selectionButton .circle1, html body #selectionButton .circle2, html body #selectionButton .circle3 {
+html body #selectionButton .circle1,
+html body #selectionButton .circle2,
+html body #selectionButton .circle3 {
   display: flex;
   background: rgba(255, 255, 255, 0.2);
   height: 16px;

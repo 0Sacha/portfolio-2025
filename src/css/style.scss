@@ -130,7 +130,11 @@ html {
         position: fixed;
         z-index: 9999;
         transition: scale 0.2s ease-out;
-
+        @media (max-width: 1100px) {
+          margin-top: -50px;
+          width: 75%;
+          height: 50.2px;
+        }
         .title {
           display: flex;
           align-items: center;
@@ -827,7 +831,10 @@ html {
       justify-content: center;
       margin-top: 70px ;
       gap: 5px;
-      .circle1, .circle2, .circle3 {
+
+      .circle1,
+      .circle2,
+      .circle3 {
         display: flex;
         background: rgba(255, 255, 255, 0.2);
         height: 16px;
