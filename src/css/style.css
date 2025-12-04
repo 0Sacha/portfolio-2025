@@ -442,7 +442,7 @@ html body #selection {
     flex-direction: row;
     margin: 0 20px 0 20px;
     overflow-x: scroll;
-    scrollbar-width: none;
+    scroll-snap-type: x proximity;
   }
 }
 html body #selection #selectionCard01 {

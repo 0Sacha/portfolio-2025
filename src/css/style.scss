@@ -485,7 +485,8 @@ html {
         flex-direction: row;
         margin: 0 20px 0 20px;
         overflow-x: scroll;
-        scrollbar-width: none;
+        //scrollbar-width: none;
+        scroll-snap-type: x proximity;
       }
 
       #selectionCard01 {
