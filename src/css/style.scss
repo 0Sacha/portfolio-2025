@@ -1151,6 +1151,7 @@ html {
 
     #aboutSection {
       margin-top: 88px;
+
       #aboutMeCard {
         display: flex;
         flex-direction: column;
@@ -1167,12 +1168,14 @@ html {
         @media (max-width: 1100px) {
           height: 416px;
         }
+
         h1 {
           color: $text-default;
           font-size: 36px;
           @media (max-width: 1100px) {
             font-size: 30px;
           }
+
           span {
             color: #2b7fff;
           }
@@ -1196,6 +1199,7 @@ html {
           display: flex;
           flex-direction: column;
           gap: 16px;
+
           #aboutMeCDList {
             display: grid;
             grid-template-columns: repeat(4, 1fr);
@@ -1205,6 +1209,7 @@ html {
             @media (max-width: 1100px) {
               grid-template-columns: repeat(2, 1fr);
             }
+
             li {
               display: flex;
               align-items: center;
@@ -1220,6 +1225,7 @@ html {
               transition: all 0.2s ease-out;
               @media (max-width: 1100px) {
               }
+
               img {
                 height: 24px;
                 width: 24px;
@@ -1257,17 +1263,16 @@ html {
     }
 
     #aboutCoupOEil {
+      //background: #4f5e5e;
       display: flex;
       flex-direction: row;
       justify-content: center;
-      margin: 0 auto;
-      gap: 25px;
+      align-items: center;
       @media (max-width: 1100px) {
         display: flex;
         flex-direction: column;
         justify-content: center;
         margin: 0 auto;
-        gap: 25px;
       }
 
       #sectionLeft {
@@ -1276,6 +1281,9 @@ html {
         justify-content: center;
         align-items: center;
         gap: 24px;
+        //background: #912323;
+        @media (max-width: 1100px) {
+        }
 
         #infosEssential {
           display: flex;
@@ -1287,14 +1295,13 @@ html {
           box-sizing: border-box;
 
           border-radius: 24px;
-          //padding: 1px;
           height: 400px;
-          width: 580px;
           gap: 24px;
           @media (max-width: 1100px) {
-            width: 326px;
+            width: 339px;
             height: 400px;
           }
+
           #infoCard {
             display: flex;
             flex-direction: column;
@@ -1326,7 +1333,6 @@ html {
           align-items: center;
           gap: 24px;
           color: $text-default;
-          width: 80%;
 
           #progCard {
             display: flex;
@@ -1336,16 +1342,16 @@ html {
             border-radius: 1rem;
             border: 1px solid rgba(255, 255, 255, 0.10);
             background: rgba(255, 255, 255, 0.05);
-            width: 278px;
-            height: 167.5px;
+            width: 246px;
+            height: 155px;
             gap: 12px;
 
             @media (max-width: 1100px) {
-              width: 156.333px;
-              height: 136.376px;
+              width: 156px;
+              height: 136px;
             }
 
-              img {
+            img {
               height: 24px;
               padding: 13px;
               border-radius: 14px;
@@ -1363,12 +1369,12 @@ html {
             border-radius: 1rem;
             border: 1px solid rgba(255, 255, 255, 0.10);
             background: rgba(255, 255, 255, 0.05);
-            width: 278px;
-            height: 167.5px;
+            width: 246px;
+            height: 155px;
             gap: 12px;
             @media (max-width: 1100px) {
-              width: 156.333px;
-              height: 136.376px;
+              width: 156px;
+              height: 136px;
             }
 
             img {
@@ -1384,22 +1390,23 @@ html {
       }
 
       #sectionRight {
+        margin-top: 17px;
         display: flex;
         flex-direction: column;
-        gap: 22.5px;
+        justify-content: center;
+        align-items: center;
+        gap: 24px;
+        //background: red;
         @media (max-width: 1100px) {
+        }
+
+        #upCard {
           display: flex;
           flex-direction: row;
-        }
-        #sectionRightCard {
-          display: grid;
-          grid-template-columns: 10fr 1fr;
-          justify-items: center;
+          justify-content: center;
           align-items: center;
-          gap: 25px;
-          width: 580px;
-          height: 402px;
-          color: $text-default;
+          gap: 24px;
+          width: 100%;
 
           #jvCard {
             display: flex;
@@ -1409,19 +1416,24 @@ html {
             border-radius: 1rem;
             border: 1px solid rgba(255, 255, 255, 0.10);
             background: rgba(255, 255, 255, 0.05);
-            width: 278px;
-            height: 167.5px;
+            width: 246px;
+            height: 155px;
             gap: 12px;
             @media (max-width: 1100px) {
-              width: 156.333px;
-              height: 136.376px;
+              width: 156px;
+              height: 136px;
             }
+
             img {
               height: 24px;
               padding: 13px;
               border-radius: 14px;
               border: 1px solid rgba(81, 162, 255, 0.30);
               background: rgba(43, 127, 255, 0.20);
+            }
+
+            p {
+              color: $text-default;
             }
 
           }
@@ -1434,13 +1446,14 @@ html {
             border-radius: 1rem;
             border: 1px solid rgba(255, 255, 255, 0.10);
             background: rgba(255, 255, 255, 0.05);
-            width: 278px;
-            height: 167.5px;
+            width: 246px;
+            height: 155px;
             gap: 12px;
             @media (max-width: 1100px) {
-              width: 156.333px;
-              height: 136.376px;
+              width: 156px;
+              height: 136px
             }
+
             img {
               height: 24px;
               padding: 13px;
@@ -1448,7 +1461,19 @@ html {
               border: 1px solid rgba(194, 122, 255, 0.30);
               background: rgba(173, 70, 255, 0.20);
             }
+
+            p {
+              color: $text-default;
+            }
           }
+        }
+
+        #downCard {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+          gap: 24px;
 
           #yearCard {
             display: flex;
@@ -1458,13 +1483,14 @@ html {
             border-radius: 16px;
             border: 1px solid rgba(0, 211, 242, 0.20);
             background: linear-gradient(135deg, rgba(0, 184, 219, 0.10) 0%, rgba(43, 127, 255, 0.10) 100%);
-            width: 278px;
+            width: 246px;
             height: 199px;
             gap: 9px;
             @media (max-width: 1100px) {
-              width: 156.333px;
-              height: 187.264px;;
+              width: 156px;
+              height: 187px;
             }
+
             img {
               height: 24px;
             }
@@ -1495,6 +1521,7 @@ html {
           }
 
           #nbrFormationCard {
+
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -1502,13 +1529,14 @@ html {
             border-radius: 16px;
             border: 1px solid rgba(194, 122, 255, 0.20);
             background: linear-gradient(135deg, rgba(173, 70, 255, 0.10) 0%, rgba(246, 51, 154, 0.10) 100%);
-            width: 278px;
+            width: 246px;
             height: 199px;
             gap: 9px;
             @media (max-width: 1100px) {
-              width: 156.333px;
-              height: 187.264px;;
+              width: 156px;
+              height: 187px;
             }
+
             img {
               height: 24px;
             }
@@ -1539,52 +1567,53 @@ html {
           }
         }
 
-        #sectionDownRightCard {
-          #logiCard {
-            display: none;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            width: 580px;
-            height: 167.5px;
-            border-radius: 16px;
-            border: 1px solid rgba(5, 223, 114, 0.20);
-            background: linear-gradient(135deg, rgba(0, 201, 80, 0.10) 0%, rgba(0, 188, 125, 0.10) 100%);
-            color: $text-default;
-            gap: 16px;
-            @media (max-width: 1100px) {
-              width: 328.66px;
-              height: 186.572px;
-            }
-            h1 {
-              color: #05DF72;
-              font-size: 36px;
-            }
+        #logiCard {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          width: 520px;
+          height: 157px;
+          border-radius: 16px;
+          border: 1px solid rgba(5, 223, 114, 0.20);
+          background: linear-gradient(135deg, rgba(0, 201, 80, 0.10) 0%, rgba(0, 188, 125, 0.10) 100%);
+          color: $text-default;
+          gap: 16px;
+          @media (max-width: 1100px) {
+            display: flex;
+            width: 338px;
+            height: 186.572px;
+          }
 
-            p {
-              color: rgba(255, 255, 255, 0.60);
-              font-size: 14px;
-              text-transform: uppercase;
-            }
+          h1 {
+            color: #05DF72;
+            font-size: 36px;
+          }
 
-            #tag {
+          p {
+            color: rgba(255, 255, 255, 0.60);
+            font-size: 14px;
+            text-transform: uppercase;
+          }
+
+          #tag {
+            display: flex;
+            flex-direction: row;
+            gap: 8px;
+
+            li {
               display: flex;
-              flex-direction: row;
-              gap: 8px;
-
-              li {
-                display: flex;
-                align-items: center;
-                height: 26px;
-                padding: 4px 12px;
-                border-radius: 10px;
-                border: 1px solid rgba(5, 223, 114, 0.20);
-                background: rgba(0, 201, 80, 0.10);
-                list-style: none;
-              }
+              align-items: center;
+              height: 26px;
+              padding: 4px 12px;
+              border-radius: 10px;
+              border: 1px solid rgba(5, 223, 114, 0.20);
+              background: rgba(0, 201, 80, 0.10);
+              list-style: none;
             }
           }
         }
+
       }
     }
 
