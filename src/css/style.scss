@@ -1323,6 +1323,8 @@ html {
               display: flex;
               gap: 12px;
               flex-direction: row;
+              justify-content: start;
+              align-items: center;
             }
           }
         }
@@ -1663,6 +1665,7 @@ html {
         }
 
         #cardCompetence1 {
+          //background: red;
           display: flex;
           flex-direction: column;
           justify-content: center;

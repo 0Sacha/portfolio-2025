@@ -1218,6 +1218,8 @@ html body #aboutCoupOEil #sectionLeft #infosEssential #status #infosTitle {
   display: flex;
   gap: 12px;
   flex-direction: row;
+  justify-content: start;
+  align-items: center;
 }
 html body #aboutCoupOEil #sectionLeft #sectionDownLeftCard {
   display: flex;
