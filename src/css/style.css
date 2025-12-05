@@ -421,9 +421,19 @@ html body #interTitre h1 {
   color: rgb(255, 255, 255);
   text-transform: uppercase;
 }
+@media (max-width: 1100px) {
+  html body #interTitre h1 {
+    font-size: 36px;
+  }
+}
 html body #interTitre p {
   font-size: 20px;
   color: rgba(255, 255, 255, 0.8);
+}
+@media (max-width: 1100px) {
+  html body #interTitre p {
+    font-size: 18px;
+  }
 }
 html body #selection {
   display: flex;
@@ -462,6 +472,7 @@ html body #selection #selectionCard01 {
     display: flex;
     flex-direction: column;
     gap: 33px;
+    align-items: center;
   }
 }
 html body #selection #selectionCard01 #leftSelectCard01 {
@@ -486,7 +497,7 @@ html body #selection #selectionCard01 #midSelectCard01 img:hover {
 html body #selection #selectionCard01 #rightSelectCard01 {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  gap: 38px;
 }
 @media (max-width: 1260px) {
   html body #selection #selectionCard01 #rightSelectCard01 {
@@ -884,22 +895,28 @@ html body #selection #selectionCard03 #rightSelectCard03 #selectionMore #selecti
   background: rgba(255, 255, 255, 0.1);
   list-style: none;
 }
-html body #selectionButton {
-  display: none;
+html body #swipe {
+  display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
-  margin-top: 30px;
-  gap: 5px;
+  gap: 8px;
+  margin-top: 27px;
 }
-html body #selectionButton .circle1,
-html body #selectionButton .circle2,
-html body #selectionButton .circle3 {
-  display: flex;
-  background: rgba(255, 255, 255, 0.2);
-  height: 16px;
-  width: 16px;
-  border-radius: 999px;
-  transition: width 300ms ease-out;
+@media (min-width: 1100px) {
+  html body #swipe {
+    display: none;
+  }
+}
+html body #swipe img {
+  transform: rotate(180deg);
+  width: 15.993px;
+  height: 15.993px;
+}
+html body #swipe p {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 14px;
+  text-align: center;
 }
 html body #interTitre2 {
   display: flex;
@@ -908,9 +925,6 @@ html body #interTitre2 {
   align-items: center;
   margin-top: 97px;
   margin-bottom: 65px;
-}
-html body #interTitre2 .separate {
-  height: 10px;
 }
 html body #interTitre2 h1 {
   font-size: 14px;
@@ -1002,20 +1016,25 @@ html body #interTitre3 {
   margin-top: 170px;
   padding-top: 170px;
 }
-@media (max-width: 1100px) {
-  html body #interTitre3 {
-    display: none;
-  }
-}
 html body #interTitre3 h1 {
   font-size: 60px;
   color: rgb(255, 255, 255);
   text-transform: uppercase;
 }
+@media (max-width: 1100px) {
+  html body #interTitre3 h1 {
+    font-size: 36px;
+  }
+}
 html body #interTitre3 p {
   font-size: 20px;
   color: rgba(255, 255, 255, 0.8);
   margin-bottom: 32px;
+}
+@media (max-width: 1100px) {
+  html body #interTitre3 p {
+    font-size: 18px;
+  }
 }
 html body #interTitre3 a {
   display: flex;
@@ -1031,13 +1050,13 @@ html body #interTitre3 a {
   padding: 8px 12px;
   gap: 16px;
 }
+@media (max-width: 1100px) {
+  html body #interTitre3 a {
+    width: 80%;
+  }
+}
 html body #aboutSection {
   margin-top: 88px;
-}
-@media (max-width: 1100px) {
-  html body #aboutSection {
-    display: none;
-  }
 }
 html body #aboutSection #aboutMeCard {
   display: flex;
@@ -1053,9 +1072,19 @@ html body #aboutSection #aboutMeCard {
   margin: 0 auto;
   gap: 32px;
 }
+@media (max-width: 1100px) {
+  html body #aboutSection #aboutMeCard {
+    height: 416px;
+  }
+}
 html body #aboutSection #aboutMeCard h1 {
   color: rgb(255, 255, 255);
   font-size: 36px;
+}
+@media (max-width: 1100px) {
+  html body #aboutSection #aboutMeCard h1 {
+    font-size: 30px;
+  }
 }
 html body #aboutSection #aboutMeCard h1 span {
   color: #2b7fff;
@@ -1063,6 +1092,11 @@ html body #aboutSection #aboutMeCard h1 span {
 html body #aboutSection #aboutMeCard p {
   color: rgba(255, 255, 255, 0.8);
   font-size: 16px;
+}
+@media (max-width: 1100px) {
+  html body #aboutSection #aboutMeCard p {
+    font-size: 16px;
+  }
 }
 html body #aboutSection #aboutMeCard h2 {
   color: rgba(255, 255, 255, 0.8);
@@ -1075,8 +1109,16 @@ html body #aboutSection #aboutMeCard #aboutMeCD {
   gap: 16px;
 }
 html body #aboutSection #aboutMeCard #aboutMeCD #aboutMeCDList {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  flex-direction: row;
   gap: 8px;
+  align-items: center;
+}
+@media (max-width: 1100px) {
+  html body #aboutSection #aboutMeCard #aboutMeCD #aboutMeCDList {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 html body #aboutSection #aboutMeCard #aboutMeCD #aboutMeCDList li {
   display: flex;
@@ -1112,7 +1154,7 @@ html body #interInterTitre {
 }
 @media (max-width: 1100px) {
   html body #interInterTitre {
-    display: none;
+    font-size: 24px;
   }
 }
 html body #aboutCoupOEil {
@@ -1124,12 +1166,18 @@ html body #aboutCoupOEil {
 }
 @media (max-width: 1100px) {
   html body #aboutCoupOEil {
-    display: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    gap: 25px;
   }
 }
 html body #aboutCoupOEil #sectionLeft {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   gap: 24px;
 }
 html body #aboutCoupOEil #sectionLeft #infosEssential {
@@ -1144,6 +1192,12 @@ html body #aboutCoupOEil #sectionLeft #infosEssential {
   height: 400px;
   width: 580px;
   gap: 24px;
+}
+@media (max-width: 1100px) {
+  html body #aboutCoupOEil #sectionLeft #infosEssential {
+    width: 326px;
+    height: 400px;
+  }
 }
 html body #aboutCoupOEil #sectionLeft #infosEssential #infoCard {
   display: flex;
@@ -1171,8 +1225,11 @@ html body #aboutCoupOEil #sectionLeft #infosEssential #status #infosTitle {
 html body #aboutCoupOEil #sectionLeft #sectionDownLeftCard {
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  align-items: center;
   gap: 24px;
   color: rgb(255, 255, 255);
+  width: 80%;
 }
 html body #aboutCoupOEil #sectionLeft #sectionDownLeftCard #progCard {
   display: flex;
@@ -1185,6 +1242,12 @@ html body #aboutCoupOEil #sectionLeft #sectionDownLeftCard #progCard {
   width: 278px;
   height: 167.5px;
   gap: 12px;
+}
+@media (max-width: 1100px) {
+  html body #aboutCoupOEil #sectionLeft #sectionDownLeftCard #progCard {
+    width: 156.333px;
+    height: 136.376px;
+  }
 }
 html body #aboutCoupOEil #sectionLeft #sectionDownLeftCard #progCard img {
   height: 24px;
@@ -1205,6 +1268,12 @@ html body #aboutCoupOEil #sectionLeft #sectionDownLeftCard #informaCard {
   height: 167.5px;
   gap: 12px;
 }
+@media (max-width: 1100px) {
+  html body #aboutCoupOEil #sectionLeft #sectionDownLeftCard #informaCard {
+    width: 156.333px;
+    height: 136.376px;
+  }
+}
 html body #aboutCoupOEil #sectionLeft #sectionDownLeftCard #informaCard img {
   height: 24px;
   padding: 13px;
@@ -1216,6 +1285,12 @@ html body #aboutCoupOEil #sectionRight {
   display: flex;
   flex-direction: column;
   gap: 22.5px;
+}
+@media (max-width: 1100px) {
+  html body #aboutCoupOEil #sectionRight {
+    display: flex;
+    flex-direction: row;
+  }
 }
 html body #aboutCoupOEil #sectionRight #sectionRightCard {
   display: grid;
@@ -1239,6 +1314,12 @@ html body #aboutCoupOEil #sectionRight #sectionRightCard #jvCard {
   height: 167.5px;
   gap: 12px;
 }
+@media (max-width: 1100px) {
+  html body #aboutCoupOEil #sectionRight #sectionRightCard #jvCard {
+    width: 156.333px;
+    height: 136.376px;
+  }
+}
 html body #aboutCoupOEil #sectionRight #sectionRightCard #jvCard img {
   height: 24px;
   padding: 13px;
@@ -1258,6 +1339,12 @@ html body #aboutCoupOEil #sectionRight #sectionRightCard #graphCard {
   height: 167.5px;
   gap: 12px;
 }
+@media (max-width: 1100px) {
+  html body #aboutCoupOEil #sectionRight #sectionRightCard #graphCard {
+    width: 156.333px;
+    height: 136.376px;
+  }
+}
 html body #aboutCoupOEil #sectionRight #sectionRightCard #graphCard img {
   height: 24px;
   padding: 13px;
@@ -1276,6 +1363,12 @@ html body #aboutCoupOEil #sectionRight #sectionRightCard #yearCard {
   width: 278px;
   height: 199px;
   gap: 9px;
+}
+@media (max-width: 1100px) {
+  html body #aboutCoupOEil #sectionRight #sectionRightCard #yearCard {
+    width: 156.333px;
+    height: 187.264px;
+  }
 }
 html body #aboutCoupOEil #sectionRight #sectionRightCard #yearCard img {
   height: 24px;
@@ -1312,6 +1405,12 @@ html body #aboutCoupOEil #sectionRight #sectionRightCard #nbrFormationCard {
   height: 199px;
   gap: 9px;
 }
+@media (max-width: 1100px) {
+  html body #aboutCoupOEil #sectionRight #sectionRightCard #nbrFormationCard {
+    width: 156.333px;
+    height: 187.264px;
+  }
+}
 html body #aboutCoupOEil #sectionRight #sectionRightCard #nbrFormationCard img {
   height: 24px;
 }
@@ -1336,7 +1435,7 @@ html body #aboutCoupOEil #sectionRight #sectionRightCard #nbrFormationCard p {
   color: rgba(255, 255, 255, 0.4);
 }
 html body #aboutCoupOEil #sectionRight #sectionDownRightCard #logiCard {
-  display: flex;
+  display: none;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -1347,6 +1446,12 @@ html body #aboutCoupOEil #sectionRight #sectionDownRightCard #logiCard {
   background: linear-gradient(135deg, rgba(0, 201, 80, 0.1) 0%, rgba(0, 188, 125, 0.1) 100%);
   color: rgb(255, 255, 255);
   gap: 16px;
+}
+@media (max-width: 1100px) {
+  html body #aboutCoupOEil #sectionRight #sectionDownRightCard #logiCard {
+    width: 328.66px;
+    height: 186.572px;
+  }
 }
 html body #aboutCoupOEil #sectionRight #sectionDownRightCard #logiCard h1 {
   color: #05DF72;
