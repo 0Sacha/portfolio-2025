@@ -433,6 +433,7 @@ html body #selection {
   justify-content: center;
   align-items: center;
   scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
 }
 @media (max-width: 1260px) {
   html body #selection {
@@ -442,14 +443,18 @@ html body #selection {
     flex-direction: row;
     margin: 0 20px 0 20px;
     overflow-x: scroll;
-    scroll-snap-type: x proximity;
+    scrollbar-width: none;
   }
 }
 html body #selection #selectionCard01 {
+  scroll-snap-align: start;
   display: flex;
   justify-content: center;
   align-items: center;
+  scroll-snap-stop: always;
   gap: 33px;
+  width: 100%;
+  flex-shrink: 0;
 }
 @media (max-width: 1260px) {
   html body #selection #selectionCard01 {
@@ -588,8 +593,12 @@ html body #selection #selectionCard01 #rightSelectCard01 #selectionMore #selecti
   list-style: none;
 }
 html body #selection #selectionCard02 {
+  scroll-snap-align: start;
   display: flex;
+  scroll-snap-stop: always;
   gap: 33px;
+  width: 100%;
+  flex-shrink: 0;
 }
 @media (max-width: 1260px) {
   html body #selection #selectionCard02 {
@@ -730,8 +739,12 @@ html body #selection #selectionCard02 #rightSelectCard02 #selectionMore #selecti
   list-style: none;
 }
 html body #selection #selectionCard03 {
+  scroll-snap-align: start;
   display: flex;
+  scroll-snap-stop: always;
   gap: 33px;
+  width: 100%;
+  flex-shrink: 0;
 }
 @media (max-width: 1260px) {
   html body #selection #selectionCard03 {
@@ -872,10 +885,10 @@ html body #selection #selectionCard03 #rightSelectCard03 #selectionMore #selecti
   list-style: none;
 }
 html body #selectionButton {
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: center;
-  margin-top: 70px;
+  margin-top: 30px;
   gap: 5px;
 }
 html body #selectionButton .circle1,

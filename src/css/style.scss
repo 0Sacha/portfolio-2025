@@ -478,6 +478,7 @@ html {
       justify-content: center;
       align-items: center;
       scroll-behavior: smooth;
+      scroll-snap-type: x  mandatory ;
       @media (max-width: 1260px) {
         display: flex;
         gap: 50px;
@@ -485,16 +486,18 @@ html {
         flex-direction: row;
         margin: 0 20px 0 20px;
         overflow-x: scroll;
-        //scrollbar-width: none;
-        scroll-snap-type: x proximity;
+        scrollbar-width: none;
       }
 
       #selectionCard01 {
+        scroll-snap-align :start;
         display: flex;
         justify-content: center;
         align-items: center;
+        scroll-snap-stop: always;
         gap: 33px;
-
+        width: 100%;
+        flex-shrink: 0;
         @media (max-width: 1260px) {
           margin-top: 80px;
           display: flex;
@@ -647,8 +650,12 @@ html {
       }
 
       #selectionCard02 {
+        scroll-snap-align :start;
         display: flex;
+        scroll-snap-stop: always;
         gap: 33px;
+        width: 100%;
+        flex-shrink: 0;
         @media (max-width: 1260px) {
           display: flex;
           flex-direction: column-reverse;
@@ -799,8 +806,12 @@ html {
       }
 
       #selectionCard03 {
+        scroll-snap-align :start;
         display: flex;
+        scroll-snap-stop: always;
         gap: 33px;
+        width: 100%;
+        flex-shrink: 0;
         @media (max-width: 1260px) {
           margin-top: 80px;
           display: flex;
@@ -952,10 +963,10 @@ html {
     }
 
     #selectionButton {
-      display: flex;
+      display: none;
       align-items: center;
       justify-content: center;
-      margin-top: 70px;
+      margin-top: 30px;
       gap: 5px;
 
       .circle1,
