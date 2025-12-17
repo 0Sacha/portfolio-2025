@@ -1662,6 +1662,12 @@ html {
           border: 1px solid rgba(255, 255, 255, 0.10);
           background: rgba(255, 255, 255, 0.05);
           transition: all .1s ease-in-out;
+          @media (max-width: 1100px) {
+            width: 315.72px;
+            border-radius: 16px;
+            border: 0.8px solid rgba(255, 255, 255, 0.10);
+            background: rgba(255, 255, 255, 0.05);
+          }
         }
 
         #cardCompetence1 {
@@ -1671,6 +1677,9 @@ html {
           justify-content: center;
           align-items: start;
           padding-left: 25px;
+          @media (max-width: 1100px) {
+            padding-left: 20px;
+          }
 
           img {
             display: flex;
@@ -1719,6 +1728,9 @@ html {
           justify-content: center;
           align-items: start;
           padding-left: 25px;
+          @media (max-width: 1100px) {
+            padding-left: 20px;
+          }
 
           img {
             display: flex;
@@ -1771,6 +1783,9 @@ html {
           justify-content: center;
           align-items: start;
           padding-left: 25px;
+          @media (max-width: 1100px) {
+            padding-left: 20px;
+          }
 
           img {
             display: flex;
@@ -1823,6 +1838,9 @@ html {
           justify-content: center;
           align-items: start;
           padding-left: 25px;
+          @media (max-width: 1100px) {
+            padding-left: 20px;
+          }
 
           img {
             display: flex;
@@ -1875,6 +1893,9 @@ html {
           justify-content: center;
           align-items: start;
           padding-left: 25px;
+          @media (max-width: 1100px) {
+            padding-left: 20px;
+          }
 
           img {
             display: flex;
@@ -1927,6 +1948,9 @@ html {
           justify-content: center;
           align-items: start;
           padding-left: 25px;
+          @media (max-width: 1100px) {
+            padding-left: 20px;
+          }
 
           img {
             display: flex;
@@ -1976,7 +2000,12 @@ html {
     }
 
     #ExpTitle {
-      margin: 63px 127px 32px 127px;
+      display: flex;
+      margin: 63px 0 32px 0;
+      flex-direction: column;
+      justify-content: start;
+      align-items: center;
+
       @media (max-width: 1100px) {
         display: flex;
       }
@@ -1984,6 +2013,13 @@ html {
       h1 {
         color: $text-default;
         font-size: 30px;
+        @media (max-width: 1100px) {
+          display: flex;
+          flex-direction: column;
+          justify-content: start;
+          align-items: center;
+          font-size: 24px;
+        }
       }
     }
 
@@ -2006,13 +2042,13 @@ html {
       #cardExpProffesionnelles1,
       #cardExpProffesionnelles2,
       #cardExpProffesionnelles3 {
-        width: 80%;
+        width: 1500px;
         border-radius: 16px;
         border: 0.8px solid rgba(255, 255, 255, 0.10);
         background: rgba(255, 255, 255, 0.05);
-
+        margin: 0 auto;
         @media (max-width: 1100px) {
-          width: 378.65px;
+          width: 300px;
           border-radius: 16px;
           border: 0.8px solid rgba(255, 255, 255, 0.10);
           background: rgba(255, 255, 255, 0.05);
@@ -2028,6 +2064,7 @@ html {
           padding: 30px;
           gap: 0;
         }
+
         #cardExpLeft {
           #bagGreenColorIcon {
             display: flex;
@@ -2053,6 +2090,7 @@ html {
             width: 378.65px;
             gap: 5px;
           }
+
           #cardTitle {
             display: flex;
             flex-direction: row;
@@ -2104,6 +2142,7 @@ html {
             @media (max-width: 1100px) {
               flex-direction: column;
             }
+
             #ExpproDate {
               display: flex;
               flex-direction: row;
@@ -2146,6 +2185,7 @@ html {
             margin-top: 23.5px;
             @media (max-width: 1100px) {
             }
+
             li {
               display: flex;
               color: rgba(255, 255, 255, 0.60);
@@ -2162,9 +2202,11 @@ html {
             margin-top: 12px;
             @media (max-width: 1100px) {
               display: flex;
+              flex-wrap: wrap;
               flex-direction: row;
               gap: 5px;
             }
+
             li {
               border-radius: 10px;
               border: 0.8px solid rgba(5, 223, 114, 0.20);
@@ -2188,6 +2230,10 @@ html {
         flex-direction: row;
         gap: 16px;
         padding: 32.8px;
+        @media (max-width: 1100px) {
+          padding: 30px;
+          gap: 0;
+        }
 
         #cardExpLeft {
           #bagBlueColorIcon {
@@ -2200,18 +2246,35 @@ html {
             border-radius: 14px;
             border: 0.8px solid rgba(81, 162, 255, 0.30);
             background: rgba(43, 127, 255, 0.20);
+            @media (max-width: 1100px) {
+              display: none;
+            }
           }
         }
 
         #cardExpRight {
+          gap: 16px;
+          @media (max-width: 1100px) {
+            display: flex;
+            flex-direction: column;
+            width: 378.65px;
+            gap: 5px;
+          }
+
           #cardTitle {
             display: flex;
             flex-direction: row;
-            gap: 10px;
+            align-items: center;
 
             h1 {
               font-size: 24px;
               color: $text-default;
+              @media (max-width: 1100px) {
+                display: flex;
+                flex-direction: row;
+                align-items: start;
+                gap: 0;
+              }
             }
           }
 
@@ -2227,6 +2290,9 @@ html {
             flex-direction: row;
             gap: 4px;
             margin-top: 16px;
+            @media (max-width: 1100px) {
+              flex-direction: column;
+            }
 
             #ExpproDate {
               display: flex;
@@ -2264,18 +2330,30 @@ html {
             flex-direction: column;
             gap: 4px;
             margin-top: 23.5px;
+            @media (max-width: 1100px) {
+            }
 
             li {
+              display: flex;
               color: rgba(255, 255, 255, 0.60);
               line-height: 22.75px;
+              @media (max-width: 1100px) {
+              }
             }
           }
+
 
           #ExpSkill {
             display: flex;
             flex-direction: row;
             gap: 8px;
             margin-top: 12px;
+            @media (max-width: 1100px) {
+              display: flex;
+              flex-direction: row;
+              flex-wrap: wrap;
+              gap: 5px;
+            }
 
             li {
               border-radius: 10px;
@@ -2286,6 +2364,10 @@ html {
               justify-content: center;
               align-items: center;
               list-style: none;
+              @media (max-width: 1100px) {
+                padding: 10px 5px;
+                font-size: 15px;
+              }
             }
           }
         }
@@ -2296,6 +2378,10 @@ html {
         flex-direction: row;
         gap: 16px;
         padding: 32.8px;
+        @media (max-width: 1100px) {
+          padding: 30px;
+          gap: 0;
+        }
 
         #cardExpLeft {
           #bagPurpleColorIcon {
@@ -2308,11 +2394,20 @@ html {
             border-radius: 14px;
             border: 0.8px solid rgba(194, 122, 255, 0.30);
             background: rgba(173, 70, 255, 0.20);
+            @media (max-width: 1100px) {
+              display: none;
+            }
           }
         }
 
         #cardExpRight {
           gap: 16px;
+          @media (max-width: 1100px) {
+            display: flex;
+            flex-direction: column;
+            width: 378.65px;
+            gap: 5px;
+          }
 
           #cardTitle {
             display: flex;
@@ -2320,8 +2415,18 @@ html {
             gap: 10px;
 
             h1 {
+              display: flex;
+              flex-direction: row;
+              align-items: center;
               font-size: 24px;
               color: $text-default;
+              gap: 10px;
+              @media (max-width: 1100px) {
+                display: flex;
+                flex-direction: row;
+                align-items: start;
+                gap: 0;
+              }
             }
           }
 
@@ -2337,6 +2442,9 @@ html {
             flex-direction: row;
             gap: 4px;
             margin-top: 16px;
+            @media (max-width: 1100px) {
+              flex-direction: column;
+            }
 
             #ExpproDate {
               display: flex;
@@ -2374,18 +2482,29 @@ html {
             flex-direction: column;
             gap: 4px;
             margin-top: 23.5px;
+            @media (max-width: 1100px) {
+            }
 
             li {
+              display: flex;
               color: rgba(255, 255, 255, 0.60);
               line-height: 22.75px;
+              @media (max-width: 1100px) {
+              }
             }
           }
 
           #ExpSkill {
             display: flex;
             flex-direction: row;
+            flex-wrap: wrap;
             gap: 8px;
             margin-top: 12px;
+            @media (max-width: 1100px) {
+              display: flex;
+              flex-direction: row;
+              gap: 5px;
+            }
 
             li {
               border-radius: 10px;
@@ -2396,6 +2515,10 @@ html {
               justify-content: center;
               align-items: center;
               list-style: none;
+              @media (max-width: 1100px) {
+                padding: 10px 5px;
+                font-size: 15px;
+              }
             }
           }
         }
@@ -2591,9 +2714,14 @@ html {
     }
 
     #formaTitle {
-      margin: 63px 127px 32px 127px;
+      display: flex;
+      margin: 63px 0 32px 0;
+      flex-direction: column;
+      justify-content: start;
+      align-items: center;
+
       @media (max-width: 1100px) {
-        display: none;
+        display: flex;
       }
 
       h1 {
