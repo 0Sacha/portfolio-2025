@@ -1587,6 +1587,9 @@ html {
 
           #tag {
             display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
             flex-direction: row;
             gap: 8px;
 
@@ -3048,8 +3051,8 @@ html {
             }
             li {
               border-radius: 10px;
-              border: 0.8px solid rgba(81, 162, 255, 0.20);
-              background: rgba(43, 127, 255, 0.10);
+              border: 0.8px solid rgba(0, 211, 242, 0.20);
+              background: rgba(0, 184, 219, 0.10);
               padding: 4.8px 8px;
               color: $text-default;
               justify-content: center;
@@ -3265,8 +3268,8 @@ html {
             li {
               display: flex;
               flex-direction: row;
-              width: 100%;
-              padding: 7px 1px;
+              width: 25%;
+              padding: 7px 12px;
               justify-content: center;
               align-items: center;
               list-style: none;
@@ -3276,6 +3279,21 @@ html {
               border-radius: 999px;
               border: 0.8px solid rgba(255, 137, 4, 0.30);
               background: rgba(255, 105, 0, 0.20);
+              @media (max-width: 1100px) {
+                display: flex;
+                flex-direction: row;
+                width: 100%;
+                padding: 7px 1px;
+                justify-content: center;
+                align-items: center;
+                list-style: none;
+                color: #FF8904;
+                font-weight: normal;
+                font-size: 12px;
+                border-radius: 999px;
+                border: 0.8px solid rgba(255, 137, 4, 0.30);
+                background: rgba(255, 105, 0, 0.20);
+              }
             }
           }
 
@@ -3587,7 +3605,7 @@ html {
       gap: 85px;
       align-items: start;
       justify-content: center;
-      margin: 80px 0px;
+      margin: 80px 0;
       @media (max-width: 1100px) {
         display: none;
       }
