@@ -1775,7 +1775,7 @@ html body #ExpTitle {
 }
 @media (max-width: 1100px) {
   html body #ExpTitle {
-    display: none;
+    display: flex;
   }
 }
 html body #ExpTitle h1 {
@@ -1792,7 +1792,12 @@ html body #aboutExpProffesionnelles {
 }
 @media (max-width: 1100px) {
   html body #aboutExpProffesionnelles {
-    display: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    gap: 24px;
   }
 }
 html body #aboutExpProffesionnelles #cardExpProffesionnelles1,
@@ -1803,11 +1808,27 @@ html body #aboutExpProffesionnelles #cardExpProffesionnelles3 {
   border: 0.8px solid rgba(255, 255, 255, 0.1);
   background: rgba(255, 255, 255, 0.05);
 }
+@media (max-width: 1100px) {
+  html body #aboutExpProffesionnelles #cardExpProffesionnelles1,
+  html body #aboutExpProffesionnelles #cardExpProffesionnelles2,
+  html body #aboutExpProffesionnelles #cardExpProffesionnelles3 {
+    width: 378.65px;
+    border-radius: 16px;
+    border: 0.8px solid rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.05);
+  }
+}
 html body #aboutExpProffesionnelles #cardExpProffesionnelles1 {
   display: flex;
   flex-direction: row;
   gap: 16px;
   padding: 32.8px;
+}
+@media (max-width: 1100px) {
+  html body #aboutExpProffesionnelles #cardExpProffesionnelles1 {
+    padding: 30px;
+    gap: 0;
+  }
 }
 html body #aboutExpProffesionnelles #cardExpProffesionnelles1 #cardExpLeft #bagGreenColorIcon {
   display: flex;
@@ -1820,19 +1841,44 @@ html body #aboutExpProffesionnelles #cardExpProffesionnelles1 #cardExpLeft #bagG
   border: 0.8px solid rgba(5, 223, 114, 0.3);
   background: rgba(0, 201, 80, 0.2);
 }
+@media (max-width: 1100px) {
+  html body #aboutExpProffesionnelles #cardExpProffesionnelles1 #cardExpLeft #bagGreenColorIcon {
+    display: none;
+  }
+}
 html body #aboutExpProffesionnelles #cardExpProffesionnelles1 #cardExpRight {
   gap: 16px;
+}
+@media (max-width: 1100px) {
+  html body #aboutExpProffesionnelles #cardExpProffesionnelles1 #cardExpRight {
+    display: flex;
+    flex-direction: column;
+    width: 378.65px;
+    gap: 5px;
+  }
 }
 html body #aboutExpProffesionnelles #cardExpProffesionnelles1 #cardExpRight #cardTitle {
   display: flex;
   flex-direction: row;
-  gap: 10px;
+  align-items: center;
 }
 html body #aboutExpProffesionnelles #cardExpProffesionnelles1 #cardExpRight #cardTitle h1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   font-size: 24px;
   color: rgb(255, 255, 255);
+  gap: 10px;
 }
-html body #aboutExpProffesionnelles #cardExpProffesionnelles1 #cardExpRight #cardTitle li {
+@media (max-width: 1100px) {
+  html body #aboutExpProffesionnelles #cardExpProffesionnelles1 #cardExpRight #cardTitle h1 {
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    gap: 0;
+  }
+}
+html body #aboutExpProffesionnelles #cardExpProffesionnelles1 #cardExpRight #cardTitle h1 #statusEmplois {
   display: flex;
   width: 6%;
   padding: 7px 12px;
@@ -1840,6 +1886,7 @@ html body #aboutExpProffesionnelles #cardExpProffesionnelles1 #cardExpRight #car
   align-items: center;
   list-style: none;
   color: #05DF72;
+  font-weight: normal;
   font-size: 12px;
   border-radius: 999px;
   border: 0.8px solid rgba(5, 223, 114, 0.3);
@@ -1856,6 +1903,11 @@ html body #aboutExpProffesionnelles #cardExpProffesionnelles1 #cardExpRight #inf
   flex-direction: row;
   gap: 4px;
   margin-top: 16px;
+}
+@media (max-width: 1100px) {
+  html body #aboutExpProffesionnelles #cardExpProffesionnelles1 #cardExpRight #infoExpProffesionnelles {
+    flex-direction: column;
+  }
 }
 html body #aboutExpProffesionnelles #cardExpProffesionnelles1 #cardExpRight #infoExpProffesionnelles #ExpproDate {
   display: flex;
@@ -1891,6 +1943,7 @@ html body #aboutExpProffesionnelles #cardExpProffesionnelles1 #cardExpRight #Exp
   margin-top: 23.5px;
 }
 html body #aboutExpProffesionnelles #cardExpProffesionnelles1 #cardExpRight #ExpTache li {
+  display: flex;
   color: rgba(255, 255, 255, 0.6);
   line-height: 22.75px;
 }
@@ -1899,6 +1952,13 @@ html body #aboutExpProffesionnelles #cardExpProffesionnelles1 #cardExpRight #Exp
   flex-direction: row;
   gap: 8px;
   margin-top: 12px;
+}
+@media (max-width: 1100px) {
+  html body #aboutExpProffesionnelles #cardExpProffesionnelles1 #cardExpRight #ExpSkill {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+  }
 }
 html body #aboutExpProffesionnelles #cardExpProffesionnelles1 #cardExpRight #ExpSkill li {
   border-radius: 10px;
@@ -1909,6 +1969,12 @@ html body #aboutExpProffesionnelles #cardExpProffesionnelles1 #cardExpRight #Exp
   justify-content: center;
   align-items: center;
   list-style: none;
+}
+@media (max-width: 1100px) {
+  html body #aboutExpProffesionnelles #cardExpProffesionnelles1 #cardExpRight #ExpSkill li {
+    padding: 10px 5px;
+    font-size: 15px;
+  }
 }
 html body #aboutExpProffesionnelles #cardExpProffesionnelles2 {
   display: flex;
