@@ -3700,8 +3700,69 @@ html body #contactSection #contactRightMainContent #contactPart p {
   font-size: 12px;
   padding: 10px;
 }
-html body #loginPage {
+html body #loginBody {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
   height: 100vh;
+}
+html body #loginBody .loginContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 24px 48px;
+  height: 400px;
+  width: 324px;
+  gap: 32px;
+}
+html body #loginBody .loginContainer .backHomeBtn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.05);
+  padding: 10px 20px;
+  width: 95px;
+}
+html body #loginBody .loginContainer .backHomeBtn a {
+  display: flex;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+html body #loginBody .loginContainer .inputContainer {
+  display: flex;
+  flex-direction: column;
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.05);
+  padding: 33px;
+  gap: 20px;
+}
+html body #loginBody .loginContainer .inputContainer .inputContent {
+  display: flex;
+  padding: 16px 48px 16px 16px;
+  border-radius: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.05);
+  color: rgba(255, 255, 255, 0.3);
+  font-size: 14px;
+}
+html body #loginBody .loginContainer .inputContainer button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(255, 255, 255);
+  padding: 15px 0;
+  border-radius: 14px;
+  border: none;
+  background: linear-gradient(90deg, #2B7FFF 0%, #AD46FF 100%);
+  box-shadow: 0 10px 15px -3px rgba(43, 127, 255, 0.3), 0 4px 6px -4px rgba(43, 127, 255, 0.3);
+  font-size: 14px;
 }
 html body footer {
   display: flex;

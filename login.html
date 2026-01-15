@@ -35,40 +35,16 @@
 </head>
 <body>
 
-<div id="loginPage">
-    <div id="loginContainer">
-        <div id="loginBack">
-            <a href="index.html" id="loginBackThePortfolio">
-                <img src="./src/images/icons/leftArrowWhiteIcon.svg" alt="Fleches blanche pointant vers la gauche">
-                <p>Retour</p>
-            </a>
+<div id="loginBody">
+    <div class="loginContainer">
+        <div class="backHomeBtn">
+            <img src="./src/images/icons/leftArrowWhiteIcon.svg">
+            <a href="index.html">Retour</a>
         </div>
-        <div id="loginForm">
-            <div id="loginText">
-                <div id="loginTitre">
-                    <img src="./src/images/icons/guardIcon.svg">
-                    <p>Accès sécurisé</p>
-                </div>
-                <p>Connectez-vous au système de gestion</p>
-            </div>
-            <form method="post" action="login.html" id="loginInput">
-                <label for="loginEmail">Adresse email</label>
-                <input type="email" id="loginEmail" name="loginEmail" placeholder="votre@email.com">
-                <label for="loginPassword">Mot de passe</label>
-                <input type="password" id="loginPassword" name="loginPassword" placeholder="••••••••••">
-                <button type="submit" id="loginSubmit" formmethod="post"><img
-                        src="./src/images/icons/connectionWhiteIcon.svg">Se connecter
-                </button>
-            </form>
-            <div id="barre"></div>
-            <div id="loginCredit">
-                <img src="./src/images/icons/etincelleIcon.svg">
-                <p>Powered by Sacha Laville</p>
-            </div>
-        </div>
-        <div id="loginSecure">
-            <img src="./src/images/icons/cadenaWhiteIcon.svg">
-            <p>Connexion sécurisée avec chiffrement</p>
+        <div class="inputContainer">
+            <input class="inputContent" type="text" placeholder="Entrez votre ID">
+            <input class="inputContent" type="password" placeholder="Entrez votre mot de passe">
+            <button type="submit">Accéder</button>
         </div>
     </div>
 </div>

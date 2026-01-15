@@ -1110,6 +1110,7 @@ html {
       justify-content: center;
       gap: 17px;
       margin-top: 170px;
+
       h1 {
         font-size: 60px;
         color: $text-default;
@@ -2937,8 +2938,8 @@ html {
             border: 0.8px solid rgba(81, 162, 255, 0.30);
             background: rgba(43, 127, 255, 0.20);
             @media (max-width: 1100px) {
-            display: none;
-          }
+              display: none;
+            }
           }
         }
 
@@ -3049,6 +3050,7 @@ html {
               flex-direction: row;
               gap: 5px;
             }
+
             li {
               border-radius: 10px;
               border: 0.8px solid rgba(0, 211, 242, 0.20);
@@ -3200,6 +3202,7 @@ html {
               flex-direction: row;
               gap: 5px;
             }
+
             li {
               border-radius: 10px;
               border: 0.8px solid rgba(5, 223, 114, 0.20);
@@ -3312,6 +3315,7 @@ html {
             @media (max-width: 1100px) {
               flex-direction: column;
             }
+
             #FormationsDate {
               display: flex;
               flex-direction: row;
@@ -3375,6 +3379,7 @@ html {
               flex-direction: row;
               gap: 5px;
             }
+
             li {
               border-radius: 10px;
               border: 0.8px solid rgba(255, 137, 4, 0.20);
@@ -3402,6 +3407,7 @@ html {
           padding: 30px;
           gap: 0;
         }
+
         #cardFormationsLeft {
           #certificatRoseIcon {
             display: flex;
@@ -3427,6 +3433,7 @@ html {
             width: 378.65px;
             gap: 5px;
           }
+
           #cardTitle {
             display: flex;
             flex-direction: row;
@@ -3459,6 +3466,7 @@ html {
             @media (max-width: 1100px) {
               flex-direction: column;
             }
+
             #FormationsDate {
               display: flex;
               flex-direction: row;
@@ -3522,6 +3530,7 @@ html {
               flex-direction: row;
               gap: 5px;
             }
+
             li {
               border-radius: 10px;
               border: 0.8px solid rgba(251, 100, 182, 0.20);
@@ -4061,14 +4070,80 @@ html {
 
     //login page
 
-    #loginPage {
+    #loginBody {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin: 0 auto;
       height: 100vh;
 
-      #loginContainer {
-        #loginBack {
+      .loginContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0 auto;
+        padding: 24px 48px;
+        height: 400px;
+        width: 324px;
+        gap: 32px;
 
+        .backHomeBtn {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+          gap: 8px;
+          border-radius: 16px;
+          border: 1px solid rgba(255, 255, 255, 0.10);
+          background: rgba(255, 255, 255, 0.05);
+          padding: 10px 20px;
+          width: 95px;
+
+          img {
+
+          }
+
+          a {
+            display: flex;
+            color: $text-default;
+            text-decoration: none;
+          }
+        }
+
+        .inputContainer {
+          display: flex;
+          flex-direction: column;
+          border-radius: 16px;
+          border: 1px solid rgba(255, 255, 255, 0.10);
+          background: rgba(255, 255, 255, 0.05);
+          padding: 33px;
+          gap: 20px;
+
+          .inputContent {
+            display: flex;
+            padding: 16px 48px 16px 16px;
+            border-radius: 14px;
+            border: 1px solid rgba(255, 255, 255, 0.10);
+            background: rgba(255, 255, 255, 0.05);
+            color: rgba(255, 255, 255, 0.30);
+            font-size: 14px;
+          }
+
+          button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: $text-default;
+            padding: 15px 0;
+            border-radius: 14px;
+            border: none;
+            background: linear-gradient(90deg, #2B7FFF 0%, #AD46FF 100%);
+            box-shadow: 0 10px 15px -3px rgba(43, 127, 255, 0.30), 0 4px 6px -4px rgba(43, 127, 255, 0.30);
+            font-size: 14px;
+          }
         }
       }
+
     }
 
     footer {
