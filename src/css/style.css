@@ -254,10 +254,10 @@ html body #mobile nav {
   align-items: start;
   flex-direction: row;
   justify-content: space-between;
-  height: 150px;
+  height: 200px;
   width: 40%;
   position: fixed;
-  margin-top: -41px;
+  margin-top: 10px;
   z-index: 9999;
   transition: scale 0.2s ease-out;
 }
@@ -581,13 +581,17 @@ html body #selection #selectionCard01 #rightSelectCard01 #selectionMore #selecti
 html body #selection #selectionCard01 #rightSelectCard01 #selectionMore #selectionShowMore img {
   transition: all 300ms ease-out;
 }
-html body #selection #selectionCard01 #rightSelectCard01 #selectionMore #selectionShowMore img:hover {
-  transform: translateX(5px) translateY(-5px);
-}
 html body #selection #selectionCard01 #rightSelectCard01 #selectionMore #selectionShowMore a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-decoration: none;
   color: rgb(255, 255, 255);
   font-size: 16px;
+  gap: 7px;
+}
+html body #selection #selectionCard01 #rightSelectCard01 #selectionMore #selectionShowMore a:hover > img {
+  transform: translateX(5px) translateY(-5px);
 }
 html body #selection #selectionCard01 #rightSelectCard01 #selectionMore #selectionShowMore:hover {
   border: 1px solid rgba(81, 162, 255, 0.7);
@@ -727,13 +731,17 @@ html body #selection #selectionCard02 #rightSelectCard02 #selectionMore #selecti
 html body #selection #selectionCard02 #rightSelectCard02 #selectionMore #selectionShowMore img {
   transition: all 300ms ease-out;
 }
-html body #selection #selectionCard02 #rightSelectCard02 #selectionMore #selectionShowMore img:hover {
-  transform: translateX(5px) translateY(-5px);
-}
 html body #selection #selectionCard02 #rightSelectCard02 #selectionMore #selectionShowMore a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-decoration: none;
   color: rgb(255, 255, 255);
   font-size: 16px;
+  gap: 7px;
+}
+html body #selection #selectionCard02 #rightSelectCard02 #selectionMore #selectionShowMore a:hover > img {
+  transform: translateX(5px) translateY(-5px);
 }
 html body #selection #selectionCard02 #rightSelectCard02 #selectionMore #selectionShowMore:hover {
   border: 1px solid rgba(81, 162, 255, 0.7);
@@ -873,13 +881,17 @@ html body #selection #selectionCard03 #rightSelectCard03 #selectionMore #selecti
 html body #selection #selectionCard03 #rightSelectCard03 #selectionMore #selectionShowMore img {
   transition: all 300ms ease-out;
 }
-html body #selection #selectionCard03 #rightSelectCard03 #selectionMore #selectionShowMore img:hover {
-  transform: translateX(5px) translateY(-5px);
-}
 html body #selection #selectionCard03 #rightSelectCard03 #selectionMore #selectionShowMore a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-decoration: none;
   color: rgb(255, 255, 255);
   font-size: 16px;
+  gap: 7px;
+}
+html body #selection #selectionCard03 #rightSelectCard03 #selectionMore #selectionShowMore a:hover > img {
+  transform: translateX(5px) translateY(-5px);
 }
 html body #selection #selectionCard03 #rightSelectCard03 #selectionMore #selectionShowMore:hover {
   border: 1px solid rgba(81, 162, 255, 0.7);
@@ -3715,9 +3727,15 @@ html body #loginBody .loginContainer {
   padding: 24px 48px;
   height: 400px;
   width: 324px;
-  gap: 32px;
+  gap: 16px;
 }
-html body #loginBody .loginContainer .backHomeBtn {
+html body #loginBody .loginContainer .upContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+html body #loginBody .loginContainer .upContainer .backHomeBtn {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -3726,13 +3744,45 @@ html body #loginBody .loginContainer .backHomeBtn {
   border-radius: 16px;
   border: 1px solid rgba(255, 255, 255, 0.1);
   background: rgba(255, 255, 255, 0.05);
-  padding: 10px 20px;
+  padding: 5px 15px;
   width: 95px;
 }
-html body #loginBody .loginContainer .backHomeBtn a {
+html body #loginBody .loginContainer .upContainer .backHomeBtn a {
   display: flex;
+  justify-content: center;
+  align-items: center;
   color: rgb(255, 255, 255);
   text-decoration: none;
+  padding: 5px 15px;
+  gap: 8px;
+}
+html body #loginBody .loginContainer .upContainer .backHomeBtn a img {
+  transition: all ease 0.2s;
+}
+html body #loginBody .loginContainer .upContainer .backHomeBtn a:hover > img {
+  transform: translateX(-5px);
+  scale: 1.2;
+}
+html body #loginBody .loginContainer .upContainer .logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.05);
+  padding: 13px;
+  width: 15px;
+  height: 15px;
+}
+html body #loginBody .loginContainer .upContainer .logo p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  gap: 8px;
 }
 html body #loginBody .loginContainer .inputContainer {
   display: flex;
@@ -3763,6 +3813,10 @@ html body #loginBody .loginContainer .inputContainer button {
   background: linear-gradient(90deg, #2B7FFF 0%, #AD46FF 100%);
   box-shadow: 0 10px 15px -3px rgba(43, 127, 255, 0.3), 0 4px 6px -4px rgba(43, 127, 255, 0.3);
   font-size: 14px;
+  transition: all ease 0.2s;
+}
+html body #loginBody .loginContainer .inputContainer button:hover {
+  scale: 1.03;
 }
 html body footer {
   display: flex;
