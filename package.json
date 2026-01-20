@@ -4,6 +4,7 @@
   },
   "dependencies": {
     "dotenv": "^17.2.3",
+    "express": "^5.2.1",
     "github-calendar": "^2.3.4",
     "mysql2": "^3.16.1"
   }
