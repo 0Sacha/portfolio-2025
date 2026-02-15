@@ -42,16 +42,19 @@
 </div>
 <div id="nav">
     <nav id="navbar">
-        <div class="title">
-            <img src="src/images/icons/logo_sachalaville.svg">
-            <h1>Sacha Laville</h1>
-        </div>
         <ul>
             <li><a href="#">Accueil</a></li>
             <li><a href="#interTitre">Mes projets</a></li>
             <li><a href="#interTitre3">Expérience</a></li>
             <li><a href="#contactTitle">Contact</a></li>
-            <li><a href="login.html"><img id="loginBtn" src="src/images/icons/loginIcon.svg"></a></li>
+            <li><a href="login.html">
+                <svg id="loginBtn" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M15.8334 17.5V15.8333C15.8334 14.9493 15.4822 14.1014 14.857 13.4763C14.2319 12.8512 13.3841 12.5 12.5 12.5H7.50002C6.61597 12.5 5.76812 12.8512 5.143 13.4763C4.51788 14.1014 4.16669 14.9493 4.16669 15.8333V17.5"
+                          stroke="white" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M10 9.16667C11.841 9.16667 13.3334 7.67428 13.3334 5.83333C13.3334 3.99238 11.841 2.5 10 2.5C8.15907 2.5 6.66669 3.99238 6.66669 5.83333C6.66669 7.67428 8.15907 9.16667 10 9.16667Z"
+                          stroke="white" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </a></li>
         </ul>
         <input class="menu" type="checkbox" id="hamburgerBtn">
         <label for="hamburgerBtn">
@@ -77,13 +80,12 @@
     </div>
     <div id="hero-subtitle">
         <p>
-            APPRENTI DÉVELOPPEUR
+            DÉVELOPPEUR FRONT-END
         </p>
     </div>
     <div id="hero-description">
         <p>
             Passionné par la création d'expériences web immersives et innovantes.
-            Spécialisé dans le développement front-end moderne avec JS et SCSS.
         </p>
     </div>
     <div id="hero-icon">
@@ -161,38 +163,6 @@
     <img src="src/images/icons/leftArrowWhiteIcon.svg">
     <p>Swipez pour naviguer</p>
 </div>
-
-<!--<div id="interTitre2">-->
-<!--    <h1>AUTRES PROJETS</h1>-->
-<!--</div>-->
-
-<!--<div id="cardSection">-->
-<!--    <div id="card">-->
-<!--        <div id="topCard">-->
-<!--            <img src="">-->
-<!--        </div>-->
-<!--        <div id="downCard">-->
-<!--            <div id="cardTitle">-->
-<!--                <h1></h1>-->
-<!--                <div id="cardShow">-->
-<!--                    <a href="" target="_blank"><img id="cardShowMore"-->
-<!--                                                    src="./src/images/icons/showMeMore.svg"></a>-->
-<!--                    <a href="" target="_blank"><img id="cardGithub"-->
-<!--                                                    src="./src/images/icons/github-light-icon.svg"></a>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--            <div id="cardDescription">-->
-<!--                <p></p>-->
-<!--            </div>-->
-<!--            <div id="cardTopic">-->
-<!--                <li></li>-->
-<!--                <li></li>-->
-<!--                <li></li>-->
-<!--                <li></li>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--    </div>-->
-<!--</div>-->
 
 <div id="interTitre3">
     <h1>À Propos & Expérience</h1>
@@ -680,35 +650,35 @@
         </div>
         <div id="contactRightMainContent">
 
-                <div id="contactPart">
-                    <h1>Envoyez-moi un message</h1>
-                    <p>Remplissez le formulaire ci-dessous et je vous repondrai dans le splus brefs délais.</p>
-                    <form id="contactForm" method="POST" action="/contact">
-                        <div id="contactFormName">
-                            <label for="nom">Nom complet <span id="contactFormRequired">*</span></label>
-                            <input type="text" name="nom" id="name" required placeholder="Votre nom">
-                        </div>
-                        <div id="contactFormEmail">
-                            <label for="email">Adresse email <span id="contactFormRequired">*</span></label>
-                            <input type="email" name="email" id="email" required placeholder="votre.email@exemple.com">
-                        </div>
-                        <div id="contactFormTopic">
-                            <label for="message">Sujet <span id="contactFormRequired">*</span></label>
-                            <textarea name="sujet" id="topic" required
-                                      placeholder="De quoi souhaitez-vous parler ?"></textarea>
-                        </div>
-                        <div id="contactFormMessage">
-                            <label for="contenu">Message <span id="contactFormRequired">*</span></label>
-                            <textarea name="contenu" id="message" required placeholder="Votre message..."></textarea>
-                        </div>
-                        <div id="contactFormButtons">
-                            <button type="submit"><img src="src/images/icons/paperPlaneIcon.svg">Envoyez le message
-                            </button>
-                        </div>
-                    </form>
-                    <p>En envoyant ce formulaire, vous acceptez que vos donnée soient utilisées pour vous
-                        recontacter.</p>
-                </div>
+            <div id="contactPart">
+                <h1>Envoyez-moi un message</h1>
+                <p>Remplissez le formulaire ci-dessous et je vous repondrai dans le splus brefs délais.</p>
+                <form id="contactForm" method="POST" action="/contact">
+                    <div id="contactFormName">
+                        <label for="nom">Nom complet <span id="contactFormRequired">*</span></label>
+                        <input type="text" name="nom" id="name" required placeholder="Votre nom">
+                    </div>
+                    <div id="contactFormEmail">
+                        <label for="email">Adresse email <span id="contactFormRequired">*</span></label>
+                        <input type="email" name="email" id="email" required placeholder="votre.email@exemple.com">
+                    </div>
+                    <div id="contactFormTopic">
+                        <label for="message">Sujet <span id="contactFormRequired">*</span></label>
+                        <textarea name="sujet" id="topic" required
+                                  placeholder="De quoi souhaitez-vous parler ?"></textarea>
+                    </div>
+                    <div id="contactFormMessage">
+                        <label for="contenu">Message <span id="contactFormRequired">*</span></label>
+                        <textarea name="contenu" id="message" required placeholder="Votre message..."></textarea>
+                    </div>
+                    <div id="contactFormButtons">
+                        <button type="submit"><img src="src/images/icons/paperPlaneIcon.svg">Envoyez le message
+                        </button>
+                    </div>
+                </form>
+                <p>En envoyant ce formulaire, vous acceptez que vos donnée soient utilisées pour vous
+                    recontacter.</p>
+            </div>
         </div>
     </div>
 </div>
