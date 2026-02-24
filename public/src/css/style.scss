@@ -41,7 +41,8 @@ html {
   body {
     height: calc(100vh + 150px);
     font-family: $font-default;
-    @media (max-width: 375px) {
+    @media (max-width: 1100px) {
+      align-items: center;
     }
 
     #message-envoyé-p {
@@ -204,6 +205,7 @@ html {
       width: 100%;
       margin-top: 78px;
       @media (max-width: 1100px) {
+        display: none;
         justify-content: end;
         margin-right: 20px;
       }
@@ -224,34 +226,13 @@ html {
         z-index: 9999;
         transition: scale 0.2s ease-out;
         @media (max-width: 1100px) {
-          display: flex;
-          align-items: center;
+          bottom: 0;
+          left: 0;
+          right: 0;
           justify-content: center;
-          margin-top: -50px;
-          width: 1px;
-          height: 50px;
-        }
-
-        .title {
-          display: flex;
-          align-items: center;
-          gap: 12px;
-          @media (max-width: 1100px) {
-            display: none;
-          }
-
-          img {
-            width: 32px;
-            height: 32px;
-          }
-
-          h1 {
-            color: #ffffff;
-            font-size: 16px;
-            @media (max-width: 1100px) {
-              display: none;
-            }
-          }
+          margin: 20px auto;
+          padding: 5px 0;
+          width: 85%;
         }
 
         ul {
@@ -260,7 +241,10 @@ html {
           padding: 0;
           align-items: center;
           @media (max-width: 1100px) {
-            display: none;
+            display: flex;
+            gap: 10px;
+            padding: 0;
+            align-items: center
           }
 
           li {
@@ -278,9 +262,15 @@ html {
             }
           }
 
+          .li-login-btn {
+            @media (max-width: 1100px) {
+              display: none;
+            }
+          }
 
           svg {
             display: flex;
+
             path {
               stroke: $text-navbar-color;
             }
@@ -288,117 +278,64 @@ html {
 
           svg:hover {
             transform: scale(1.05);
+
             path {
               stroke: #ffffff;
             }
-
-          }
-
-
-        }
-
-
-        #hamburgerBtn {
-          display: none;
-        }
-
-        #hamburgerBtn:checked + label {
-          transform: translateY(2px);
-
-          #hamburgerLines1 {
-            transform: rotate(45deg) + translateX(7px) + translateY(6px);
-          }
-
-          #hamburgerLines2 {
-            transform: rotate(-45deg);
-
-          }
-
-          #hamburgerLines3 {
-            transform: translateY(4px);
-            opacity: 0;
           }
         }
-
-        label {
-          display: none;
-          flex-direction: column;
-          gap: 7px;
-          align-items: center;
-          justify-content: center;
-          cursor: pointer;
-          @media (max-width: 1100px) {
-            display: flex;
-          }
-
-          #hamburgerLines1, #hamburgerLines2, #hamburgerLines3 {
-            transition: all 300ms ease-in-out;
-          }
-
-          #hamburgerLines1 {
-            height: 2px;
-            width: 25px;
-            background-color: #ffffff;
-          }
-
-          #hamburgerLines2 {
-            height: 2px;
-            width: 25px;
-            background-color: #ffffff;
-          }
-
-          #hamburgerLines3 {
-            height: 2px;
-            width: 25px;
-            background-color: #ffffff;
-          }
-        }
-
       }
-
     }
 
-
-    #mobile {
+    #nav-mobile {
       display: none;
-      left: 0;
       align-items: center;
       justify-content: center;
+      width: 100%;
       margin-top: 78px;
-      transition: all 300ms ease-in-out;
       @media (max-width: 1100px) {
-        justify-content: start;
-        margin-left: 20px;
+        display: flex;
+        justify-content: end;
+        margin-right: 20px;
       }
 
-      &.active {
-        display: flex;
-        transition: all 300ms ease-in-out;
-      }
-
-      nav {
-        display: flex;
-        color: $text-navbar-color;
-        background-color: rgba(255, 255, 255, 0.01);
-        border: $border-navbar-color;
-        border-radius: $border_radius-navbar-color;
-        box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
-        backdrop-filter: blur(50px) saturate(450%);
-        padding: 33px 33px;
-        align-items: start;
-        flex-direction: row;
-        justify-content: space-between;
-        height: 200px;
-        width: 40%;
-        position: fixed;
-        margin-top: 10px;
-        z-index: 9999;
-        transition: scale 0.2s ease-out;
+      #navbar-mobile {
+        @media (max-width: 1100px) {
+          display: flex;
+          color: $text-navbar-color;
+          background-color: rgba(255, 255, 255, 0.01);
+          border: $border-navbar-color;
+          border-radius: $border_radius-navbar-color;
+          box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+          backdrop-filter: blur(50px) saturate(450%);
+          position: fixed;
+          z-index: 9999;
+          //transform: translateY(100px);
+          transition: scale 0.2s ease-out,
+          transform 500ms ease-in-out;
+          flex-direction: column;
+          bottom: 0;
+          right: 0;
+          justify-content: center;
+          margin-bottom: 20px;
+          margin-right: 10px;
+          padding: 1px;
+          height: 10rem;
+          width: 15%;
+        }
 
         ul {
           display: flex;
-          flex-direction: column;
-          gap: 30px;
+          gap: 32px;
+          padding: 0;
+          align-items: center;
+          @media (max-width: 1100px) {
+            display: flex;
+            flex-direction: column;
+            gap: 50px;
+            padding: 0;
+            align-items: center
+          }
 
           li {
             display: flex;
@@ -408,14 +345,45 @@ html {
               color: $text-navbar-color;
               text-decoration: none;
               font-size: 16px;
+
+              .fa-house,
+              .fa-book-bookmark,
+              .fa-envelope {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+              }
             }
 
             a:hover {
               color: #ffffff;
             }
           }
+
+          .li-login-btn {
+            @media (max-width: 1100px) {
+              display: none;
+            }
+          }
+
+          svg {
+            display: flex;
+
+            path {
+              stroke: $text-navbar-color;
+            }
+          }
+
+          svg:hover {
+            transform: scale(1.05);
+
+            path {
+              stroke: #ffffff;
+            }
+          }
         }
       }
+
     }
 
     #hero {
@@ -424,7 +392,6 @@ html {
       align-items: start;
       margin-left: 182.5px;
       margin-top: 150px;
-      //padding: 150px 182.5px 33px 182.5px;
       @media (max-width: 1100px) {
         align-items: center;
         justify-content: center;
@@ -556,7 +523,7 @@ html {
       margin-top: 170px;
       padding-top: 170px;
       @media (max-width: 1100px) {
-
+        display: none;
       }
 
       h1 {
@@ -587,8 +554,10 @@ html {
       max-width: 1200px;
       margin: 75px auto;
 
-      @media (max-width: 1260px) {
+      @media (max-width: 1100px) {
+        display: none;
         flex-direction: row;
+        align-items: center;
         gap: 50px;
         justify-content: flex-start;
         margin: 0 auto;
@@ -941,6 +910,9 @@ html {
       @media (min-width: 1100px) {
         display: none;
       }
+      @media (max-width: 1100px) {
+        display: none;
+      }
 
       img {
         transform: rotate(180deg);
@@ -1226,7 +1198,7 @@ html {
       align-items: center;
 
       @media (max-width: 1100px) {
-        display: flex;
+        display: none;
       }
 
       h1 {
@@ -1247,6 +1219,9 @@ html {
       justify-content: center;
       align-items: center;
       margin: 0 auto;
+      @media (max-width: 1100px) {
+        display: none;
+      }
 
       .section-container {
         max-width: $default-max-width;
@@ -3254,7 +3229,7 @@ html {
       margin-top: 170px;
       padding-top: 170px;
       @media (max-width: 1100px) {
-        display: none;
+        display: flex;
       }
 
 

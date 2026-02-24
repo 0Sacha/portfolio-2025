@@ -18,6 +18,11 @@ html body {
   height: calc(100vh + 150px);
   font-family: "Space Grotesk";
 }
+@media (max-width: 1100px) {
+  html body {
+    align-items: center;
+  }
+}
 html body #message-envoyé-p {
   position: fixed;
   transform: translateY(150%);
@@ -157,6 +162,7 @@ html body #nav {
 }
 @media (max-width: 1100px) {
   html body #nav {
+    display: none;
     justify-content: end;
     margin-right: 20px;
   }
@@ -179,35 +185,13 @@ html body #nav #navbar {
 }
 @media (max-width: 1100px) {
   html body #nav #navbar {
-    display: flex;
-    align-items: center;
+    bottom: 0;
+    left: 0;
+    right: 0;
     justify-content: center;
-    margin-top: -50px;
-    width: 1px;
-    height: 50px;
-  }
-}
-html body #nav #navbar .title {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-}
-@media (max-width: 1100px) {
-  html body #nav #navbar .title {
-    display: none;
-  }
-}
-html body #nav #navbar .title img {
-  width: 32px;
-  height: 32px;
-}
-html body #nav #navbar .title h1 {
-  color: #ffffff;
-  font-size: 16px;
-}
-@media (max-width: 1100px) {
-  html body #nav #navbar .title h1 {
-    display: none;
+    margin: 20px auto;
+    padding: 5px 0;
+    width: 85%;
   }
 }
 html body #nav #navbar ul {
@@ -218,7 +202,10 @@ html body #nav #navbar ul {
 }
 @media (max-width: 1100px) {
   html body #nav #navbar ul {
-    display: none;
+    display: flex;
+    gap: 10px;
+    padding: 0;
+    align-items: center;
   }
 }
 html body #nav #navbar ul li {
@@ -233,6 +220,11 @@ html body #nav #navbar ul li a {
 html body #nav #navbar ul li a:hover {
   color: #ffffff;
 }
+@media (max-width: 1100px) {
+  html body #nav #navbar ul .li-login-btn {
+    display: none;
+  }
+}
 html body #nav #navbar ul svg {
   display: flex;
 }
@@ -245,106 +237,93 @@ html body #nav #navbar ul svg:hover {
 html body #nav #navbar ul svg:hover path {
   stroke: #ffffff;
 }
-html body #nav #navbar #hamburgerBtn {
+html body #nav-mobile {
   display: none;
-}
-html body #nav #navbar #hamburgerBtn:checked + label {
-  transform: translateY(2px);
-}
-html body #nav #navbar #hamburgerBtn:checked + label #hamburgerLines1 {
-  transform: rotate(45deg)translateX(7px)translateY(6px);
-}
-html body #nav #navbar #hamburgerBtn:checked + label #hamburgerLines2 {
-  transform: rotate(-45deg);
-}
-html body #nav #navbar #hamburgerBtn:checked + label #hamburgerLines3 {
-  transform: translateY(4px);
-  opacity: 0;
-}
-html body #nav #navbar label {
-  display: none;
-  flex-direction: column;
-  gap: 7px;
   align-items: center;
   justify-content: center;
-  cursor: pointer;
-}
-@media (max-width: 1100px) {
-  html body #nav #navbar label {
-    display: flex;
-  }
-}
-html body #nav #navbar label #hamburgerLines1, html body #nav #navbar label #hamburgerLines2, html body #nav #navbar label #hamburgerLines3 {
-  transition: all 300ms ease-in-out;
-}
-html body #nav #navbar label #hamburgerLines1 {
-  height: 2px;
-  width: 25px;
-  background-color: #ffffff;
-}
-html body #nav #navbar label #hamburgerLines2 {
-  height: 2px;
-  width: 25px;
-  background-color: #ffffff;
-}
-html body #nav #navbar label #hamburgerLines3 {
-  height: 2px;
-  width: 25px;
-  background-color: #ffffff;
-}
-html body #mobile {
-  display: none;
-  left: 0;
-  align-items: center;
-  justify-content: center;
+  width: 100%;
   margin-top: 78px;
-  transition: all 300ms ease-in-out;
 }
 @media (max-width: 1100px) {
-  html body #mobile {
-    justify-content: start;
-    margin-left: 20px;
+  html body #nav-mobile {
+    display: flex;
+    justify-content: end;
+    margin-right: 20px;
   }
 }
-html body #mobile.active {
-  display: flex;
-  transition: all 300ms ease-in-out;
+@media (max-width: 1100px) {
+  html body #nav-mobile #navbar-mobile {
+    display: flex;
+    color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(255, 255, 255, 0.01);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 24px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(50px) saturate(450%);
+    position: fixed;
+    z-index: 9999;
+    transition: scale 0.2s ease-out, transform 500ms ease-in-out;
+    flex-direction: column;
+    bottom: 0;
+    right: 0;
+    justify-content: center;
+    margin-bottom: 20px;
+    margin-right: 10px;
+    padding: 1px;
+    height: 10rem;
+    width: 15%;
+  }
 }
-html body #mobile nav {
+html body #nav-mobile #navbar-mobile ul {
   display: flex;
-  color: rgba(255, 255, 255, 0.8);
-  background-color: rgba(255, 255, 255, 0.01);
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  border-radius: 24px;
-  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
-  backdrop-filter: blur(50px) saturate(450%);
-  padding: 33px 33px;
-  align-items: start;
-  flex-direction: row;
-  justify-content: space-between;
-  height: 200px;
-  width: 40%;
-  position: fixed;
-  margin-top: 10px;
-  z-index: 9999;
-  transition: scale 0.2s ease-out;
+  gap: 32px;
+  padding: 0;
+  align-items: center;
 }
-html body #mobile nav ul {
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
+@media (max-width: 1100px) {
+  html body #nav-mobile #navbar-mobile ul {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding: 0;
+    align-items: center;
+  }
 }
-html body #mobile nav ul li {
+html body #nav-mobile #navbar-mobile ul li {
   display: flex;
   list-style: none;
 }
-html body #mobile nav ul li a {
+html body #nav-mobile #navbar-mobile ul li a {
   color: rgba(255, 255, 255, 0.8);
   text-decoration: none;
   font-size: 16px;
 }
-html body #mobile nav ul li a:hover {
+html body #nav-mobile #navbar-mobile ul li a .fa-house,
+html body #nav-mobile #navbar-mobile ul li a .fa-book-bookmark,
+html body #nav-mobile #navbar-mobile ul li a .fa-envelope {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+html body #nav-mobile #navbar-mobile ul li a:hover {
   color: #ffffff;
+}
+@media (max-width: 1100px) {
+  html body #nav-mobile #navbar-mobile ul .li-login-btn {
+    display: none;
+  }
+}
+html body #nav-mobile #navbar-mobile ul svg {
+  display: flex;
+}
+html body #nav-mobile #navbar-mobile ul svg path {
+  stroke: rgba(255, 255, 255, 0.8);
+}
+html body #nav-mobile #navbar-mobile ul svg:hover {
+  transform: scale(1.05);
+}
+html body #nav-mobile #navbar-mobile ul svg:hover path {
+  stroke: #ffffff;
 }
 html body #hero {
   display: flex;
@@ -484,6 +463,11 @@ html body #interTitre {
   margin-top: 170px;
   padding-top: 170px;
 }
+@media (max-width: 1100px) {
+  html body #interTitre {
+    display: none;
+  }
+}
 html body #interTitre h1 {
   font-size: 60px;
   color: rgb(255, 255, 255);
@@ -513,9 +497,11 @@ html body #selection {
   max-width: 1200px;
   margin: 75px auto;
 }
-@media (max-width: 1260px) {
+@media (max-width: 1100px) {
   html body #selection {
+    display: none;
     flex-direction: row;
+    align-items: center;
     gap: 50px;
     justify-content: flex-start;
     margin: 0 auto;
@@ -848,6 +834,11 @@ html body #swipe {
     display: none;
   }
 }
+@media (max-width: 1100px) {
+  html body #swipe {
+    display: none;
+  }
+}
 html body #swipe img {
   transform: rotate(180deg);
   width: 15.993px;
@@ -1095,7 +1086,7 @@ html body #competenceTitle {
 }
 @media (max-width: 1100px) {
   html body #competenceTitle {
-    display: flex;
+    display: none;
   }
 }
 html body #competenceTitle h1 {
@@ -1116,6 +1107,11 @@ html body #aboutCompetences {
   justify-content: center;
   align-items: center;
   margin: 0 auto;
+}
+@media (max-width: 1100px) {
+  html body #aboutCompetences {
+    display: none;
+  }
 }
 html body #aboutCompetences .section-container {
   max-width: 1200px;
@@ -2960,7 +2956,7 @@ html body #contactTitle {
 }
 @media (max-width: 1100px) {
   html body #contactTitle {
-    display: none;
+    display: flex;
   }
 }
 html body #contactTitle h1 {

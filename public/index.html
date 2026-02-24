@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, user-scalable=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
     <title>Porfolio 2025 - Sacha Laville</title>
 
@@ -47,30 +48,21 @@
             <li><a href="#interTitre">Mes projets</a></li>
             <li><a href="#interTitre3">Expérience</a></li>
             <li><a href="#contactTitle">Contact</a></li>
-            <li><a href="login.html">
-                <svg id="loginBtn" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M15.8334 17.5V15.8333C15.8334 14.9493 15.4822 14.1014 14.857 13.4763C14.2319 12.8512 13.3841 12.5 12.5 12.5H7.50002C6.61597 12.5 5.76812 12.8512 5.143 13.4763C4.51788 14.1014 4.16669 14.9493 4.16669 15.8333V17.5"
-                          stroke="white" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path d="M10 9.16667C11.841 9.16667 13.3334 7.67428 13.3334 5.83333C13.3334 3.99238 11.841 2.5 10 2.5C8.15907 2.5 6.66669 3.99238 6.66669 5.83333C6.66669 7.67428 8.15907 9.16667 10 9.16667Z"
-                          stroke="white" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-            </a></li>
+            <li class="li-login-btn">
+                <a href="login.html">
+                    <i class="fa-solid fa-user-shield"></i>
+                </a>
+            </li>
         </ul>
-        <input class="menu" type="checkbox" id="hamburgerBtn">
-        <label for="hamburgerBtn">
-            <div id="hamburgerLines1"></div>
-            <div id="hamburgerLines2"></div>
-            <div id="hamburgerLines3"></div>
-        </label>
     </nav>
 </div>
-<div id="mobile">
-    <nav>
+<div id="nav-mobile">
+    <nav id="navbar-mobile">
         <ul>
-            <li><a href="#">Accueil</a></li>
-            <li><a href="#interTitre">Mes projets</a></li>
-            <li><a href="#interTitre3">Expérience</a></li>
-            <li><a href="#contactTitle">Contact</a></li>
+            <li><a href="#"><i class="fa-solid fa-house fa-lg"></i></a></li>
+            <!--            <li><a href="#interTitre"><i class="fa-solid fa-briefcase"></i></a></li>-->
+            <li><a href="#interTitre3"><i class="fa-solid fa-book-bookmark fa-lg"></i></a></li>
+            <li><a href="#contactTitle"><i class="fa-solid fa-envelope fa-lg"></i></a></li>
         </ul>
     </nav>
 </div>
@@ -100,7 +92,7 @@
                                                                                alt="icône d'une boîte au lettre, qui renvoie au mail pro de Sacha Laville"></a>
     </div>
     <div id="hero-links">
-        <a id="hero-links-project" href="#interTitre">voir mes projet <span><img
+        <a id="hero-links-project" href="#interTitre3">voir mes projet <span><img
                 src="src/images/icons/down-arrow-light.svg"
                 alt="Button qui redirige vers la  section projet de Sacha Laville"></span></a>
         <a id="hero-links-contact" href="#contactTitle">Me contacter</a>
