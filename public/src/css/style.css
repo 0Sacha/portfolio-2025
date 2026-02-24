@@ -36,13 +36,13 @@ html body #message-envoyé-p {
   right: 24px;
   height: 53px;
   width: 200px;
-  color: #0A0A0A;
+  color: #0a0a0a;
   font-size: 13px;
   border-radius: 8px;
   font-weight: 500;
   line-height: 19.5px;
   border: 1px solid rgba(0, 0, 0, 0.1);
-  background: #FFF;
+  background: #fff;
   box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.1);
   z-index: 999;
 }
@@ -80,13 +80,13 @@ html body #message-no-envoyé-p {
   right: 24px;
   height: 53px;
   width: 200px;
-  color: #0A0A0A;
+  color: #0a0a0a;
   font-size: 13px;
   border-radius: 8px;
   font-weight: 500;
   line-height: 19.5px;
   border: 1px solid rgba(0, 0, 0, 0.1);
-  background: #FFF;
+  background: #fff;
   box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.1);
   z-index: 999;
 }
@@ -359,7 +359,7 @@ html body #hero #hero-title {
 }
 html body #hero #hero-subtitle {
   margin-top: 15px;
-  color: #51A2FF;
+  color: #51a2ff;
   font-size: 48px;
   font-weight: 300;
   line-height: 48px; /* 100% */
@@ -400,7 +400,9 @@ html body #hero #hero-icon {
 html body #hero #hero-icon a {
   text-decoration: none;
 }
-html body #hero #hero-icon .fa-github, html body #hero #hero-icon .fa-linkedin-in, html body #hero #hero-icon .fa-paper-plane {
+html body #hero #hero-icon .fa-github,
+html body #hero #hero-icon .fa-linkedin-in,
+html body #hero #hero-icon .fa-paper-plane {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -413,7 +415,9 @@ html body #hero #hero-icon .fa-github, html body #hero #hero-icon .fa-linkedin-i
   width: 24px;
   color: white;
 }
-html body #hero #hero-icon .fa-github:hover, html body #hero #hero-icon .fa-linkedin-in:hover, html body #hero #hero-icon .fa-paper-plane:hover {
+html body #hero #hero-icon .fa-github:hover,
+html body #hero #hero-icon .fa-linkedin-in:hover,
+html body #hero #hero-icon .fa-paper-plane:hover {
   border: 1px solid rgba(81, 162, 255, 0.5);
   background: rgba(255, 255, 255, 0.1);
 }
@@ -429,7 +433,8 @@ html body #hero #hero-links {
     flex-direction: column;
   }
 }
-html body #hero #hero-links #hero-links-project, html body #hero #hero-links #hero-links-contact {
+html body #hero #hero-links #hero-links-project,
+html body #hero #hero-links #hero-links-contact {
   color: rgb(255, 255, 255);
   text-decoration: none;
   transition: all 150ms ease-in-out;
@@ -449,7 +454,8 @@ html body #hero #hero-links #hero-links-project {
   background: rgba(43, 127, 255, 0.2);
   gap: 8px;
 }
-html body #hero #hero-links #hero-links-project, html body #hero #hero-links img {
+html body #hero #hero-links #hero-links-project,
+html body #hero #hero-links img {
   display: flex;
   align-items: center;
 }
@@ -1606,7 +1612,7 @@ html body #aboutExpProffesionnelles .section-container #cardExpProffesionnelles1
   justify-content: center;
   align-items: center;
   list-style: none;
-  color: #05DF72;
+  color: #05df72;
   font-weight: normal;
   font-size: 12px;
   border-radius: 999px;
@@ -1614,7 +1620,7 @@ html body #aboutExpProffesionnelles .section-container #cardExpProffesionnelles1
   background: rgba(0, 201, 80, 0.2);
 }
 html body #aboutExpProffesionnelles .section-container #cardExpProffesionnelles1 #cardExpRight h2 {
-  color: #05DF72;
+  color: #05df72;
   font-size: 16px;
   font-weight: 400;
   margin-top: 8px;
@@ -1759,7 +1765,7 @@ html body #aboutExpProffesionnelles .section-container #cardExpProffesionnelles2
   }
 }
 html body #aboutExpProffesionnelles .section-container #cardExpProffesionnelles2 #cardExpRight h2 {
-  color: #51A2FF;
+  color: #51a2ff;
   font-size: 16px;
   font-weight: 400;
   margin-top: 12px;
@@ -1904,7 +1910,7 @@ html body #aboutExpProffesionnelles .section-container #cardExpProffesionnelles3
   }
 }
 html body #aboutExpProffesionnelles .section-container #cardExpProffesionnelles3 #cardExpRight h2 {
-  color: #C27AFF;
+  color: #c27aff;
   font-size: 16px;
   font-weight: 400;
   margin-top: 12px;
@@ -2263,7 +2269,7 @@ html body #aboutFormations .section-container #cardFormations1 #cardFormationsRi
   justify-content: center;
   align-items: center;
   list-style: none;
-  color: #51A2FF;
+  color: #51a2ff;
   font-weight: normal;
   font-size: 12px;
   border-radius: 999px;
@@ -2271,7 +2277,7 @@ html body #aboutFormations .section-container #cardFormations1 #cardFormationsRi
   background: rgba(43, 127, 255, 0.2);
 }
 html body #aboutFormations .section-container #cardFormations1 #cardFormationsRight h2 {
-  color: #51A2FF;
+  color: #51a2ff;
   font-size: 16px;
   font-weight: 400;
   margin-top: 8px;
@@ -2417,7 +2423,7 @@ html body #aboutFormations .section-container #cardFormations2 #cardFormationsRi
   }
 }
 html body #aboutFormations .section-container #cardFormations2 #cardFormationsRight h2 {
-  color: #00D3F2;
+  color: #00d3f2;
   font-size: 16px;
   font-weight: 400;
   margin-top: 8px;
@@ -2562,7 +2568,7 @@ html body #aboutFormations .section-container #cardFormations3 #cardFormationsRi
   }
 }
 html body #aboutFormations .section-container #cardFormations3 #cardFormationsRight h2 {
-  color: #05DF72;
+  color: #05df72;
   font-size: 16px;
   font-weight: 400;
   margin-top: 8px;
@@ -2706,7 +2712,7 @@ html body #aboutFormations .section-container #cardFormations4 #cardFormationsRi
   justify-content: center;
   align-items: center;
   list-style: none;
-  color: #FF8904;
+  color: #ff8904;
   font-weight: normal;
   font-size: 12px;
   border-radius: 999px;
@@ -2722,7 +2728,7 @@ html body #aboutFormations .section-container #cardFormations4 #cardFormationsRi
     justify-content: center;
     align-items: center;
     list-style: none;
-    color: #FF8904;
+    color: #ff8904;
     font-weight: normal;
     font-size: 12px;
     border-radius: 999px;
@@ -2731,7 +2737,7 @@ html body #aboutFormations .section-container #cardFormations4 #cardFormationsRi
   }
 }
 html body #aboutFormations .section-container #cardFormations4 #cardFormationsRight h2 {
-  color: #FF8904;
+  color: #ff8904;
   font-size: 16px;
   font-weight: 400;
   margin-top: 8px;
@@ -2875,7 +2881,7 @@ html body #aboutFormations .section-container #cardFormations5 #cardFormationsRi
   }
 }
 html body #aboutFormations .section-container #cardFormations5 #cardFormationsRight h2 {
-  color: #FB64B6;
+  color: #fb64b6;
   font-size: 16px;
   font-weight: 400;
   margin-top: 8px;
@@ -2989,10 +2995,10 @@ html body #phraseDeFin p {
   color: rgb(255, 255, 255);
 }
 html body #phraseDeFin p #dynamic {
-  color: #FB64B6;
+  color: #fb64b6;
 }
 html body #phraseDeFin p #investi {
-  color: #C27AFF;
+  color: #c27aff;
 }
 html body #phraseDeFin:hover {
   border: 0.8px solid rgba(251, 100, 182, 0.75);
@@ -3236,7 +3242,9 @@ html body #contactSection .section-container #contactLeftMainContent #myLinkCont
 html body #contactSection .section-container #contactLeftMainContent #myLinkContent #myLink #links a {
   text-decoration: none;
 }
-html body #contactSection .section-container #contactLeftMainContent #myLinkContent #myLink #links .fa-github, html body #contactSection .section-container #contactLeftMainContent #myLinkContent #myLink #links .fa-linkedin-in, html body #contactSection .section-container #contactLeftMainContent #myLinkContent #myLink #links .fa-paper-plane {
+html body #contactSection .section-container #contactLeftMainContent #myLinkContent #myLink #links .fa-github,
+html body #contactSection .section-container #contactLeftMainContent #myLinkContent #myLink #links .fa-linkedin-in,
+html body #contactSection .section-container #contactLeftMainContent #myLinkContent #myLink #links .fa-paper-plane {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -3249,7 +3257,9 @@ html body #contactSection .section-container #contactLeftMainContent #myLinkCont
   width: 24px;
   color: white;
 }
-html body #contactSection .section-container #contactLeftMainContent #myLinkContent #myLink #links .fa-github:hover, html body #contactSection .section-container #contactLeftMainContent #myLinkContent #myLink #links .fa-linkedin-in:hover, html body #contactSection .section-container #contactLeftMainContent #myLinkContent #myLink #links .fa-paper-plane:hover {
+html body #contactSection .section-container #contactLeftMainContent #myLinkContent #myLink #links .fa-github:hover,
+html body #contactSection .section-container #contactLeftMainContent #myLinkContent #myLink #links .fa-linkedin-in:hover,
+html body #contactSection .section-container #contactLeftMainContent #myLinkContent #myLink #links .fa-paper-plane:hover {
   border: 1px solid rgba(81, 162, 255, 0.5);
   background: rgba(255, 255, 255, 0.1);
 }
@@ -3289,7 +3299,7 @@ html body #contactSection .section-container #contactLeftMainContent #myStatusCo
   display: flex;
   align-items: center;
   list-style: none;
-  color: #FF8904;
+  color: #ff8904;
   font-size: 16px;
   gap: 8px;
 }
@@ -3301,7 +3311,7 @@ html body #contactSection .section-container #contactLeftMainContent #myStatusCo
   animation: scale 2s infinite;
 }
 html body #contactSection .section-container #contactLeftMainContent #myStatusContent #myStatus #myStatusText li #dashboard-status-dot.dashboard-dot-active {
-  background-color: #FF8904;
+  background-color: #ff8904;
 }
 @keyframes scale {
   0% {
@@ -3362,7 +3372,7 @@ html body #contactSection .section-container #contactRightMainContent #contactPa
   color: rgb(255, 255, 255);
 }
 html body #contactSection .section-container #contactRightMainContent #contactPart #contactForm #contactFormName label #contactFormRequired {
-  color: #FF6467;
+  color: #ff6467;
   font-weight: bolder;
 }
 html body #contactSection .section-container #contactRightMainContent #contactPart #contactForm #contactFormName #name {
@@ -3387,7 +3397,7 @@ html body #contactSection .section-container #contactRightMainContent #contactPa
   color: rgb(255, 255, 255);
 }
 html body #contactSection .section-container #contactRightMainContent #contactPart #contactForm #contactFormEmail label #contactFormRequired {
-  color: #FF6467;
+  color: #ff6467;
   font-weight: bolder;
 }
 html body #contactSection .section-container #contactRightMainContent #contactPart #contactForm #contactFormEmail #email {
@@ -3412,7 +3422,7 @@ html body #contactSection .section-container #contactRightMainContent #contactPa
   color: rgb(255, 255, 255);
 }
 html body #contactSection .section-container #contactRightMainContent #contactPart #contactForm #contactFormTopic label #contactFormRequired {
-  color: #FF6467;
+  color: #ff6467;
   font-weight: bolder;
 }
 html body #contactSection .section-container #contactRightMainContent #contactPart #contactForm #contactFormTopic #topic {
@@ -3437,7 +3447,7 @@ html body #contactSection .section-container #contactRightMainContent #contactPa
   color: rgb(255, 255, 255);
 }
 html body #contactSection .section-container #contactRightMainContent #contactPart #contactForm #contactFormMessage label #contactFormRequired {
-  color: #FF6467;
+  color: #ff6467;
   font-weight: bolder;
 }
 html body #contactSection .section-container #contactRightMainContent #contactPart #contactForm #contactFormMessage #message {
@@ -3460,7 +3470,7 @@ html body #contactSection .section-container #contactRightMainContent #contactPa
   justify-content: center;
   padding: 11px;
   border-radius: 14px;
-  background: linear-gradient(90deg, #2B7FFF 0%, #AD46FF 100%);
+  background: linear-gradient(90deg, #2b7fff 0%, #ad46ff 100%);
   box-shadow: 0 10px 15px -3px rgba(43, 127, 255, 0.2), 0 4px 6px -4px rgba(43, 127, 255, 0.2);
 }
 html body #contactSection .section-container #contactRightMainContent #contactPart #contactForm #contactFormButtons button {
@@ -3608,7 +3618,7 @@ html body #login-body .login-container .input-container button {
   padding: 15px 0;
   border-radius: 14px;
   border: none;
-  background: linear-gradient(90deg, #2B7FFF 0%, #AD46FF 100%);
+  background: linear-gradient(90deg, #2b7fff 0%, #ad46ff 100%);
   box-shadow: 0 10px 15px -3px rgba(43, 127, 255, 0.3), 0 4px 6px -4px rgba(43, 127, 255, 0.3);
   font-size: 14px;
   transition: all ease 0.2s;
@@ -3644,14 +3654,14 @@ html body #dashboard-body #dashboard-header-content #dashboard-title-container l
 html body #dashboard-body #dashboard-header-content #dashboard-title-container li .dashboard-index-back {
   display: flex;
   padding: 9px;
+  text-decoration: none;
   border-radius: 33554400px;
   border: 1px solid rgba(255, 255, 255, 0.2);
   background: rgba(255, 255, 255, 0.1);
   align-items: center;
 }
-html body #dashboard-body #dashboard-header-content #dashboard-title-container li .dashboard-index-back img {
-  height: 20px;
-  width: 20px;
+html body #dashboard-body #dashboard-header-content #dashboard-title-container li .dashboard-index-back .fa-arrow-left {
+  color: white;
 }
 html body #dashboard-body #dashboard-header-content #dashboard-title-container .dashboard-title {
   display: flex;
@@ -3724,12 +3734,10 @@ html body #dashboard-body #dashboard-nav #dashboard-navbar-container li {
   gap: 8px;
 }
 html body #dashboard-body #dashboard-nav #dashboard-navbar-container li #dashboard-active-page {
-  color: #51A2FF;
+  text-decoration: none;
+  color: #51a2ff;
 }
-html body #dashboard-body #dashboard-nav #dashboard-navbar-container li #dashboard-active-page .fa-chart-line {
-  color: #51A2FF;
-}
-html body #dashboard-body #dashboard-nav #dashboard-navbar-container li #dashboard-active-page a {
+html body #dashboard-body #dashboard-nav #dashboard-navbar-container li a {
   display: flex;
   gap: 8px;
   text-decoration: none;
@@ -3737,18 +3745,14 @@ html body #dashboard-body #dashboard-nav #dashboard-navbar-container li #dashboa
   color: rgba(255, 255, 255, 0.6);
   transition: color 150ms ease-in-out;
 }
-html body #dashboard-body #dashboard-nav #dashboard-navbar-container li #dashboard-active-page a .nav-link svg path {
-  stroke: gray;
-  transition: stroke 150ms ease-in-out;
-}
-html body #dashboard-body #dashboard-nav #dashboard-navbar-container li #dashboard-active-page a:hover {
+html body #dashboard-body #dashboard-nav #dashboard-navbar-container li a:hover {
   display: flex;
   gap: 8px;
   text-decoration: none;
   align-items: center;
   color: #346aa8;
 }
-html body #dashboard-body #dashboard-nav #dashboard-navbar-container li #dashboard-active-page a:hover .fa-chart-line {
+html body #dashboard-body #dashboard-nav #dashboard-navbar-container li a:hover .fa-chart-line {
   color: #346aa8;
   transition: stroke 0.3s ease;
 }
@@ -3772,7 +3776,10 @@ html body #dashboard-body #monitoring-container .dashboard-card {
   grid-template-rows: repeat(1, minmax(0, 1fr));
   grid-template-columns: repeat(4, minmax(0, 1fr));
 }
-html body #dashboard-body #monitoring-container .dashboard-card #dashboard-card-1, html body #dashboard-body #monitoring-container .dashboard-card #dashboard-card-2, html body #dashboard-body #monitoring-container .dashboard-card #dashboard-card-3, html body #dashboard-body #monitoring-container .dashboard-card #dashboard-card-4 {
+html body #dashboard-body #monitoring-container .dashboard-card #dashboard-card-1,
+html body #dashboard-body #monitoring-container .dashboard-card #dashboard-card-2,
+html body #dashboard-body #monitoring-container .dashboard-card #dashboard-card-3,
+html body #dashboard-body #monitoring-container .dashboard-card #dashboard-card-4 {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -3780,7 +3787,22 @@ html body #dashboard-body #monitoring-container .dashboard-card #dashboard-card-
   padding: 25px;
   border-radius: 16px;
 }
-html body #dashboard-body #monitoring-container .dashboard-card #dashboard-card-1 .dashboard-card-image, html body #dashboard-body #monitoring-container .dashboard-card #dashboard-card-2 .dashboard-card-image, html body #dashboard-body #monitoring-container .dashboard-card #dashboard-card-3 .dashboard-card-image, html body #dashboard-body #monitoring-container .dashboard-card #dashboard-card-4 .dashboard-card-image {
+html body #dashboard-body #monitoring-container .dashboard-card #dashboard-card-1 .fa-user-group,
+html body #dashboard-body #monitoring-container .dashboard-card #dashboard-card-1 .fa-eye,
+html body #dashboard-body #monitoring-container .dashboard-card #dashboard-card-1 .fa-clock,
+html body #dashboard-body #monitoring-container .dashboard-card #dashboard-card-1 .fa-arrow-trend-up,
+html body #dashboard-body #monitoring-container .dashboard-card #dashboard-card-2 .fa-user-group,
+html body #dashboard-body #monitoring-container .dashboard-card #dashboard-card-2 .fa-eye,
+html body #dashboard-body #monitoring-container .dashboard-card #dashboard-card-2 .fa-clock,
+html body #dashboard-body #monitoring-container .dashboard-card #dashboard-card-2 .fa-arrow-trend-up,
+html body #dashboard-body #monitoring-container .dashboard-card #dashboard-card-3 .fa-user-group,
+html body #dashboard-body #monitoring-container .dashboard-card #dashboard-card-3 .fa-eye,
+html body #dashboard-body #monitoring-container .dashboard-card #dashboard-card-3 .fa-clock,
+html body #dashboard-body #monitoring-container .dashboard-card #dashboard-card-3 .fa-arrow-trend-up,
+html body #dashboard-body #monitoring-container .dashboard-card #dashboard-card-4 .fa-user-group,
+html body #dashboard-body #monitoring-container .dashboard-card #dashboard-card-4 .fa-eye,
+html body #dashboard-body #monitoring-container .dashboard-card #dashboard-card-4 .fa-clock,
+html body #dashboard-body #monitoring-container .dashboard-card #dashboard-card-4 .fa-arrow-trend-up {
   display: flex;
   padding: 13px;
   flex-direction: column;
@@ -3789,7 +3811,34 @@ html body #dashboard-body #monitoring-container .dashboard-card #dashboard-card-
   border: 1px solid rgba(255, 255, 255, 0.2);
   background: rgba(255, 255, 255, 0.1);
 }
-html body #dashboard-body #monitoring-container .dashboard-card #dashboard-card-1 .dashboard-card-image .dashboard-card-chiffre .dashboard-card-label p, html body #dashboard-body #monitoring-container .dashboard-card #dashboard-card-2 .dashboard-card-image .dashboard-card-chiffre .dashboard-card-label p, html body #dashboard-body #monitoring-container .dashboard-card #dashboard-card-3 .dashboard-card-image .dashboard-card-chiffre .dashboard-card-label p, html body #dashboard-body #monitoring-container .dashboard-card #dashboard-card-4 .dashboard-card-image .dashboard-card-chiffre .dashboard-card-label p {
+html body #dashboard-body #monitoring-container .dashboard-card #dashboard-card-1 .fa-user-group,
+html body #dashboard-body #monitoring-container .dashboard-card #dashboard-card-2 .fa-user-group,
+html body #dashboard-body #monitoring-container .dashboard-card #dashboard-card-3 .fa-user-group,
+html body #dashboard-body #monitoring-container .dashboard-card #dashboard-card-4 .fa-user-group {
+  color: #51a2ff;
+}
+html body #dashboard-body #monitoring-container .dashboard-card #dashboard-card-1 .fa-eye,
+html body #dashboard-body #monitoring-container .dashboard-card #dashboard-card-2 .fa-eye,
+html body #dashboard-body #monitoring-container .dashboard-card #dashboard-card-3 .fa-eye,
+html body #dashboard-body #monitoring-container .dashboard-card #dashboard-card-4 .fa-eye {
+  color: #c27aff;
+}
+html body #dashboard-body #monitoring-container .dashboard-card #dashboard-card-1 .fa-clock,
+html body #dashboard-body #monitoring-container .dashboard-card #dashboard-card-2 .fa-clock,
+html body #dashboard-body #monitoring-container .dashboard-card #dashboard-card-3 .fa-clock,
+html body #dashboard-body #monitoring-container .dashboard-card #dashboard-card-4 .fa-clock {
+  color: #00d3f2;
+}
+html body #dashboard-body #monitoring-container .dashboard-card #dashboard-card-1 .fa-arrow-trend-up,
+html body #dashboard-body #monitoring-container .dashboard-card #dashboard-card-2 .fa-arrow-trend-up,
+html body #dashboard-body #monitoring-container .dashboard-card #dashboard-card-3 .fa-arrow-trend-up,
+html body #dashboard-body #monitoring-container .dashboard-card #dashboard-card-4 .fa-arrow-trend-up {
+  color: #05df72;
+}
+html body #dashboard-body #monitoring-container .dashboard-card #dashboard-card-1 .dashboard-card-chiffre .dashboard-card-label p,
+html body #dashboard-body #monitoring-container .dashboard-card #dashboard-card-2 .dashboard-card-chiffre .dashboard-card-label p,
+html body #dashboard-body #monitoring-container .dashboard-card #dashboard-card-3 .dashboard-card-chiffre .dashboard-card-label p,
+html body #dashboard-body #monitoring-container .dashboard-card #dashboard-card-4 .dashboard-card-chiffre .dashboard-card-label p {
   display: flex;
   color: rgba(255, 255, 255, 0.6);
   font-size: 14px;
@@ -3800,7 +3849,7 @@ html body #dashboard-body #monitoring-container .dashboard-card #dashboard-card-
   gap: 16px;
 }
 html body #dashboard-body #monitoring-container .dashboard-card #dashboard-card-1 .dashboard-card-image .dashboard-card-chiffre h1 {
-  color: #51A2FF;
+  color: #51a2ff;
   font-size: 30px;
 }
 html body #dashboard-body #monitoring-container .dashboard-card #dashboard-card-1 .dashboard-card-image .dashboard-card-chiffre .dashboard-card-label p {
@@ -3814,7 +3863,7 @@ html body #dashboard-body #monitoring-container .dashboard-card #dashboard-card-
   gap: 16px;
 }
 html body #dashboard-body #monitoring-container .dashboard-card #dashboard-card-2 .dashboard-card-image .dashboard-card-chiffre {
-  color: #C27AFF;
+  color: #c27aff;
   font-size: 30px;
 }
 html body #dashboard-body #monitoring-container .dashboard-card #dashboard-card-2 .dashboard-card-image .dashboard-card-chiffre .dashboard-card-label p {
@@ -3828,7 +3877,7 @@ html body #dashboard-body #monitoring-container .dashboard-card #dashboard-card-
   gap: 16px;
 }
 html body #dashboard-body #monitoring-container .dashboard-card #dashboard-card-3 .dashboard-card-image .dashboard-card-chiffre {
-  color: #00D3F2;
+  color: #00d3f2;
   font-size: 30px;
 }
 html body #dashboard-body #monitoring-container .dashboard-card #dashboard-card-3 .dashboard-card-image .dashboard-card-chiffre .dashboard-card-label p {
@@ -3842,7 +3891,7 @@ html body #dashboard-body #monitoring-container .dashboard-card #dashboard-card-
   gap: 16px;
 }
 html body #dashboard-body #monitoring-container .dashboard-card #dashboard-card-4 .dashboard-card-image .dashboard-card-chiffre {
-  color: #05DF72;
+  color: #05df72;
   font-size: 30px;
 }
 html body #dashboard-body #monitoring-container .dashboard-card #dashboard-card-4 .dashboard-card-image .dashboard-card-chiffre .dashboard-card-label p {
@@ -3879,6 +3928,9 @@ html body #dashboard-body #monitoring-container .dashboard-perf-et-activité .da
   font-size: 20px;
   margin-bottom: 20px;
 }
+html body #dashboard-body #monitoring-container .dashboard-perf-et-activité .dashboard-performance-du-site .performance-titre .fa-wave-square {
+  color: #51a2ff;
+}
 html body #dashboard-body #monitoring-container .dashboard-perf-et-activité .dashboard-performance-du-site .performance-temps-de-chargement,
 html body #dashboard-body #monitoring-container .dashboard-perf-et-activité .dashboard-performance-du-site .performance-disponibilité,
 html body #dashboard-body #monitoring-container .dashboard-perf-et-activité .dashboard-performance-du-site .performance-utilisation-cpu,
@@ -3892,6 +3944,24 @@ html body #dashboard-body #monitoring-container .dashboard-perf-et-activité .da
   border: 1px solid rgba(255, 255, 255, 0.1);
   background: rgba(255, 255, 255, 0.05);
   padding: 16px;
+}
+html body #dashboard-body #monitoring-container .dashboard-perf-et-activité .dashboard-performance-du-site .performance-temps-de-chargement .fa-bolt-lightning,
+html body #dashboard-body #monitoring-container .dashboard-perf-et-activité .dashboard-performance-du-site .performance-temps-de-chargement .fa-server,
+html body #dashboard-body #monitoring-container .dashboard-perf-et-activité .dashboard-performance-du-site .performance-temps-de-chargement .fa-microchip,
+html body #dashboard-body #monitoring-container .dashboard-perf-et-activité .dashboard-performance-du-site .performance-temps-de-chargement .fa-hard-drive,
+html body #dashboard-body #monitoring-container .dashboard-perf-et-activité .dashboard-performance-du-site .performance-disponibilité .fa-bolt-lightning,
+html body #dashboard-body #monitoring-container .dashboard-perf-et-activité .dashboard-performance-du-site .performance-disponibilité .fa-server,
+html body #dashboard-body #monitoring-container .dashboard-perf-et-activité .dashboard-performance-du-site .performance-disponibilité .fa-microchip,
+html body #dashboard-body #monitoring-container .dashboard-perf-et-activité .dashboard-performance-du-site .performance-disponibilité .fa-hard-drive,
+html body #dashboard-body #monitoring-container .dashboard-perf-et-activité .dashboard-performance-du-site .performance-utilisation-cpu .fa-bolt-lightning,
+html body #dashboard-body #monitoring-container .dashboard-perf-et-activité .dashboard-performance-du-site .performance-utilisation-cpu .fa-server,
+html body #dashboard-body #monitoring-container .dashboard-perf-et-activité .dashboard-performance-du-site .performance-utilisation-cpu .fa-microchip,
+html body #dashboard-body #monitoring-container .dashboard-perf-et-activité .dashboard-performance-du-site .performance-utilisation-cpu .fa-hard-drive,
+html body #dashboard-body #monitoring-container .dashboard-perf-et-activité .dashboard-performance-du-site .performance-stockage-utilisé .fa-bolt-lightning,
+html body #dashboard-body #monitoring-container .dashboard-perf-et-activité .dashboard-performance-du-site .performance-stockage-utilisé .fa-server,
+html body #dashboard-body #monitoring-container .dashboard-perf-et-activité .dashboard-performance-du-site .performance-stockage-utilisé .fa-microchip,
+html body #dashboard-body #monitoring-container .dashboard-perf-et-activité .dashboard-performance-du-site .performance-stockage-utilisé .fa-hard-drive {
+  color: #a3a3a3;
 }
 html body #dashboard-body #monitoring-container .dashboard-perf-et-activité .dashboard-activité-récente {
   display: flex;
@@ -3913,6 +3983,9 @@ html body #dashboard-body #monitoring-container .dashboard-perf-et-activité .da
   font-size: 20px;
   margin-bottom: 20px;
 }
+html body #dashboard-body #monitoring-container .dashboard-perf-et-activité .dashboard-activité-récente .activité-titre .fa-clock {
+  color: #00d3f2;
+}
 html body #dashboard-body #monitoring-container .dashboard-perf-et-activité .dashboard-activité-récente .activité-card-default {
   display: flex;
   flex-direction: row;
@@ -3930,6 +4003,9 @@ html body #dashboard-body #monitoring-container .dashboard-perf-et-activité .da
   border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.1);
   background: rgba(255, 255, 255, 0.05);
+}
+html body #dashboard-body #monitoring-container .dashboard-perf-et-activité .dashboard-activité-récente .activité-card-default .activité-informations-icon .fa-globe {
+  color: #a3a3a3;
 }
 html body #dashboard-body #monitoring-container .dashboard-perf-et-activité .dashboard-activité-récente .activité-card-default .activité-informations {
   display: flex;
@@ -3974,6 +4050,9 @@ html body #dashboard-body #monitoring-container .dashboard-stat-et-bdd .stat-der
   gap: 8px;
   font-size: 20px;
 }
+html body #dashboard-body #monitoring-container .dashboard-stat-et-bdd .stat-dernières-modifications .dernières-modifications-titre .fa-pencil {
+  color: #a3a3a3;
+}
 html body #dashboard-body #monitoring-container .dashboard-stat-et-bdd .stat-dernières-modifications .dernières-modifications-default {
   display: flex;
   flex-direction: row;
@@ -4003,7 +4082,7 @@ html body #dashboard-body #monitoring-container .dashboard-stat-et-bdd .stat-der
   border-radius: 10px;
   border: 1px solid rgba(81, 162, 255, 0.3);
   background: rgba(43, 127, 255, 0.2);
-  color: #51A2FF;
+  color: #51a2ff;
   font-size: 12px;
 }
 html body #dashboard-body #monitoring-container .dashboard-stat-et-bdd .stat-dernières-modifications .dernières-modifications-default .dernières-modifications-default-status-et-descriptions .dernières-modifications-default-description {
@@ -4036,6 +4115,9 @@ html body #dashboard-body #monitoring-container .dashboard-stat-et-bdd .bdd-base
   align-items: center;
   gap: 8px;
   font-size: 20px;
+}
+html body #dashboard-body #monitoring-container .dashboard-stat-et-bdd .bdd-base-de-donnée .base-de-donnée-entrées-titre .fa-database {
+  color: #05df72;
 }
 html body #dashboard-body #monitoring-container .dashboard-stat-et-bdd .bdd-base-de-donnée .base-de-donnée-entrées-totales {
   display: flex;
@@ -4100,23 +4182,13 @@ html body #dashboard-body #messages-container #messages-container-titre {
   display: flex;
   flex-direction: column;
 }
-html body #dashboard-body #messages-container #messages-container-titre #messages-titre-h1 {
-  color: rgb(255, 255, 255);
-  font-size: 30px;
-  line-height: 36px;
-}
-html body #dashboard-body #messages-container #messages-container-titre #messages-titre-p {
-  color: rgba(255, 255, 255, 0.6);
-  font-size: 16px;
-  line-height: 24px;
-}
 html body #dashboard-body #messages-container .messages {
   display: flex;
   flex-direction: column;
   width: 100%;
   height: 186px;
   padding: 49px;
-  gap: 16px;
+  gap: 32px;
   justify-content: center;
   align-items: center;
   border-radius: 16px;
@@ -4124,9 +4196,10 @@ html body #dashboard-body #messages-container .messages {
   border: 1px solid rgba(255, 255, 255, 0.1);
   background: rgba(255, 255, 255, 0.05);
 }
-html body #dashboard-body #messages-container .messages #messages-icon {
-  height: 48px;
-  width: 48px;
+html body #dashboard-body #messages-container .messages .fa-message {
+  color: #9e9e9e;
+  justify-content: center;
+  align-items: center;
 }
 html body #dashboard-body #messages-container .messages #messages-notfound {
   color: rgba(255, 255, 255, 0.6);
@@ -4135,6 +4208,10 @@ html body #dashboard-body #messages-container .messages #messages-notfound {
 }
 html body #dashboard-body #messages-container .messages .messages-details {
   display: none;
+}
+html body #dashboard-body #messages-container .messages .messages-details .fa-message {
+  justify-content: center;
+  align-items: center;
 }
 html body #dashboard-body #messages-container .has-messages {
   display: flex;
@@ -4145,7 +4222,8 @@ html body #dashboard-body #messages-container .has-messages {
   border-radius: 16px;
   box-sizing: border-box;
 }
-html body #dashboard-body #messages-container .has-messages #messages-icon, html body #dashboard-body #messages-container .has-messages #messages-notfound {
+html body #dashboard-body #messages-container .has-messages #messages-icon,
+html body #dashboard-body #messages-container .has-messages #messages-notfound {
   display: none;
 }
 html body #dashboard-body #messages-container .has-messages .messages-card-section {
@@ -4191,7 +4269,7 @@ html body #dashboard-body #messages-container .has-messages .messages-card-secti
   align-items: center;
   border-radius: 8px;
   border: 1px solid rgba(0, 0, 0, 0);
-  background: #D4183D;
+  background: #d4183d;
   color: rgb(255, 255, 255);
 }
 html body #dashboard-body #messages-container .has-messages .messages-card-section .messages-card .messages-content {
@@ -4201,7 +4279,7 @@ html body #dashboard-body #messages-container .has-messages .messages-card-secti
   gap: 8px;
 }
 html body #dashboard-body #messages-container .has-messages .messages-card-section .messages-card .messages-content .messages-sujet {
-  color: #51A2FF;
+  color: #51a2ff;
   font-size: 16px;
   font-style: normal;
   line-height: 24px;
@@ -4263,7 +4341,7 @@ html body #dashboard-body #messages-container .has-messages .messages-details-re
   gap: 16px;
 }
 html body #dashboard-body #messages-container .has-messages .messages-details-remplis .messages-content .messages-sujet {
-  color: #FFF;
+  color: #fff;
   font-size: 24px;
   font-style: normal;
   line-height: 32px;
@@ -4295,7 +4373,7 @@ html body #dashboard-body #messages-container .has-messages .messages-details-re
   stroke-opacity: 0.6;
 }
 html body #dashboard-body #messages-container .has-messages .messages-details-remplis .messages-content .messages-email-content .messages-email {
-  color: #51A2FF;
+  color: #51a2ff;
   font-size: 14px;
   font-style: normal;
   line-height: 20px;
@@ -4366,7 +4444,7 @@ html body #dashboard-body #messages-container .has-messages .messages-details-re
   justify-content: center;
   align-items: center;
   border-radius: 8px;
-  background: #D4183D;
+  background: #d4183d;
 }
 html body #dashboard-body #messages-container .has-messages .messages-details-remplis .messages-actions .messages-supprimer svg path {
   stroke: white;
