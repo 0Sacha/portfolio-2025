@@ -147,6 +147,7 @@ html {
         position: absolute;
         filter: blur(150px);
         border-radius: 999px;
+        z-index: -1;
       }
 
       #sphere1Home {
@@ -155,7 +156,7 @@ html {
         top: 10%;
         left: 7%;
         animation: sphere1Bounce 6s ease-in-out infinite;
-        background-color: rgba(43, 127, 255, 0.2);
+        background-color: rgba(43, 127, 255, 0.4);
         @keyframes sphere1Bounce {
           0% {
             top: 10%;
@@ -174,7 +175,7 @@ html {
         height: 600px;
         top: 65%;
         right: 5%;
-        background-color: rgba(173, 70, 255, 0.15);
+        background-color: rgba(173, 70, 255, 0.4);
         animation: sphere2Bounce 8s ease-in-out infinite;
         @keyframes sphere2Bounce {
           0% {
@@ -446,23 +447,27 @@ html {
         flex-direction: row;
         gap: 16px;
 
-        #github, #linkedin, #mailto {
+        a {
+          text-decoration: none;
+        }
+
+        .fa-github, .fa-linkedin-in, .fa-paper-plane {
+          display: flex;
+          align-items: center;
+          justify-content: center;
           padding: 17px;
           border-radius: 16px;
           border: 1px solid rgba(255, 255, 255, 0.20);
           background: rgba(255, 255, 255, 0.10);
           transition: all 150ms ease-in-out;
-        }
-
-        #github:hover, #linkedin:hover, #mailto:hover {
-          transform: scale(1.1);
-          border: 1px solid rgba(81, 162, 255, 0.5);
-          background: rgba(255, 255, 255, 0.10);
-        }
-
-        #github img, #linkedin img, #mailto img {
           height: 24px;
           width: 24px;
+          color: white;
+        }
+
+        .fa-github:hover, .fa-linkedin-in:hover, .fa-paper-plane:hover {
+          border: 1px solid rgba(81, 162, 255, 0.5);
+          background: rgba(255, 255, 255, 0.10);
         }
       }
 
@@ -497,6 +502,7 @@ html {
           border-radius: 16px;
           border: 1px solid rgba(81, 162, 255, 0.50);
           background: rgba(43, 127, 255, 0.20);
+          gap: 8px;
         }
 
         #hero-links-project, img {
@@ -914,10 +920,8 @@ html {
         display: none;
       }
 
-      img {
-        transform: rotate(180deg);
-        width: 15.993px;
-        height: 15.993px;
+      .fa-arrow-left {
+        color: white;
       }
 
       p {
@@ -1073,14 +1077,22 @@ html {
         margin: 0 auto;
         background: linear-gradient(90deg, #9f9f9f, #c3c3c3);
         //background: linear-gradient(90deg, #2b67ff, #2b7fff);
-        color: $text-default;
+        color: #e3e3e3;
         font-size: 14px;
         text-decoration: none;
         width: 338px;
         border-radius: 8px;
-        padding: 8px 12px;
+        padding: 16px 12px;
         gap: 16px;
-        cursor: default;
+
+        .fa-arrow-right-to-bracket {
+          transform: rotate(90deg);
+        }
+      }
+
+      a:hover {
+        cursor: not-allowed;
+
       }
     }
 
@@ -1162,16 +1174,25 @@ html {
                 padding: 0 16px;
                 font-size: 14px;
                 height: 46px;
-                gap: 8px;
+                gap: 10px;
                 transition: all 0.2s ease-out;
                 @media (max-width: 1100px) {
                 }
 
-                img {
-                  height: 24px;
-                  width: 24px;
-                  @media (max-width: 1100px) {
-                  }
+                .fa-gamepad {
+                  color: rgb(116, 192, 252);
+                }
+
+                .fa-pencil {
+                  color: rgb(177, 151, 252);
+                }
+
+                .fa-code {
+                  color: rgb(39, 212, 243);
+                }
+
+                .fa-laptop {
+                  color: rgb(255, 162, 232);
                 }
               }
 
@@ -1282,7 +1303,7 @@ html {
               padding-left: 20px;
             }
 
-            img {
+            .fa-code {
               display: flex;
               align-items: center;
               justify-content: center;
@@ -1291,6 +1312,7 @@ html {
               padding: 13px;
               margin-bottom: 16px;
               border-radius: 14px;
+              color: rgb(39, 212, 243);
               border: 1px solid rgba(81, 162, 255, 0.30);
               background: rgba(43, 127, 255, 0.20);
             }
@@ -1333,7 +1355,7 @@ html {
               padding-left: 20px;
             }
 
-            img {
+            .fa-palette {
               display: flex;
               align-items: center;
               justify-content: center;
@@ -1342,6 +1364,7 @@ html {
               padding: 13px;
               margin-bottom: 16px;
               border-radius: 14px;
+              color: rgb(177, 151, 252);
               border: 1px solid rgba(194, 122, 255, 0.30);
               background: rgba(173, 70, 255, 0.20);
             }
@@ -1388,7 +1411,7 @@ html {
               padding-left: 20px;
             }
 
-            img {
+            .fa-bolt {
               display: flex;
               align-items: center;
               justify-content: center;
@@ -1397,6 +1420,7 @@ html {
               padding: 13px;
               margin-bottom: 16px;
               border-radius: 14px;
+              color: rgb(104, 229, 251);
               border: 1px solid rgba(0, 211, 242, 0.30);
               background: rgba(0, 184, 219, 0.20);
             }
@@ -1443,7 +1467,7 @@ html {
               padding-left: 20px;
             }
 
-            img {
+            .fa-wrench {
               display: flex;
               align-items: center;
               justify-content: center;
@@ -1452,6 +1476,7 @@ html {
               padding: 13px;
               margin-bottom: 16px;
               border-radius: 14px;
+              color: rgb(99, 230, 190);
               border: 1px solid rgba(5, 223, 114, 0.30);
               background: rgba(0, 201, 80, 0.20);
             }
@@ -1498,7 +1523,7 @@ html {
               padding-left: 20px;
             }
 
-            img {
+            .fa-microchip {
               display: flex;
               align-items: center;
               justify-content: center;
@@ -1507,6 +1532,7 @@ html {
               padding: 13px;
               margin-bottom: 16px;
               border-radius: 14px;
+              color: rgb(255, 159, 37);
               border: 1px solid rgba(255, 137, 4, 0.30);
               background: rgba(255, 105, 0, 0.20);
             }
@@ -1553,7 +1579,7 @@ html {
               padding-left: 20px;
             }
 
-            img {
+            .fa-graduation-cap {
               display: flex;
               align-items: center;
               justify-content: center;
@@ -1562,6 +1588,7 @@ html {
               padding: 13px;
               margin-bottom: 16px;
               border-radius: 14px;
+              color: rgb(242, 127, 243);
               border: 1px solid rgba(251, 100, 182, 0.30);
               background: rgba(246, 51, 154, 0.20);
             }
@@ -1675,7 +1702,7 @@ html {
           }
 
           #cardExpLeft {
-            #bagGreenColorIcon {
+            .fa-briefcase {
               display: flex;
               align-items: center;
               justify-content: center;
@@ -1683,6 +1710,7 @@ html {
               height: 24px;
               padding: 13px;
               border-radius: 14px;
+              color: rgb(5, 223, 114);
               border: 0.8px solid rgba(5, 223, 114, 0.30);
               background: rgba(0, 201, 80, 0.20);
               @media (max-width: 1100px) {
@@ -1748,6 +1776,8 @@ html {
               flex-direction: row;
               gap: 4px;
               margin-top: 16px;
+              align-items: center;
+
               @media (max-width: 1100px) {
                 flex-direction: column;
               }
@@ -1756,10 +1786,11 @@ html {
                 display: flex;
                 flex-direction: row;
                 gap: 4px;
+                align-items: center;
+                justify-content: center;
 
-                img {
-                  width: 14px;
-                  height: 14px;
+                .fa-calendar {
+                  color: rgba(255, 255, 255, 0.50);
                 }
 
                 p {
@@ -1771,10 +1802,11 @@ html {
                 display: flex;
                 flex-direction: row;
                 gap: 4px;
+                align-items: center;
+                justify-content: center;
 
-                img {
-                  width: 14px;
-                  height: 14px;
+                .fa-location-dot {
+                  color: rgba(255, 255, 255, 0.50);
                 }
 
                 p {
@@ -1845,7 +1877,7 @@ html {
           }
 
           #cardExpLeft {
-            #bagBlueColorIcon {
+            .fa-briefcase {
               display: flex;
               align-items: center;
               justify-content: center;
@@ -1853,6 +1885,7 @@ html {
               height: 24px;
               padding: 13px;
               border-radius: 14px;
+              color: rgb(81, 162, 255);
               border: 0.8px solid rgba(81, 162, 255, 0.30);
               background: rgba(43, 127, 255, 0.20);
               @media (max-width: 1100px) {
@@ -1907,10 +1940,11 @@ html {
                 display: flex;
                 flex-direction: row;
                 gap: 4px;
+                align-items: center;
+                justify-content: center;
 
-                img {
-                  width: 14px;
-                  height: 14px;
+                .fa-calendar {
+                  color: rgba(255, 255, 255, 0.50);
                 }
 
                 p {
@@ -1922,10 +1956,11 @@ html {
                 display: flex;
                 flex-direction: row;
                 gap: 4px;
+                align-items: center;
+                justify-content: center;
 
-                img {
-                  width: 14px;
-                  height: 14px;
+                .fa-location-dot {
+                  color: rgba(255, 255, 255, 0.50);
                 }
 
                 p {
@@ -1993,7 +2028,7 @@ html {
           }
 
           #cardExpLeft {
-            #bagPurpleColorIcon {
+            .fa-briefcase {
               display: flex;
               align-items: center;
               justify-content: center;
@@ -2001,6 +2036,7 @@ html {
               height: 24px;
               padding: 13px;
               border-radius: 14px;
+              color: rgb(194, 122, 255);
               border: 0.8px solid rgba(194, 122, 255, 0.30);
               background: rgba(173, 70, 255, 0.20);
               @media (max-width: 1100px) {
@@ -2059,10 +2095,11 @@ html {
                 display: flex;
                 flex-direction: row;
                 gap: 4px;
+                align-items: center;
+                justify-content: center;
 
-                img {
-                  width: 14px;
-                  height: 14px;
+                .fa-calendar {
+                  color: rgba(255, 255, 255, 0.50);
                 }
 
                 p {
@@ -2074,10 +2111,11 @@ html {
                 display: flex;
                 flex-direction: row;
                 gap: 4px;
+                align-items: center;
+                justify-content: center;
 
-                img {
-                  width: 14px;
-                  height: 14px;
+                .fa-location-dot {
+                  color: rgba(255, 255, 255, 0.50);
                 }
 
                 p {
@@ -2389,7 +2427,7 @@ html {
           }
 
           #cardFormationsLeft {
-            #certificationBlueIcon {
+            .fa-graduation-cap {
               display: flex;
               align-items: center;
               justify-content: center;
@@ -2397,6 +2435,7 @@ html {
               height: 24px;
               padding: 13px;
               border-radius: 14px;
+              color: rgb(81 162 255);
               border: 0.8px solid rgba(81, 162, 255, 0.30);
               background: rgba(43, 127, 255, 0.20);
               @media (max-width: 1100px) {
@@ -2467,10 +2506,11 @@ html {
                 display: flex;
                 flex-direction: row;
                 gap: 4px;
+                align-items: center;
+                justify-content: center;
 
-                img {
-                  width: 14px;
-                  height: 14px;
+                .fa-calendar {
+                  color: rgba(255, 255, 255, 0.50);
                 }
 
                 p {
@@ -2482,10 +2522,11 @@ html {
                 display: flex;
                 flex-direction: row;
                 gap: 4px;
+                align-items: center;
+                justify-content: center;
 
-                img {
-                  width: 14px;
-                  height: 14px;
+                .fa-location-dot {
+                  color: rgba(255, 255, 255, 0.50);
                 }
 
                 p {
@@ -2557,7 +2598,7 @@ html {
           }
 
           #cardFormationsLeft {
-            #certificationCyanIcon {
+            .fa-graduation-cap {
               display: flex;
               align-items: center;
               justify-content: center;
@@ -2565,6 +2606,7 @@ html {
               height: 24px;
               padding: 13px;
               border-radius: 14px;
+              color: rgb(81 162 255);
               border: 0.8px solid rgba(81, 162, 255, 0.30);
               background: rgba(43, 127, 255, 0.20);
               @media (max-width: 1100px) {
@@ -2620,10 +2662,11 @@ html {
                 display: flex;
                 flex-direction: row;
                 gap: 4px;
+                align-items: center;
+                justify-content: center;
 
-                img {
-                  width: 14px;
-                  height: 14px;
+                .fa-calendar {
+                  color: rgba(255, 255, 255, 0.50);
                 }
 
                 p {
@@ -2635,10 +2678,11 @@ html {
                 display: flex;
                 flex-direction: row;
                 gap: 4px;
+                align-items: center;
+                justify-content: center;
 
-                img {
-                  width: 14px;
-                  height: 14px;
+                .fa-location-dot {
+                  color: rgba(255, 255, 255, 0.50);
                 }
 
                 p {
@@ -2710,7 +2754,7 @@ html {
           }
 
           #cardFormationsLeft {
-            #certificationLimeGreenIcon {
+            .fa-graduation-cap {
               display: flex;
               align-items: center;
               justify-content: center;
@@ -2718,6 +2762,7 @@ html {
               height: 24px;
               padding: 13px;
               border-radius: 14px;
+              color: rgb(5 223 114);
               border: 0.8px solid rgba(5, 223, 114, 0.30);
               background: rgba(0, 201, 80, 0.20);
               @media (max-width: 1100px) {
@@ -2773,10 +2818,11 @@ html {
                 display: flex;
                 flex-direction: row;
                 gap: 4px;
+                align-items: center;
+                justify-content: center;
 
-                img {
-                  width: 14px;
-                  height: 14px;
+                .fa-calendar {
+                  color: rgba(255, 255, 255, 0.50);
                 }
 
                 p {
@@ -2788,10 +2834,11 @@ html {
                 display: flex;
                 flex-direction: row;
                 gap: 4px;
+                align-items: center;
+                justify-content: center;
 
-                img {
-                  width: 14px;
-                  height: 14px;
+                .fa-location-dot {
+                  color: rgba(255, 255, 255, 0.50);
                 }
 
                 p {
@@ -2862,7 +2909,7 @@ html {
           }
 
           #cardFormationsLeft {
-            #certificationOrangeIcon {
+            .fa-graduation-cap {
               display: flex;
               align-items: center;
               justify-content: center;
@@ -2870,6 +2917,7 @@ html {
               height: 24px;
               padding: 13px;
               border-radius: 14px;
+              color: rgb(255 137 4);
               border: 0.8px solid rgba(255, 137, 4, 0.30);
               background: rgba(255, 105, 0, 0.20);
               @media (max-width: 1100px) {
@@ -2950,10 +2998,11 @@ html {
                 display: flex;
                 flex-direction: row;
                 gap: 4px;
+                align-items: center;
+                justify-content: center;
 
-                img {
-                  width: 14px;
-                  height: 14px;
+                .fa-calendar {
+                  color: rgba(255, 255, 255, 0.50);
                 }
 
                 p {
@@ -2965,10 +3014,11 @@ html {
                 display: flex;
                 flex-direction: row;
                 gap: 4px;
+                align-items: center;
+                justify-content: center;
 
-                img {
-                  width: 14px;
-                  height: 14px;
+                .fa-location-dot {
+                  color: rgba(255, 255, 255, 0.50);
                 }
 
                 p {
@@ -3039,7 +3089,7 @@ html {
           }
 
           #cardFormationsLeft {
-            #certificatRoseIcon {
+            .fa-graduation-cap {
               display: flex;
               align-items: center;
               justify-content: center;
@@ -3047,6 +3097,7 @@ html {
               height: 24px;
               padding: 13px;
               border-radius: 14px;
+              color: rgb(251 100 182);
               border: 0.8px solid rgba(251, 100, 182, 0.30);
               background: rgba(246, 51, 154, 0.20);
               @media (max-width: 1100px) {
@@ -3101,10 +3152,11 @@ html {
                 display: flex;
                 flex-direction: row;
                 gap: 4px;
+                align-items: center;
+                justify-content: center;
 
-                img {
-                  width: 14px;
-                  height: 14px;
+                .fa-calendar {
+                  color: rgba(255, 255, 255, 0.50);
                 }
 
                 p {
@@ -3116,10 +3168,11 @@ html {
                 display: flex;
                 flex-direction: row;
                 gap: 4px;
+                align-items: center;
+                justify-content: center;
 
-                img {
-                  width: 14px;
-                  height: 14px;
+                .fa-location-dot {
+                  color: rgba(255, 255, 255, 0.50);
                 }
 
                 p {
@@ -3195,13 +3248,14 @@ html {
       border-radius: 24px;
       border: 0.8px solid rgba(251, 100, 182, 0.20);
       background: linear-gradient(90deg, rgba(246, 51, 154, 0.10) 0%, rgba(173, 70, 255, 0.10) 100%);
-
       @media (max-width: 1100px) {
         width: 400px;
         padding: 0 32px 0 32px;
       }
 
-      img {
+      .fa-rocket {
+        color: rgb(251 100 182);
+
       }
 
       p {
@@ -3337,14 +3391,17 @@ html {
                   background: rgba(255, 255, 255, 0.05);
                   padding: 16px;
 
-                  img {
+                  .fa-envelope {
                     display: flex;
                     width: 24px;
                     height: 24px;
                     padding: 13px;
                     border-radius: 14px;
+                    color: rgb(81 162 255);
                     border: 0.8px solid rgba(81, 162, 255, 0.30);
                     background: rgba(43, 127, 255, 0.20);
+                    justify-content: center;
+                    align-items: center;
                   }
 
                   #mailText {
@@ -3375,14 +3432,17 @@ html {
                   background: rgba(255, 255, 255, 0.05);
                   padding: 16px;
 
-                  img {
+                  .fa-phone {
                     display: flex;
                     width: 24px;
                     height: 24px;
                     padding: 13px;
                     border-radius: 14px;
+                    color: rgb(194 122 255);
                     border: 0.8px solid rgba(194, 122, 255, 0.30);
                     background: rgba(173, 70, 255, 0.20);
+                    justify-content: center;
+                    align-items: center;
                   }
 
                   #telephoneText {
@@ -3413,14 +3473,17 @@ html {
                   background: rgba(255, 255, 255, 0.05);
                   padding: 16px;
 
-                  img {
+                  .fa-location-dot {
                     display: flex;
                     width: 24px;
                     height: 24px;
                     padding: 13px;
                     border-radius: 14px;
+                    color: rgb(0 211 242);
                     border: 0.8px solid rgba(0, 211, 242, 0.30);
                     background: rgba(0, 184, 219, 0.20);
+                    justify-content: center;
+                    align-items: center;
                   }
 
                   #localisationText {
@@ -3467,19 +3530,27 @@ html {
                 flex-direction: row;
                 gap: 12px;
 
-                li {
+                a {
+                  text-decoration: none;
+                }
+
+                .fa-github, .fa-linkedin-in, .fa-paper-plane {
                   display: flex;
                   align-items: center;
-                  padding: 16px 42px;
-                  border-radius: 14px;
-                  border: 0.8px solid rgba(255, 255, 255, 0.10);
-                  background: rgba(255, 255, 255, 0.05);
+                  justify-content: center;
+                  padding: 17px;
+                  border-radius: 16px;
+                  border: 1px solid rgba(255, 255, 255, 0.20);
+                  background: rgba(255, 255, 255, 0.10);
+                  transition: all 150ms ease-in-out;
+                  height: 24px;
+                  width: 24px;
+                  color: white;
+                }
 
-                  a {
-                    img {
-
-                    }
-                  }
+                .fa-github:hover, .fa-linkedin-in:hover, .fa-paper-plane:hover {
+                  border: 1px solid rgba(81, 162, 255, 0.5);
+                  background: rgba(255, 255, 255, 0.10);
                 }
               }
             }
@@ -3500,14 +3571,17 @@ html {
               align-items: center;
               gap: 16px;
 
-              #messageOrangeIcon {
+              .fa-message {
                 display: flex;
                 width: 24px;
                 height: 24px;
                 padding: 13px;
                 border-radius: 14px;
+                color: rgba(255, 137, 4);
                 border: 0.8px solid rgba(255, 137, 4, 0.30);
                 background: rgba(255, 105, 0, 0.20);
+                justify-content: center;
+                align-items: center;
               }
 
               #myStatusText {
@@ -3523,20 +3597,27 @@ html {
                   font-size: 16px;
                   gap: 8px;
 
-                  #circlePointOrageIcon {
-                    width: 8px;
+                  #dashboard-status-dot {
+                    display: inline-block;
                     height: 8px;
-                    animation: bounce 2s ease-in-out infinite;
-                    @keyframes bounce {
-                      0% {
-                        transform: scale(1);
-                      }
-                      50% {
-                        transform: scale(1.2);
-                      }
-                      100% {
-                        transform: scale(1);
-                      }
+                    width: 8px;
+                    border-radius: 50%;
+                    animation: scale 2s infinite;
+
+                    &.dashboard-dot-active {
+                      background-color: #FF8904;
+                    }
+                  }
+
+                  @keyframes scale {
+                    0% {
+                      scale: 1;
+                    }
+                    50% {
+                      scale: 1.2;
+                    }
+                    100% {
+                      scale: 1;
                     }
                   }
                 }
@@ -3729,9 +3810,8 @@ html {
                   gap: 16px;
                   font-size: 16px;
 
-                  img {
-                    height: 16px;
-                    width: 16px;
+                  .fa-paper-plane {
+
                   }
                 }
               }
@@ -3841,8 +3921,8 @@ html {
               padding: 5px 15px;
               gap: 8px;
 
-              img {
-                transition: all ease 0.2s;
+              .fa-arrow-left {
+                color: white;
               }
             }
 
@@ -4042,10 +4122,8 @@ html {
             #dashboard-active-page {
               color: #51A2FF;
 
-              svg {
-                path {
-                  stroke: #51A2FF;
-                }
+              .fa-chart-line {
+                color: #51A2FF;
               }
             }
 
@@ -4075,429 +4153,147 @@ html {
               align-items: center;
               color: #346aa8;
 
-              svg {
-                path {
-                  stroke: #346aa8;
-                  transition: stroke 0.3s ease;
-                }
+              .fa-chart-line {
+                color: #346aa8;
+                transition: stroke 0.3s ease;
               }
             }
-
-
           }
+
+
         }
       }
+    }
 
-      #monitoring-container {
-        display: flex;
-        flex-direction: column;
-        margin-top: 24px;
+    #monitoring-container {
+      display: flex;
+      flex-direction: column;
+      margin-top: 24px;
+      width: 100%;
+      gap: 48px;
+
+      .dashboard-card {
+        display: grid;
+        flex-direction: row;
+        justify-content: space-between;
         width: 100%;
-        gap: 48px;
+        height: 176px;
+        margin: 0 auto;
+        color: $text-default;
+        gap: 24px;
+        flex-shrink: 0;
+        grid-template-rows: repeat(1, minmax(0, 1fr));
+        grid-template-columns: repeat(4, minmax(0, 1fr));
 
-        .dashboard-card {
-          display: grid;
-          flex-direction: row;
-          justify-content: space-between;
-          width: 100%;
-          height: 176px;
-          margin: 0 auto;
-          color: $text-default;
-          gap: 24px;
-          flex-shrink: 0;
-          grid-template-rows: repeat(1, minmax(0, 1fr));
-          grid-template-columns: repeat(4, minmax(0, 1fr));
+        #dashboard-card-1, #dashboard-card-2, #dashboard-card-3, #dashboard-card-4 {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: flex-start;
+          padding: 25px;
+          border-radius: 16px;
 
-          #dashboard-card-1, #dashboard-card-2, #dashboard-card-3, #dashboard-card-4 {
+          .dashboard-card-image {
             display: flex;
+            padding: 13px;
             flex-direction: column;
-            justify-content: center;
             align-items: flex-start;
-            padding: 25px;
-            border-radius: 16px;
+            border-radius: 14px;
+            border: 1px solid rgba(255, 255, 255, 0.20);
+            background: rgba(255, 255, 255, 0.10);
 
-            .dashboard-card-image {
-              display: flex;
-              padding: 13px;
-              flex-direction: column;
-              align-items: flex-start;
-              border-radius: 14px;
-              border: 1px solid rgba(255, 255, 255, 0.20);
-              background: rgba(255, 255, 255, 0.10);
-
-              .dashboard-card-chiffre {
-                .dashboard-card-label {
-                  p {
-                    display: flex;
-                    color: rgba(255, 255, 255, 0.60);
-                    font-size: 14px;
-                  }
-                }
-              }
-            }
-          }
-
-          #dashboard-card-1 {
-            border: 1px solid rgba(81, 162, 255, 0.30);
-            background: linear-gradient(135deg, rgba(43, 127, 255, 0.20) 0%, rgba(43, 127, 255, 0.05) 100%);
-            gap: 16px;
-
-            .dashboard-card-image {
-              .dashboard-card-chiffre {
-                h1 {
-                  color: #51A2FF;
-                  font-size: 30px;
-                }
-
-                .dashboard-card-label {
-                  p {
-                    display: flex;
-                    color: rgba(255, 255, 255, 0.60);
-                    font-size: 14px;
-                  }
-                }
-              }
-            }
-          }
-
-          #dashboard-card-2 {
-            border: 1px solid rgba(194, 122, 255, 0.30);
-            background: linear-gradient(135deg, rgba(173, 70, 255, 0.20) 0%, rgba(173, 70, 255, 0.05) 100%);
-            gap: 16px;
-
-            .dashboard-card-image {
-              .dashboard-card-chiffre {
-                color: #C27AFF;
-                font-size: 30px;
-
-                .dashboard-card-label {
-                  p {
-                    display: flex;
-                    color: rgba(255, 255, 255, 0.60);
-                    font-size: 14px;
-                  }
-                }
-              }
-            }
-          }
-
-          #dashboard-card-3 {
-            border: 1px solid rgba(0, 211, 242, 0.30);
-            background: linear-gradient(135deg, rgba(0, 184, 219, 0.20) 0%, rgba(0, 184, 219, 0.05) 100%);
-            gap: 16px;
-
-            .dashboard-card-image {
-              .dashboard-card-chiffre {
-                color: #00D3F2;
-                font-size: 30px;
-
-                .dashboard-card-label {
-                  p {
-                    display: flex;
-                    color: rgba(255, 255, 255, 0.60);
-                    font-size: 14px;
-                  }
-                }
-              }
-            }
-          }
-
-          #dashboard-card-4 {
-            border: 1px solid rgba(5, 223, 114, 0.30);
-            background: linear-gradient(135deg, rgba(0, 201, 80, 0.20) 0%, rgba(0, 201, 80, 0.05) 100%);
-            gap: 16px;
-
-            .dashboard-card-image {
-              .dashboard-card-chiffre {
-                color: #05DF72;
-                font-size: 30px;
-
-                .dashboard-card-label {
-                  p {
-                    display: flex;
-                    color: rgba(255, 255, 255, 0.60);
-                    font-size: 14px;
-                  }
-                }
-              }
-            }
-          }
-        }
-
-        .dashboard-perf-et-activité {
-          display: flex;
-          flex-direction: row;
-          justify-content: center;
-          align-items: center;
-          width: 100%;
-          gap: 24px;
-          box-sizing: border-box;
-
-          .dashboard-performance-du-site {
-            display: flex;
-            flex-direction: column;
-            border-radius: 24px;
-            padding: 33px 33px 1px 33px;
-            color: $text-default;
-            border: 1px solid rgba(255, 255, 255, 0.10);
-            background: rgba(255, 255, 255, 0.05);
-            width: 100%;
-            height: 496px;
-            gap: 16px;
-
-            .performance-titre {
-              display: flex;
-              flex-direction: row;
-              align-items: center;
-              gap: 8px;
-              font-size: 20px;
-              margin-bottom: 20px;
-            }
-
-            .performance-temps-de-chargement,
-            .performance-disponibilité,
-            .performance-utilisation-cpu,
-            .performance-stockage-utilisé {
-              display: flex;
-              flex-direction: row;
-              align-items: center;
-              gap: 12px;
-              font-size: 16px;
-              border-radius: 14px;
-              border: 1px solid rgba(255, 255, 255, 0.10);
-              background: rgba(255, 255, 255, 0.05);
-              padding: 16px;
-            }
-          }
-
-          .dashboard-activité-récente {
-            display: flex;
-            flex-direction: column;
-            border-radius: 24px;
-            padding: 33px 33px 1px 33px;
-            color: $text-default;
-            border: 1px solid rgba(255, 255, 255, 0.10);
-            background: rgba(255, 255, 255, 0.05);
-            width: 100%;
-            height: 496px;
-            gap: 16px;
-
-            .activité-titre {
-              display: flex;
-              flex-direction: row;
-              align-items: center;
-              gap: 8px;
-              font-size: 20px;
-              margin-bottom: 20px;
-            }
-
-            .activité-card-default {
-              display: flex;
-              flex-direction: row;
-              align-items: center;
-              font-size: 16px;
-              border-radius: 14px;
-              border: 1px solid rgba(255, 255, 255, 0.10);
-              background: rgba(255, 255, 255, 0.05);
-              padding: 16px;
-              gap: 12px;
-
-              .activité-informations-icon {
-                display: flex;
-                padding: 9px;
-                border-radius: 10px;
-                border: 1px solid rgba(255, 255, 255, 0.10);
-                background: rgba(255, 255, 255, 0.05);
-              }
-
-              .activité-informations {
-                display: flex;
-                flex-direction: column;
-                justify-content: start;
-                gap: 4px;
-
-                .activité-informations-description {
-                  color: $text-default;
+            .dashboard-card-chiffre {
+              .dashboard-card-label {
+                p {
+                  display: flex;
+                  color: rgba(255, 255, 255, 0.60);
                   font-size: 14px;
-                  line-height: 20px;
-                }
-
-                .activité-temps-passé {
-                  color: rgba(255, 255, 255, 0.40);
-                  font-size: 12px;
-                  line-height: 16px;
                 }
               }
             }
           }
         }
 
-        .dashboard-stat-et-bdd {
-          display: flex;
-          flex-direction: row;
-          justify-content: center;
-          width: 100%;
-          color: $text-default;
-          gap: 24px;
-          margin-bottom: 48px;
+        #dashboard-card-1 {
+          border: 1px solid rgba(81, 162, 255, 0.30);
+          background: linear-gradient(135deg, rgba(43, 127, 255, 0.20) 0%, rgba(43, 127, 255, 0.05) 100%);
+          gap: 16px;
 
-          .stat-dernières-modifications {
-            display: flex;
-            flex-direction: column;
-            width: 70%;
-            height: 410px;
-            padding: 33px 33px 1px 33px;
-            gap: 24px;
-            border-radius: 24px;
-            border: 1px solid rgba(255, 255, 255, 0.10);
-            background: rgba(255, 255, 255, 0.05);
-
-            .dernières-modifications-titre {
-              display: flex;
-              flex-direction: row;
-              align-items: center;
-              gap: 8px;
-              font-size: 20px;
-            }
-
-            .dernières-modifications-default {
-              display: flex;
-              flex-direction: row;
-              justify-content: space-between;
-              margin: 0 auto;
-              width: 95%;
-              height: 60px;
-              padding: 0 16px;
-              border-radius: 14px;
-              border: 1px solid rgba(255, 255, 255, 0.10);
-              background: rgba(255, 255, 255, 0.05);
-
-              .dernières-modifications-default-status-et-descriptions {
-                display: flex;
-                flex-direction: row;
-                justify-content: start;
-                align-items: center;
-                gap: 12px;
-
-                .dernières-modifications-default-status {
-                  display: flex;
-                  width: 61px;
-                  height: 26px;
-                  padding: 4px 8px;
-                  align-items: center;
-                  justify-content: center;
-                  border-radius: 10px;
-                  border: 1px solid rgba(81, 162, 255, 0.30);
-                  background: rgba(43, 127, 255, 0.20);
-                  color: #51A2FF;
-                  font-size: 12px;
-                }
-
-                .dernières-modifications-default-description {
-                  display: flex;
-                  flex-direction: row;
-                  color: $text-default;
-                  align-items: center;
-                }
+          .dashboard-card-image {
+            .dashboard-card-chiffre {
+              h1 {
+                color: #51A2FF;
+                font-size: 30px;
               }
 
-              .dernières-modifications-default-temps-passé {
-                display: flex;
-                justify-content: end;
-                align-items: center;
-                color: rgba(255, 255, 255, 0.50);
+              .dashboard-card-label {
+                p {
+                  display: flex;
+                  color: rgba(255, 255, 255, 0.60);
+                  font-size: 14px;
+                }
               }
             }
           }
+        }
 
-          .bdd-base-de-donnée {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            width: 30%;
-            height: 410px;
-            padding: 33px 33px 1px 33px;
-            gap: 24px;
-            border-radius: 24px;
-            border: 1px solid rgba(255, 255, 255, 0.10);
-            background: rgba(255, 255, 255, 0.05);
+        #dashboard-card-2 {
+          border: 1px solid rgba(194, 122, 255, 0.30);
+          background: linear-gradient(135deg, rgba(173, 70, 255, 0.20) 0%, rgba(173, 70, 255, 0.05) 100%);
+          gap: 16px;
 
-            .base-de-donnée-entrées-titre {
-              display: flex;
-              flex-direction: row;
-              align-items: center;
-              gap: 8px;
-              font-size: 20px;
-            }
+          .dashboard-card-image {
+            .dashboard-card-chiffre {
+              color: #C27AFF;
+              font-size: 30px;
 
-            .base-de-donnée-entrées-totales {
-              display: flex;
-              width: 100%;
-              height: 90px;
-              flex-direction: column;
-              align-items: flex-start;
-              padding: 0 0 0 17px;
-              justify-content: center;
-              gap: 4px;
-              border-radius: 14px;
-              border: 1px solid rgba(255, 255, 255, 0.10);
-              background: rgba(255, 255, 255, 0.05);
-
-              .totales-titre {
-                color: rgba(255, 255, 255, 0.60);
-                font-size: 14px;
-                font-style: normal;
-
-                .totales-description {
+              .dashboard-card-label {
+                p {
+                  display: flex;
+                  color: rgba(255, 255, 255, 0.60);
+                  font-size: 14px;
                 }
               }
             }
+          }
+        }
 
-            .base-de-donnée-dernière-sauvegarde {
-              display: flex;
-              width: 100%;
-              height: 90px;
-              flex-direction: column;
-              align-items: flex-start;
-              padding: 0 0 0 17px;
-              justify-content: center;
-              gap: 4px;
-              border-radius: 14px;
-              border: 1px solid rgba(255, 255, 255, 0.10);
-              background: rgba(255, 255, 255, 0.05);
+        #dashboard-card-3 {
+          border: 1px solid rgba(0, 211, 242, 0.30);
+          background: linear-gradient(135deg, rgba(0, 184, 219, 0.20) 0%, rgba(0, 184, 219, 0.05) 100%);
+          gap: 16px;
 
-              .sauvegarde-titre {
-                color: rgba(255, 255, 255, 0.60);
-                font-size: 14px;
-                font-style: normal;
+          .dashboard-card-image {
+            .dashboard-card-chiffre {
+              color: #00D3F2;
+              font-size: 30px;
 
-                .sauvegarde-description {
+              .dashboard-card-label {
+                p {
+                  display: flex;
+                  color: rgba(255, 255, 255, 0.60);
+                  font-size: 14px;
                 }
               }
             }
+          }
+        }
 
-            .base-de-donnée-taille {
-              display: flex;
-              width: 100%;
-              height: 90px;
-              flex-direction: column;
-              align-items: flex-start;
-              padding: 0 0 0 17px;
-              justify-content: center;
-              gap: 4px;
-              border-radius: 14px;
-              border: 1px solid rgba(255, 255, 255, 0.10);
-              background: rgba(255, 255, 255, 0.05);
+        #dashboard-card-4 {
+          border: 1px solid rgba(5, 223, 114, 0.30);
+          background: linear-gradient(135deg, rgba(0, 201, 80, 0.20) 0%, rgba(0, 201, 80, 0.05) 100%);
+          gap: 16px;
 
-              .taille-titre {
-                color: rgba(255, 255, 255, 0.60);
-                font-size: 14px;
-                font-style: normal;
+          .dashboard-card-image {
+            .dashboard-card-chiffre {
+              color: #05DF72;
+              font-size: 30px;
 
-                .tailles-description {
-                  .taille-progress-barre {
-
-                  }
+              .dashboard-card-label {
+                p {
+                  display: flex;
+                  color: rgba(255, 255, 255, 0.60);
+                  font-size: 14px;
                 }
               }
             }
@@ -4505,364 +4301,645 @@ html {
         }
       }
 
-      #messages-container {
+      .dashboard-perf-et-activité {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
         gap: 24px;
+        box-sizing: border-box;
 
-        #messages-container-titre {
+        .dashboard-performance-du-site {
           display: flex;
           flex-direction: column;
+          border-radius: 24px;
+          padding: 33px 33px 1px 33px;
+          color: $text-default;
+          border: 1px solid rgba(255, 255, 255, 0.10);
+          background: rgba(255, 255, 255, 0.05);
+          width: 100%;
+          height: 496px;
+          gap: 16px;
 
-          #messages-titre-h1 {
-            color: $text-default;
-            font-size: 30px;
-            line-height: 36px
+          .performance-titre {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 8px;
+            font-size: 20px;
+            margin-bottom: 20px;
           }
 
-          #messages-titre-p {
-            color: rgba(255, 255, 255, 0.60);
+          .performance-temps-de-chargement,
+          .performance-disponibilité,
+          .performance-utilisation-cpu,
+          .performance-stockage-utilisé {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 12px;
             font-size: 16px;
-            line-height: 24px;
+            border-radius: 14px;
+            border: 1px solid rgba(255, 255, 255, 0.10);
+            background: rgba(255, 255, 255, 0.05);
+            padding: 16px;
           }
         }
 
-        .messages {
+        .dashboard-activité-récente {
           display: flex;
           flex-direction: column;
+          border-radius: 24px;
+          padding: 33px 33px 1px 33px;
+          color: $text-default;
+          border: 1px solid rgba(255, 255, 255, 0.10);
+          background: rgba(255, 255, 255, 0.05);
           width: 100%;
-          height: 186px;
-          padding: 49px;
+          height: 496px;
           gap: 16px;
-          justify-content: center;
-          align-items: center;
-          border-radius: 16px;
-          box-sizing: border-box;
+
+          .activité-titre {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 8px;
+            font-size: 20px;
+            margin-bottom: 20px;
+          }
+
+          .activité-card-default {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            font-size: 16px;
+            border-radius: 14px;
+            border: 1px solid rgba(255, 255, 255, 0.10);
+            background: rgba(255, 255, 255, 0.05);
+            padding: 16px;
+            gap: 12px;
+
+            .activité-informations-icon {
+              display: flex;
+              padding: 9px;
+              border-radius: 10px;
+              border: 1px solid rgba(255, 255, 255, 0.10);
+              background: rgba(255, 255, 255, 0.05);
+            }
+
+            .activité-informations {
+              display: flex;
+              flex-direction: column;
+              justify-content: start;
+              gap: 4px;
+
+              .activité-informations-description {
+                color: $text-default;
+                font-size: 14px;
+                line-height: 20px;
+              }
+
+              .activité-temps-passé {
+                color: rgba(255, 255, 255, 0.40);
+                font-size: 12px;
+                line-height: 16px;
+              }
+            }
+          }
+        }
+      }
+
+      .dashboard-stat-et-bdd {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+        color: $text-default;
+        gap: 24px;
+        margin-bottom: 48px;
+
+        .stat-dernières-modifications {
+          display: flex;
+          flex-direction: column;
+          width: 70%;
+          height: 410px;
+          padding: 33px 33px 1px 33px;
+          gap: 24px;
+          border-radius: 24px;
           border: 1px solid rgba(255, 255, 255, 0.10);
           background: rgba(255, 255, 255, 0.05);
 
-          #messages-icon {
-            height: 48px;
-            width: 48px;
+          .dernières-modifications-titre {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 8px;
+            font-size: 20px;
           }
 
-          #messages-notfound {
-            color: rgba(255, 255, 255, 0.60);
-            font-size: 16px;
-            line-height: 24px;
-          }
+          .dernières-modifications-default {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin: 0 auto;
+            width: 95%;
+            height: 60px;
+            padding: 0 16px;
+            border-radius: 14px;
+            border: 1px solid rgba(255, 255, 255, 0.10);
+            background: rgba(255, 255, 255, 0.05);
 
-          .messages-details {
-            display: none;
+            .dernières-modifications-default-status-et-descriptions {
+              display: flex;
+              flex-direction: row;
+              justify-content: start;
+              align-items: center;
+              gap: 12px;
+
+              .dernières-modifications-default-status {
+                display: flex;
+                width: 61px;
+                height: 26px;
+                padding: 4px 8px;
+                align-items: center;
+                justify-content: center;
+                border-radius: 10px;
+                border: 1px solid rgba(81, 162, 255, 0.30);
+                background: rgba(43, 127, 255, 0.20);
+                color: #51A2FF;
+                font-size: 12px;
+              }
+
+              .dernières-modifications-default-description {
+                display: flex;
+                flex-direction: row;
+                color: $text-default;
+                align-items: center;
+              }
+            }
+
+            .dernières-modifications-default-temps-passé {
+              display: flex;
+              justify-content: end;
+              align-items: center;
+              color: rgba(255, 255, 255, 0.50);
+            }
           }
         }
 
-        .has-messages {
+        .bdd-base-de-donnée {
           display: flex;
-          width: 100%;
-          flex-direction: row;
-          gap: 16px;
-          justify-content: center;
-          border-radius: 16px;
-          box-sizing: border-box;
+          flex-direction: column;
+          align-items: center;
+          width: 30%;
+          height: 410px;
+          padding: 33px 33px 1px 33px;
+          gap: 24px;
+          border-radius: 24px;
+          border: 1px solid rgba(255, 255, 255, 0.10);
+          background: rgba(255, 255, 255, 0.05);
 
-          #messages-icon, #messages-notfound {
-            display: none;
-          }
-
-          .messages-card-section {
+          .base-de-donnée-entrées-titre {
             display: flex;
-            flex-direction: column;
+            flex-direction: row;
             align-items: center;
-            gap: 16px;
-
-            .messages-card {
-              display: flex;
-              width: 510px;
-              height: 150px;
-              padding: 25px;
-              flex-direction: column;
-              align-items: flex-start;
-              justify-content: center;
-              border-radius: 16px;
-              box-sizing: border-box;
-              gap: 8px;
-              border: 1px solid rgba(81, 162, 255, 0.30);
-              background: rgba(43, 127, 255, 0.10);
-              transition: border 0.2s ease-in;
-
-              .messages-titre {
-                display: flex;
-                flex-direction: row;
-                align-items: center;
-                border-radius: 16px;
-                gap: 8px;
-
-                .messages-nom {
-                  color: $text-default;
-                  font-size: 16px;
-                  font-style: normal;
-                  line-height: 24px;
-                }
-
-                .messages-new {
-                  display: flex;
-                  width: 42.453px;
-                  height: 18px;
-                  padding: 0 8px;
-                  justify-content: center;
-                  align-items: center;
-                  border-radius: 8px;
-                  border: 1px solid rgba(0, 0, 0, 0.00);
-                  background: #D4183D;
-                  color: $text-default;
-                }
-              }
-
-              .messages-content {
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                gap: 8px;
-
-                .messages-sujet {
-                  color: #51A2FF;
-                  font-size: 16px;
-                  font-style: normal;
-                  line-height: 24px;
-                }
-
-                .messages-contenu {
-                  color: rgba(255, 255, 255, 0.50);
-                  font-size: 14px;
-                  font-style: normal;
-                  line-height: 20px;
-                }
-
-                .messages-temps {
-                  color: rgba(255, 255, 255, 0.40);
-                  font-size: 12px;
-                  font-style: normal;
-                  line-height: 16px;
-                }
-              }
-            }
-
-            .messages-card:hover {
-              border: 1px solid rgba(81, 162, 255, 0.75);
-              cursor: pointer;
-            }
-
+            gap: 8px;
+            font-size: 20px;
           }
 
-          .messages-details {
+          .base-de-donnée-entrées-totales {
+            display: flex;
             width: 100%;
-            padding: 33px;
+            height: 90px;
             flex-direction: column;
+            align-items: flex-start;
+            padding: 0 0 0 17px;
             justify-content: center;
-            align-items: center;
-            border-radius: 16px;
-            gap: 21px;
+            gap: 4px;
+            border-radius: 14px;
             border: 1px solid rgba(255, 255, 255, 0.10);
             background: rgba(255, 255, 255, 0.05);
 
-            .messages-icon {
-              height: 48px;
-              width: 48px;
-            }
-
-            .messages-notfound {
+            .totales-titre {
               color: rgba(255, 255, 255, 0.60);
-              font-size: 16px;
-              line-height: 24px;
+              font-size: 14px;
+              font-style: normal;
+
+              .totales-description {
+              }
             }
           }
 
-          .messages-details-remplis {
+          .base-de-donnée-dernière-sauvegarde {
+            display: flex;
             width: 100%;
-            padding: 33px;
+            height: 90px;
             flex-direction: column;
-            justify-content: start;
-            align-items: center;
-            border-radius: 16px;
-            gap: 21px;
+            align-items: flex-start;
+            padding: 0 0 0 17px;
+            justify-content: center;
+            gap: 4px;
+            border-radius: 14px;
             border: 1px solid rgba(255, 255, 255, 0.10);
             background: rgba(255, 255, 255, 0.05);
+
+            .sauvegarde-titre {
+              color: rgba(255, 255, 255, 0.60);
+              font-size: 14px;
+              font-style: normal;
+
+              .sauvegarde-description {
+              }
+            }
+          }
+
+          .base-de-donnée-taille {
+            display: flex;
+            width: 100%;
+            height: 90px;
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 0 0 0 17px;
+            justify-content: center;
+            gap: 4px;
+            border-radius: 14px;
+            border: 1px solid rgba(255, 255, 255, 0.10);
+            background: rgba(255, 255, 255, 0.05);
+
+            .taille-titre {
+              color: rgba(255, 255, 255, 0.60);
+              font-size: 14px;
+              font-style: normal;
+
+              .tailles-description {
+                .taille-progress-barre {
+
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    #messages-container {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+
+      #messages-container-titre {
+        display: flex;
+        flex-direction: column;
+
+        #messages-titre-h1 {
+          color: $text-default;
+          font-size: 30px;
+          line-height: 36px
+        }
+
+        #messages-titre-p {
+          color: rgba(255, 255, 255, 0.60);
+          font-size: 16px;
+          line-height: 24px;
+        }
+      }
+
+      .messages {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 186px;
+        padding: 49px;
+        gap: 16px;
+        justify-content: center;
+        align-items: center;
+        border-radius: 16px;
+        box-sizing: border-box;
+        border: 1px solid rgba(255, 255, 255, 0.10);
+        background: rgba(255, 255, 255, 0.05);
+
+        #messages-icon {
+          height: 48px;
+          width: 48px;
+        }
+
+        #messages-notfound {
+          color: rgba(255, 255, 255, 0.60);
+          font-size: 16px;
+          line-height: 24px;
+        }
+
+        .messages-details {
+          display: none;
+        }
+      }
+
+      .has-messages {
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+        gap: 16px;
+        justify-content: center;
+        border-radius: 16px;
+        box-sizing: border-box;
+
+        #messages-icon, #messages-notfound {
+          display: none;
+        }
+
+        .messages-card-section {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 16px;
+
+          .messages-card {
+            display: flex;
+            width: 510px;
+            height: 150px;
+            padding: 25px;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+            border-radius: 16px;
+            box-sizing: border-box;
+            gap: 8px;
+            border: 1px solid rgba(81, 162, 255, 0.30);
+            background: rgba(43, 127, 255, 0.10);
+            transition: border 0.2s ease-in;
+
+            .messages-titre {
+              display: flex;
+              flex-direction: row;
+              align-items: center;
+              border-radius: 16px;
+              gap: 8px;
+
+              .messages-nom {
+                color: $text-default;
+                font-size: 16px;
+                font-style: normal;
+                line-height: 24px;
+              }
+
+              .messages-new {
+                display: flex;
+                width: 42.453px;
+                height: 18px;
+                padding: 0 8px;
+                justify-content: center;
+                align-items: center;
+                border-radius: 8px;
+                border: 1px solid rgba(0, 0, 0, 0.00);
+                background: #D4183D;
+                color: $text-default;
+              }
+            }
 
             .messages-content {
               display: flex;
               flex-direction: column;
               justify-content: center;
-              align-items: start;
-              width: 100%;
-              color: $text-default;
-              gap: 16px;
+              gap: 8px;
 
               .messages-sujet {
-                color: #FFF;
-                font-size: 24px;
+                color: #51A2FF;
+                font-size: 16px;
                 font-style: normal;
-                line-height: 32px;
+                line-height: 24px;
               }
-
-              .messages-nom-content {
-                display: flex;
-                flex-direction: row;
-                align-items: center;
-                gap: 8px;
-
-                svg {
-                  path {
-                    stroke: white;
-                    stroke-opacity: 0.6;
-                  }
-                }
-
-                .messages-nom-p {
-                  color: rgba(255, 255, 255, 0.70);
-                  font-size: 14px;
-                  font-style: normal;
-                  line-height: 20px;
-                }
-              }
-
-              .messages-email-content {
-                display: flex;
-                flex-direction: row;
-                align-items: center;
-                gap: 8px;
-
-                svg {
-                  path {
-                    stroke: white;
-                    stroke-opacity: 0.6;
-                  }
-                }
-
-                .messages-email {
-                  color: #51A2FF;
-                  font-size: 14px;
-                  font-style: normal;
-                  line-height: 20px;
-                }
-              }
-
-              .messages-time-content {
-                display: flex;
-                flex-direction: row;
-                align-items: center;
-                gap: 8px;
-
-                svg {
-                  path {
-                    stroke: white;
-                    stroke-opacity: 0.4;
-                  }
-                }
-
-                .messages-temps {
-                  color: rgba(255, 255, 255, 0.40);
-                  font-size: 12px;
-                  font-style: normal;
-                  line-height: 16px;
-                }
-              }
-
 
               .messages-contenu {
-                display: flex;
-                height: 100%;
-                padding: 17px;
-                flex-direction: row;
-                justify-content: start;
-                align-items: start;
-                border-radius: 14px;
-                border: 1px solid rgba(255, 255, 255, 0.10);
-                background: rgba(255, 255, 255, 0.05);
+                color: rgba(255, 255, 255, 0.50);
+                font-size: 14px;
+                font-style: normal;
+                line-height: 20px;
+              }
 
-                .messages-contenu-p {
-                  color: rgba(255, 255, 255, 0.80);
-                  font-size: 16px;
-                  font-style: normal;
-                  line-height: 24px;
-                }
+              .messages-temps {
+                color: rgba(255, 255, 255, 0.40);
+                font-size: 12px;
+                font-style: normal;
+                line-height: 16px;
               }
             }
+          }
 
-            .messages-actions {
+          .messages-card:hover {
+            border: 1px solid rgba(81, 162, 255, 0.75);
+            cursor: pointer;
+          }
+
+        }
+
+        .messages-details {
+          width: 100%;
+          padding: 33px;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          border-radius: 16px;
+          gap: 21px;
+          border: 1px solid rgba(255, 255, 255, 0.10);
+          background: rgba(255, 255, 255, 0.05);
+
+          .messages-icon {
+            height: 48px;
+            width: 48px;
+          }
+
+          .messages-notfound {
+            color: rgba(255, 255, 255, 0.60);
+            font-size: 16px;
+            line-height: 24px;
+          }
+        }
+
+        .messages-details-remplis {
+          width: 100%;
+          padding: 33px;
+          flex-direction: column;
+          justify-content: start;
+          align-items: center;
+          border-radius: 16px;
+          gap: 21px;
+          border: 1px solid rgba(255, 255, 255, 0.10);
+          background: rgba(255, 255, 255, 0.05);
+
+          .messages-content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: start;
+            width: 100%;
+            color: $text-default;
+            gap: 16px;
+
+            .messages-sujet {
+              color: #FFF;
+              font-size: 24px;
+              font-style: normal;
+              line-height: 32px;
+            }
+
+            .messages-nom-content {
               display: flex;
               flex-direction: row;
               align-items: center;
-              width: 100%;
-              gap: 12px;
+              gap: 8px;
 
-              .messages-reponse {
-                display: flex;
-                padding: 8px 0;
-                justify-content: center;
-                align-items: center;
-                flex-direction: row;
-                gap: 16px;
-                width: 100%;
-                border-radius: 8px;
-                border: 1px solid rgba(81, 162, 255, 0.50);
-                background: rgba(43, 127, 255, 0.20);
-
-                svg {
-                  path {
-                    stroke: white;
-                    stroke-opacity: 1;
-                  }
+              svg {
+                path {
+                  stroke: white;
+                  stroke-opacity: 0.6;
                 }
-
-                .messages-reponse-p {
-                  color: $text-default;
-                }
-
               }
 
-              .messages-supprimer {
-                display: flex;
-                width: 40px;
-                height: 36px;
-                justify-content: center;
-                align-items: center;
-                border-radius: 8px;
-                background: #D4183D;
+              .messages-nom-p {
+                color: rgba(255, 255, 255, 0.70);
+                font-size: 14px;
+                font-style: normal;
+                line-height: 20px;
+              }
+            }
 
-                svg {
-                  path {
-                    stroke: white;
-                    stroke-opacity: 1;
-                  }
+            .messages-email-content {
+              display: flex;
+              flex-direction: row;
+              align-items: center;
+              gap: 8px;
+
+              svg {
+                path {
+                  stroke: white;
+                  stroke-opacity: 0.6;
                 }
+              }
+
+              .messages-email {
+                color: #51A2FF;
+                font-size: 14px;
+                font-style: normal;
+                line-height: 20px;
+              }
+            }
+
+            .messages-time-content {
+              display: flex;
+              flex-direction: row;
+              align-items: center;
+              gap: 8px;
+
+              svg {
+                path {
+                  stroke: white;
+                  stroke-opacity: 0.4;
+                }
+              }
+
+              .messages-temps {
+                color: rgba(255, 255, 255, 0.40);
+                font-size: 12px;
+                font-style: normal;
+                line-height: 16px;
+              }
+            }
+
+
+            .messages-contenu {
+              display: flex;
+              height: 100%;
+              padding: 17px;
+              flex-direction: row;
+              justify-content: start;
+              align-items: start;
+              border-radius: 14px;
+              border: 1px solid rgba(255, 255, 255, 0.10);
+              background: rgba(255, 255, 255, 0.05);
+
+              .messages-contenu-p {
+                color: rgba(255, 255, 255, 0.80);
+                font-size: 16px;
+                font-style: normal;
+                line-height: 24px;
+              }
+            }
+          }
+
+          .messages-actions {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            width: 100%;
+            gap: 12px;
+
+            .messages-reponse {
+              display: flex;
+              padding: 8px 0;
+              justify-content: center;
+              align-items: center;
+              flex-direction: row;
+              gap: 16px;
+              width: 100%;
+              border-radius: 8px;
+              border: 1px solid rgba(81, 162, 255, 0.50);
+              background: rgba(43, 127, 255, 0.20);
+
+              svg {
+                path {
+                  stroke: white;
+                  stroke-opacity: 1;
+                }
+              }
+
+              .messages-reponse-p {
+                color: $text-default;
               }
 
             }
+
+            .messages-supprimer {
+              display: flex;
+              width: 40px;
+              height: 36px;
+              justify-content: center;
+              align-items: center;
+              border-radius: 8px;
+              background: #D4183D;
+
+              svg {
+                path {
+                  stroke: white;
+                  stroke-opacity: 1;
+                }
+              }
+            }
+
           }
-        }
-      }
-
-    }
-
-    footer {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      justify-content: center;
-      margin: 0 auto;
-      padding: 32px;
-
-      p {
-        color: $text-default;
-
-        a {
-          color: $text-default;
-
         }
       }
     }
 
   }
+
+  footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 32px;
+
+    p {
+      color: $text-default;
+
+      a {
+        color: $text-default;
+
+      }
+    }
+  }
+
+}
 
 }
