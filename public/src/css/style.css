@@ -160,11 +160,11 @@ html body #nav {
   align-items: center;
   justify-content: center;
   width: 100%;
-  margin-top: 78px;
+  margin-top: 44px;
 }
 @media (max-width: 1100px) {
   html body #nav {
-    display: none;
+    display: flex;
     justify-content: end;
     margin-right: 20px;
   }
@@ -328,90 +328,104 @@ html body #nav-mobile #navbar-mobile ul svg:hover path {
   stroke: #ffffff;
 }
 html body #hero {
-  position: relative;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  color: rgba(255, 255, 255, 0.8);
+  align-items: start;
+  margin-left: 182.5px;
   margin-top: 150px;
-  gap: 32px;
 }
-html body #hero::after {
-  z-index: 1;
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  clip-path: polygon(20% 10%, 80% 10%, 65% 110%, 35% 110%);
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(to top, rgba(255, 215, 0, 0.5), transparent);
-  pointer-events: none;
+@media (max-width: 1100px) {
+  html body #hero {
+    align-items: center;
+    justify-content: center;
+    margin-left: 0;
+    margin-top: 10px;
+  }
 }
 html body #hero #hero-title {
-  position: relative;
-  z-index: 1;
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  font-family: "Saira Extra Condensed", sans-serif;
-  font-weight: 900;
-  font-style: normal;
+  flex-direction: column;
   color: rgb(255, 255, 255);
-  text-align: center;
-  font-size: 256px;
-  line-height: 128px;
+  font-size: 96px;
+}
+@media (max-width: 1100px) {
+  html body #hero #hero-title {
+    text-align: center;
+  }
+}
+@media (max-width: 500px) {
+  html body #hero #hero-title {
+    font-size: 48px;
+  }
 }
 html body #hero #hero-subtitle {
-  position: relative;
-  z-index: 3;
-  margin-top: 50px;
-  color: #51A2FF;
-  text-align: center;
-  font-size: 24px;
-  font-style: normal;
-  line-height: 32px;
+  margin-top: 15px;
+  color: #51a2ff;
+  font-size: 48px;
+  font-weight: 300;
+  line-height: 48px; /* 100% */
+}
+@media (max-width: 1100px) {
+  html body #hero #hero-subtitle {
+    text-align: center;
+  }
+}
+@media (max-width: 650px) {
+  html body #hero #hero-subtitle {
+    font-size: 24px;
+  }
 }
 html body #hero #hero-description {
-  position: relative;
-  z-index: 3;
-  width: 620px;
-  flex-shrink: 0;
-  color: rgba(255, 255, 255, 0.7);
-  text-align: center;
-  font-size: 18px;
-  line-height: 28px;
+  margin-top: 33px;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 20px;
+  width: 637px;
+  line-height: 140%;
+}
+@media (max-width: 1100px) {
+  html body #hero #hero-description {
+    text-align: start;
+  }
+}
+@media (max-width: 650px) {
+  html body #hero #hero-description {
+    width: 345px;
+  }
 }
 html body #hero #hero-icon {
-  position: relative;
-  z-index: 3;
-  display: flex;
-  width: 102px;
-  height: 18px;
-  align-items: center;
-  gap: 24px;
-}
-html body #hero #hero-icon .fa-github, html body #hero #hero-icon .fa-linkedin-in, html body #hero #hero-icon .fa-paper-plane {
-  height: 18px;
-  flex-shrink: 0;
-  align-self: stretch;
-  color: rgba(255, 255, 255, 0.7);
-  transition: 300ms;
-}
-html body #hero #hero-icon .fa-github:hover, html body #hero #hero-icon .fa-linkedin-in:hover, html body #hero #hero-icon .fa-paper-plane:hover {
-  height: 18px;
-  flex-shrink: 0;
-  align-self: stretch;
-  color: #ffffff;
-}
-html body #hero #hero-links {
-  position: relative;
-  z-index: 3;
+  margin-top: 48px;
   display: flex;
   flex-direction: row;
+  gap: 16px;
+}
+html body #hero #hero-icon a {
+  text-decoration: none;
+}
+html body #hero #hero-icon .fa-github,
+html body #hero #hero-icon .fa-linkedin-in,
+html body #hero #hero-icon .fa-paper-plane {
+  display: flex;
   align-items: center;
-  margin-bottom: 150px;
+  justify-content: center;
+  padding: 17px;
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.1);
+  transition: all 150ms ease-in-out;
+  height: 24px;
+  width: 24px;
+  color: white;
+}
+html body #hero #hero-icon .fa-github:hover,
+html body #hero #hero-icon .fa-linkedin-in:hover,
+html body #hero #hero-icon .fa-paper-plane:hover {
+  border: 1px solid rgba(81, 162, 255, 0.5);
+  background: rgba(255, 255, 255, 0.1);
+}
+html body #hero #hero-links {
+  display: flex;
+  flex-direction: row;
+  margin-top: 40px;
   gap: 16px;
   height: 58px;
 }
@@ -420,38 +434,39 @@ html body #hero #hero-links {
     flex-direction: column;
   }
 }
-html body #hero #hero-links #hero-links-project {
-  display: flex;
+html body #hero #hero-links #hero-links-project,
+html body #hero #hero-links #hero-links-contact {
   color: rgb(255, 255, 255);
   text-decoration: none;
-  padding: 16px 33px 18px 33px;
-  border-radius: 16px;
-  gap: 8px;
-  border: 1px solid rgba(81, 162, 255, 0.5);
-  background: rgba(43, 127, 255, 0.7);
-  transition: all 300ms ease-in-out;
+  transition: all 150ms ease-in-out;
 }
 html body #hero #hero-links #hero-links-project:hover {
   transform: scale(1.1);
   border: 1px solid rgba(81, 162, 255, 0.3);
-  background: rgba(43, 127, 255, 0.9);
+  background: rgba(43, 127, 255, 0.5);
+}
+html body #hero #hero-links #hero-links-contact:hover {
+  transform: scale(1.1);
+}
+html body #hero #hero-links #hero-links-project {
+  padding: 16px 33px 18px 33px;
+  border-radius: 16px;
+  border: 1px solid rgba(81, 162, 255, 0.5);
+  background: rgba(43, 127, 255, 0.2);
+  gap: 8px;
+}
+html body #hero #hero-links #hero-links-project,
+html body #hero #hero-links img {
+  display: flex;
+  align-items: center;
 }
 html body #hero #hero-links #hero-links-contact {
   display: flex;
   align-items: center;
-  justify-content: center;
   padding: 16px 32.594px 18px 33px;
-  color: rgb(255, 255, 255);
-  text-decoration: none;
   border-radius: 16px;
-  border: 1px solid rgba(0, 0, 0, 0.5);
-  background: rgba(0, 0, 0, 0.7);
-  transition: all 300ms ease-in-out;
-}
-html body #hero #hero-links #hero-links-contact:hover {
-  transform: scale(1.1);
-  border: 1px solid rgba(0, 0, 0, 0.3);
-  background: rgba(0, 0, 0, 0.9);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.1);
 }
 @keyframes breathingLight {
   0% {
@@ -4185,6 +4200,7 @@ html body #dashboard-body #messages-container {
   display: flex;
   flex-direction: column;
   gap: 24px;
+  margin-bottom: 40px;
 }
 html body #dashboard-body #messages-container #messages-container-titre {
   display: flex;

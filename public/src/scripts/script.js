@@ -161,7 +161,7 @@ async function readMessage(messageId) {
                     <i class="fa-regular fa-clock"></i>
                     <p class="messages-temps">le ${new Date(msg.data_envoi).toLocaleDateString()}</p>
                 </div>
-                <div class="messages-contenu"><p class="messages-contenu-p">${msg.contenu.substring(0, 40)}</p></div>
+                <div class="messages-contenu"><p class="messages-contenu-p">${msg.contenu.substring(0, 500)}</p></div>
             </div>
             <div class="messages-actions">
                 <div class="messages-reponse">
