@@ -7,7 +7,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 // Saira Extra Condensed
-@import url('https://fonts.googleapis.com/css2?family=Saira+Extra+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Saira+Extra+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap");
 /*$bg-color-dark: linear-gradient(156.2deg, rgba(0, 0, 0, 1) 14.8%, rgba(32, 104, 177, 1) 68.1%, rgb(224, 222, 237) 129%);*/
 /*$bg-color-light: linear-gradient(156.2deg, rgba(222, 229, 237) 14.8%, rgba(32, 104, 177, 1) 68.1%, rgba(0, 0, 0) 129%);*/
 
@@ -313,8 +313,9 @@ html {
           position: fixed;
           z-index: 9999;
           //transform: translateY(100px);
-          transition: scale 0.2s ease-out,
-          transform 500ms ease-in-out;
+          transition:
+            scale 0.2s ease-out,
+            transform 500ms ease-in-out;
           flex-direction: column;
           bottom: 0;
           right: 0;
@@ -3948,8 +3949,9 @@ html {
                 padding: 11px;
                 border-radius: 14px;
                 background: linear-gradient(90deg, #2b7fff 0%, #ad46ff 100%);
-                box-shadow: 0 10px 15px -3px rgba(43, 127, 255, 0.2),
-                0 4px 6px -4px rgba(43, 127, 255, 0.2);
+                box-shadow:
+                  0 10px 15px -3px rgba(43, 127, 255, 0.2),
+                  0 4px 6px -4px rgba(43, 127, 255, 0.2);
 
                 button {
                   cursor: pointer;
@@ -4125,8 +4127,9 @@ html {
             border-radius: 14px;
             border: none;
             background: linear-gradient(90deg, #2b7fff 0%, #ad46ff 100%);
-            box-shadow: 0 10px 15px -3px rgba(43, 127, 255, 0.3),
-            0 4px 6px -4px rgba(43, 127, 255, 0.3);
+            box-shadow:
+              0 10px 15px -3px rgba(43, 127, 255, 0.3),
+              0 4px 6px -4px rgba(43, 127, 255, 0.3);
             font-size: 14px;
             transition: all ease 0.2s;
           }
@@ -5093,6 +5096,135 @@ html {
                 }
               }
             }
+          }
+        }
+      }
+    }
+
+    #about-container {
+      display: flex;
+      display: flex;
+      height: 2474px;
+      align-items: flex-start;
+      gap: 32px;
+      flex-shrink: 0;
+      background: rgb(34, 0, 0);
+      #left-container {
+        display: flex;
+        width: 288px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+        #profile-left-container {
+          display: flex;
+          width: 288px;
+          height: 531.25px;
+          flex-direction: column;
+          align-items: center;
+          justify-content: space-around;
+          padding: 25px;
+          flex-shrink: 0;
+          border-radius: 16px;
+          border: 1px solid rgba(255, 255, 255, 0.1);
+          background: rgba(255, 255, 255, 0.03);
+          #pp-profile {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 999px;
+            padding: 22px;
+            width: 96px;
+            height: 96px;
+            svg {
+              path {
+                height: 48px;
+                width: 48px;
+                background: #000;
+                padding: 22px;
+                margin: 22px;
+              }
+            }
+          }
+
+          h1 {
+            color: #fff;
+            text-align: center;
+            font-size: 20px;
+            font-weight: 700;
+            line-height: 28px;
+          }
+          p {
+            color: rgba(255, 255, 255, 0.65);
+            text-align: center;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 22.75px;
+          }
+          #localisation {
+            display: flex;
+            width: 238px;
+            height: 16px;
+            padding-right: 0.016px;
+            justify-content: center;
+            gap: 8px;
+            .fa-compass {
+              color: rgba(255, 255, 255, 0.4);
+            }
+            p {
+              color: rgba(255, 255, 255, 0.4);
+              text-align: center;
+              font-size: 12px;
+              font-weight: 400;
+              line-height: 16px;
+            }
+          }
+          #links {
+            display: flex;
+            width: 238px;
+            flex-direction: column;
+            gap: 8px;
+            #github-links {
+              .fa-github {
+                color: #ffffff4d;
+              }
+              a {
+                color: #ffffff8c;
+              }
+            }
+            #linkedin-links {
+              .fa-linkedin-in {
+                color: #ffffff4d;
+              }
+              a {
+                color: #ffffff8c;
+              }
+            }
+            #contact-links {
+              .fa-envelope {
+                color: #ffffff4d;
+              }
+              a {
+                color: #ffffff8c;
+              }
+            }
+          }
+          #line {
+            display: flex;
+            width: 238px;
+            padding-top: 21px;
+            flex-direction: column;
+            align-items: flex-start;
+            border-top: 1px solid rgba(255, 255, 255, 0.08);
+          }
+          #connexion-admin {
+            display: flex;
+            padding: 11px 49.57px 11px 50.42px;
+            justify-content: center;
+            align-items: center;
+            gap: 8px;
+            border-radius: 14px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            background: rgba(255, 255, 255, 0.05);
           }
         }
       }

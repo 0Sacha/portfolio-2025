@@ -4474,6 +4474,125 @@ html body #dashboard-body #messages-container .has-messages .messages-details-re
   stroke: white;
   stroke-opacity: 1;
 }
+html body #about-container {
+  display: flex;
+  display: flex;
+  height: 2474px;
+  align-items: flex-start;
+  gap: 32px;
+  flex-shrink: 0;
+  background: rgb(34, 0, 0);
+}
+html body #about-container #left-container {
+  display: flex;
+  width: 288px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+html body #about-container #left-container #profile-left-container {
+  display: flex;
+  width: 288px;
+  height: 531.25px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding: 25px;
+  flex-shrink: 0;
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.03);
+}
+html body #about-container #left-container #profile-left-container #pp-profile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 999px;
+  padding: 22px;
+  width: 96px;
+  height: 96px;
+}
+html body #about-container #left-container #profile-left-container #pp-profile svg path {
+  height: 48px;
+  width: 48px;
+  background: #000;
+  padding: 22px;
+  margin: 22px;
+}
+html body #about-container #left-container #profile-left-container h1 {
+  color: #fff;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 28px;
+}
+html body #about-container #left-container #profile-left-container p {
+  color: rgba(255, 255, 255, 0.65);
+  text-align: center;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22.75px;
+}
+html body #about-container #left-container #profile-left-container #localisation {
+  display: flex;
+  width: 238px;
+  height: 16px;
+  padding-right: 0.016px;
+  justify-content: center;
+  gap: 8px;
+}
+html body #about-container #left-container #profile-left-container #localisation .fa-compass {
+  color: rgba(255, 255, 255, 0.4);
+}
+html body #about-container #left-container #profile-left-container #localisation p {
+  color: rgba(255, 255, 255, 0.4);
+  text-align: center;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+}
+html body #about-container #left-container #profile-left-container #links {
+  display: flex;
+  width: 238px;
+  flex-direction: column;
+  gap: 8px;
+}
+html body #about-container #left-container #profile-left-container #links #github-links .fa-github {
+  color: rgba(255, 255, 255, 0.3019607843);
+}
+html body #about-container #left-container #profile-left-container #links #github-links a {
+  color: rgba(255, 255, 255, 0.5490196078);
+}
+html body #about-container #left-container #profile-left-container #links #linkedin-links .fa-linkedin-in {
+  color: rgba(255, 255, 255, 0.3019607843);
+}
+html body #about-container #left-container #profile-left-container #links #linkedin-links a {
+  color: rgba(255, 255, 255, 0.5490196078);
+}
+html body #about-container #left-container #profile-left-container #links #contact-links .fa-envelope {
+  color: rgba(255, 255, 255, 0.3019607843);
+}
+html body #about-container #left-container #profile-left-container #links #contact-links a {
+  color: rgba(255, 255, 255, 0.5490196078);
+}
+html body #about-container #left-container #profile-left-container #line {
+  display: flex;
+  width: 238px;
+  padding-top: 21px;
+  flex-direction: column;
+  align-items: flex-start;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+html body #about-container #left-container #profile-left-container #connexion-admin {
+  display: flex;
+  padding: 11px 49.57px 11px 50.42px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.05);
+}
 html body footer {
   display: flex;
   flex-direction: row;
