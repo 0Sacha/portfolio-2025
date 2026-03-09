@@ -273,7 +273,7 @@ async function fetchGitHubContributions() {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
-                "Authorization": "Bearer " + GITHUB_TOKEN
+                "Authorization": "Bearer " + GITHUB_TOKEN,
             },
             body: JSON.stringify({query: query})
         });
