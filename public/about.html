@@ -30,7 +30,14 @@
 </head>
 
 <body>
-    <div id="about-container">
+    <div id="about-body">
+        <div id="back-to-index">
+
+            <a href="index.html">
+                <i class="fa-solid fa-arrow-left fa-sm"></i>
+                <p>Retour</p>
+            </a>
+        </div>
         <div id="main-content">
             <div id="left-container">
                 <div id="profile-left-container">
@@ -116,55 +123,63 @@
                 </div>
                 <div id="stat-left-container">
                     <h1>stats</h1>
-                    <div id="experience-years">
-                        <p>Années d'expérience</p>
-                        <p>2+</p>
-                    </div>
-                    <div id="Formations">
-                        <p>Formations</p>
-                        <p>3</p>
-                    </div>
-                    <div id="Logiciels">
-                        <p>Logiciels maîtrisés</p>
-                        <p>10+</p>
-                    </div>
-                    <div id="Projets">
-                        <p>Projets réalisés</p>
-                        <p>2+</p>
-                    </div>
+                     <div id="statis">
+                         <div id="experience-years">
+                             <p>Années d'expérience</p>
+                             <p class="colored">2+</p>
+                         </div>
+                         <div id="formations">
+                             <p>Formations</p>
+                             <p class="colored">3</p>
+                         </div>
+                         <div id="logiciels">
+                             <p>Logiciels maîtrisés</p>
+                             <p class="colored">10+</p>
+                         </div>
+                         <div id="projets">
+                             <p>Projets réalisés</p>
+                             <p class="colored">2+</p>
+                         </div>
+                     </div>
                 </div>
                 <div id="organisation-left-container">
                     <h1>Organisation</h1>
-                    <div id="presoa">
-                        <i class="fa-solid fa-briefcase-medical"></i>
-                        <div id="subtitle-presoa">
-                            <p>Presoa</p>
-                            <p>Médecine du travail</p>
+                    <div id="ecole-entreprise">
+                        <div id="presoa">
+                            <div id="left-presoa">
+                                <i class="fa-solid fa-briefcase-medical"></i>
+                                <div id="subtitle-presoa">
+                                    <p>Presoa</p>
+                                    <p>Médecine du travail</p>
+                                </div>
+                            </div>
+                            <a href="https://presoa.org/" target="_blank" id="link-presoa">
+                                <i class="fa-solid fa-arrow-up-right-from-square fa-sm"></i>
+                            </a>
                         </div>
-                        <a href="https://presoa.org/" id="link-presoa">
-                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                        </a>
-                    </div>
-                    <div id="promeo">
-                        <i class="fa-solid fa-graduation-cap"></i>
-                        <div id="subtitle-promeo">
-                            <p>Promeo</p>
-                            <p>CFA Compiègne</p>
+                        <div id="promeo">
+                            <div id="left-promeo">
+                                <i class="fa-solid fa-graduation-cap"></i>
+                                <div id="subtitle-promeo">
+                                    <p>Promeo</p>
+                                    <p>CFA Compiègne</p>
+                                </div>
+                            </div>
+                            <a href="https://www.promeo-formation.fr/" target="_blank" id="link-promeo">
+                                <i class="fa-solid fa-arrow-up-right-from-square fa-sm"></i>
+                            </a>
                         </div>
-                        <a href="https://www.promeo-formation.fr/" id="link-promeo">
-                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                        </a>
                     </div>
                 </div>
                 <div id="langue-left-container">
                     <h1>langues</h1>
                     <div id="francais">
                         <p>Français</p>
-                        <p>Natif</p>
+                        <p id="niveau">Natif</p>
                     </div>
                     <div id="anglais">
                         <p>Anglais</p>
-                        <p>B1</p>
+                        <p id="niveau">B1</p>
                     </div>
                 </div>
             </div>
@@ -184,7 +199,7 @@
                             alternance.
                         </p>
                         <p>
-                            💼 En alternance depuis <span style="color: #05DF72">2 ans chez Presoa</span> en tant que
+                            💼 En alternance depuis <span style="color: #05DF72">1 ans et demi chez Presoa</span> en tant que
                             technicien IT : support N1, helpdesk, administration AD et réseau.
                         </p>
                         <p>
