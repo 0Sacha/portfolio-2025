@@ -4688,7 +4688,10 @@ html body #about-body #main-content #left-container #stat-left-container #statis
   width: 100%;
   gap: 12px;
 }
-html body #about-body #main-content #left-container #stat-left-container #statis #experience-years, html body #about-body #main-content #left-container #stat-left-container #statis #formations, html body #about-body #main-content #left-container #stat-left-container #statis #logiciels, html body #about-body #main-content #left-container #stat-left-container #statis #projets {
+html body #about-body #main-content #left-container #stat-left-container #statis #experience-years,
+html body #about-body #main-content #left-container #stat-left-container #statis #formations,
+html body #about-body #main-content #left-container #stat-left-container #statis #logiciels,
+html body #about-body #main-content #left-container #stat-left-container #statis #projets {
   width: 100%;
 }
 html body #about-body #main-content #left-container #stat-left-container #statis #experience-years {
@@ -4704,7 +4707,7 @@ html body #about-body #main-content #left-container #stat-left-container #statis
   line-height: 20px;
 }
 html body #about-body #main-content #left-container #stat-left-container #statis #experience-years .colored {
-  color: #00D3F3;
+  color: #00d3f3;
   font-size: 14px;
   font-weight: 700;
   line-height: 20px;
@@ -4722,7 +4725,7 @@ html body #about-body #main-content #left-container #stat-left-container #statis
   line-height: 20px;
 }
 html body #about-body #main-content #left-container #stat-left-container #statis #formations .colored {
-  color: #C27AFF;
+  color: #c27aff;
   font-size: 14px;
   font-weight: 700;
   line-height: 20px;
@@ -4740,7 +4743,7 @@ html body #about-body #main-content #left-container #stat-left-container #statis
   line-height: 20px;
 }
 html body #about-body #main-content #left-container #stat-left-container #statis #logiciels .colored {
-  color: #05DF72;
+  color: #05df72;
   font-size: 14px;
   font-weight: 700;
   line-height: 20px;
@@ -4758,7 +4761,7 @@ html body #about-body #main-content #left-container #stat-left-container #statis
   line-height: 20px;
 }
 html body #about-body #main-content #left-container #stat-left-container #statis #projets .colored {
-  color: #51A2FF;
+  color: #51a2ff;
   font-size: 14px;
   font-weight: 700;
   line-height: 20px;
@@ -4890,20 +4893,23 @@ html body #about-body #main-content #left-container #langue-left-container h1 {
   line-height: 16px;
   text-transform: uppercase;
 }
-html body #about-body #main-content #left-container #langue-left-container #francais, html body #about-body #main-content #left-container #langue-left-container #anglais {
+html body #about-body #main-content #left-container #langue-left-container #francais,
+html body #about-body #main-content #left-container #langue-left-container #anglais {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   width: 100%;
 }
-html body #about-body #main-content #left-container #langue-left-container #francais p, html body #about-body #main-content #left-container #langue-left-container #anglais p {
+html body #about-body #main-content #left-container #langue-left-container #francais p,
+html body #about-body #main-content #left-container #langue-left-container #anglais p {
   color: rgba(255, 255, 255, 0.7);
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
 }
-html body #about-body #main-content #left-container #langue-left-container #francais #niveau, html body #about-body #main-content #left-container #langue-left-container #anglais #niveau {
+html body #about-body #main-content #left-container #langue-left-container #francais #niveau,
+html body #about-body #main-content #left-container #langue-left-container #anglais #niveau {
   color: rgba(255, 255, 255, 0.4);
   line-height: 20px;
   font-size: 12px;
@@ -5001,7 +5007,544 @@ html body #about-body #main-content #right-container #nav-bar-right-container na
   display: flex;
   align-items: center;
   color: #9e9e9e;
-  padding: 10px 65px 10px 65px;
+  padding: 10px 57px 10px 57px;
+}
+html body #about-body #main-content #right-container #activite-github-right-container {
+  padding: 25px;
+  height: 245px;
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.03);
+}
+html body #about-body #main-content #right-container #activite-github-right-container #title-activity {
+  display: flex;
+  margin-bottom: 15px;
+  height: 20px;
+  justify-content: space-between;
+  align-items: center;
+}
+html body #about-body #main-content #right-container #activite-github-right-container #title-activity p {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+}
+html body #about-body #main-content #right-container #activite-github-right-container .graph-container {
+  display: flex;
+}
+html body #about-body #main-content #right-container #activite-github-right-container .graph-container .week {
+  display: flex;
+  flex-direction: column;
+  width: 734px;
+  height: 131px;
+  align-items: flex-start;
+  gap: 4px;
+}
+html body #about-body #main-content #right-container #activite-github-right-container .graph-container .week .day[data-level="0"] {
+  width: 12px;
+  height: 12px;
+  border-radius: 6px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.05);
+}
+html body #about-body #main-content #right-container #activite-github-right-container .graph-container .week .day[data-level="1"] {
+  width: 12px;
+  height: 12px;
+  flex-shrink: 0;
+  border-radius: 6px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(28, 57, 142, 0.6);
+}
+html body #about-body #main-content #right-container #activite-github-right-container .graph-container .week .day[data-level="2"] {
+  width: 12px;
+  height: 12px;
+  border-radius: 6px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(21, 93, 252, 0.7);
+}
+html body #about-body #main-content #right-container #activite-github-right-container .graph-container .week .day[data-level="3"] {
+  width: 12px;
+  height: 12px;
+  border-radius: 6px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(43, 127, 255, 0.8);
+}
+html body #about-body #main-content #right-container #activite-github-right-container .graph-container .week .day[data-level="4"] {
+  width: 12px;
+  height: 12px;
+  border-radius: 6px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: #51A2FF;
+}
+html body #about-body #main-content #right-container #activite-github-right-container #legend {
+  display: flex;
+  flex-direction: row;
+  margin-top: 35px;
+  gap: 8px;
+  justify-content: end;
+  align-items: center;
+}
+html body #about-body #main-content #right-container #activite-github-right-container #legend p {
+  color: rgba(255, 255, 255, 0.3);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+}
+html body #about-body #main-content #right-container #activite-github-right-container #legend .dot-2,
+html body #about-body #main-content #right-container #activite-github-right-container #legend .dot-1,
+html body #about-body #main-content #right-container #activite-github-right-container #legend .dot0,
+html body #about-body #main-content #right-container #activite-github-right-container #legend .dot1,
+html body #about-body #main-content #right-container #activite-github-right-container #legend .dot2 {
+  width: 12px;
+  height: 12px;
+}
+html body #about-body #main-content #right-container #activite-github-right-container #legend .dot-2 {
+  border-radius: 6px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.05);
+}
+html body #about-body #main-content #right-container #activite-github-right-container #legend .dot-1 {
+  border-radius: 6px;
+  background: rgba(28, 57, 142, 0.6);
+}
+html body #about-body #main-content #right-container #activite-github-right-container #legend .dot0 {
+  border-radius: 6px;
+  background: rgba(21, 93, 252, 0.7);
+}
+html body #about-body #main-content #right-container #activite-github-right-container #legend .dot1 {
+  border-radius: 6px;
+  background: rgba(43, 127, 255, 0.8);
+}
+html body #about-body #main-content #right-container #activite-github-right-container #legend .dot2 {
+  border-radius: 6px;
+  background: #51A2FF;
+}
+html body #about-body #main-content #right-container #activite-github-right-container #legend p {
+  color: rgba(255, 255, 255, 0.3);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+}
+html body #about-body #main-content #right-container #epingle-title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+}
+html body #about-body #main-content #right-container #epingle-title .fa-star {
+  color: rgba(255, 255, 255, 0.4);
+}
+html body #about-body #main-content #right-container #epingle-title p {
+  color: rgba(255, 255, 255, 0.55);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+}
+html body #about-body #main-content #right-container #projet-right-container {
+  display: grid;
+  row-gap: 16px;
+  column-gap: 16px;
+  grid-template-rows: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+html body #about-body #main-content #right-container #projet-right-container #card-project-1,
+html body #about-body #main-content #right-container #projet-right-container #card-project-2,
+html body #about-body #main-content #right-container #projet-right-container #card-project-3,
+html body #about-body #main-content #right-container #projet-right-container #card-project-4,
+html body #about-body #main-content #right-container #projet-right-container #card-project-5,
+html body #about-body #main-content #right-container #projet-right-container #card-project-6 {
+  display: flex;
+  gap: 16px;
+}
+html body #about-body #main-content #right-container #projet-right-container #card-project-1 {
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 16px;
+  padding: 20px 22px;
+  border: 1px solid rgba(81, 162, 255, 0.3);
+  background: linear-gradient(135deg, rgba(43, 127, 255, 0.1) 0%, rgba(0, 0, 0, 0) 100%);
+}
+html body #about-body #main-content #right-container #projet-right-container #card-project-1 #up-of-card {
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  justify-content: space-between;
+}
+html body #about-body #main-content #right-container #projet-right-container #card-project-1 #up-of-card #title-card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+}
+html body #about-body #main-content #right-container #projet-right-container #card-project-1 #up-of-card #title-card .fa-server {
+  color: rgba(255, 255, 255, 0.4);
+}
+html body #about-body #main-content #right-container #projet-right-container #card-project-1 #up-of-card #title-card p {
+  color: rgba(255, 255, 255, 0.4);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+}
+html body #about-body #main-content #right-container #projet-right-container #card-project-1 #up-of-card #title-card p span {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+}
+html body #about-body #main-content #right-container #projet-right-container #card-project-1 #up-of-card .fa-arrow-up-right-from-square {
+  color: rgba(255, 255, 255, 0.4);
+}
+html body #about-body #main-content #right-container #projet-right-container #card-project-1 #description {
+  width: 100%;
+}
+html body #about-body #main-content #right-container #projet-right-container #card-project-1 #description p {
+  color: rgba(255, 255, 255, 0.55);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 19.5px;
+}
+html body #about-body #main-content #right-container #projet-right-container #card-project-1 #language-used {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 6px;
+}
+html body #about-body #main-content #right-container #projet-right-container #card-project-1 #language-used #dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 999px;
+  background: #51a2ff;
+}
+html body #about-body #main-content #right-container #projet-right-container #card-project-1 #language-used p {
+  color: rgba(255, 255, 255, 0.4);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+}
+html body #about-body #main-content #right-container #projet-right-container #card-project-2 {
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 16px;
+  padding: 20px 22px;
+  border: 1px solid rgba(194, 122, 255, 0.3);
+  background: linear-gradient(135deg, rgba(173, 70, 255, 0.1) 0%, rgba(0, 0, 0, 0) 100%);
+}
+html body #about-body #main-content #right-container #projet-right-container #card-project-2 #up-of-card {
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  justify-content: space-between;
+}
+html body #about-body #main-content #right-container #projet-right-container #card-project-2 #up-of-card #title-card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+}
+html body #about-body #main-content #right-container #projet-right-container #card-project-2 #up-of-card #title-card .fa-server {
+  color: rgba(255, 255, 255, 0.4);
+}
+html body #about-body #main-content #right-container #projet-right-container #card-project-2 #up-of-card #title-card p {
+  color: rgba(255, 255, 255, 0.4);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+}
+html body #about-body #main-content #right-container #projet-right-container #card-project-2 #up-of-card #title-card p span {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+}
+html body #about-body #main-content #right-container #projet-right-container #card-project-2 #up-of-card .fa-arrow-up-right-from-square {
+  color: rgba(255, 255, 255, 0.4);
+}
+html body #about-body #main-content #right-container #projet-right-container #card-project-2 #description {
+  width: 100%;
+}
+html body #about-body #main-content #right-container #projet-right-container #card-project-2 #description p {
+  color: rgba(255, 255, 255, 0.55);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 19.5px;
+}
+html body #about-body #main-content #right-container #projet-right-container #card-project-2 #language-used {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 6px;
+}
+html body #about-body #main-content #right-container #projet-right-container #card-project-2 #language-used #dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 999px;
+  background: #c27aff;
+}
+html body #about-body #main-content #right-container #projet-right-container #card-project-2 #language-used p {
+  color: rgba(255, 255, 255, 0.4);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+}
+html body #about-body #main-content #right-container #projet-right-container #card-project-3 {
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 16px;
+  padding: 20px 22px;
+  border: 1px solid rgba(5, 223, 114, 0.3);
+  background: linear-gradient(135deg, rgba(0, 201, 80, 0.1) 0%, rgba(0, 0, 0, 0) 100%);
+}
+html body #about-body #main-content #right-container #projet-right-container #card-project-3 #up-of-card {
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  justify-content: space-between;
+}
+html body #about-body #main-content #right-container #projet-right-container #card-project-3 #up-of-card #title-card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+}
+html body #about-body #main-content #right-container #projet-right-container #card-project-3 #up-of-card #title-card .fa-server {
+  color: rgba(255, 255, 255, 0.4);
+}
+html body #about-body #main-content #right-container #projet-right-container #card-project-3 #up-of-card #title-card p {
+  color: rgba(255, 255, 255, 0.4);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+}
+html body #about-body #main-content #right-container #projet-right-container #card-project-3 #up-of-card #title-card p span {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+}
+html body #about-body #main-content #right-container #projet-right-container #card-project-3 #up-of-card .fa-arrow-up-right-from-square {
+  color: rgba(255, 255, 255, 0.4);
+}
+html body #about-body #main-content #right-container #projet-right-container #card-project-3 #description {
+  width: 100%;
+}
+html body #about-body #main-content #right-container #projet-right-container #card-project-3 #description p {
+  color: rgba(255, 255, 255, 0.55);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 19.5px;
+}
+html body #about-body #main-content #right-container #projet-right-container #card-project-3 #language-used {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 6px;
+}
+html body #about-body #main-content #right-container #projet-right-container #card-project-3 #language-used #dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 999px;
+  background: #05df72;
+}
+html body #about-body #main-content #right-container #projet-right-container #card-project-3 #language-used p {
+  color: rgba(255, 255, 255, 0.4);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+}
+html body #about-body #main-content #right-container #projet-right-container #card-project-4 {
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 16px;
+  padding: 20px 22px;
+  border: 1px solid rgba(0, 211, 243, 0.3);
+  background: linear-gradient(135deg, rgba(0, 184, 219, 0.1) 0%, rgba(0, 0, 0, 0) 100%);
+}
+html body #about-body #main-content #right-container #projet-right-container #card-project-4 #up-of-card {
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  justify-content: space-between;
+}
+html body #about-body #main-content #right-container #projet-right-container #card-project-4 #up-of-card #title-card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+}
+html body #about-body #main-content #right-container #projet-right-container #card-project-4 #up-of-card #title-card .fa-server {
+  color: rgba(255, 255, 255, 0.4);
+}
+html body #about-body #main-content #right-container #projet-right-container #card-project-4 #up-of-card #title-card p {
+  color: rgba(255, 255, 255, 0.4);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+}
+html body #about-body #main-content #right-container #projet-right-container #card-project-4 #up-of-card #title-card p span {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+}
+html body #about-body #main-content #right-container #projet-right-container #card-project-4 #up-of-card .fa-arrow-up-right-from-square {
+  color: rgba(255, 255, 255, 0.4);
+}
+html body #about-body #main-content #right-container #projet-right-container #card-project-4 #description {
+  width: 100%;
+}
+html body #about-body #main-content #right-container #projet-right-container #card-project-4 #description p {
+  color: rgba(255, 255, 255, 0.55);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 19.5px;
+}
+html body #about-body #main-content #right-container #projet-right-container #card-project-4 #language-used {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 6px;
+}
+html body #about-body #main-content #right-container #projet-right-container #card-project-4 #language-used #dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 999px;
+  background: #00d3f3;
+}
+html body #about-body #main-content #right-container #projet-right-container #card-project-4 #language-used p {
+  color: rgba(255, 255, 255, 0.4);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+}
+html body #about-body #main-content #right-container #projet-right-container #card-project-5 {
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 16px;
+  padding: 20px 22px;
+  border: 1px solid rgba(255, 137, 4, 0.3);
+  background: linear-gradient(135deg, rgba(255, 105, 0, 0.1) 0%, rgba(0, 0, 0, 0) 100%);
+}
+html body #about-body #main-content #right-container #projet-right-container #card-project-5 #up-of-card {
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  justify-content: space-between;
+}
+html body #about-body #main-content #right-container #projet-right-container #card-project-5 #up-of-card #title-card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+}
+html body #about-body #main-content #right-container #projet-right-container #card-project-5 #up-of-card #title-card .fa-server {
+  color: rgba(255, 255, 255, 0.4);
+}
+html body #about-body #main-content #right-container #projet-right-container #card-project-5 #up-of-card #title-card p {
+  color: rgba(255, 255, 255, 0.4);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+}
+html body #about-body #main-content #right-container #projet-right-container #card-project-5 #up-of-card #title-card p span {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+}
+html body #about-body #main-content #right-container #projet-right-container #card-project-5 #up-of-card .fa-arrow-up-right-from-square {
+  color: rgba(255, 255, 255, 0.4);
+}
+html body #about-body #main-content #right-container #projet-right-container #card-project-5 #description {
+  width: 100%;
+}
+html body #about-body #main-content #right-container #projet-right-container #card-project-5 #description p {
+  color: rgba(255, 255, 255, 0.55);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 19.5px;
+}
+html body #about-body #main-content #right-container #projet-right-container #card-project-5 #language-used {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 6px;
+}
+html body #about-body #main-content #right-container #projet-right-container #card-project-5 #language-used #dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 999px;
+  background: #ff8904;
+}
+html body #about-body #main-content #right-container #projet-right-container #card-project-5 #language-used p {
+  color: rgba(255, 255, 255, 0.4);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+}
+html body #about-body #main-content #right-container #projet-right-container #card-project-6 {
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 16px;
+  padding: 20px 22px;
+  border: 1px solid rgba(251, 100, 182, 0.3);
+  background: linear-gradient(135deg, rgba(246, 51, 154, 0.1) 0%, rgba(0, 0, 0, 0) 100%);
+}
+html body #about-body #main-content #right-container #projet-right-container #card-project-6 #up-of-card {
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  justify-content: space-between;
+}
+html body #about-body #main-content #right-container #projet-right-container #card-project-6 #up-of-card #title-card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+}
+html body #about-body #main-content #right-container #projet-right-container #card-project-6 #up-of-card #title-card .fa-server {
+  color: rgba(255, 255, 255, 0.4);
+}
+html body #about-body #main-content #right-container #projet-right-container #card-project-6 #up-of-card #title-card p {
+  color: rgba(255, 255, 255, 0.4);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+}
+html body #about-body #main-content #right-container #projet-right-container #card-project-6 #up-of-card #title-card p span {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+}
+html body #about-body #main-content #right-container #projet-right-container #card-project-6 #up-of-card .fa-arrow-up-right-from-square {
+  color: rgba(255, 255, 255, 0.4);
+}
+html body #about-body #main-content #right-container #projet-right-container #card-project-6 #description {
+  width: 100%;
+}
+html body #about-body #main-content #right-container #projet-right-container #card-project-6 #description p {
+  color: rgba(255, 255, 255, 0.55);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 19.5px;
+}
+html body #about-body #main-content #right-container #projet-right-container #card-project-6 #language-used {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 6px;
+}
+html body #about-body #main-content #right-container #projet-right-container #card-project-6 #language-used #dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 999px;
+  background: #fb64b6;
+}
+html body #about-body #main-content #right-container #projet-right-container #card-project-6 #language-used p {
+  color: rgba(255, 255, 255, 0.4);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
 }
 html body footer {
   display: flex;

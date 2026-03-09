@@ -5,6 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const container = document.getElementById('monitoring-container');
 
     async function loadPage(url) {
+        if (!container) return;
         try {
             const response = await fetch(url);
             if (!response.ok) throw new Error("Erreur de chargement");
@@ -225,23 +226,102 @@ async function deleteMessage(messageId) {
 const nav = document.querySelector('#navbar');
 const navMobile = document.querySelector('#navbar-mobile');
 
-window.addEventListener('scroll', () => {
-    if (window.scrollY > 1) {
-        nav.style.scale = '1.03';
-        // navMobile.style.scale = '1.03';
-        // navMobile.style.transform = 'translateY(0)';
-    } else {
-        nav.style.scale = '1.0';
-        // navMobile.style.scale = '1.0';
-        // navMobile.style.transform = 'translateY(100px)';
+if (nav) {
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 1) {
+            nav.style.scale = '1.03';
+        } else {
+            nav.style.scale = '1.0';
 
-    }
-})
+        }
+    })
+}
 
 // menu hamburger
 
 const change = document.querySelector('#hamburgerBtn');
 const menu = document.querySelector('#mobile');
-change.addEventListener('click', (e) => {
-    menu.classList.toggle('active');
-})
+
+if (change) {
+    change.addEventListener('click', (e) => {
+        menu.classList.toggle('active');
+    })
+}
+
+// API GITHUB
+
+
+async function fetchGitHubContributions() {
+    const url = "https://api.github.com/graphql";
+    try {
+        const query = `
+        {
+            user(login: "0Sacha") {
+            contributionsCollection {
+            contributionCalendar {
+            weeks {
+            contributionDays {
+                                date
+                                contributionCount
+                            }
+                        }
+                    }
+                }
+            }
+        }`
+        const reponse = await fetch(url, {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+                "Authorization": "Bearer " + GITHUB_TOKEN
+            },
+            body: JSON.stringify({query: query})
+        });
+        if (!reponse.ok) {
+            throw new Error(`Statut de réponse : ${reponse.status}`);
+        }
+        const resultat = await reponse.json();
+        console.log(resultat);
+        const weeks = resultat.data.user.contributionsCollection.contributionCalendar.weeks;
+        const graphContainer = document.querySelector('.graph-container')
+        console.log(graphContainer)
+        if (!graphContainer) return;
+        graphContainer.innerHTML = ""
+        weeks.forEach(week => {
+
+            const weekEl = document.createElement("div");
+
+            weekEl.classList.add("week");
+            week.contributionDays.forEach(day => {
+                const dayEl = document.createElement("div");
+
+                dayEl.classList.add("day");
+
+                weekEl.appendChild(dayEl);
+
+                dayEl.dataset.level = getLevel(day.contributionCount)
+            })
+            graphContainer.appendChild(weekEl);
+
+        })
+        console.log(weeks);
+    } catch (erreur) {
+        console.error(erreur.message);
+    }
+}
+
+function getLevel(count) {
+    if (count === 0) {
+        return 0;
+    } else if (count >= 1 && count <= 3) {
+        return 1;
+    } else if (count >= 4 && count <= 9) {
+        return 2;
+    } else if (count >= 10 && count <= 19) {
+        return 3;
+    } else if (count >= 20) {
+        return 4;
+    }
+}
+
+fetchGitHubContributions();
