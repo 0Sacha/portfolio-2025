@@ -5073,6 +5073,29 @@ html body #about-body #main-content #right-container #activite-github-right-cont
   border: 1px solid rgba(255, 255, 255, 0.1);
   background: #51A2FF;
 }
+html body #about-body #main-content #right-container #activite-github-right-container .graph-container .temp-week {
+  display: flex;
+  flex-direction: column;
+  width: 734px;
+  height: 131px;
+  align-items: flex-start;
+  gap: 4px;
+}
+html body #about-body #main-content #right-container #activite-github-right-container .graph-container .temp-week .day[data-level="0"] {
+  width: 12px;
+  height: 12px;
+  border-radius: 6px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.05);
+}
+@keyframes loading-github {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
 html body #about-body #main-content #right-container #activite-github-right-container #legend {
   display: flex;
   flex-direction: row;
@@ -5238,7 +5261,7 @@ html body #about-body #main-content #right-container #projet-right-container #ca
   align-items: center;
   gap: 8px;
 }
-html body #about-body #main-content #right-container #projet-right-container #card-project-2 #up-of-card #title-card .fa-server {
+html body #about-body #main-content #right-container #projet-right-container #card-project-2 #up-of-card #title-card .fa-shield {
   color: rgba(255, 255, 255, 0.4);
 }
 html body #about-body #main-content #right-container #projet-right-container #card-project-2 #up-of-card #title-card p {
@@ -5303,7 +5326,7 @@ html body #about-body #main-content #right-container #projet-right-container #ca
   align-items: center;
   gap: 8px;
 }
-html body #about-body #main-content #right-container #projet-right-container #card-project-3 #up-of-card #title-card .fa-server {
+html body #about-body #main-content #right-container #projet-right-container #card-project-3 #up-of-card #title-card .fa-suitcase {
   color: rgba(255, 255, 255, 0.4);
 }
 html body #about-body #main-content #right-container #projet-right-container #card-project-3 #up-of-card #title-card p {
@@ -5368,7 +5391,7 @@ html body #about-body #main-content #right-container #projet-right-container #ca
   align-items: center;
   gap: 8px;
 }
-html body #about-body #main-content #right-container #projet-right-container #card-project-4 #up-of-card #title-card .fa-server {
+html body #about-body #main-content #right-container #projet-right-container #card-project-4 #up-of-card #title-card .fa-code {
   color: rgba(255, 255, 255, 0.4);
 }
 html body #about-body #main-content #right-container #projet-right-container #card-project-4 #up-of-card #title-card p {
@@ -5433,7 +5456,7 @@ html body #about-body #main-content #right-container #projet-right-container #ca
   align-items: center;
   gap: 8px;
 }
-html body #about-body #main-content #right-container #projet-right-container #card-project-5 #up-of-card #title-card .fa-server {
+html body #about-body #main-content #right-container #projet-right-container #card-project-5 #up-of-card #title-card .fa-microchip {
   color: rgba(255, 255, 255, 0.4);
 }
 html body #about-body #main-content #right-container #projet-right-container #card-project-5 #up-of-card #title-card p {
@@ -5498,7 +5521,7 @@ html body #about-body #main-content #right-container #projet-right-container #ca
   align-items: center;
   gap: 8px;
 }
-html body #about-body #main-content #right-container #projet-right-container #card-project-6 #up-of-card #title-card .fa-server {
+html body #about-body #main-content #right-container #projet-right-container #card-project-6 #up-of-card #title-card .fa-palette {
   color: rgba(255, 255, 255, 0.4);
 }
 html body #about-body #main-content #right-container #projet-right-container #card-project-6 #up-of-card #title-card p {

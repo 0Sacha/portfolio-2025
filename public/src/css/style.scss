@@ -5792,6 +5792,34 @@ html {
                   background: #51A2FF;
                 }
               }
+
+              .temp-week {
+                display: flex;
+                flex-direction: column;
+                width: 734px;
+                height: 131px;
+                align-items: flex-start;
+                gap: 4px;
+                //animation: loading-github 1s ease-in-out infinite;
+
+                .day[data-level="0"] {
+                  width: 12px;
+                  height: 12px;
+                  border-radius: 6px;
+                  border: 1px solid rgba(255, 255, 255, 0.1);
+                  background: rgba(255, 255, 255, 0.05);
+                }
+              }
+
+              @keyframes loading-github {
+                from {
+                  opacity: 1;
+                }
+                to {
+                  opacity: 0;
+                }
+              }
+
             }
 
             #legend {
@@ -5801,6 +5829,7 @@ html {
               gap: 8px;
               justify-content: end;
               align-items: center;
+
               p {
                 color: rgba(255, 255, 255, 0.30);
                 font-size: 12px;
@@ -5985,7 +6014,7 @@ html {
                   align-items: center;
                   gap: 8px;
 
-                  .fa-server {
+                  .fa-shield {
                     color: rgba(255, 255, 255, 0.4);
                   }
 
@@ -6062,7 +6091,7 @@ html {
                   align-items: center;
                   gap: 8px;
 
-                  .fa-server {
+                  .fa-suitcase {
                     color: rgba(255, 255, 255, 0.4);
                   }
 
@@ -6139,7 +6168,7 @@ html {
                   align-items: center;
                   gap: 8px;
 
-                  .fa-server {
+                  .fa-code {
                     color: rgba(255, 255, 255, 0.4);
                   }
 
@@ -6216,7 +6245,7 @@ html {
                   align-items: center;
                   gap: 8px;
 
-                  .fa-server {
+                  .fa-microchip {
                     color: rgba(255, 255, 255, 0.4);
                   }
 
@@ -6293,7 +6322,7 @@ html {
                   align-items: center;
                   gap: 8px;
 
-                  .fa-server {
+                  .fa-palette {
                     color: rgba(255, 255, 255, 0.4);
                   }
 
