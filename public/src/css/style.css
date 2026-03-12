@@ -177,7 +177,7 @@ html body #nav #navbar {
   border-radius: 24px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
   backdrop-filter: blur(50px) saturate(450%);
-  padding: 0 33px;
+  padding: 0 13px;
   flex-direction: row;
   justify-content: space-between;
   height: 54px;
@@ -197,10 +197,12 @@ html body #nav #navbar {
   }
 }
 html body #nav #navbar ul {
+  position: relative;
   display: flex;
-  gap: 32px;
+  gap: 8px;
   padding: 0;
   align-items: center;
+  justify-content: center;
 }
 @media (max-width: 1100px) {
   html body #nav #navbar ul {
@@ -210,17 +212,37 @@ html body #nav #navbar ul {
     align-items: center;
   }
 }
+html body #nav #navbar ul .active {
+  background: rgba(255, 255, 255, 0.1);
+  height: 34px;
+  border-radius: 13px;
+  padding: 2.5px 20px;
+  z-index: 0;
+  display: flex;
+  align-items: center;
+}
 html body #nav #navbar ul li {
   display: flex;
   list-style: none;
+  transition: all 150ms ease-in-out;
 }
 html body #nav #navbar ul li a {
   color: rgba(255, 255, 255, 0.8);
   text-decoration: none;
   font-size: 16px;
+  padding: 5px 12px;
 }
 html body #nav #navbar ul li a:hover {
   color: #ffffff;
+}
+html body #nav #navbar ul li:hover {
+  background: rgba(255, 255, 255, 0.1);
+  height: 34px;
+  border-radius: 13px;
+  padding: 2.5px 20px;
+  z-index: 0;
+  display: flex;
+  align-items: center;
 }
 @media (max-width: 1100px) {
   html body #nav #navbar ul .li-login-btn {
@@ -328,104 +350,91 @@ html body #nav-mobile #navbar-mobile ul svg:hover path {
   stroke: #ffffff;
 }
 html body #hero {
+  position: relative;
   display: flex;
   flex-direction: column;
-  align-items: start;
-  margin-left: 182.5px;
-  margin-top: 150px;
-}
-@media (max-width: 1100px) {
-  html body #hero {
-    align-items: center;
-    justify-content: center;
-    margin-left: 0;
-    margin-top: 10px;
-  }
-}
-html body #hero #hero-title {
-  display: flex;
-  flex-direction: column;
-  color: rgb(255, 255, 255);
-  font-size: 96px;
-}
-@media (max-width: 1100px) {
-  html body #hero #hero-title {
-    text-align: center;
-  }
-}
-@media (max-width: 500px) {
-  html body #hero #hero-title {
-    font-size: 48px;
-  }
-}
-html body #hero #hero-subtitle {
-  margin-top: 15px;
-  color: #51a2ff;
-  font-size: 48px;
-  font-weight: 300;
-  line-height: 48px; /* 100% */
-}
-@media (max-width: 1100px) {
-  html body #hero #hero-subtitle {
-    text-align: center;
-  }
-}
-@media (max-width: 650px) {
-  html body #hero #hero-subtitle {
-    font-size: 24px;
-  }
-}
-html body #hero #hero-description {
-  margin-top: 33px;
-  color: rgba(255, 255, 255, 0.8);
-  font-size: 20px;
-  width: 637px;
-  line-height: 140%;
-}
-@media (max-width: 1100px) {
-  html body #hero #hero-description {
-    text-align: start;
-  }
-}
-@media (max-width: 650px) {
-  html body #hero #hero-description {
-    width: 345px;
-  }
-}
-html body #hero #hero-icon {
-  margin-top: 48px;
-  display: flex;
-  flex-direction: row;
-  gap: 16px;
-}
-html body #hero #hero-icon a {
-  text-decoration: none;
-}
-html body #hero #hero-icon .fa-github,
-html body #hero #hero-icon .fa-linkedin-in,
-html body #hero #hero-icon .fa-paper-plane {
-  display: flex;
   align-items: center;
   justify-content: center;
-  padding: 17px;
-  border-radius: 16px;
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  background: rgba(255, 255, 255, 0.1);
-  transition: all 150ms ease-in-out;
-  height: 24px;
-  width: 24px;
-  color: white;
+  height: 100vh;
+  color: rgba(255, 255, 255, 0.8);
+  gap: 32px;
 }
-html body #hero #hero-icon .fa-github:hover,
-html body #hero #hero-icon .fa-linkedin-in:hover,
-html body #hero #hero-icon .fa-paper-plane:hover {
-  border: 1px solid rgba(81, 162, 255, 0.5);
-  background: rgba(255, 255, 255, 0.1);
+html body #hero::after {
+  display: none;
+  z-index: 1;
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  clip-path: polygon(20% 10%, 80% 10%, 65% 110%, 35% 110%);
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, rgba(255, 215, 0, 0.5), transparent);
+  pointer-events: none;
 }
-html body #hero #hero-links {
+html body #hero #hero-title {
+  position: relative;
+  z-index: 1;
   display: flex;
   flex-direction: row;
-  margin-top: 40px;
+  align-items: center;
+  font-family: "Saira Extra Condensed", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  font-size: 256px;
+  line-height: 128px;
+}
+html body #hero #hero-subtitle {
+  position: relative;
+  z-index: 3;
+  margin-top: 50px;
+  color: #51A2FF;
+  text-align: center;
+  font-size: 24px;
+  font-style: normal;
+  line-height: 32px;
+}
+html body #hero #hero-description {
+  position: relative;
+  z-index: 3;
+  width: 620px;
+  flex-shrink: 0;
+  color: rgba(255, 255, 255, 0.7);
+  text-align: center;
+  font-size: 18px;
+  line-height: 28px;
+}
+html body #hero #hero-icon {
+  position: relative;
+  z-index: 3;
+  display: flex;
+  width: 102px;
+  height: 18px;
+  align-items: center;
+  gap: 24px;
+}
+html body #hero #hero-icon .fa-github, html body #hero #hero-icon .fa-linkedin-in, html body #hero #hero-icon .fa-paper-plane {
+  height: 18px;
+  flex-shrink: 0;
+  align-self: stretch;
+  color: rgba(255, 255, 255, 0.7);
+  transition: 300ms;
+}
+html body #hero #hero-icon .fa-github:hover, html body #hero #hero-icon .fa-linkedin-in:hover, html body #hero #hero-icon .fa-paper-plane:hover {
+  height: 18px;
+  flex-shrink: 0;
+  align-self: stretch;
+  color: #ffffff;
+}
+html body #hero #hero-links {
+  position: relative;
+  z-index: 3;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 150px;
   gap: 16px;
   height: 58px;
 }
@@ -434,39 +443,42 @@ html body #hero #hero-links {
     flex-direction: column;
   }
 }
-html body #hero #hero-links #hero-links-project,
-html body #hero #hero-links #hero-links-contact {
+html body #hero #hero-links #hero-links-project {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: rgb(255, 255, 255);
   text-decoration: none;
-  transition: all 150ms ease-in-out;
+  padding: 16px 33px 18px 33px;
+  gap: 8px;
+  border: 1px solid rgba(81, 162, 255, 0.5);
+  border-radius: 999px;
+  background: #2B7FFF;
+  box-shadow: 0 10px 15px -3px rgba(43, 127, 255, 0.3), 0 4px 6px -4px rgba(43, 127, 255, 0.3);
+  transition: all 300ms ease-in-out;
 }
 html body #hero #hero-links #hero-links-project:hover {
   transform: scale(1.1);
   border: 1px solid rgba(81, 162, 255, 0.3);
-  background: rgba(43, 127, 255, 0.5);
-}
-html body #hero #hero-links #hero-links-contact:hover {
-  transform: scale(1.1);
-}
-html body #hero #hero-links #hero-links-project {
-  padding: 16px 33px 18px 33px;
-  border-radius: 16px;
-  border: 1px solid rgba(81, 162, 255, 0.5);
-  background: rgba(43, 127, 255, 0.2);
-  gap: 8px;
-}
-html body #hero #hero-links #hero-links-project,
-html body #hero #hero-links img {
-  display: flex;
-  align-items: center;
+  background: #3a5af9;
 }
 html body #hero #hero-links #hero-links-contact {
   display: flex;
+  justify-content: center;
   align-items: center;
-  padding: 16px 32.594px 18px 33px;
-  border-radius: 16px;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  padding: 16px 33px 18px 33px;
+  gap: 8px;
+  border-radius: 999px;
   border: 1px solid rgba(255, 255, 255, 0.2);
   background: rgba(255, 255, 255, 0.1);
+  transition: all 300ms ease-in-out;
+}
+html body #hero #hero-links #hero-links-contact:hover {
+  transform: scale(1.1);
+  border: 1px solid #515763;
+  background: #3D4451;
 }
 @keyframes breathingLight {
   0% {
@@ -579,6 +591,8 @@ html body #selection .section-container #selectionCard01 #leftSelectCard01 {
   flex-direction: column;
 }
 html body #selection .section-container #selectionCard01 #midSelectCard01 img {
+  width: 602px;
+  height: 376px;
   border-radius: 24px;
   border: 1px solid rgba(255, 255, 255, 0.1);
   transition: all 300ms ease-out;
@@ -668,14 +682,15 @@ html body #selection .section-container #selectionCard01 #rightSelectCard01 #sel
 }
 html body #selection .section-container #selectionCard01 #rightSelectCard01 #selectionMore #selectionShowMore {
   display: flex;
-  align-items: center;
-  list-style: none;
-  padding: 12px 25px 14px 25px;
-  border-radius: 14px;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  padding: 16px 33px 18px 33px;
+  gap: 8px;
   border: 1px solid rgba(81, 162, 255, 0.5);
-  background: rgba(43, 127, 255, 0.2);
-  transition: all 300ms ease-out;
-  gap: 7px;
+  border-radius: 999px;
+  background: #2B7FFF;
+  box-shadow: 0 10px 15px -3px rgba(43, 127, 255, 0.3), 0 4px 6px -4px rgba(43, 127, 255, 0.3);
+  transition: all 300ms ease-in-out;
 }
 html body #selection .section-container #selectionCard01 #rightSelectCard01 #selectionMore #selectionShowMore img {
   transition: all 300ms ease-out;
@@ -693,8 +708,8 @@ html body #selection .section-container #selectionCard01 #rightSelectCard01 #sel
   transform: translateX(5px) translateY(-5px);
 }
 html body #selection .section-container #selectionCard01 #rightSelectCard01 #selectionMore #selectionShowMore:hover {
-  border: 1px solid rgba(81, 162, 255, 0.7);
-  background: rgba(43, 127, 255, 0.4);
+  border: 1px solid rgba(81, 162, 255, 0.3);
+  background: #3a5af9;
   cursor: pointer;
 }
 html body #selection .section-container #selectionCard01 #rightSelectCard01 #selectionMore #selectionGithub {
@@ -729,6 +744,8 @@ html body #selection .section-container #selectionCard02 #leftSelectCard02 {
   flex-direction: column;
 }
 html body #selection .section-container #selectionCard02 #midSelectCard02 img {
+  width: 602px;
+  height: 376px;
   border-radius: 24px;
   border: 1px solid rgba(255, 255, 255, 0.1);
   transition: all 300ms ease-out;
@@ -818,14 +835,15 @@ html body #selection .section-container #selectionCard02 #rightSelectCard02 #sel
 }
 html body #selection .section-container #selectionCard02 #rightSelectCard02 #selectionMore #selectionShowMore {
   display: flex;
-  align-items: center;
-  list-style: none;
-  padding: 12px 25px 14px 25px;
-  border-radius: 14px;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  padding: 16px 33px 18px 33px;
+  gap: 8px;
   border: 1px solid rgba(81, 162, 255, 0.5);
-  background: rgba(43, 127, 255, 0.2);
-  transition: all 300ms ease-out;
-  gap: 7px;
+  border-radius: 999px;
+  background: #2B7FFF;
+  box-shadow: 0 10px 15px -3px rgba(43, 127, 255, 0.3), 0 4px 6px -4px rgba(43, 127, 255, 0.3);
+  transition: all 300ms ease-in-out;
 }
 html body #selection .section-container #selectionCard02 #rightSelectCard02 #selectionMore #selectionShowMore img {
   transition: all 300ms ease-out;
@@ -843,8 +861,8 @@ html body #selection .section-container #selectionCard02 #rightSelectCard02 #sel
   transform: translateX(5px) translateY(-5px);
 }
 html body #selection .section-container #selectionCard02 #rightSelectCard02 #selectionMore #selectionShowMore:hover {
-  border: 1px solid rgba(81, 162, 255, 0.7);
-  background: rgba(43, 127, 255, 0.4);
+  border: 1px solid rgba(81, 162, 255, 0.3);
+  background: #3a5af9;
   cursor: pointer;
 }
 html body #selection .section-container #selectionCard02 #rightSelectCard02 #selectionMore #selectionGithub {
@@ -3488,13 +3506,15 @@ html body #contactSection .section-container #contactRightMainContent #contactPa
 }
 html body #contactSection .section-container #contactRightMainContent #contactPart #contactForm #contactFormButtons {
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  padding: 11px;
-  border-radius: 14px;
-  background: linear-gradient(90deg, #2b7fff 0%, #ad46ff 100%);
-  box-shadow: 0 10px 15px -3px rgba(43, 127, 255, 0.2), 0 4px 6px -4px rgba(43, 127, 255, 0.2);
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  padding: 16px 33px 18px 33px;
+  gap: 8px;
+  border: 1px solid rgba(81, 162, 255, 0.5);
+  border-radius: 999px;
+  background: #2B7FFF;
+  box-shadow: 0 10px 15px -3px rgba(43, 127, 255, 0.3), 0 4px 6px -4px rgba(43, 127, 255, 0.3);
+  transition: all 300ms ease-in-out;
 }
 html body #contactSection .section-container #contactRightMainContent #contactPart #contactForm #contactFormButtons button {
   cursor: pointer;
@@ -3506,6 +3526,11 @@ html body #contactSection .section-container #contactRightMainContent #contactPa
   border: none;
   gap: 16px;
   font-size: 16px;
+}
+html body #contactSection .section-container #contactRightMainContent #contactPart #contactForm #contactFormButtons:hover {
+  border: 1px solid rgba(81, 162, 255, 0.3);
+  background: #3a5af9;
+  cursor: pointer;
 }
 html body #contactSection .section-container #contactRightMainContent #contactPart p {
   color: rgba(255, 255, 255, 0.4);
