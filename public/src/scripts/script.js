@@ -248,6 +248,33 @@ if (change) {
     })
 }
 
+// glissement de la pilule sous les text de la navbar
+
+const navLi = document.querySelectorAll('#navbar li')
+const aActive = document.querySelector('#active');
+
+let liActif = navLi[0]
+
+function moveIndicator(element) {
+    aActive.style.left = element.offsetLeft + 'px'
+    aActive.style.width = element.offsetWidth + 'px'
+}
+
+navLi.forEach(lien => {
+    lien.addEventListener('click', (e) => {
+        moveIndicator(e.currentTarget)
+        liActif = e.currentTarget
+    })
+    lien.addEventListener('mouseenter', () => {
+    })
+
+    lien.addEventListener('mouseleave', () => {
+    })
+})
+
+moveIndicator(navLi[0])
+
+
 // API GITHUB
 
 

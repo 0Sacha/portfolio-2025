@@ -32,6 +32,7 @@
 
     <link rel="icon" href="src/images/LogoPortfolio.png" type="image/x-icon">
     <link rel="stylesheet" href="src/css/style.css">
+    <script src="src/scripts/config.js" defer></script>
     <script src="src/scripts/script.js" defer></script>
 </head>
 <body>
@@ -44,9 +45,9 @@
 <div id="nav">
     <nav id="navbar">
         <ul>
-<!--            class="active"-->
+            <span id="active"></span>
             <li><a href="#">Accueil</a></li>
-            <li><a href="#interTitre">Mes projets</a></li>
+            <li><a href="#section-projet">Mes projets</a></li>
             <li><a href="#contactTitle">Contact</a></li>
         </ul>
     </nav>
@@ -71,13 +72,13 @@
         <a href="mailto:sacha_laville_promeo@outlook.com" target="_blank"><i class="fa-solid fa-paper-plane fa-lg"></i></a>
     </div>
     <div id="hero-links">
-        <a id="hero-links-project" href="#interTitre">voir mes projet<i class="fa-solid fa-arrow-down"></i></a>
+        <a id="hero-links-project" href="#section-projet">voir mes projet<i class="fa-solid fa-arrow-down"></i></a>
         <a id="hero-links-contact" href="#contactTitle">Me contacter</a>
     </div>
 </div>
-<div id="interTitre">
+<div id="section-projet">
     <h1>Projets Favoris</h1>
-    <p>Le top de mes meilleurs projets</p>
+    <p>Le top des projets</p>
 </div>
 <div id="selection">
     <div class="section-container">
@@ -140,11 +141,6 @@
 <div id="swipe">
     <i class="fa-solid fa-arrow-left fa-lg"></i>
     <p>Swipez pour naviguer</p>
-</div>
-
-<div id="phraseDeFin">
-    <i class="fa-solid fa-rocket fa-xl"></i>
-    <p>Curieux, <span id="dynamic"> dynamic </span> et <span id="investi"> investi à 100% </span> dans mes projets</p>
 </div>
 
 <div id="contactTitle">
