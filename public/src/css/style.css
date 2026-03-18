@@ -317,14 +317,18 @@ html body #hero #hero-icon {
   align-items: center;
   gap: 24px;
 }
-html body #hero #hero-icon .fa-github, html body #hero #hero-icon .fa-linkedin-in, html body #hero #hero-icon .fa-paper-plane {
+html body #hero #hero-icon .fa-github,
+html body #hero #hero-icon .fa-linkedin-in,
+html body #hero #hero-icon .fa-paper-plane {
   height: 18px;
   flex-shrink: 0;
   align-self: stretch;
   color: rgba(255, 255, 255, 0.7);
   transition: 300ms;
 }
-html body #hero #hero-icon .fa-github:hover, html body #hero #hero-icon .fa-linkedin-in:hover, html body #hero #hero-icon .fa-paper-plane:hover {
+html body #hero #hero-icon .fa-github:hover,
+html body #hero #hero-icon .fa-linkedin-in:hover,
+html body #hero #hero-icon .fa-paper-plane:hover {
   height: 18px;
   flex-shrink: 0;
   align-self: stretch;
@@ -802,8 +806,421 @@ html body #swipe p {
   font-size: 14px;
   text-align: center;
 }
-html body #phraseDeFin:hover {
-  border: 0.8px solid rgba(251, 100, 182, 0.75);
+html body #experienceTitle {
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
+  text-align: center;
+  margin-top: 170px;
+  padding-top: 170px;
+}
+@media (max-width: 1100px) {
+  html body #experienceTitle {
+    display: flex;
+  }
+}
+html body #experienceTitle h1 {
+  font-size: 60px;
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+}
+html body #experienceTitle p {
+  font-size: 20px;
+  color: rgba(255, 255, 255, 0.8);
+}
+html body #experienceSection {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 48px 0;
+  width: 100%;
+  max-width: 1500px;
+  box-sizing: border-box;
+  gap: 24px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+html body #experienceSection #card-presoa {
+  position: relative;
+  border-radius: 16px;
+  border: 1px solid rgba(0, 201, 80, 0.2);
+  background: linear-gradient(135deg, rgba(0, 201, 80, 0.2) 0%, rgba(0, 201, 80, 0.05) 100%);
+  width: 30%;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+html body #experienceSection #card-presoa .annee {
+  position: absolute;
+  z-index: 0;
+  right: 16px;
+  top: 16px;
+  display: flex;
+}
+html body #experienceSection #card-presoa .annee p {
+  color: rgba(255, 255, 255, 0.05);
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 48px;
+}
+html body #experienceSection #card-presoa .icon {
+  color: #05DF72;
+  display: flex;
+  width: 48px;
+  height: 48px;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  border-radius: 14px;
+  border: 1px solid rgba(0, 201, 80, 0.2);
+  background: rgba(0, 201, 80, 0.1);
+}
+html body #experienceSection #card-presoa .icon .fa-briefcase-medical {
+  color: #05df72;
+}
+html body #experienceSection #card-presoa .titre {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+}
+html body #experienceSection #card-presoa .titre p {
+  color: #FFF;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 28px;
+}
+html body #experienceSection #card-presoa .titre span {
+  display: flex;
+  padding: 4px 9.516px 4px 10px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 33554400px;
+  background: rgba(0, 201, 80, 0.1);
+  color: #05DF72;
+  font-family: "Space Grotesk";
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 15px;
+}
+html body #experienceSection #card-presoa .lieu {
+  display: flex;
+  width: 328px;
+  padding-right: 282px;
+  align-items: center;
+}
+html body #experienceSection #card-presoa .lieu p {
+  color: #05DF72;
+}
+html body #experienceSection #card-presoa .date p {
+  color: rgba(255, 255, 255, 0.4);
+  font-size: 12px;
+  line-height: 16px;
+}
+html body #experienceSection #card-presoa .description {
+  height: 40px;
+  padding-right: 45.5px;
+  align-items: center;
+}
+html body #experienceSection #card-presoa .description p {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 14px;
+  line-height: 20px;
+}
+html body #experienceSection #card-promeo {
+  position: relative;
+  border-radius: 16px;
+  border: 1px solid rgba(43, 127, 255, 0.2);
+  background: linear-gradient(135deg, rgba(43, 127, 255, 0.2) 0%, rgba(43, 127, 255, 0.05) 100%);
+  width: 30%;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 18px;
+}
+html body #experienceSection #card-promeo .annee {
+  position: absolute;
+  z-index: 0;
+  right: 16px;
+  top: 16px;
+  display: flex;
+}
+html body #experienceSection #card-promeo .annee p {
+  color: rgba(255, 255, 255, 0.05);
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 48px;
+}
+html body #experienceSection #card-promeo .icon {
+  display: flex;
+  width: 48px;
+  height: 48px;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  border-radius: 14px;
+  border: 1px solid rgba(43, 127, 255, 0.2);
+  background: rgba(43, 127, 255, 0.1);
+}
+html body #experienceSection #card-promeo .icon .fa-graduation-cap {
+  color: #51A2FF;
+}
+html body #experienceSection #card-promeo .titre {
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  gap: 8px;
+}
+html body #experienceSection #card-promeo .titre p {
+  color: #FFF;
+  font-size: 18px;
+  font-weight: 700;
+}
+html body #experienceSection #card-promeo .titre span {
+  display: flex;
+  padding: 4px 9.75px 4px 10px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 999px;
+  background: rgba(43, 127, 255, 0.1);
+  color: #51A2FF;
+  font-family: "Space Grotesk";
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 15px;
+}
+html body #experienceSection #card-promeo .lieu {
+  display: flex;
+  width: 328px;
+  padding-right: 282px;
+  align-items: center;
+}
+html body #experienceSection #card-promeo .lieu p {
+  color: #51A2FF;
+}
+html body #experienceSection #card-promeo .date p {
+  color: rgba(255, 255, 255, 0.4);
+  font-size: 12px;
+  line-height: 16px;
+}
+html body #experienceSection #card-promeo .description {
+  height: 40px;
+  padding-right: 45.5px;
+  align-items: center;
+}
+html body #experienceSection #card-promeo .description p {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 14px;
+  line-height: 20px;
+}
+html body #experienceSection #card-grenet {
+  position: relative;
+  border-radius: 16px;
+  border: 1px solid rgba(173, 70, 255, 0.2);
+  background: linear-gradient(135deg, rgba(173, 70, 255, 0.2) 0%, rgba(173, 70, 255, 0.05) 100%);
+  width: 30%;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+html body #experienceSection #card-grenet .annee {
+  position: absolute;
+  z-index: 0;
+  right: 16px;
+  top: 16px;
+  display: flex;
+}
+html body #experienceSection #card-grenet .annee p {
+  color: rgba(255, 255, 255, 0.05);
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 48px;
+}
+html body #experienceSection #card-grenet .icon {
+  display: flex;
+  width: 48px;
+  height: 48px;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  border-radius: 14px;
+  border: 1px solid rgba(173, 70, 255, 0.2);
+  background: rgba(173, 70, 255, 0.1);
+}
+html body #experienceSection #card-grenet .icon .fa-graduation-cap {
+  color: #C27AFF;
+}
+html body #experienceSection #card-grenet .titre {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+}
+html body #experienceSection #card-grenet .titre p {
+  color: #FFF;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 28px;
+}
+html body #experienceSection #card-grenet .titre span {
+  display: flex;
+  padding: 4px 9.5px 4px 10px;
+  justify-content: center;
+  align-items: center;
+  color: #C27AFF;
+  border-radius: 999px;
+  background: rgba(173, 70, 255, 0.1);
+  font-family: "Space Grotesk";
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 15px;
+}
+html body #experienceSection #card-grenet .lieu {
+  display: flex;
+  width: 328px;
+  padding-right: 282px;
+  align-items: center;
+}
+html body #experienceSection #card-grenet .lieu p {
+  color: #C27AFF;
+}
+html body #experienceSection #card-grenet .date p {
+  color: rgba(255, 255, 255, 0.4);
+  font-size: 12px;
+  line-height: 16px;
+}
+html body #experienceSection #card-grenet .description {
+  height: 40px;
+  padding-right: 45.5px;
+  align-items: center;
+}
+html body #experienceSection #card-grenet .description p {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 14px;
+  line-height: 20px;
+}
+html body #experience-link {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 48px;
+}
+html body #experience-link .liste-et-lien {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1500px;
+}
+html body #experience-link .liste-et-lien #list-tag {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+}
+html body #experience-link .liste-et-lien #list-tag .tag-1 {
+  display: flex;
+  flex-direction: row;
+  gap: 6px;
+  border-radius: 33554400px;
+  border: 1px solid rgba(0, 211, 243, 0.3);
+  background: rgba(0, 184, 219, 0.1);
+  padding: 7px 13px 6.5px 13px;
+}
+html body #experience-link .liste-et-lien #list-tag .tag-1 .fa-code {
+  color: #00D3F3;
+}
+html body #experience-link .liste-et-lien #list-tag .tag-1 p {
+  color: #00D3F3;
+}
+html body #experience-link .liste-et-lien #list-tag .tag-2 {
+  display: flex;
+  flex-direction: row;
+  gap: 6px;
+  border-radius: 33554400px;
+  border: 1px solid rgba(5, 223, 114, 0.3);
+  background: rgba(0, 201, 80, 0.1);
+  padding: 7px 13px 6.5px 13px;
+}
+html body #experience-link .liste-et-lien #list-tag .tag-2 .fa-wrench {
+  color: #05DF72;
+}
+html body #experience-link .liste-et-lien #list-tag .tag-2 p {
+  color: #05DF72;
+}
+html body #experience-link .liste-et-lien #list-tag .tag-3 {
+  display: flex;
+  flex-direction: row;
+  gap: 6px;
+  border-radius: 33554400px;
+  border: 1px solid rgba(194, 122, 255, 0.3);
+  background: rgba(173, 70, 255, 0.1);
+  padding: 7px 13px 6.5px 13px;
+}
+html body #experience-link .liste-et-lien #list-tag .tag-3 .fa-swatchbook {
+  color: #C27AFF;
+}
+html body #experience-link .liste-et-lien #list-tag .tag-3 p {
+  color: #C27AFF;
+}
+html body #experience-link .liste-et-lien #list-tag .tag-4 {
+  display: flex;
+  flex-direction: row;
+  gap: 6px;
+  border-radius: 33554400px;
+  border: 1px solid rgba(81, 162, 255, 0.3);
+  background: rgba(43, 127, 255, 0.1);
+  padding: 7px 13px 6.5px 13px;
+}
+html body #experience-link .liste-et-lien #list-tag .tag-4 .fa-graduation-cap {
+  color: #51A2FF;
+}
+html body #experience-link .liste-et-lien #list-tag .tag-4 p {
+  color: #51A2FF;
+}
+html body #experience-link .liste-et-lien #liens-experience {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+}
+html body #experience-link .liste-et-lien #liens-experience .en-savoir-plus {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 9px 16px;
+  border-radius: 999px;
+  background: #2B7FFF;
+  box-shadow: 0 10px 15px -3px rgba(43, 127, 255, 0.25), 0 4px 6px -4px rgba(43, 127, 255, 0.25);
+  gap: 6px;
+}
+html body #experience-link .liste-et-lien #liens-experience .en-savoir-plus p {
+  color: #fff;
+}
+html body #experience-link .liste-et-lien #liens-experience .en-savoir-plus .fa-angle-right {
+  color: #fff;
+}
+html body #experience-link .liste-et-lien #liens-experience .telecharger-le-cv {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 9px 16px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.05);
+  gap: 6px;
+}
+html body #experience-link .liste-et-lien #liens-experience .telecharger-le-cv .fa-file-arrow-down {
+  color: #fff;
+}
+html body #experience-link .liste-et-lien #liens-experience .telecharger-le-cv p {
+  color: #fff;
 }
 html body #contactTitle {
   display: flex;
@@ -2949,7 +3366,8 @@ html body #about-body #main-content #right-container #epingle-title p {
 html body #about-body #main-content #right-container #projet-right-container {
   display: grid;
   row-gap: 16px;
-  column-gap: 16px;
+  -moz-column-gap: 16px;
+       column-gap: 16px;
   grid-template-rows: repeat(3, minmax(0, 1fr));
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
@@ -3365,6 +3783,4 @@ html body footer p {
 }
 html body footer p a {
   color: rgb(255, 255, 255);
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

@@ -1,4 +1,4 @@
 .env
 node_modules
 public/src/scripts/config.js
-index-old.html
+public/index-old.html
