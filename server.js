@@ -23,6 +23,8 @@ app.post('/login', (req, res) => {
                 return;
             }
             if (results.length > 0) {
+                const jwt = require('jsonwebtoken');
+                const token = jwt.sign({ foo: 'bar' }, 'shhhhh');
                 res.redirect('/dashboard.html');
             } else {
                 console.log('Pseudo ou mot de passe incorrect !');

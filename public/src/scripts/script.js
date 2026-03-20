@@ -113,7 +113,7 @@ function chargerMessages() {
                                 headers: {
                                     'Content-Type': 'application/json'
                                 },
-                                body: JSON.stringify({is_new: 0})
+                                body: JSON.stringify({ is_new: 0 })
                             })
                                 .then(response => {
                                     if (!response.ok) {
@@ -162,7 +162,7 @@ async function readMessage(messageId) {
                     <i class="fa-regular fa-clock"></i>
                     <p class="messages-temps">le ${new Date(msg.data_envoi).toLocaleDateString()}</p>
                 </div>
-                <div class="messages-contenu"><p class="messages-contenu-p">${msg.contenu.substring(0, 500)}</p></div>
+                <div class="messages-contenu"><p class="messages-contenu-p">${msg.contenu.substring(0, 10000)}</p></div>
             </div>
             <div class="messages-actions">
                 <div class="messages-reponse">
@@ -237,6 +237,8 @@ if (nav) {
     })
 }
 
+
+
 // menu hamburger
 
 const change = document.querySelector('#hamburgerBtn');
@@ -274,6 +276,19 @@ navLi.forEach(lien => {
 
 moveIndicator(navLi[0])
 
+const sectionHeros = document.querySelector('#nav')
+const sectionProjet = document.querySelector('#section-projet')
+const experienceTitle = document.querySelector('#experienceTitle')
+const contactTitle = document.querySelector('#contactTitle')
+
+
+window.addEventListener('scroll', (element) => {
+    if (window.scrollY >= offsetTop) {
+        
+    }
+})
+
+
 
 // API GITHUB
 
@@ -302,7 +317,7 @@ async function fetchGitHubContributions() {
                 "Content-Type": "application/json",
                 "Authorization": "Bearer " + GITHUB_TOKEN,
             },
-            body: JSON.stringify({query: query})
+            body: JSON.stringify({ query: query })
         });
         if (!reponse.ok) {
             throw new Error(`Statut de réponse : ${reponse.status}`);

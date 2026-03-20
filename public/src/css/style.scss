@@ -1109,6 +1109,7 @@ html {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        transition: all 300ms ease-in-out;
 
         .annee {
           position: absolute;
@@ -1205,6 +1206,10 @@ html {
 
       }
 
+      #card-presoa:hover {
+        border: 1px solid rgba(0, 201, 80, 0.50);
+      }
+
       #card-promeo {
         position: relative;
         border-radius: 16px;
@@ -1216,6 +1221,7 @@ html {
         flex-direction: column;
         justify-content: space-between;
         gap: 18px;
+        transition: all 300ms ease-in-out;
 
         .annee {
           position: absolute;
@@ -1312,6 +1318,10 @@ html {
 
       }
 
+      #card-promeo:hover {
+        border: 1px solid rgba(43, 127, 255, 0.50);
+      }
+
       #card-grenet {
         position: relative;
         border-radius: 16px;
@@ -1322,6 +1332,7 @@ html {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        transition: all 300ms ease-in-out;
 
         .annee {
           position: absolute;
@@ -1415,6 +1426,10 @@ html {
           }
         }
       }
+
+      #card-grenet:hover {
+        border: 1px solid rgba(173, 70, 255, 0.50);
+      }
     }
 
     #experience-link {
@@ -1422,137 +1437,174 @@ html {
       flex-direction: row;
       justify-content: center;
       margin-top: 48px;
+
       .liste-et-lien {
-      position: relative;
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      justify-content: space-between;
-      width: 100%;
-      max-width: 1500px;
-
-      #list-tag {
+        position: relative;
         display: flex;
         flex-direction: row;
-        gap: 8px;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        max-width: 1500px;
 
-        .tag-1 {
+        #list-tag {
           display: flex;
           flex-direction: row;
-          gap: 6px;
-          border-radius: 33554400px;
-          border: 1px solid rgba(0, 211, 243, 0.30);
-          background: rgba(0, 184, 219, 0.10);
-          padding: 7px 13px 6.5px 13px;
+          gap: 8px;
 
-          .fa-code {
-            color: #00D3F3;
+          .tag-1 {
+            display: flex;
+            flex-direction: row;
+            gap: 6px;
+            border-radius: 999px;
+            border: 1px solid rgba(0, 211, 243, 0.30);
+            background: rgba(0, 184, 219, 0.10);
+            padding: 7px 13px 6.5px 13px;
+            transition: all 250ms ease-in-out;
+
+            .fa-code {
+              color: #00D3F3;
+            }
+
+            p {
+              color: #00D3F3;
+            }
           }
 
-          p {
-            color: #00D3F3;
+          .tag-1:hover {
+            border: 1px solid rgba(0, 211, 243, 0.50);
+            cursor: default;
+          }
+
+          .tag-2 {
+            display: flex;
+            flex-direction: row;
+            gap: 6px;
+            border-radius: 999px;
+            border: 1px solid rgba(5, 223, 114, 0.30);
+            background: rgba(0, 201, 80, 0.10);
+            padding: 7px 13px 6.5px 13px;
+            transition: all 250ms ease-in-out;
+
+            .fa-wrench {
+              color: #05DF72;
+            }
+
+            p {
+              color: #05DF72;
+            }
+          }
+
+          .tag-2:hover {
+            border: 1px solid rgba(5, 223, 114, 0.50);
+            cursor: default;
+          }
+
+          .tag-3 {
+            display: flex;
+            flex-direction: row;
+            gap: 6px;
+            border-radius: 999px;
+            border: 1px solid rgba(194, 122, 255, 0.30);
+            background: rgba(173, 70, 255, 0.10);
+            padding: 7px 13px 6.5px 13px;
+            transition: all 250ms ease-in-out;
+
+            .fa-swatchbook {
+              color: #C27AFF;
+            }
+
+            p {
+              color: #C27AFF;
+            }
+          }
+
+          .tag-3:hover {
+            border: 1px solid rgba(194, 122, 255, 0.50);
+            cursor: default;
+          }
+
+          .tag-4 {
+            display: flex;
+            flex-direction: row;
+            gap: 6px;
+            border-radius: 999px;
+            border: 1px solid rgba(81, 162, 255, 0.30);
+            background: rgba(43, 127, 255, 0.10);
+            padding: 7px 13px 6.5px 13px;
+            transition: all 250ms ease-in-out;
+
+            .fa-graduation-cap {
+              color: #51A2FF;
+            }
+
+            p {
+              color: #51A2FF;
+            }
+          }
+
+          .tag-4:hover {
+            border: 1px solid rgba(81, 162, 255, 0.50);
+            cursor: default;
           }
         }
 
-        .tag-2 {
+        #liens-experience {
           display: flex;
           flex-direction: row;
-          gap: 6px;
-          border-radius: 33554400px;
-          border: 1px solid rgba(5, 223, 114, 0.30);
-          background: rgba(0, 201, 80, 0.10);
-          padding: 7px 13px 6.5px 13px;
+          gap: 8px;
 
-          .fa-wrench {
-            color: #05DF72;
+          .en-savoir-plus {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            padding: 9px 16px;
+            border-radius: 999px;
+            background: #2B7FFF;
+            box-shadow: 0 10px 15px -3px rgba(43, 127, 255, 0.25), 0 4px 6px -4px rgba(43, 127, 255, 0.25);
+            transition: all 300ms ease-in-out;
+
+            a {
+              display: flex;
+              flex-direction: row;
+              gap: 6px;
+              text-decoration: none;
+              color: #ffffff;
+              align-items: center;
+
+              .fa-angle-right {
+                color: #fff;
+              }
+            }
+
           }
 
-          p {
-            color: #05DF72;
-          }
-        }
-
-        .tag-3 {
-          display: flex;
-          flex-direction: row;
-          gap: 6px;
-          border-radius: 33554400px;
-          border: 1px solid rgba(194, 122, 255, 0.30);
-          background: rgba(173, 70, 255, 0.10);
-          padding: 7px 13px 6.5px 13px;
-
-          .fa-swatchbook {
-            color: #C27AFF;
+          .en-savoir-plus:hover {
+            background: #1d59b3;
           }
 
-          p {
-            color: #C27AFF;
-          }
-        }
+          .telecharger-le-cv {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            padding: 9px 16px;
+            border-radius: 999px;
+            border: 1px solid rgba(255, 255, 255, 0.10);
+            background: rgba(255, 255, 255, 0.05);
+            gap: 6px;
 
-        .tag-4 {
-          display: flex;
-          flex-direction: row;
-          gap: 6px;
-          border-radius: 33554400px;
-          border: 1px solid rgba(81, 162, 255, 0.30);
-          background: rgba(43, 127, 255, 0.10);
-          padding: 7px 13px 6.5px 13px;
+            .fa-file-arrow-down {
+              color: rgba(255, 255, 255, 0.5);
+            }
 
-          .fa-graduation-cap {
-            color: #51A2FF;
-          }
-
-          p {
-            color: #51A2FF;
+            a {
+              text-decoration: none;
+              cursor: not-allowed;
+              color: rgba(255, 255, 255, 0.5);
+            }
           }
         }
       }
-
-      #liens-experience {
-        display: flex;
-        flex-direction: row;
-        gap: 8px;
-
-        .en-savoir-plus {
-          display: flex;
-          flex-direction: row;
-          align-items: center;
-          padding: 9px 16px;
-          border-radius: 999px;
-          background: #2B7FFF;
-          box-shadow: 0 10px 15px -3px rgba(43, 127, 255, 0.25), 0 4px 6px -4px rgba(43, 127, 255, 0.25);
-          gap: 6px;
-
-          p {
-            color: #fff;
-          }
-
-          .fa-angle-right {
-            color: #fff;
-          }
-        }
-
-        .telecharger-le-cv {
-          display: flex;
-          flex-direction: row;
-          align-items: center;
-          padding: 9px 16px;
-          border-radius: 999px;
-          border: 1px solid rgba(255, 255, 255, 0.10);
-          background: rgba(255, 255, 255, 0.05);
-          gap: 6px;
-
-          .fa-file-arrow-down {
-            color: #fff;
-          }
-
-          p {
-            color: #fff;
-          }
-        }
-      }
-    }
     }
 
     #contactTitle {
