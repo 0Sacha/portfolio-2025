@@ -340,8 +340,7 @@ html body #hero #hero-links {
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin-bottom: 150px;
-  gap: 16px;
+  gap: -10px;
   height: 58px;
 }
 @media (max-width: 1100px) {
@@ -355,11 +354,11 @@ html body #hero #hero-links #hero-links-project {
   align-items: center;
   color: rgb(255, 255, 255);
   text-decoration: none;
-  padding: 16px 33px 18px 33px;
+  padding: 11px 33px 12px 33px;
   gap: 8px;
   border: 1px solid rgba(81, 162, 255, 0.5);
   border-radius: 999px;
-  background: #2B7FFF;
+  background: #1f5fbe;
   box-shadow: 0 10px 15px -3px rgba(43, 127, 255, 0.3), 0 4px 6px -4px rgba(43, 127, 255, 0.3);
   transition: all 300ms ease-in-out;
 }
@@ -376,15 +375,16 @@ html body #hero #hero-links #hero-links-contact {
   text-decoration: none;
   padding: 16px 33px 18px 33px;
   gap: 8px;
-  border-radius: 999px;
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  background: rgba(255, 255, 255, 0.1);
   transition: all 300ms ease-in-out;
 }
-html body #hero #hero-links #hero-links-contact:hover {
-  transform: scale(1.1);
-  border: 1px solid #515763;
-  background: #3D4451;
+html body #hero #hero-links #hero-links-contact .trait {
+  background: #fff;
+  height: 1px;
+  width: 10px;
+  transition: all 300ms ease-in-out;
+}
+html body #hero #hero-links #hero-links-contact:hover .trait {
+  width: 25px;
 }
 @keyframes breathingLight {
   0% {
@@ -594,7 +594,7 @@ html body #selection .section-container #selectionCard01 #rightSelectCard01 #sel
   gap: 8px;
   border: 1px solid rgba(81, 162, 255, 0.5);
   border-radius: 999px;
-  background: #2B7FFF;
+  background: #1f5fbe;
   box-shadow: 0 10px 15px -3px rgba(43, 127, 255, 0.3), 0 4px 6px -4px rgba(43, 127, 255, 0.3);
   transition: all 300ms ease-in-out;
 }
@@ -747,7 +747,7 @@ html body #selection .section-container #selectionCard02 #rightSelectCard02 #sel
   gap: 8px;
   border: 1px solid rgba(81, 162, 255, 0.5);
   border-radius: 999px;
-  background: #2B7FFF;
+  background: #1f5fbe;
   box-shadow: 0 10px 15px -3px rgba(43, 127, 255, 0.3), 0 4px 6px -4px rgba(43, 127, 255, 0.3);
   transition: all 300ms ease-in-out;
 }
@@ -811,8 +811,7 @@ html body #experienceTitle {
   flex-direction: column;
   gap: 17px;
   text-align: center;
-  margin-top: 170px;
-  padding-top: 170px;
+  padding-top: 150px;
 }
 @media (max-width: 1100px) {
   html body #experienceTitle {
@@ -1121,7 +1120,8 @@ html body #experience-link {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin-top: 48px;
+  margin-top: 40px;
+  margin-bottom: 60px;
 }
 html body #experience-link .liste-et-lien {
   position: relative;
@@ -1228,7 +1228,7 @@ html body #experience-link .liste-et-lien #liens-experience .en-savoir-plus {
   align-items: center;
   padding: 9px 16px;
   border-radius: 999px;
-  background: #2B7FFF;
+  background: #1f5be1;
   box-shadow: 0 10px 15px -3px rgba(43, 127, 255, 0.25), 0 4px 6px -4px rgba(43, 127, 255, 0.25);
   transition: all 300ms ease-in-out;
 }
@@ -2890,18 +2890,19 @@ html body #about-body #main-content #left-container #profile-left-container #con
   border-radius: 14px;
   border: 1px solid rgba(255, 255, 255, 0.1);
   background: rgba(255, 255, 255, 0.05);
+  cursor: not-allowed;
+  text-decoration: none;
 }
 html body #about-body #main-content #left-container #profile-left-container #connexion-admin .fa-lock {
   color: rgba(255, 255, 255, 0.35);
   text-align: center;
 }
-html body #about-body #main-content #left-container #profile-left-container #connexion-admin a {
+html body #about-body #main-content #left-container #profile-left-container #connexion-admin p {
   color: rgba(255, 255, 255, 0.35);
   text-align: center;
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
-  text-decoration: none;
 }
 html body #about-body #main-content #left-container #stat-left-container {
   display: flex;

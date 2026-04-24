@@ -29,7 +29,6 @@ $heigh-card-topic: 14px;
 
 $font-default: "Space Grotesk";
 $debug-color: red;
-
 $default-max-width: 1200px;
 $default-max-width-reponsive: 768px;
 
@@ -558,8 +557,8 @@ html {
         display: flex;
         flex-direction: row;
         align-items: center;
-        margin-bottom: 150px;
-        gap: 16px;
+        // margin-bottom: 150px;
+        gap: -10px;
         height: 58px;
 
         @media (max-width: 1100px) {
@@ -572,11 +571,11 @@ html {
           align-items: center;
           color: $text-default;
           text-decoration: none;
-          padding: 16px 33px 18px 33px;
+          padding: 11px 33px 12px 33px;
           gap: 8px;
           border: 1px solid rgba(81, 162, 255, 0.5);
           border-radius: 999px;
-          background: #2B7FFF;
+          background: #1f5fbe;
           box-shadow: 0 10px 15px -3px rgba(43, 127, 255, 0.30), 0 4px 6px -4px rgba(43, 127, 255, 0.30);
           transition: all 300ms ease-in-out;
         }
@@ -595,16 +594,22 @@ html {
           text-decoration: none;
           padding: 16px 33px 18px 33px;
           gap: 8px;
-          border-radius: 999px;
-          border: 1px solid rgba(255, 255, 255, 0.20);
-          background: rgba(255, 255, 255, 0.10);
+          
           transition: all 300ms ease-in-out;
+
+          .trait {
+            background: #fff;
+            height: 1px;
+            width: 10px;
+            transition: all 300ms ease-in-out;
+          }
+
         }
 
         #hero-links-contact:hover {
-          transform: scale(1.1);
-          border: 1px solid #515763;
-          background: #3D4451;
+          .trait {
+            width: 25px;
+          }
         }
       }
 
@@ -826,7 +831,7 @@ html {
                 gap: 8px;
                 border: 1px solid rgba(81, 162, 255, 0.5);
                 border-radius: 999px;
-                background: #2B7FFF;
+                background: #1f5fbe;
                 box-shadow: 0 10px 15px -3px rgba(43, 127, 255, 0.30), 0 4px 6px -4px rgba(43, 127, 255, 0.30);
                 transition: all 300ms ease-in-out;
 
@@ -992,7 +997,7 @@ html {
                 gap: 8px;
                 border: 1px solid rgba(81, 162, 255, 0.5);
                 border-radius: 999px;
-                background: #2B7FFF;
+                background: #1f5fbe;
                 box-shadow: 0 10px 15px -3px rgba(43, 127, 255, 0.30), 0 4px 6px -4px rgba(43, 127, 255, 0.30);
                 transition: all 300ms ease-in-out;
 
@@ -1068,8 +1073,7 @@ html {
       flex-direction: column;
       gap: 17px;
       text-align: center;
-      margin-top: 170px;
-      padding-top: 170px;
+      padding-top: 150px;
 
       @media (max-width: 1100px) {
         display: flex;
@@ -1436,7 +1440,8 @@ html {
       display: flex;
       flex-direction: row;
       justify-content: center;
-      margin-top: 48px;
+      margin-top: 40px;
+      margin-bottom: 60px;
 
       .liste-et-lien {
         position: relative;
@@ -1560,7 +1565,7 @@ html {
             align-items: center;
             padding: 9px 16px;
             border-radius: 999px;
-            background: #2B7FFF;
+            background: #1f5be1;
             box-shadow: 0 10px 15px -3px rgba(43, 127, 255, 0.25), 0 4px 6px -4px rgba(43, 127, 255, 0.25);
             transition: all 300ms ease-in-out;
 
@@ -3493,19 +3498,20 @@ html {
               border-radius: 14px;
               border: 1px solid rgba(255, 255, 255, 0.1);
               background: rgba(255, 255, 255, 0.05);
+              cursor: not-allowed;
+                text-decoration: none;
 
               .fa-lock {
                 color: rgba(255, 255, 255, 0.35);
                 text-align: center;
               }
 
-              a {
+              p {
                 color: rgba(255, 255, 255, 0.35);
                 text-align: center;
                 font-size: 14px;
                 font-weight: 400;
                 line-height: 20px;
-                text-decoration: none;
               }
             }
           }
@@ -4577,6 +4583,32 @@ html {
         }
       }
     }
+
+    // promeo
+
+    #formation-body {
+      .formation-content {
+        .formation-title {
+          .promeo-img {
+            .fa-graduation-cap {
+
+            }
+            .txt {
+              p {
+
+              }
+            }
+          }
+          .promeo-desc {
+            p {
+
+            }
+          }
+        }
+          
+
+      }
+    }    
 
     footer {
       display: flex;

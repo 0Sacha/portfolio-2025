@@ -255,40 +255,42 @@ if (change) {
 const navLi = document.querySelectorAll('#navbar li')
 const aActive = document.querySelector('#active');
 
-let liActif = navLi[0]
+if (aActive) {
 
-function moveIndicator(element) {
-    aActive.style.left = element.offsetLeft + 'px'
-    aActive.style.width = element.offsetWidth + 'px'
-}
+    let liActif = navLi[0]
 
-navLi.forEach(lien => {
-    lien.addEventListener('click', (e) => {
-        moveIndicator(e.currentTarget)
-        liActif = e.currentTarget
-    })
-    lien.addEventListener('mouseenter', () => {
-    })
-
-    lien.addEventListener('mouseleave', () => {
-    })
-})
-
-moveIndicator(navLi[0])
-
-const sectionHeros = document.querySelector('#nav')
-const sectionProjet = document.querySelector('#section-projet')
-const experienceTitle = document.querySelector('#experienceTitle')
-const contactTitle = document.querySelector('#contactTitle')
-
-
-window.addEventListener('scroll', (element) => {
-    if (window.scrollY >= offsetTop) {
-        
+    function moveIndicator(element) {
+        aActive.style.left = element.offsetLeft + 'px'
+        aActive.style.width = element.offsetWidth + 'px'
     }
-})
+
+    navLi.forEach(lien => {
+        lien.addEventListener('click', (e) => {
+            moveIndicator(e.currentTarget)
+            liActif = e.currentTarget
+        })
+        lien.addEventListener('mouseenter', () => {
+        })
+
+        lien.addEventListener('mouseleave', () => {
+        })
+    })
+
+    moveIndicator(navLi[0])
+
+    const sectionHeros = document.querySelector('#nav')
+    const sectionProjet = document.querySelector('#section-projet')
+    const experienceTitle = document.querySelector('#experienceTitle')
+    const contactTitle = document.querySelector('#contactTitle')
 
 
+    window.addEventListener('scroll', (element) => {
+        if (window.scrollY >= offsetTop) {
+
+        }
+    })
+
+}
 
 // API GITHUB
 
